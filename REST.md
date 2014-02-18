@@ -23,15 +23,15 @@ Cette contrainte améliore la portabilité de l'interface utilisateur sur les di
 
 2° Une **communication dite sans état**, c'est-à-dire dans laquelle chaque requête du client vers le serveur doit contenir toutes les informations nécessaires pour qu'elle puisse être comprise. Ainsi, cette requête ne peut utiliser aucun contexte stocké sur le serveur. L'état de la session est entièrement détenu par le client.
 
-Cette contrainte facilite la visibilité de la requête, la fiabilité est améliorée car il est plus simple de faire face à des echers. Enfin, il est plus facile de monter en charge car l'absence de stockage d'état entre les requêtes permet aux composants du serveur de libérer rapidement les ressources et la mise en œuvre est facilitée. L'inconvénient de cette contrainte est qu'elle peut diminuer les performances en nécessitant des interactions supplémentaires puisque l'information ne peut être conservée sur le serveur dans un contexte partagé. La gestion de l'état côté client réduit en outre le contrôle du serveur sur le comportement de l'application.
+Cette contrainte facilite la visibilité de la requête, la fiabilité est améliorée car il est plus simple de faire face à des échecs. Enfin, il est plus facile de monter en charge car l'absence de stockage d'état entre les requêtes permet aux composants du serveur de libérer rapidement les ressources et la mise en œuvre est facilitée. L'inconvénient de cette contrainte est qu'elle peut diminuer les performances en nécessitant des interactions supplémentaires puisque l'information ne peut être conservée sur le serveur dans un contexte partagé. La gestion de l'état, côté client, réduit en outre le contrôle du serveur sur le comportement de l'application.
 
-3° **Utilisation d'un cache** pour améliorer les performances réseau. Cela impose que les données d'une réponse à une requête soient, implicitement ou explicitement, marquées comme pouvant être, ou non, mises en cache. Lorsqu'une réponse est mise en cache, le cache du client a le possibilité de réutiliser ces données pour les demandes ultérieures équivalentes.
+3° **Utilisation d'un cache** pour améliorer les performances réseau. Cela impose que les données d'une réponse à une requête soient implicitement, ou explicitement, marquées comme pouvant être, ou non, mises en cache. Lorsqu'une réponse est mise en cache, le cache du client a la possibilité de réutiliser ces données pour les demandes ultérieures équivalentes.
 
 Cette contrainte a l'avantage d'offir la possibilité d'éliminer certaines interactions et d'améliorer l'efficacité et la performance.
 
 4° Une **interface uniforme** entre les composants est mise en place. Celle-ci implique quatre contraintes : l'identification des ressources, la manipulation des ressources par des représentations, des messages auto-descriptifs et l'hypermédia comme moteur de l'application.
 
-Cette contrainte simplifie l'architecture globale du système et la visibilité des interactions. La mise en œuvre est découplée des services fournis ce qui favorise leur indépendance et les évolutions. Cependant, cela pénalise l'efficacité puisque l'information doit être transmise sous une forme normalisée plutôt que spécifique aux besoins d'une application.
+Cette contrainte simplifie l'architecture globale du système et la visibilité des interactions. La mise en œuvre est découplée des services fournis ce qui favorise leur indépendance et les évolutions. Cependant, cela pénalise l'efficacité puisque l'information doit être transmise sous une forme normalisée plutôt que de manière spécifique aux besoins d'une application.
 
 5° Un **système en couches** pour le déploiement d'une architecture à grande échelle comme le web. Le système est composé de couches hiérarchiques qui contraignent le comportement des composants puisque chaque composant ne peut pas voir au-delà de la couche intermédiaire avec laquelle il interagit.
 
@@ -45,7 +45,7 @@ Cette contrainte facultative simplifie les clients en réduisant le nombre de fo
 Les éléments architecturaux de REST
 -----------
 
-"Le modèle REST (Representation State Transfer) est une abstraction des éléments architecturaux d'un système réparti d'hypermédias." De ce fait, il est indépendant des détails de mise en œuvre de ces composants et de la syntaxe de protocole. Il se concentre sur le rôle des composants, les contraintes sur leurs interactions, et leur interprétation des données. "Il englobe les contraintes fondamentales sur les composants, les connecteurs et les données qui définissent la base de l'architecture du Web, et ainsi l'essence de leur comportement en tant qu'application réseau."
+"Le modèle REST (Representation State Transfer) est une abstraction des éléments architecturaux d'un système réparti d'hypermédias." De ce fait, il est indépendant des détails de mise en œuvre de ces composants et de la syntaxe de protocole. Il se concentre sur le rôle des composants, les contraintes, sur leurs interactions, et leur interprétation des données. "Il englobe les contraintes fondamentales sur les composants, les connecteurs et les données qui définissent la base de l'architecture du Web, et ainsi l'essence de leur comportement en tant qu'application réseau."
 
 
 ### Les éléments de données
