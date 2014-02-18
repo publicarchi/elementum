@@ -1,7 +1,7 @@
 ---
 title: Qu'est-ce que REST ?
 author: Emmanuel Chateau
-filename: REST.md
+filename: nREST.md
 date: 2014-02-18
 version: 0.3
 ---
