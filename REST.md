@@ -3,7 +3,7 @@ title: Qu'est-ce que REST ?
 author: Emmanuel Chateau
 filename: REST.md
 date: 2014-02-18
-version: 0.1
+version: 0.3
 ---
 
 
@@ -76,7 +76,7 @@ Cela implique de donner un identifiant pour identifier des ressources impliquée
 
 "Les composant REST effectue des actions sur une ressource en utilisant une représentation pour capturer l'état courant ou prévu de cette ressource et en transférant cette représentation entre composants." Une représentation se compose de données et de métadonnées qui les décrivent. Le format de données d'une représentation est connu comme étant un type de média.
 
-#### Les connecteurs
+### Les connecteurs
 
 Les connecteurs offrent une interface abstraite pour la communication entre les composants. Une interface prend des paramètre en entrée et fournit des paramètres en sortie.
 
@@ -86,7 +86,7 @@ Plusieurs types de connecteurs :
 - résolveurs de liens
 - tunnel
 
-#### Les composants
+### Les composants
 
 Un **Agent utilisateur** utilise un connecteur client pour initier une requêet et devient destinaire final de la réponse. L'exemple le plus commun est un navigateur web qui permet d'accéder aux services d'information.
 
@@ -94,7 +94,9 @@ Le **Serveur d'origine** utiliser un connecteur serveur pour régir l'espace de 
 
 Les **composants intermédiaires** agissent en tant que client et serveur afin de faire suivre, avec une traduction éventuelle, des requêtes et des réponses. Un composant mandataire est un intermédiaire choisi par un client. Un composant passerelle est un intermédiaire imposé par le réseau ou le serveur d'origine.
 
-### Les vues
+
+Les vues
+-----------
 
 Vue processus
 Vue connecteur
