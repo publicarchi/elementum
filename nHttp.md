@@ -1,6 +1,6 @@
 ---
 title: Note sur HTTP
-filename: nHttp.md
+filename: nHTTP.md
 author: Emmanuel Chateau
 version: 0.2
 ---
