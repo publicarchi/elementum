@@ -11,7 +11,7 @@ Guides Git
 Sélection de guides de démarrage pour Git
 ---------
 
-[Git the simple Guide](http://rogerdudler.github.io/git-guide/index.html)
+[Git Un guide simple](http://rogerdudler.github.io/git-guide/index.fr.html)
 
 
 Ouvrages
