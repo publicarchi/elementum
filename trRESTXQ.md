@@ -199,7 +199,7 @@ Les annotations suivantes peuvent être employées pour lier des valeurs de requ
 
 #### Paramètres de requête (_query parameters_)
 
-La veluer du _premier paramètre_, si elle est trouvée dans le [composant de requête](http://docs.basex.org/wiki/Request_Module#Conventions), sera assignée à la variable spécifiée comme le _second paramètre_. Si aucune valeur n'est spécifiée dans la requête HTTP, tous les paramètres additionnels seront liés à la variable (si aucune paramètre additionnel n'est donné, une séquence vide sera liée) :
+La valeur du _premier paramètre_, si elle est trouvée dans le [composant de requête](http://docs.basex.org/wiki/Request_Module#Conventions), sera assignée à la variable spécifiée comme _second paramètre_. Si aucune valeur n'est spécifiée dans la requête HTTP, tous les paramètres additionnels seront liés à la variable (si aucun paramètre additionnel n'est donné, une séquence vide sera liée) :
 
 ```xquery
     declare
