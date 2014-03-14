@@ -42,8 +42,7 @@ Un court texte par l'un des contributeurs de GitHub présentant la philosophie d
 
 ### [Git is simpler than you think](http://nfarina.com/post/9868516270/git-is-simpler)
 
-L'auteur décrit en détail la structure de l'archive Git, les différents objets constitutifs de la base de données et la manière dont git gère les différentes branches et les heads.
-
+L'auteur décrit en détail la structure de l'archive Git, les différents objets constitutifs de la base de données et la manière dont git gère les différentes branches et les heads. En bref : le pourquoi du comment nécessaire pour comprendre.
 
 
 Ouvrages
@@ -55,3 +54,30 @@ L'ouvrage de Scott Chacon examine l'ensemble des fonctionnalités du système de
 
 
 ### [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/fr/)
+
+
+### [Git User's Manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html)
+
+
+Quelques références sur Git et les DH
+---------
+
+
+Travailler avec Github
+---------
+
+Workflows, etc.
+
+
+### [The illustrated guide to recover commits](http://www.programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git/)
+
+Parceque c'est parfois nécessaire...
+
+
+### [Section "The Workflow" du Git user manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html#the-workflow)
+
+
+Rédiger avec Git
+----------
+
+
