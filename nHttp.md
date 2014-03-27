@@ -152,7 +152,7 @@ Le mécanisme d'authentification n'a pas beaucoup changé avec HTTP/1.1 hormis l
 voir http://www.themanualpage.org/http/http_auth_basic.php
 
 
-Définitions (extrait de la spécification 1.0)
+Définitions (extraits de la spécification 1.0)
 ---------
 
 Connexion

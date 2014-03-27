@@ -36,7 +36,14 @@ Mieux comprendre le fonctionnement de Git
 Un court texte par l'un des contributeurs de GitHub présentant la philosophie de Git.
 
 
+### [Enfin comprendre Git](http://www.miximum.fr/enfin-comprendre-git.html)
+
+Il est parfois difficile de percevoir la logique des commandes de Git. Une description des mécanismes internes de Git permet de mieux comprendre les commandes.
+
+
 ### [Une référence visuelle de Git](http://marklodato.github.io/visual-git-guide/index-fr.html)
+
+L'article permet de visualiser le fonctionnement des branches et du head.
 
 
 
