@@ -75,6 +75,8 @@ Travailler avec Github
 
 Workflows, etc.
 
+### [Contributing to Open Source on GitHub](https://guides.github.com/overviews/os-contributing)
+
 
 ### [The illustrated guide to recover commits](http://www.programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git/)
 
