@@ -86,7 +86,21 @@ Parceque c'est parfois nécessaire...
 ### [Section "The Workflow" du Git user manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html#the-workflow)
 
 
+### [Les workflows Git](https://www.atlassian.com/fr/git/workflows)
+
+Tutoriaux en français sur les différents modèles de Workflows possibles en travaillant avec git.
+
 Rédiger avec Git
 ----------
+
+
+Divers
+------------
+
+[Git (visual) cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html)
+
+[Git cheatsheet](http://cheat.errtheblog.com/s/git)
+
+[Git reference](http://gitref.org/index.html)
 
 
