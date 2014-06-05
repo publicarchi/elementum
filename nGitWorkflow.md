@@ -8,6 +8,8 @@ Plusieurs modèles de workflows sont possibles qui offrent divers niveaux de col
 Dans une telle organisation, les collaborateurs travaillent sur des copies du projet prinicpal qu'ils peuvent modifier comme ils le souhaitent. Une fois les modifications effectuées, ceux-ci peuvent proposer d'intégrer les changements au projet principal au moyen de "pull request".
 
 
+## Opérations élémentaires
+
 ### Récupérer les sources
 
 La commande `clone` permet d'obtenir une copie du dépôt sur sa machine :
@@ -25,7 +27,7 @@ Avec `checkout` on peut se déplacer dans l'historique du dépôt :
 `git checkout 2.0 # passer sur la branche 2.0`
 `git checkout 2.0.1 # passer sur le tag 2.0.1`
 
-Vous disposez mainenant d'un répertoire local dont la source a pu évoluer depuis que vous l'avez cloné. On peut mettre à jour la version locale de son répertoire avec le répertoire distant avec `fetch` qui ramène tous les nouveaux commits et les résumés des changements.
+Vous disposez maintenant d'un répertoire local dont la source a pu évoluer depuis que vous l'avez cloné. On peut mettre à jour la version locale de son répertoire avec le répertoire distant avec `fetch` qui ramène tous les nouveaux commits et les résumés des changements.
 
 `git fetch # mettre à jour les sources`
 
@@ -35,7 +37,7 @@ N'oubliez d'utiliser `checkout` pour accéder aux nouvelles branches ou aux nouv
 
 La création de branches de travail est aisée avec Git, il ne faut pas s'en priver. Créer des branches de travail permettra de facilement distinguer sa contribution pour qu'elle soit évaluée avant de pouvoir être intégrée au répertoire principal.
 
-`git checkout -b new_feature # créer une nouvelle branche`
+`git checkout -b new_feature # accéder à la  nouvelle branche`
 
 
 Soit on forke le répertoire pour travailler sur une copie du répertoire. Soit on branch directement depuis dépôt distant.
