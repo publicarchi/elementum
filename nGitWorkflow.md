@@ -3,9 +3,9 @@ Git Workflow
 
 Lorsque l'on travaille à plusieurs sur un projet commun avec Git, il est habituellement nécessaire de définir un flux de travail pour gérer les contributions.
 
-Plusieurs modèles de workflows sont possibles qui offrent divers niveaux de collaboration. Un modèle centralisé autour d'un entrepôt commun, ou des configurations distribuées. Les facilités de création de branches de travail de Git, et l'utilisation d'un entrepôt distant hébergé sur un serveur comme Github incitent plutôt à des modes d'organisation distribués.
+Plusieurs modèles de workflows sont possibles qui offrent divers niveaux de collaboration : un modèle centralisé autour d'un entrepôt commun, ou des configurations distribuées. Les facilités de création de branches de travail de Git, et l'utilisation d'un entrepôt distant hébergé sur un serveur comme Github incitent plutôt à utiliser des modes d'organisation distribués.
 
-Dans une telle organisation, les collaborateurs travaillent sur des copies du projet prinicpal qu'ils peuvent modifier comme ils le souhaitent. Une fois les modifications effectuées, ceux-ci peuvent proposer d'intégrer les changements au projet principal au moyen de "pull request".
+Dans une telle organisation, les collaborateurs travaillent sur des copies du projet principal qu'ils peuvent modifier comme ils le souhaitent. Une fois les modifications effectuées, ceux-ci peuvent proposer d'intégrer les changements au projet principal au moyen de "pull request".
 
 
 ## Opérations élémentaires

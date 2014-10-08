@@ -102,6 +102,18 @@ Vue processus
 Vue connecteur
 Vue orientée données
 
+
+REST vs SOAP
+-----------
+Description | SOAP | REST
+(Perceived) complexity | High | Low 
+HTTP as an application protocol | No, abused as transport protocol | Yes
+Web-friendly (direct support of caches, proxies, etc.) | No | Yes
+Stateless | No (most of the time) | Yes
+Addressable resource | No | Yes
+Data handling | Automatic mapping to objects (O/X) | No automatism
+Date security | WS-Security, ... | HTTPS
+
 Références
 -----------
 

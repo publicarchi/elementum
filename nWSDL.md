@@ -69,3 +69,12 @@ Source
 - [WADL](http://fr.wikipedia.org/wiki/Web_Application_Description_Language)
 - http://bitworking.org/news/193/Do-we-need-WADL
 - http://www.w3.org/Submission/wadl
+
+Recommandations
+--------
+- [Web Services Description Language (WSDL) Version 2.0 Part 0: Primer](http://www.w3.org/TR/wsdl20-primer/)
+- [Web Services Description Language (WSDL) Version 2.0 Part 1: Core Language](http://www.w3.org/TR/wsdl20)
+- [Web Services Description Language (WSDL) Version 2.0 Part 2: Adjuncts](http://www.w3.org/TR/wsdl20-adjuncts/)
+- [Semantic Annotations for WSDL and XML Schema](http://www.w3.org/TR/sawsdl/)
+- [Semantic Annotations for WSDL and XML Schema — Usage Guide](http://www.w3.org/TR/sawsdl-guide/)
+- [Semantic Annotations for WSDL Working Group](http://www.w3.org/2002/ws/sawsdl/)
