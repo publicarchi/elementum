@@ -35,7 +35,7 @@ Le service RESTXQ est accessible via [http://localhost:8984/](http://localhost:8
 
 Toutes les [annotations](http://docs.basex.org/wiki/XQuery_3.0#Annotations) RESTXQ sont assignées à l'espace de nom `http://exquery.org/ns/restxq`, qui est statiquement lié au préfixe `rest`. Une _fonction ressource_ est une fonction XQuery qui a été marquée par des annotations RESTXQ. Lorsqu'une requête HTTP arrive, une fonction ressource sera invoquée en correspondant aux contraintes indiquées par ses annotations.
 
-Lorsqu'uen URL RESTXQ est requétée, le répertoire du module [RESTXQPATH](http://docs.basex.org/wiki/Options#RESTXQPATH) et ses sous-répertoires seront parcourus pour des fonctions disposant d'annotations RESTXQ dans les modules de bibliothèque (détectés par l'extension `xqm`) et les modules principaux (détectés par `.xq`). Dans les expressions principales, le module principal ne sera jamais évalué. Tous les modules seront mis en cache et parcouru une nouvelle fois quand leur timestamp change.
+Lorsqu'une URL RESTXQ est requétée, le répertoire du module [RESTXQPATH](http://docs.basex.org/wiki/Options#RESTXQPATH) et ses sous-répertoires seront parcourus pour des fonctions disposant d'annotations RESTXQ dans les modules de bibliothèque (détectés par l'extension `xqm`) et les modules principaux (détectés par `.xq`). Dans les expressions principales, le module principal ne sera jamais évalué. Tous les modules seront mis en cache et parcouru une nouvelle fois quand leur timestamp change.
 
 Un module RESTXQ simple est présenté ci-dessous. Il fait partie d'une installation propre et est disponible à [http://localhost:8984/](http://localhost:8984/).
 

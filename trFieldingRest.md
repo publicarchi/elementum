@@ -3,7 +3,7 @@ Essai de traduction de Fielding
 
 La traduction française n'étant pas très bonne http://opikanoba.org/tr/fielding/rest/
 
-Chaptre 5
+Chapitre 5
 Representational State Transfer (REST)
 
 Ce chapitre propose et introduit le paradigme architectural Representational State Transfer (REST) pour des systèmes hypermédia distribués. Il décrit les principes de conception logicielle qui guident REST et les contraintes d'interaction choisies pour maintenir ces principes en les comparant aux contraintes d'autres paradigmes architercturaux. REST est un style hybride qui dérive de plusieurs des paradigmes architecturaux basés sur les réseaux décrits dans le Chapitre 3, qui a été combiné avec des contraintes additionnelles définissant une interface de connexion uniforme. Le cadre de travail d'architecture logiciel du Chapitre 1 est employé pour définir les éléments architecturaux de REST et pour examiner les exemples de processus, de connecteurs, et de vues sur les données d'architectures prototypales.

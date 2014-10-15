@@ -3,13 +3,22 @@ BaseX Talk, discussion intéressantes
 
 Ce fichier liste quelques discussions intéressantes sur BaseX Talk pour y avoir
 recours au besoin.
+
 ## RESTXQ
 
 [RESTXQ declare base-uri "."](http://www.mail-archive.com/basex-talk@mailman.uni-konstanz.de/msg04298.html)
 
+
+## HTTP Request
+
+[request:http()](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04639.html)
+
+
 ## XML-TEI and XSLT
 
 [xsl:transform, spaces and mixed content](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg01149.html)
+
+[Serialisation before xslt](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04462.html)
 
 ## Templating
 
@@ -22,6 +31,16 @@ recours au besoin.
 ## Sécurisation des accès
 
 [Rest Access from javascript using AngularJS](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04146.html)
+
+## Upload et download de fichier
+
+[Dowloading files](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04615.html)
+
+## BaseX for dummies
+
+
+
+## Notes en Français concernant RESTXQ
 
 ### Extension des modules XQuery
 
@@ -38,7 +57,7 @@ Il est possible d'attribuer directement à toutes les fonctions exécutables des
 
 ### Static
 
-Par défaut, la configuration des applications web requière que tous les fichiers statiques (css, images, html, etc.) soient stockés dans le répertoire `static`. Ces fichiers peuvent ensuite être référencés par le chemin `/static/...` dans les fichiers HTML générés.
+Par défaut, la configuration des applications web requiert que tous les fichiers statiques (css, images, html, etc.) soient stockés dans le répertoire `static`. Ces fichiers peuvent ensuite être référencés par le chemin `/static/...` dans les fichiers HTML générés.
 
 ### Requêtes successives de la base en RESTXQ
 
@@ -47,3 +66,38 @@ L'utilisation de scripts restent possible pour des opérations séquentielles. P
 [1] http://docs.basex.org/wiki/RESTXQ#Forwards_and_Redirects
 [2] http://docs.basex.org/wiki/Commands#Command_Scripts
 [3] http://docs.basex.org/wiki/Database_Module#db:create
+
+### Upload et download de fichiers
+
+
+
+#### Dowload de fichiers
+
+```xquery
+(:~ page pour downloader :)
+<form method="get" action="/download/{$file}">
+              <button type="submit">Download</button>
+              </form>
+```
+
+```xquery
+declare
+  %rest:path("/download/{$file}")
+  function page:download-file($file)
+  {
+   (download-response("raw",$file), file:read-binary(..))
+  };
+
+(:~ headers for download  :)
+declare function download-response($method,$filename){
+<restxq:response>
+    <output:serialization-parameters>
+        <output:method value="{$method}"/>
+    </output:serialization-parameters>
+   <http:response>
+       <http:header name="Content-Disposition"
+value='attachment;filename="{$filename}"'/>
+    </http:response>
+</restxq:response>
+};
+```

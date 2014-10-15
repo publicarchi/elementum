@@ -11,7 +11,6 @@ WSDL ou WADL
 imaginer une extension de xqDoc pour une doc en WSDL 2.0 ou WADL d'un service RESTXQ
 
 
-
 WSDL
 -----
 
