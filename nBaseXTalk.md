@@ -13,6 +13,12 @@ recours au besoin.
 
 [request:http()](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04639.html)
 
+[How to get the data of a http post request?](https://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg03171.html)
+
+[Request Module](http://docs.basex.org/wiki/Request_Module)
+
+[Fetch Module](http://docs.basex.org/wiki/Fetch_Module)
+
 
 ## XML-TEI and XSLT
 
@@ -20,24 +26,29 @@ recours au besoin.
 
 [Serialisation before xslt](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04462.html)
 
+
 ## Templating
 
 [What to use for page layout/view templating](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg01705.html)
 
+
 ## XForms
 
+
 ## Rmqs diverses
+
 
 ## Sécurisation des accès
 
 [Rest Access from javascript using AngularJS](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04146.html)
 
+
 ## Upload et download de fichier
 
 [Dowloading files](http://www.mail-archive.com/basex-talk%40mailman.uni-konstanz.de/msg04615.html)
 
-## BaseX for dummies
 
+## BaseX for dummies
 
 
 ## Notes en Français concernant RESTXQ
@@ -74,7 +85,7 @@ L'utilisation de scripts restent possible pour des opérations séquentielles. P
 #### Dowload de fichiers
 
 ```xquery
-(:~ page pour downloader :)
+(:~ form for downloader :)
 <form method="get" action="/download/{$file}">
               <button type="submit">Download</button>
               </form>
