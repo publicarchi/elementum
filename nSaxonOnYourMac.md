@@ -1,17 +1,15 @@
 nSaxonOnYourMac
 ======
 
+Sur mac, le moyen le plus simple de rendre disponibles des fichiers JAR (ou des fichiers .class) pour toutes les applications installées une machine, il suffit d'ajouter ces fichiers dans le répertoire `/Library/Java/Extensions`.
+
+Pour seulement les rendre disponibles pour un utilisateur donner, les placer dans le répertoire `~/Library/Java/Extensions` de l'utilisateur concerné.
+
 http://stackoverflow.com/questions/1675765/adding-to-the-classpath-on-osx
-
-If you want to make a certain set of JAR files (or .class files) available to every Java application on the machine, then your best bet is to add those files to /Library/Java/Extensions.
-
-Or, if you want to do it for every Java application, but only when your Mac OS X account runs them, then use ~/Library/Java/Extensions instead.
-
-EDIT: If you want to do this only for a particular application, as Thorbjørn asked, then you will need to tell us more about how the application is packaged.
 
 Cela rend Saxon disponible pour basexhttp
 
-Normalement, il est également possible de ficher le classpath directement
+Normalement, il est également possible de fixer le classpath directement de la manière suivante :
 
 `export CLASSPATH=/path/to/some.jar:/path/to/some/other.jar`
 mais nous n'y sommes pas parvenu
@@ -20,8 +18,6 @@ Or you can add to the existing classpath like this:
 
 export CLASSPATH=$CLASSPATH:/path/to/some.jar:/path/to/some/other.jar
 
-This is answering your exact question, I'm not saying it's the right or wrong thing to do; I'll leave that for others to comment upon.
-
 
 en tcsh, ou csh
 dans /etc/profile
@@ -29,8 +25,6 @@ dans /etc/profile
 
 `echo $CLASSPASS`
 pour afficher la variable d'environnement
-
-
 
 
 ------
