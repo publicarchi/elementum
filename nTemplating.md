@@ -14,7 +14,7 @@ https://gist.github.com/micheee/e053068a41eb35e727bb
 
 ## XQMVC
 
-MVC est un modèle de conception qui promeut l’organisation du code et de la structure de fichiers en séparant la présentation de la partie logique.
+MVC (Model View Controller) est un modèle de conception qui promeut l’organisation du code et de la structure de fichiers en séparant la présentation de la partie logique. XQMVC est une proposition de cadre de travail pour produire des applications XQuery organisées d'après le modèle MVC.
 https://code.google.com/p/xqmvc/
 
 ## Mustache
