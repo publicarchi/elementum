@@ -143,7 +143,7 @@ QUST: Doubler attribut lang avec xml:lang="fr" pour rester conforme à la syntax
 
 ## Remarques diverses
 
-Rendre du XHTML dans IE8 requière un truc avec XSLT.
+Rendre du XHTML dans IE8 requiert un tip XSLT.
 Ajouter l'instruction de traitement suivante
 ```xml
 <?xml version="1.0" encoding="iso-8859-1"?>

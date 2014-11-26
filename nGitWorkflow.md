@@ -231,3 +231,10 @@ permet d'intégrer les dernières modifications au commit précédent.
 ### ajout interactif
 
 http://alx.github.io/gitbook/4_ajout_interactif.html
+
+
+## Références
+
+- http://git-scm.com/book/fr/v1/Git-distribué-Contribution-à-un-projet
+
+- https://www.atlassian.com/fr/git/workflows

@@ -18,6 +18,9 @@ Or you can add to the existing classpath like this:
 
 export CLASSPATH=$CLASSPATH:/path/to/some.jar:/path/to/some/other.jar
 
+dans le bash_profile :
+CLASSPATH=$CLASSPATH:/Library/Java/Extensions/SaxonHE9-4-0-6J/saxon9he.jar  # put saxon in the path
+
 
 en tcsh, ou csh
 dans /etc/profile
