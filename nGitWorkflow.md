@@ -88,7 +88,8 @@ Une fois la branche `upstream` configurée, il est désormais possible de mettre
 
 ```bash
 git checkout master # se placer sur la branche master de son fork
-git pull upstream master # récupérer les dernières modifications de la branche principale de upstream
+git fetch upstream master # récupérer les dernières modifications de la branche principale de upstream
+git pull upstream master # remplacer la branche locale par les dernières modifications de la branche principale de upstream : préférer un rebase
 git checkout new_feature # retourner sur la branche de développement
 ```
 
@@ -143,46 +144,47 @@ git merge new_feature # fusionner les commits provenant de "new_feature" à l'in
 git branch -d new_feature # Effacer la branche "new_feature"
 ```
 
-
 ### Rebaser avant de commiter
 
-Pour faciliter le travail d'intégration, on peut éviter d'éventuels conflits en utilisant la commande `rebase`. Cette commande permet de mettre à jour votre branche avec le dernier commit du dépôt original.
+Pour faciliter le travail d'intégration, on peut éviter d'éventuels conflits en utilisant la commande `rebase`. Cette commande permet de mettre à jour votre branche avec le dernier commit du dépôt original. Elle permet de créer un historique de commits plus linéaire et le rebasage interactif permet de modifier l'historique des commits.
 
 ```bash
-git rebase master
+git rebase master # rebase la branche courante avec master
 ```
 
-Afin de proposer un historique plus simple à l'intégrateur, il est possible de fusionner tous les commits réalisés avec l'option `-i`.
+Afin de proposer un historique plus simple à l'intégrateur, il est possible de fusionner tous les commits réalisés au cours d'un rebase interactif avec l'option `-i`.
 
 ```bash
-git rebase -i master
+git rebase -i master # rebase la branche courante avec master
 ```
 
 Dans l'éditeur de recombinaison interactive, http://alx.github.io/gitbook/4_recombinaison_interactive.html
 
-Remplacer "pick" par "squash" le début des lignes qui doivent être confondues dans un même commit.
+Remplacer "pick" par "squash" au début des lignes qui doivent être confondues dans un même commit.
 
 Si 'pick' est sélectionné, git essayera simplement d'appliquer le patch et de sauvegarder le commit avec le même message qu'avant.
 
 Si 'squash' est sélectionné, il combinera ce commit avec le précédent pour former un nouveau commit. Vous trouverez alors un autre éditeur pour merger les messages des 2 commit qui ont étés assemblés ensemble.
 
-En effaçant la ligne, on peut également retirer un commit de l'historique.
+En effaçant la ligne, on peut également retirer un commit de l'historique (et ses modifications ??).
 
 
-Remarque : la commande `rebase` est à éviter sur des commits ayant déjà été partagés et sur lesquelles d'autres personnes peuvent avoir basé des modifications.
-
+Remarque : la modification de l'historique avec le rebasage interactif `rebase -i` est à éviter sur des commits ayant déjà été partagés et à partir desquels d'autres personnes peuvent avoir fondés des modifications.
 
 Sans rebase, il est possible de mettre à jour sa branche avec l'upstream
 
 ```bash
-git checkout master
-git fetch upstream
-git merge upstream/master
-git chekout new_feature
-git rebase master
+git checkout master # passer sur la branche master
+git fetch upstream # synchroniser upstream
+git merge upstream/master # mettre à jour master avec upstream/master
+git chekout new_feature # repasser sur la branche de nouvelles fonctionnalités
+git rebase master # rebaser avec master
+git checkout master # revenir sur la branche master
+git merge new_feature # merger la branche master avec new_feature
+git branch -d new_feature # supprimer la branche new_feature
 ```
 
-Au cours du rebasage, vous pouvez avoir des conflits
+Au cours du rebasage, vous pouvez éventuellement rencontrer des conflits
 
 ```bash
 git add ... # ajouter les fichiers résolus

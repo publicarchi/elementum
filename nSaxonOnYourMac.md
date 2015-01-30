@@ -1,25 +1,64 @@
 nSaxonOnYourMac
 ======
 
+Le paquet Saxon contient une collection d'outils pour manipuler des documents XML soit sous la forme de processeur XSLT ou XQuery, soit sous la forme de bibliothèques Java.
+ 
+Un processeur XSLT est un produit logiciel capable de prendre en entrée un document XML et un programme XSLT et d'exécuter une transformation en fonctions de certains paramètres.
+
+
+## Installer Saxon
+
+Les sources du processeur Saxon sont téléchargeables sur le site de Saxonica à l'adresse suivante : http://saxonica.com/welcome/welcome.xml
+
+La version libre et open-source du processeur Saxon est la version dénommée 'saxon9he.jar'.
+
+Un fichier JAR est une archive java exécutable. Il contient toutes les classes java du programme.
+
+Saxon étant installé sur votre machine, vous pouvez l'invoquer de la manière suivante :
+
+```bash
+java -jar /path/to/saxon.jar path/to/xmlfile.xml path/to/xslfile.xsl
+```
+
+La liste des options disponibles pour une transformation XSLT est présentée à cette adresse http://www.saxonica.com/documentation/html/using-xsl/commandline.html
+
+La liste des options disponibles pour une requête XQuery est présentée à cette adresse
+http://www.saxonica.com/documentation/html/using-xquery/commandline.html
+
+
+## Créer un alias
+
+Pour invoquer Saxon facilement en ligne de commande, le plus simple est de créer un alias dans votre fichier .bash_profile
+
+```bash
+alias saxon='java -jar /Library/Java/Extensions/SaxonHE9-5-1-6J/saxon9he.jar'
+```
+
+Il est désormais possible d'exécuter Saxon avec l'alias saxon en lui passant les paramètres nécessaires.
+
+Par exemple, on exécute la classe
+
+```bash
+saxon -o:fichierRésultat.html source.xml programme.xsl
+```
+
+## Placer Saxon dans le CLASSPATH java
+
 Sur mac, le moyen le plus simple de rendre disponibles des fichiers JAR (ou des fichiers .class) pour toutes les applications installées une machine, il suffit d'ajouter ces fichiers dans le répertoire `/Library/Java/Extensions`.
 
-Pour seulement les rendre disponibles pour un utilisateur donner, les placer dans le répertoire `~/Library/Java/Extensions` de l'utilisateur concerné.
+Pour seulement les rendre disponibles pour un utilisateur donné, les placer dans le répertoire `~/Library/Java/Extensions` de l'utilisateur concerné.
 
 http://stackoverflow.com/questions/1675765/adding-to-the-classpath-on-osx
 
-Cela rend Saxon disponible pour basexhttp
+Pour une utilisation avec BaseX, cela suffit à rendre Saxon disponible pour basexhttp si les classes Java sont chargées par le script.
 
-Normalement, il est également possible de fixer le classpath directement de la manière suivante :
+
+Il est aussi possible de fixer le classpath directement de la manière suivante :
 
 `export CLASSPATH=/path/to/some.jar:/path/to/some/other.jar`
-mais nous n'y sommes pas parvenu
 
-Or you can add to the existing classpath like this:
-
-export CLASSPATH=$CLASSPATH:/path/to/some.jar:/path/to/some/other.jar
-
-dans le bash_profile :
-CLASSPATH=$CLASSPATH:/Library/Java/Extensions/SaxonHE9-4-0-6J/saxon9he.jar  # put saxon in the path
+ou d'ajouter la ligne suivante dans `.bash_profile`
+`export CLASSPATH=$CLASSPATH:/Library/Java/Extensions/SaxonHE9-4-0-6J/saxon9he.jar  # put saxon in the path`
 
 
 en tcsh, ou csh
@@ -29,10 +68,9 @@ dans /etc/profile
 `echo $CLASSPASS`
 pour afficher la variable d'environnement
 
-
 ------
 
-pour linux
+# pour linux
 
 http://saxon.sourceforge.net/saxon7.0/api-guide.html
 
