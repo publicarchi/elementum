@@ -6,13 +6,16 @@ date: 2014-06-27
 
 ## Introduction
 
-L'abandon de XHTML2 et le choix par W3C de développer HTML5 se caractérise d'abord par l'abandon de certaines contraintes syntaxiques propres au langages XML. Toutefois, même si l'information à ce sujet est parfois difficile à trouver ou peu claire, il reste possible d'écrire ses pages web en XHTML5. Le recours à ce formalisme est particulièrement nécessaire lorsque l'on travaille avec le langage de requêtes XQuery ou le langage de transformation XSLT ou bien encore dans l'univers XML (sources XML, Xlink, SVG,  MathML, etc.).
+L’abandon de XHTML2 et le choix effectué par le W3C de poursuivre le développement de HTML5 se caractérise d’abord par l’abandon des contraintes syntaxiques propres au méta-langage XML. Toutefois, même si l’information à ce sujet est souvent restée peu claire ou difficile à trouver, il a toujours été possible d’écrire ses pages web en xHTML5. Le recours à ce formalisme s’avère particulièrement nécessaire lorsque l’on travaille avec le langage de requêtes XQuery ou le langage de transformation XSLT, ou bien généralement dans l’univers XML (sources XML, Xlink, SVG,  MathML, etc.).
 
-Si le langage de balisage HTML5 a paru signer la fin de XHTML, la réalité est un peu plus complexe. D'une part, la syntaxe XML subsiste et reste toujours valide puisque HTML5 a été conçu pour rester rétrocompatible avec HTML4 et XHTML. D'autre part, certaines règles syntaxiques propres à XHTML demeurent comme l'imbrication des éléments sans chevauchement, ou bien sont supportées comme des conventions optionnelles. Tout XHTML5 est du HTML5 valide, et XHTML5 présente plusieurs des propriétés de XML comme l'extensibilité en utilisant des espaces de noms, ou encore l'utilisation de XSLT pour transformer la page dans le navigateur. Ainsi, il est donc possible de bénéficier à la fois du meilleur de XHTML et des nouveaux éléments offerts HTML5.
+En effet, si le langage de balisage HTML5 paraissait signer la fin de XHTML, la réalité s’est avérée un peu plus complexe. D’une part, la syntaxe XML subsiste et reste toujours valide puisque HTML5 a été conçu pour rester rétrocompatible avec HTML4 et XHTML. D’autre part, certaines règles syntaxiques propres à XHTML demeurent comme l’imbrication des éléments sans chevauchement, ou bien sont supportées comme des conventions optionnelles. Tout XHTML5 est du HTML5 valide, et XHTML5 présente plusieurs des propriétés de XML comme l’extensibilité en utilisant des espaces de noms, ou encore l’utilisation de XSLT pour transformer la page dans le navigateur. Ainsi, il est donc possible de bénéficier à la fois du meilleur de XHTML et des nouveaux éléments offerts HTML5.
+
+La recommandation candidate du W3C qui définit des documents polyglotes pour HTML5 devrait bientôt résoudre définitivement la question en offrant un cadre pour la compatibilité des deux langages de balisage.
+
 
 ## Se conformer aux règles syntaxiques de XHTML
 
-Il est possible de contraindre la syntaxe de HTML5 pour qu'elle se conforme à XML, en utilisant XHTML5. Pour ce faire, il convient d'ajouter explicitement une déclaration d'espace de nom XHTML à l'élément <html> et respecter la syntaxe XML en fermant les éléments, en respectant la casse pour les noms d'éléments et en donnant des valeurs à tous les attributs. Un document XHTML doit être un document XML bien formé.
+Il est possible de contraindre la syntaxe de HTML5 pour qu’elle se conforme à XML, en utilisant XHTML5. Pour ce faire, il convient d’ajouter explicitement une déclaration d’espace de nom XHTML à l’élément <html> et respecter la syntaxe XML en fermant les éléments, en respectant la casse pour les noms d’éléments et en donnant des valeurs à tous les attributs. Un document XHTML doit être un document XML bien formé.
 
 ```html
 <!DOCTYPE html>
@@ -29,28 +32,28 @@ Il est possible de contraindre la syntaxe de HTML5 pour qu'elle se conforme à X
 </html>
 ```
 
-Il est désormais possible de valider son XHTML5 avec un validateur pour obtenir un contrôle plus strict des erreurs. Cela n'est pour le moment pas proposé par le W3C, mais il on peut utiliser le service en ligne [http://html5.validator.nu]([http://html5.validator.nu]) (en choisissant l'option "Be lax about HTTP Content-Type"), ou bien un schéma [mais la spécification ne définit pas de DTD].
+Il est désormais possible de valider son XHTML5 avec un validateur pour obtenir un contrôle plus strict des erreurs. Cela n’est pour le moment pas proposé par le W3C, mais il on peut utiliser le service en ligne [http://html5.validator.nu]([http://html5.validator.nu]) (en choisissant l’option "Be lax about HTTP Content-Type"), ou bien un schéma [mais la spécification ne définit pas de DTD].
 
 
 ## Servir la page comme du XHTML
 
-Si, au moyen de ces précautions, on produit du XHTML, les navigateurs traiteront toujours les pages comme des documents HTML5, sans essayer d'appliquer aucune règle complémentaire. Pour utiliser XHTML5 plus complètement, il est nécessaire de configurer son serveur pour servir les pages avec type MIME `application/xhtml+xml` ou  `application/xml` au lieu de `text/html`. Attention, un tel changement peut empêcher vos pages d'être affichées par les navigateurs Internet Explorer antérieurs à la version IE 9. C'est la raison pour laquelle ce format est dans l'immédiatement peu employé. Incidemment, il faut aussi avoir conscience que les navigateurs qui supportent XHTML5 se comportent différemment qu'avec HTML5, en essayant de traiter la page comme un document XML, et en interrompant le traitement si le document est mal formé.
+Si, au moyen de ces précautions, on produit du XHTML, les navigateurs traiteront toujours les pages comme des documents HTML5, sans essayer d’appliquer aucune règle complémentaire. Pour utiliser XHTML5 plus complètement, il est nécessaire de configurer son serveur pour servir les pages avec type MIME `application/xhtml+xml` ou  `application/xml` au lieu de `text/html`. Attention, un tel changement peut empêcher vos pages d’être affichées par les navigateurs Internet Explorer antérieurs à la version IE 9. C’est la raison pour laquelle ce format est dans l’immédiat peu employé. Incidemment, il faut aussi avoir conscience que les navigateurs qui supportent XHTML5 se comportent différemment qu’avec HTML5, en essayant de traiter la page comme un document XML, et en interrompant le traitement si le document est mal formé.
 
-Avec nombre de navigateurs, l'utilisation d'une extension `.xhtml` permet d'afficher la page comme avec un type MIME correspondant.
+Avec nombre de navigateurs, l’utilisation d’une extension `.xhtml` permet d’afficher la page comme avec un type MIME correspondant.
 
 
 ## Utiliser une déclaration XML
 
-Enfin, c'est une bonne pratique que d'ajouter une déclaration XML, même si elle n'est pas obligatoire lorsque l'encodage par défaut UTF-8 est utilisé. Cependant, il alors recommandé de configurer l'encodage en utilisant les en-tête Content-Type du serveur, sinon cette déclaration peut être fournie dans une balise méta `<meta charset="UTF-8" />`.
+Enfin, c’est une bonne pratique que d’ajouter une déclaration XML, même si elle n’est pas obligatoire lorsque l’encodage par défaut UTF-8 est utilisé. Cependant, il alors recommandé de configurer l’encodage en utilisant les en-tête Content-Type du serveur, sinon cette déclaration peut être fournie dans une balise méta `<meta charset="UTF-8" />`.
 
-Il faut noter que la déclaration XML est illégale avec l'en-tête HTTP Content-Type `text/html`. Elle devra donc être réservée aux pages servies en XML.
+Il faut noter que la déclaration XML est illégale avec l’en-tête HTTP Content-Type `text/html`. Elle devra donc être réservée aux pages servies en XML.
 
 
 ## Documents Polyglottes
 
-Il est parfois utile de pouvoir servir des documents HTML5 qui sont également des documents XML bien formés ; par exemple, lorsque l'on utilise des outils XML pour générer un document et que l'on veut traiter ces documents avec des outils XML. Un langage qui permet de créer des documents qui peuvent être à la fois traités par des parseurs HTML et XML est appellé un balisage polyglotte. C'est un profil entièrement optionnel du vocabulaire HTML qui permet aux auteurs de rendre leurs documents plus robustes.
+Il est parfois utile de pouvoir servir des documents HTML5 qui sont également des documents XML bien formés ; par exemple, lorsque l’on utilise des outils XML pour générer un document et que l’on veut traiter ces documents avec des outils XML. Un langage qui permet de créer des documents qui peuvent être à la fois traités par des parseurs HTML et XML est appellé un balisage polyglotte. C’est un profil entièrement optionnel du vocabulaire HTML qui permet aux auteurs de rendre leurs documents plus robustes.
 
-Un document qui utilise un balisage polyglotte est un document qui forme des arbres identiques (à quelques exceptions près) lorsqu'il est parsé aussi bien en tant que document HTML ou en tant que document XML. Les documents polyglottes utilisent un DOCTYPE spécifique, une déclaration d'espace de nom, et une casse spécifique pour les noms d'éléments ou d'attributs (généralement bas de casse, et parfois camel case.
+Un document qui utilise un balisage polyglotte est un document qui forme des arbres identiques (à quelques exceptions près) lorsqu’il est parsé aussi bien en tant que document HTML ou en tant que document XML. Les documents polyglottes utilisent un DOCTYPE spécifique, une déclaration d’espace de nom, et une casse spécifique pour les noms d’éléments ou d’attributs (généralement bas de casse, et parfois camel case.
 
 Le W3C ne recommande pas particulièrement de publier des documents polyglottes. De manière générale, les auteurs sont encouragés à publier du contenu HTML en employant la syntaxe HTML5 et les types de médias correspondants (soit la syntaxe HTML avec `text/html`, soit XHTML avec `application/xhtml+xml`). Un document polyglotte peut être indistinctement servi comme `text/html` (si le contenu est transmis à un agent utilisateur compatible avec HTML) ou "application/xhtml+xml" (si le contenu est transmis à un agent utilisateur compatible avec XHTML). Les types MIME `text/xml`, `application/xml` et tous les sous-types se terminant par les quatre caractères "+xml" sont également permis.
 
@@ -58,32 +61,32 @@ Le W3C ne recommande pas particulièrement de publier des documents polyglottes.
 Les documents polyglottes sont :
 - des documents HTML valides
 - des document XML bien formés
-- ont des DOMs identiques lorsqu'ils sont traités comme HTML ou XML à l'exception notable des DOMs différents générés par les parseurs pour les attributs xml (xml:lang, xml:space, xml:base), xmlns (xmlns="" et xmlns:xlink=""), et xlink (tels que xlink:href). XML rexquière ces attributs et HTML5 les permets dans certains endroits. L'exception ne doit pas empêcher que le document doit être un document HTML valide.
+- ont des DOMs identiques lorsqu’ils sont traités comme HTML ou XML à l’exception notable des DOMs différents générés par les parseurs pour les attributs xml (xml:lang, xml:space, xml:base), xmlns (xmlns="" et xmlns:xlink=""), et xlink (tels que xlink:href). XML rexquière ces attributs et HTML5 les permets dans certains endroits. L’exception ne doit pas empêcher que le document doit être un document HTML valide.
 
 Le support est maximisé :
 - par le support du parsing tant HTML que XML
-- l'utilisation de code équivalents en DOM
-- la possibilité de réutilisation avec d'autres parseurs
+- l’utilisation de code équivalents en DOM
+- la possibilité de réutilisation avec d’autres parseurs
 
-Un document polyglot ne doit donc pas utiliser d'éléments  `document.write` ou `noscript` par exemple.
+Un document polyglot ne doit donc pas utiliser d’éléments  `document.write` ou `noscript` par exemple.
 
 Polyglot markup triggers non-quirks mode in HTML parsers, as non-quirks mode is closest to XML-mode rendering, in regard to both DOM and CSS.
 
-L'extensibilité est supportée lorsque le document est servi comme `application/xhtml+xml`.
+L’extensibilité est supportée lorsque le document est servi comme `application/xhtml+xml`.
 
 
 ### Règles de rédaction
 
 Les instructions de traitement et les déclarations XML sont proscrites.
 
-La spécification de l'encodage du document utilise seulement UTF-8. HTML requière une déclaration explicite, tandis qu'UTF-8 est un encodage par défaut de XML. Les documents servis avec un Content-type `xml` ne nécessitent aucune des deux déclarations HTML, toutefois puisque le document pourrait être interprété comme `text/html` cette déclaration est préférable.
+La spécification de l’encodage du document utilise seulement UTF-8. HTML requière une déclaration explicite, tandis qu’UTF-8 est un encodage par défaut de XML. Les documents servis avec un Content-type `xml` ne nécessitent aucune des deux déclarations HTML, toutefois puisque le document pourrait être interprété comme `text/html` cette déclaration est préférable.
 
-Les documents polyglottes utilisent la déclaration suivante, séparément ou en combinaison (notez qu'il ne peut y avoir qu'une seule déclaration d'encodage HTML) :
+Les documents polyglottes utilisent la déclaration suivante, séparément ou en combinaison (notez qu’il ne peut y avoir qu’une seule déclaration d’encodage HTML) :
 - Au sein du document
 En utilisant le Byte Order Mark (BOM) character
-En utilisant la déclaration d'encodage HTML soit dans l'attribut `charset` de `<meta charset="UTF-8"/>` soit dans la forme alternative `<meta http-equiv="Content-Type" content="text/htm; charset=UTF-8"/>`
+En utilisant la déclaration d’encodage HTML soit dans l’attribut `charset` de `<meta charset="UTF-8"/>` soit dans la forme alternative `<meta http-equiv="Content-Type" content="text/htm; charset=UTF-8"/>`
 - En dehors du document
-En ajoutant `charset=utf-8` au type MIME/HTTP de l'en-tête Content-Type comme ci-dessous :
+En ajoutant `charset=utf-8` au type MIME/HTTP de l’en-tête Content-Type comme ci-dessous :
 `Content-type: text/html; charset=utf-8`
 `Content-type: application/xhtml+xml; charset=utf-8`
 
@@ -95,10 +98,10 @@ Les documents polyglottes utilisent une déclaration de type de document (DOCTYP
 - Un identifiant formel public (FPI), si présent, sensible à la casse
 - Une URI, si présente dans la déclaration de type de document sensible à la casse
  par exemple `about:legacy-compat`
- Notez que l'usage de about:legacy-compat dans des document XML peut consuire à des résultats de parsing non prévisibles.
+ Notez que l’usage de about:legacy-compat dans des document XML peut conduire à des résultats de parsing non prévisibles.
 
  Namespace
- HTML5 a introduit un espace de nom par défaut pour l'élément racine html, svg, et MathMl. Les documents polyglotes déclarent ces espaces de noms par défaut sur l'élément racine pour maintenir la compatibilité avec XML.
+ HTML5 a introduit un espace de nom par défaut pour l’élément racine html, svg, et MathMl. Les documents polyglotes déclarent ces espaces de noms par défaut sur l’élément racine pour maintenir la compatibilité avec XML.
 
  `<html xmlns="http://www.w3.org/1999/xhtml"> <math xmlns="http://www.w3.org/1998/Math/MathML"> <svg xmlns="http://www.w3.org/2000/svg">`
 
@@ -144,7 +147,7 @@ QUST: Doubler attribut lang avec xml:lang="fr" pour rester conforme à la syntax
 ## Remarques diverses
 
 Rendre du XHTML dans IE8 requiert un tip XSLT.
-Ajouter l'instruction de traitement suivante
+Ajouter l’instruction de traitement suivante
 ```xml
 <?xml version="1.0" encoding="iso-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="copy.xsl"?>
@@ -163,15 +166,15 @@ où copy.xsl contient le contenu suivant :
 </stylesheet>
 ```
 
-Déclarer l'encodage dans une balise meta ne fonctionne pas en XHTML, c'est seulement utile pour les documents polyglotes.
+Déclarer l’encodage dans une balise meta ne fonctionne pas en XHTML, c’est seulement utile pour les documents polyglotes.
 
-La balise meta pour l'encodage est ignorée lorsque le document XHTML est traité en tant que XML.
+La balise meta pour l’encodage est ignorée lorsque le document XHTML est traité en tant que XML.
 
-La déclaration XML est illégale avec l'en-tête HTTP "text/html".
+La déclaration XML est illégale avec l’en-tête HTTP "text/html".
 
-Les documents XML n'ont pas nécessairement besoin d'un DOCTYPE, la spécification ne définit ni identifiant public ni DTD.
+Les documents XML n’ont pas nécessairement besoin d’un DOCTYPE, la spécification ne définit ni identifiant public ni DTD.
 
-À la différence de XHTML1 par rapport à HTML4, le choix entre XHTML5 et HTML5 est exclusivement définit par le type Mime plutôt que par le DOCTYPE : HTML5 n'est plus formellement basé sur SGML, et n'est plus spécifié par une DTD.
+À la différence de XHTML1 par rapport à HTML4, le choix entre XHTML5 et HTML5 est exclusivement définit par le type Mime plutôt que par le DOCTYPE : HTML5 n’est plus formellement basé sur SGML, et n’est plus spécifié par une DTD.
 
 
 ## Références
