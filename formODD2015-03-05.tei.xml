@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../schema/gdpArticle.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fichier @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ --> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="fre" type="main">Cours ODD</title>
+                <principal>
+                    <persName ref="#MCL">
+                        <forename>Lou</forename>
+                        <surname>Burnard</surname>
+                    </persName>
+                </principal>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1">document nativement numérique, <date from="2013"
+                    to="2018">2013-2018</date></edition>
+            </editionStmt>
+            <extent><!-- TODO : taille du fichier en octet --></extent>
+            <publicationStmt>
+                <date when="2015-03-05">5 mars 2015</date>
+                <idno>formODD2015-03-05</idno>
+                <!-- responsable de la publication -->
+                <publisher>
+                    <orgName>Histoire des Arts &amp; Représentations</orgName>
+                    <orgName type="acronym">HAR</orgName>
+                    <orgName type="alt">EA 4414</orgName>
+                    <address> <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine> <addrLine>UFR de Sciences Sociales et Administration (SSA)</addrLine> <addrLine>200, Avenue de la République</addrLine> <addrLine>92001 Nanterre Cedex</addrLine> <addrLine>France</addrLine> <addrLine>http://har.u-paris10.fr</addrLine> <addrLine>harparisouest@gmail.com</addrLine> </address>
+                </publisher>
+                <availability status="restricted"
+                    xml:id="gdpLicenceTextSauval1724">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/fr/">
+                        <p>Texte de la licence</p>
+                        <!-- TODO renseigner le texte de la licence -->
+                        <!--<graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/fr/88x31.png"/>-->
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title xml:lang="fre" type="main">Blog du projet des Guides de
+                    Paris</title>
+                <title xml:lang="fre" type="sub">Les Guides de Paris, Les
+                    historiens des arts et les corpus numériques</title>
+                <idno type="URI">http://www.guidesdeparis.net/blog</idno>
+            </seriesStmt>
+            <!-- <notesStmt> <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note> <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note> </notesStmt> -->
+            <!-- description de la source -->
+            <sourceDesc xml:id="gdpPresentation2014">
+                <p>document nativement numérique</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <!-- description du projet éditorial -->
+            <projectDesc>
+                <p>L'édition des Guides de Paris fait partie d'un programme de
+                    recherche sur les historiens de l'art et les corpus
+                    numériques.</p>
+            </projectDesc>
+            <!-- déclaration des principes éditoriaux -->
+            <editorialDecl>
+                <quotation>
+                    <p>Les citations dans le texte sont encodées soit au moyen
+                        d'un élément quote, soit au moyen d'un élément...</p>
+                </quotation>
+            </editorialDecl>
+            <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+            <refsDecl>
+                <p>Description du système de référence canonique.</p>
+                <!-- TODO à renseigner avec une expression régulière -->
+            </refsDecl>
+        </encodingDesc>
+        <!-- présentation du profil de fichier -->
+        <profileDesc>
+            <creation when="2014">2014</creation>
+            <langUsage>
+                <language ident="fre" usage="98">Français (langue principale du
+                    corpus)</language>
+                <language ident="lat" usage="2">Latin</language>
+                <!-- TODO vérifier -->
+            </langUsage>
+            <textClass>
+                <keywords xml:lang="fre"
+                    scheme="http://data.bnf.fr/liste-rameau">
+                    <term>18e siècle</term>
+                    <term>France</term>
+                </keywords>
+                <keywords xml:lang="eng"
+                    scheme="http://id.loc.gov/authorities/about.html#lcsh">
+                    <term>17th-18th centuries</term>
+                    <term>France</term>
+                </keywords>
+                <classCode
+                    scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+                    <term>Text</term>
+                </classCode>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2014-04-15">Remaniement de l'entête et de la
+                structure</change>
+            <change when="2013-11-29">Premier échantillonnage</change>
+        </revisionDesc>
+    </teiHeader>
+    <text corresp="#variaBioTextLicence">
+        <body>
+            <div>
+                <head>Initiation ODD, 5 mars 2015, École nationale des chartes,
+                    Lou Burnard</head>
+                <div>
+                    <p>Pour commencer, on fera semblant de ne rien connaître de
+                        la TEI, en revanche on connaît XML. On envisagera
+                        ensuite un cas d'usage avec la TEI dans lequel on
+                        examinera la manière dont la TEI se sert de ODD. Il
+                        s'agira là d'envisager la TEI "sous le capot". En tous
+                        les cas la session d'aujourd'hui sera principalement
+                        destinée à vous présenter ce vocabulaire spécifique que
+                        constitue ODD.</p>
+                </div>
+                <div>
+                    <head>ODD une introduction</head>
+                    <div>
+                        <head>À quoi sert un ODD ?</head>
+                        <p>Peut-être ne savez pas ce qu'est que ODD, en revanche
+                            vous savez sans doute ce qu'est un schéma et vous en
+                            avez peut-être créé, ou utilisé des DTD. L'idée de
+                            ODD est basée sur le fait que dans le monde
+                            informatique lorsque l'on lance un grand projet de
+                            création de ressources numériques, on a besoin de
+                            plusieurs choses. On a d'abord besoin d'un schéma
+                            formelle qui s'exprime dans un langage informatique
+                            commme les DTD, W3C XML Schema ou RelaxNG.</p>
+                        <p>W3C Schema présente l'avantage de résoudre certains
+                            inconvénients des DTD. RelaxNg Ensemble de
+                            technologiques qui permettent de résoudre chacun des
+                            aspects suivants :<list/> <item>- d'abord quelles
+                            sont les balises disponibles. Un premier aspect
+                            essentiel, mais ces balises ne sont pas toujours
+                            disponibles n'importe quand. Elles ont également un
+                            contexte.</item> <item>- Le contexte. Par exemple le
+                            fait que les titres ne puissent pas apparaître en
+                            bas de page.</item> <item>- Les balises disposent
+                            aussi d'attributs. La définition des attributs est
+                            une partie essentielle de la définition d'un
+                            schéma.</item> <p>Il y a encore d'autres contraintes
+                            que l'on pourrait vouloir exprimer. Il s'agit de
+                            documenter les choix que l'on a fait ; les principes
+                            éditoriaux.</p> <p>Il arrive très souvent que l'on
+                            veut documenter un chapitre. Là plusieurs choix
+                            possibles, il est souvent intéressant de documenter
+                            les choix que l'on a fait. Même si le schéma le
+                            permet, ne va jamais va faire quelque chose. Dans
+                            d'autres cas, va contraindre les valeurs des
+                            attributs. Or dans la plupart des schémas formels,
+                            il n'y a pas moyen de documenter cela.</p> <p>ex:
+                            @status qui a la valeur a, b ou c. Mais pas de moyen
+                            de documenter la signification de cet attribut.</p>
+                            <list> <item>Besoin de fournir une explication de la
+                            manière dont l'encodage a été appliqué</item>
+                            <item>Enfin, l'on a besoin de plusieurs outils pour
+                            gérer les documents XML que l'on a créés.</item>
+                            </list> </p>
+                    </div>
+                    <div>
+                        <head>L'idée essentielle de ODD</head>
+                        <p> D'abord, ODD est une abréviation de "One Document
+                            Does it all".</p>
+                        <p>C'est un vocabulaire spécialisé de la TEI pour la
+                            définition de schémas, pour la définition de types
+                            d'éléments XML, indépendamment des Schémas. C'est un
+                            élément essentielle car la TEI constitue un langage
+                            à part entière qui peut donc être mappé dans
+                            d'autres langages.</p>
+                        <p>ODD permet également des regroupements de certains
+                            types d'éléments, il aussi possible de définir des
+                            patrons, des classes et des sous-classes d'éléments.
+                            Cf. notion fondamentale de l'informatique que
+                            constitue le système de classe. Il est enfin
+                            possible de créer des référence.</p>
+                        <p>Un schéma que l'on va créer avec OCDD doit permettre
+                            de combiner des objets identifiables avec leur
+                            documentation.</p>
+                    </div>
+                    <div>
+                        <head>éléments essentiels d'un ODD</head>
+                        <p>Voici les éléments définis pour ODD.</p>
+                    </div>
+                    <div>
+                        <head>Premier exemple simplissime</head>
+                    </div>
+                    <div>
+                        <head>Premier exemple simplissime (suite)</head>
+                        <p>Un autre élément qui contient un paragraphe para.</p>
+                        <p>Un autre élément qui est un élément vide, comme c'est
+                            un attribut peut avoir un dataType. Ici ne souhaite
+                            pas refaire tout le travail du W3C qui a déjà défini
+                            la plupart des dataType fondamentaux. C'est pour
+                            cela qu'ici on a un élément qui s'appelle rng:data.
+                            rng: est le préfixe qui indique que l'élément data
+                            n'est pas dans le même espace de nom que les autres
+                            éléments. Il indique que l'élément data est dans une
+                            autre langue qui appartient à un autre espace de
+                            nom. Ici dataType est de type anyURI.</p>
+                    </div>
+                    <div>
+                        <head>à quoi ça sert ?</head>
+                        <p>Cela permet de générer un schéma RelaxNG ou une DTD
+                            avec une transformation XSLT. On peut aussi extraire
+                            des fragments documentaires notamment des
+                            descriptions des éléments et des attributs
+                            ailleurs.</p>
+                    </div>
+                    <div>
+                        <head>TP</head>
+                        <p>Créer un document</p>
+                        <p>Pour faire les exercices, vous avez besoin de
+                            disposer de la version courante du cadre de modèles
+                            TEI.</p>
+                        <p>Aller dans préférences, et adds-on.</p>
+                        <p>http://www.tei-c.org/release/oxygen/updateSite.oxygen</p>
+                        <p>Aller dans rechercher des mises à jour d'add on</p>
+                        <p>Installer les nouveaux adds on, voir le tutoriel
+                            http://blogs.it.ox.ac.uk/jamesc/2014/04/02/auto-update-your-tei-framework-in-oxygen/</p>
+                        <p>Créer un nouveau document ODD, Ajouter dans body
+                            oddex-1.xml, puis avant schemaSpec oddex-1-doc.xml.
+                            Enregistrez le nouveau document.</p>
+                        <p>Vous avez maintenant créé votre premier ODD. Nous
+                            allons maintenant le traiter avec oXygen et des
+                            transformations du cadre de modèle. TEI ODD to XHTML
+                            et TEI ODD XML schema.</p>
+                        <p>Nous allons maintenant vérifier que notre schéma
+                            fonctionne. Associez le schéma généré dans le
+                            répertoire out/ avec le document
+                            oddex-1-test.xml</p>
+                        <p>Validez. Maintenant qu'il y a un schéma vous pouvez
+                            vous apercevoir qu'il y a une erreur dans votre
+                            document. Retirez status pour rendre le document
+                            valide.</p>
+                    </div>
+                    <div>
+                        <head>Notion de classe</head>
+                        <p>Dans le monde réel le contenu de nos livres ne se
+                            limite pas uniquement aux élements para et images.
+                            On peut regrouper tous les éléments qui peuvent
+                            apparaître au sein d'un livre, et l'on va appeler ce
+                            regroupement classe, que l'on va nommer
+                            bookPart.</p>
+                        <p>On utilise donc ici une classe poru indiquer
+                            l'association d 'un élément avec une classe. Cette
+                            fois encore l'élément a un identifiant, il a un type
+                            et une spécialisation. Notez bien que l'on ne
+                            fournit pas les éléments composants de la classe à
+                            l'intérieure de la classe car elle est définie par
+                            ailleurs. Chacun des membres doivent déclarer qu'ils
+                            sont membres de la classe.</p>
+                    </div>
+                    <div>
+                        <head>Usage d'une classe de modélisation</head>
+                        <p>Pourquoi faire cela ? Dorénavant, on n'a pas besoin
+                            de lister l'ensemble des éléments pour dire qu'ils
+                            peuvent apparaître à tel ou tel endroit du document,
+                            il suffit de déclarer que les éléments de la classe
+                            peuvent apparaître à cet endroit dans le
+                            document.</p>
+                        <p>Supposons que nous avions affaire à une centaine
+                            d'éléments. On peut dorénavant dire que n'importe
+                            quel élément de la classe peut apparaître ici. Cela
+                            peut nous simplifier la vie notamment lorsque l'on
+                            va modifier des listes.</p>
+                    </div>
+                    <div>
+                        <head>Classes d'attribut</head>
+                        <p>Dans le monde réel il est fréquent que des éléments
+                            portent des attributs du même nom. Il pourrait donc
+                            être très commode de n'avoir à définir ces attributs
+                            qu'une seule fois en déclarant lorsqu'un élément
+                            l'utilise qu'il utilise une classe d'attribut
+                            définie par ailleurs.</p>
+                        <p>Ici pointing. On donne une définition de l'attribut.
+                            Ici plus définie dans la classe. </p>
+                    </div>
+                    <div>
+                        <head>TP 2</head>
+                        <p>Un fichier comme précédemment oddex2, très proche du
+                            précédent, mais il contient maintenant des
+                            définitions de classes. Assurez-vous que cela
+                            fonctionne comme tout à l'heure.</p>
+                        <p/>
+                    </div>
+                    <div>
+                        <head>Classes d'attribut : un exemple</head>
+                        <p>Jusqu'à présent il s'agissait simplement de réduire
+                            la complexité du ODD. On va maintenant essayer de
+                            faire quelque chose de spécifique avec les
+                            attributs. On peut par exemple contraindre les
+                            valeurs autorisées d'un attribut. On peut
+                            contraindre les choses de deux manières. Ou bien
+                            peut donner des types définis par le W3C. Mais plus
+                            intéressant encore, on peut définir une liste de
+                            valeurs avec valList.</p>
+                        <p>bookAtts, la liste des attributs qui sont applicables
+                            au contenu des livres. xml:id un attribut unique qui
+                            est défini dans un autre espace de nom que la TEI.
+                            Un autre attribut plus intéressant pour nous,
+                            l'attribut status, donc nous voudrions contraindre
+                            les valeurs en fournissant une liste de valeurs
+                            autorisées. Bien sûr on aurait pu élargir les
+                            valItem avec un <gi>gi</gi> pour décrire ce que l'on
+                            entend par red, green, etc.</p>
+                    </div>
+                    <div>
+                        <head>TP 3</head>
+                        <p>Maintenant, vous allez devoir ajouter cette
+                            définition d'une classe d'attribut dans le document
+                            ODD oddex3.xml. Vous pouvez insérer une définition
+                            d'attribut n'importe où dans <gi>schemaSpec</gi>,
+                            mais au même niveau que les autres
+                            spécifications.</p>
+                        <p>On ajoute le document oddex3.xml à notre ODD,
+                            regénère le schema et vérifie qu'il est possible de
+                            fournir un attribut status.</p>
+                        <p>On ajoute le document </p>
+                    </div>
+                    <div>
+                        <head>Autres choses</head>
+                        <p>On pourrait vouloir fournir un schéma avec des
+                            descriptions dans plusieurs langues. C'est
+                            possible.</p>
+                    </div>
+                    <div>
+                        <head>Exemples d'usage</head>
+                        <p>Il y a trois approches possibles pour fournir des
+                            exemples en XML dans du XML.<list> <item>La première
+                            héritée de SGML consiste à utiliser des balises
+                            CDATA</item> <item>Il est également possible
+                            d'échapper des balises en utilisant des entités
+                            référencées (amp; lt; etc.)</item> <item>Utiliser un
+                            autre espace de dommage, dès lors vous pourrez
+                            valider votre document et en même temps vos
+                            exemples.</item> </list></p>
+                        <p>Par exemple un élément <gi>eg</gi> et ce qu'il
+                            contient est fourni avec un CDATA, il sera ignoré.
+                            L'échappement est une solution équivalente mais
+                            traitée au niveau des caractères. La troisième
+                            solution est beaucoup plus intéressante car on y
+                            indique que cet élément appartient à tel espace de
+                            nom. On peut y mettre ce que l'on souhaite du moment
+                            que ce qu'il contient est valide contre le schéma
+                            correspondant à l'espace de nom. En effet une
+                            déclaration d'espace de nom indique au parseur
+                            d'utiliser à cet endroit un autre schéma s'il est
+                            indiqué.</p>
+                    </div>
+                    <div>
+                        <head>Quelques mots sur la TEI</head>
+                        <p>Les éléments que nous venons de définir ressemblent
+                            beaucoup à ce qui existe déjà dans la TEI. On
+                            pourrait donc judicieusement profiter des
+                            définitions déjà existantes.</p>
+                        <p>Le schemaSpec ci-dessous correspond plus ou moins aux
+                            définitions existantes dans la TEI. Ici on fait
+                            référence aux éléments TEI correspondants. Ces
+                            éléments de spécifications se trouvent dans la
+                            spécification TEI et cela est indiqué au moyen de
+                            l'attribut source. L'attribut source charge tout un
+                            ensemble de définition de déclaration, ici la
+                            version 1.6 de la TEI.</p>
+                        <p>Dernier élément, si l'on se sert de la TEI, il y a un
+                            ensemble de déclaration de la TEI dont on ne peut se
+                            passer, c'est le module TEI. On ne peut pas s'en
+                            passer car ce module définit des classes et des
+                            macros qui sont utilisées par tous les autres
+                            éléments de la TEI.</p>
+                    </div>
+                    <div>
+                        <head>TP4</head>
+                        <p>Vous avez un fichier oddex-3.odd, comparez le avec
+                            les versions précédentes. Transformez ce fichier
+                            comme d'habitude et validez le document
+                            oddex-3-test.xml</p>
+                        <p>Attention, un document TEI doit utiliser l'espace de
+                            nom TEI. Notez également que les concepts TEI et les
+                            nôtres ne sont pas forcément identiques.</p>
+                    </div>
+                </div>
+                <div>
+                    <head>Une carte routière de la TEI</head>
+                    <div>
+                        <head>Les Cinq Étapes du chemin de l'Éveil
+                            TEI-ODD</head>
+                        <p>D'abord il est nécessaire de bien identifier les buts
+                            et les objets de votre projet ?</p>
+                        <p>Est-ce que vos objets sont déjà reconnus par la TEI
+                            ?</p>
+                        <p>Déclarations : comment créer une spécification</p>
+                    </div>
+                    <div>
+                        <head>Une modélisation</head>
+                        <p>Être conscience que la TEI est une modélisation. Or
+                            une modélisation est nécessairement une
+                            réduction.</p>
+                    </div>
+                    <div>
+                        <head>Comment s'orienter ?</head>
+                        <p>La TEI est très vaste, et comporte beaucoup de
+                            goodies. Toute la question est de savoir comment
+                            s'orienter dans la TEI.</p>
+                        <p>La TEI est organisée en deux grandes parties. La
+                            première concerne les modules, qui correspondent aux
+                            23 chapitres des Guidelines. L'autre contient des
+                            listes d'éléments et d'attributs et les classes.</p>
+                        <p>La triste vérité, c'est qu'il n'y pas de manière
+                            scientifique de s'orienter dans la TEI. La seule
+                            solution c'est de consulter attentivement la
+                            documentation pour voir si un élément cible qui peut
+                            nous intéresser est adapter à notre cas d'usage.</p>
+                        <p>Le plus souvent on essaye d'adapter à ses propres
+                            besoins très spécifiques. Dans certains cas, on peut
+                            appliquer des modèles existants déjà dans la TEI,
+                            dans d'autres il est nécessaire d'adapter la TEI à
+                            ses besoins, enfin il est dans certains cas très
+                            spécifiques possible que la TEI ne réponde pas déjà
+                            à vos besoins. Par exemple, un groupe de travail a
+                            récemment proposé un nouvel élément qui a été
+                            ensuite intégré aux guidelines.</p>
+                        <p>Photographie des guidelines qui montre
+                            l'accroissement de la TEI entre ses diverses
+                            éditions. Aujourd'hui les guidelines ne font plus
+                            l'objet d'une édition imprimée.</p>
+                    </div>
+                    <div>
+                        <head>Organisation de la TEI</head>
+                        <p>La TEI est intéressante du point de vue de son
+                            organisation sociale. L'argent de la TEI provient de
+                            ses membres qui payent une cotisation annuelle pour
+                            financer le travail du consortium. La plupart du
+                            travail est bénévole. Au centre, il existe un
+                            conseil scientifique composé de 12 personnes élues
+                            pour 2 ans par les membres cotisants du consortium.
+                            Le travail du Conseil produit des mises à jour des
+                            <title>Guidelines</title>, corrections des erreurs,
+                            élargissement des sujets traités, etc. C'est ce qui
+                            rend possible, à peu près deux fois par an, des
+                            mises à jour des Guidelines.</p>
+                        <p>En réalité, ces mises à jour proviennent le plus
+                            souvent de la communauté de la TEI. Celle-ci n'a pas
+                            forcément de frontières bien délimitées, il s'agit
+                            des personnes qui se servent de la TEI et peuvent
+                            faire remonter des besoins. De temps en temps, il
+                            arrive également qu'émergent des Special Interest
+                            Group (SIG) qui ne font pas nécessairement
+                            directement partie de l'organisation de la TEI. Par
+                            exemple, il y a encore quelques années, la TEI ne
+                            proposait pas d'éléments spécifiques pour indiquer
+                            la manière dont un texte a évolué entre ses
+                            différents états. Un groupe s'est constitué pour
+                            travailler sur l'édition génétique textuelle, elle a
+                            fait des propositions qui ont depuis été pour la
+                            plupart intégrées dans la TEI. Ce n'est pas un cas
+                            unique et c'est le fonctionnement général des
+                            projets open source.</p>
+                    </div>
+                    <div>
+                        <head>Il n'y a pas une DTD TEI…</head>
+                        <p>Il n'existe pas une manière unique d'utiliser la TEI.
+                            Dans tous les cas, vous allez devoir personnaliser
+                            la TEI à vos besoins.</p>
+                        <p>Les <title>Guidelines</title> sont organisées en
+                            chapitres qui correspondent à des centres d'intérêts
+                            différents. Des propositions pour l'édition de
+                            textes dramatiques ; des propositions pour l'édition
+                            de sources manuscrites ; des propositions pour la
+                            prise en charge des entités nommées ; des
+                            propositions pour des corpus langagiers, des
+                            propositions très génériques pour la segmentation,
+                            l'analyse et l'alignement ; les réseaux ; les
+                            chevauchements car XML ne permet pas de traiter
+                            directement les chevauchements, tout devant être
+                            bien structuré hiérarchiquement ; un chapitre qui
+                            traite des responsabilités et de la certitude ; un
+                            chapitre qui traite de la documentation,
+                            c'est-à-dire le chapitre qui traite de ODD. ODD
+                            comme vous l'avez compris est un vocabulaire TEI,
+                            c'est celui dont la TEI se sert pour s'exprimer. Il
+                            y a là encore une récurcivité.</p>
+                    </div>
+                </div>
+                <div>
+                    <head>Travailler avec Roma</head>
+                    <div>
+                        <head>Propositions de la TEI</head>
+                        <p>La TEI propose plusieurs outils pour travailler avec
+                            ODD. Tout à l'heure, nous avons utilisé les outils
+                            du Framework. Maintenant nous allons utiliser
+                            l'outil Roma. Proposé par le Consortium, cet outil
+                            vous permet d'explorer des schémas, mais aussi de
+                            générer des ODD ou des schémas à partir d'ODD. Roma
+                            est donc un processeur ODD.</p>
+                    </div>
+                    <div>
+                        <head>Cas d'usage</head>
+                        <p>Supposons que nous avons monté un projet d'ANR qui a
+                            bénéficié d'un important financement pour numériser
+                            une collection de cartes postales. Pour mener à bien
+                            ce travail nous allons avoir besoin de définir un
+                            schéma. Le matériau que nous traitons se compose de
+                            cartes postales qui comportent habituellement un
+                            recto et un verso. Au verso apparaît souvent le
+                            destinataire. Mais ce n'est pas toujours le cas.</p>
+                        <p>La question qui se pose dans notre exercice de
+                            modélisation, c'est d'identifier les éléments
+                            constitutifs absoluement essentiels qui devront
+                            nécessairement être traités.</p>
+                        <p>L'image, l'oblitération, les parties imprimées, le
+                            texte, le destinataire, etc.</p>
+                    </div>
+                    <div>
+                        <head>Propositions de modélisation</head>
+                        <p>On va commencer en structurant chaque carte en
+                            divisions distinctes. Physiquement recto / verso,
+                            mais aussi du point de vue du contenu.</p>
+                        <p>Une première proposition donnée dans un vocabulaire
+                            idomatique. On ne s'est pas servi ici du vocabulaire
+                            TEI, cela n'est pas obligatoire. Mais en faisant ce
+                            choix, j'aurais probablement du mal à expliquer
+                            cette modélisation à d'autres personnes notamment
+                            étrangères. Car oblitération n'a pas le même sens en
+                            anglais. J'aurais également du mal à partager mon
+                            travail avec d'autres cartophiles non francophone.
+                            Enfin, je n'ai pas encore pris en charge l'ensemble
+                            des cas. Je suis cartophile, pourquoi perdre son
+                            temps à réinventer des choses déjà définies par
+                            ailleurs.</p>
+                    </div>
+                    <div>
+                        <head>Propositions initiales de la TEI</head>
+                        <p>La TEI propose de traiter chaque carte comme un
+                            texte, avec des sous-parties matérialisées par des
+                            div. etc.</p>
+                        <p>En tire des propositions d'encodage en TEI.</p>
+                    </div>
+                    <div>
+                        <head>Exercice Roma</head>
+                        <p>Nous allons maintenant nous lancer dans l'exercice
+                            Roma.</p>
+                        <p>L'exercice, étapes par étape est décrit dans le
+                            fichier ex-roma.pdf</p>
+                    </div>
+                </div>
+                <div>
+                    <head>Comment la TEI utilise ODD</head>
+                    <div>
+                        <p>Je voudrais maintenant vous montrer la manière dont
+                            la TEI se sert de ODD. Il s'agit de regarder sous le
+                            capot de la TEI. Si l'on ne mettra pas les mains
+                            dans le camboui pour la modifier, on verra tout ce
+                            qu'il y a à l'intérieur.</p>
+                    </div>
+                    <div>
+                        <head>La TEI sous le capot</head>
+                        <p>Bien sûr, comme pour tout bon projet open source,
+                            toutes les sources de la TEI sont téléchargeables en
+                            ligne. Elles sont disponibles à l'adresse suivante :
+                            <ref
+                            target="http://wwww.tei-c.org/release/xml/tei/odd/Sources/guidelines-en.xml"
+                            >http://wwww.tei-c.org/release/xml/tei/odd/Sources/guidelines-en.xml</ref></p>
+                        <p>Ce document est un fichier xml valide, vous y trouvez
+                            un espace de nom, des éléments <gi>divGen</gi> et
+                            des éléments <gi>include</gi> qui sont des éléments
+                            Xinclude.</p>
+                        <p>La TEI est définie avec des ODD. Dans le dossier
+                            specs/ un ensemble de fichiers qui contiennent
+                            individuellement chaque description des éléments de
+                            la TEI.</p>
+                        <p>Il ne faut bien sûr pas comprendre l'organisation
+                            physique en fichier et l'organisation logique de la
+                            spécification. Question des langues.</p>
+                    </div>
+                    <div>
+                        <head>Organisation logique des Guidelines</head>
+                        <p>À la fin de chaque chapitre définissant un module, il
+                            y a (par convention) un élément moduleSpec qui
+                            rassemble toutes les spécifications référencées par
+                            le chapitre pour définir un module. Il n'y a pas de
+                            spécification de schéma car la TEI défini un
+                            ensemble de spécification pour plusieurs schémas
+                            possible.</p>
+                        <p>Pour plus de commodité, on dispose d'un élément
+                            <gi>moduleSpec</gi> qui permet de regrouper des
+                            spécifications dans un module. Les pointeurs
+                            <gi>specGrpRef</gi> pointent sur des regroupements
+                            de spécifications (spec groups) par l'intermédiaire
+                            d'un identifiant.</p>
+                        <p>Par exemple DFTTAB qui spécifie les éléments pour les
+                            tables, etc. comportent également des XInclude,
+                            pointant eux-mêmes vers d'autres éléments de
+                            spécification. Ici dans
+                            href="../../SPecs/table.xml", etc. qui contient ici
+                            finalement la spécification proprement dit de
+                            l'élément concerné.</p>
+                    </div>
+                    <div>
+                        <head>De quels types d'objet s'agit-il ?</head>
+                        <p>On dispose de plusieurs types d'objets : des
+                            data.type, etc.</p>
+                        <p>...</p>
+                        <p>Comme tout autre spécification TEI, il s'agit encore
+                            d'un document XML. Les data.types sont définis par
+                            des macros. C'est un type de macro défini dans le
+                            module TEI. Il a un identifiant ident comme tout
+                            type d'objet. Il possède une explication dans
+                            plusieurs langues avec <gi>desc</gi> et il a un
+                            contenu (qui fait ici référence à un autre
+                            dataType). Enfin l'élément comprend des remarques en
+                            plusieurs langues <gi>remarks</gi>.</p>
+                        <p>Les explications de ces objets sont normatives mais
+                            sont le résultats de traduction, c'est la raison
+                            pour laquelle ces éléments disposent d'un attribut
+                            versionDate. Or la version française est parfois
+                            plus ancienne que la traduction dans certaines
+                            langues. En effet, depuis 2007, la TEI a changé
+                            d'avis sur la définition du sexe. Initialement la
+                            TEI suivait la spécification de l'ISO 5218:2004
+                            selon laquelle il n'y avait que deux sexes
+                            possibles. Plusieurs personnes ont fait valoir qu'il
+                            pouvait y avoir plus de deux sexes et que cette
+                            hiérarchisation n'était pas politiquement correct.
+                            Suite à une discussion, il a été convenu que c'était
+                            aux projets eux-mêmes d'adopter des codes conformes
+                            à leur point de vue. Ici la documentation explique
+                            qu'il existe d'autres standards permettant de
+                            prendre en charge ces questions. Mais bien sûr,
+                            quand change d'avis sur ces questions, on doit
+                            changer le schéma, mais cela nécessite de faire un
+                            effort pour mettre à jour l'ensemble des
+                            traductions.</p>
+                        <p>Liens vers des parties des Guidelines qui permettent
+                            de trouver des exemples ou des discussions sur le
+                            sujet.</p>
+                        <p>La spécification d'un datatype est fondée sur une
+                            macro.</p>
+                    </div>
+                    <div>
+                        <head>Spécification d'une classe modèle</head>
+                        <p>Ouvrir model.biblLike.xml</p>
+                        <p>C'est un tout petit fichier, mais remarquez que ce
+                            modèle est membre d'un ensemble de classes. Il y a
+                            une hiérarchisation de classes qui permet de définir
+                            un héritage.</p>
+                        <p>Pour bien percevoir l'effet de cette hiérarchie,
+                            aller sur internet <ref
+                            target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-model.biblLike.html"
+                            >http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-model.biblLike.html</ref></p>
+                        <p>Vous disposez ici du nom de l'élément mais aussi d'un
+                            ensemble d'information qui n'est pas présent dans la
+                            spécification mais qui est générée pour la sortie
+                            web. On y trouve par exemple une liste des éléments
+                            qui utilisent le modèle. Si clique ici sur un des
+                            éléments, voit que cet élément est membre de la
+                            classe. Ce qui signifie qu'il y a un élément classes
+                            qui déclare que l'élément est membre de cette
+                            classe.</p>
+                        <p>Remarquez que dans cette liste de utilisé par, ou
+                            membres, peuvent figurer d'autres éléments mais
+                            aussi des classes.</p>
+                        <p>Par exemple model.msItemPart, ou model.personClass.
+                            model.personClass est une classe qui regroupe les
+                            éléments qui font partie de la description d'une
+                            personne, ce qui signifie que peut ici avoir des
+                            membres qui sont des modèles. Ici model.biblLike
+                            suivi d'une énumération des membres entre
+                            crochets.</p>
+                    </div>
+                    <div>
+                        <head>Spécification d'une classe d'attribut</head>
+                        <p>ouvrir att.divLike.xml</p>
+                        <p>Un attribut qui dispose d'un attList avec des gloses
+                            et descriptions. Ici trouve un valList qui permet de
+                            définir des listes de valeur, etc.</p>
+                        <p>C'est difficile à lire dans ce format, en revanche,
+                            il est très facile de prendre connaissance de la
+                            classe sur le site de la TEI. Page de la classe
+                            d'attribut qui présente la liste des membres de la
+                            classe, mais aussi la liste des valeurs d'attributs
+                            possibles. Comme on est ici sur la page française,
+                            on sélectionne seulement les valeurs en français ce
+                            qui rend donc la page bien plus lisible.</p>
+                    </div>
+                    <div>
+                        <head>Spécification d'un élément</head>
+                        <p>Allez voir l'élément abstract, c'est un nouvel
+                            élément qui n'a pas encore été traduit.</p>
+                        <p>Abstract est membre de deux classes d'attribut et une
+                            classe de modèle.</p>
+                        <p>il porte ...</p>
+                        <p>On peut définir le contenu d'un élément comme on l'a
+                            vu tout à l'heure en utilisant seulement des
+                            éléments TEI ou bien en employant des éléments
+                            relaxNg</p>
+                        <p>Voici un exemple de spécification avec RelaxNG</p>
+                        <p>En dessous, la version "purifiée" car purement en ODD
+                            (ne comportant que des éléments ODD) qui comporte
+                            des éléments très ressemblant tels que maxOccurs
+                            tirés d'un autre système. voir l'article.</p>
+                    </div>
+                    <div>
+                        <head>Purification d'un modèle de contenu</head>
+                        <p>Si dans mon modèle de contenu, je fais référence à
+                            une classe, que signifie-t-on ? Est-ce que fait
+                            référence à tous les éléments de la classe, ou bien
+                            une séquence ou seulement cet élément.</p>
+                        <p>Comme souvent la TEI permet de choisir. Supposons une
+                            classe qui contient trois membres qui suivant la
+                            valeur de l'attribut expand pourrait signifier des
+                            choses différentes : une alternative, une séquence
+                            de tous les membres, ou encore une séquence
+                            optionnelle, séquence optionnelle répétable, ou
+                            séquence répétable.</p>
+                        <p>Les attributs minOccurs et maxOccurs</p>
+                    </div>
+                    <div>
+                        <head>Description des contraintes</head>
+                        <p>Ici la description de l'élément <gi>span</gi></p>
+                        <p>Ici, l'élément contient des descriptions de
+                            contraintes avec <gi>constraintSpec</gi>. Ces
+                            contraintes peuvent être définies dans un autre
+                            vocabulaire. Ici on peut notamment définir des
+                            modèles de contenus complexes.</p>
+                    </div>
+                    <div>
+                        <head>ODD est aussi une langue de personnalisation</head>
+                        <p>Lorsque l'on utilise Roma, on produit un document ODD, c'est le même vocabulaire qui sert à spécifier la TEI et sa personnalisation.</p>
+                        <p>Revenons au ODD de personnalisation que nous avons déjà vu avec Roma. Ce ODD de spécialisation contient une liste de modules, une liste d'objets qui sont facultativement modifiés, augmentés. Lorsque l'on traite un ODD, on doit pouvoir utiliser ces spécifications et il peut exister des cas où le processeurs rencontre deux spécifications pour un même élément. Il faut alors employer des algorithmes de résolution.</p>
+                        <p>On a déjà rencontré plusieurs des éléments que l'on va pouvoir rencontrer. Dans schemaSpec il y a deux manières de spécifier un élément.</p>
+                        <p>Dans l'une, on fait référence au module core avec moduleRef et déclare que l'on veut tout son contenu sauf une liste d'éléments mentionnés dans la valeur de l'attribut except.</p>
+                        <p>Dans l'autre cas fait la déclaration de la suppression de l'élément avec <gi>elementRef</gi> en mode delete pour supprimer toutes les spécification de l'élément.</p>
+                        <p>Dans d'autres cas va faire l'inverse, va utiliser include, mais dans ce cas si ajout d'un nouvel élément ne l'aura pas avec cet ODD. Tandis que si utilise exclude, on l'obtiendra.</p>
+                        <p>Dans la spécification par inclusion, il est également possible au lieu d'utiliser le module textstructure, on peut utiliser deux elementRef qui appellent div et body. Ici c'est un peu tricher car le processeur doit savoir qu'il s'agit d'un élément div. Il n'est donc pas nécessaire de spécifier le module. Pour créer un schéma très simple il peut suffir de spécifier les éléments. Mais il faut faire attention car module peut servir à spécifier d'autres objets comme des classes.</p>
+                    </div>
+                    <div>
+                        <head>Exercice de personnalisation</head>
+                        <p>Ouvrir feather-1.odd. Regarder le document, essayer de comprendre son effet, créer un schéma avec ce fichier, et créer un document qui utilise ce schéma et contrôlez les attributs et les éléments disponibles.</p>
+                        <p>Si vous avez généré le schéma, vous vous apercevez qu'un grand nombre d'attribut est alors disponible. Par exemple sur title : key, level, etc. Sur le body, tout semble fonctionner.</p>
+                    </div>
+                    <div>
+                        <head>Exercice un peu plus avancé</head>
+                        <p>On souhaite maintenant un ODD un peu plus perfectionné tel qu'indiqué. Supprime les atributs globaux sauf style, xml:id et xml:lang. Ajouter un élement span, modifier le contenu de s pour ne permettre que des w</p>
+                        <p>Ajout de span</p>
+                        <p>Pour suppression de title</p>
+                        <p>Exclude et include ne peuvent être ratachés qu'aux modèles ou aux classes.</p>
+                        <p>Pour faire en sorte que <gi>s</gi> ne contienne que des <gi>w</gi>, il faut modifier le contenu de s. Il faut donc ajouter une définition pour l'élément s qui aura une définition de contenu différente. On ajoute un élément elementSpec et indique que l'on veut le modifier. La modification doit seulement porter sur son contenu, ici ne veut que des éléments w, donc elementRef dans content avec maxOccurs unbound</p>
+                        <![CDATA[
+                        <elementSpec ident="s" mode="change">
+          <content>
+            <elementRef key="w" maxOccurs="unbounded"/>
+          </content>
+        </elementSpec>
+        ]]>
+                        <p>Pour traiter le problème du title, il faut regarder la raison pour laquelle title est permis dans certains éléments comme s ou ab. Pour cela consulter la documentation des éléments sur internet.</p>
+                        <p>Le cas est ici plus compliqué car l'élément <gi>title</gi> hérite de plusieurs autres éléments. Sauf qu'il apparaît dans le header explicitement. Il existe une classe qui est utilisé par toutes les classes d'éléments, le seul membre de cette classe <gi>title</gi>. On peut donc soit supprimer l'élément de la classe ou supprimer cette classe. Si la classe est supprimée tous les membres de la classe disparaissent bien sûr. Mais cela permet toujours d'avoir <gi>title</gi> dans le header car si l'on regarde la définition de <gi>titleStmt</gi> on voit que sa déclaration implique que l'élément title est disponible dans le header explicitement sans qu'il soit fait explicitement référence à la classe. On peut donc supprimer la classe tout en conservant l'élément disponible dans <gi>titleStmt</gi>.</p>
+                        <p>Pour spécifier un nouvel élément, il suffit d'ajouter un élément <gi>elementSpec</gi> (<gi>elementRef</gi> signifierait que l'élément existe déjà). On veut ajouter un élément qui aura l'identifiant mw. Mais comme il s'agit d'un nouvel élément qui n'est pas présent dans la TEI il faut spécifier un autre espace de nom pour s'en distinguer. On fournit des descriptions puis des déclarations de classes. Dans l'élément classes on indique que l'élément va hérité des attributs de la classe.</p>
+                        <p>Comme on veut avoir ce nouvel élément au même endroit que w, on regarde la documentation de cet élément et les classes auxquelles il appartient. Il est notamment membre de la classe model.seqLike. Si l'ajoute dans la classe, alors il apparaîtra au même endroit.</p>
+                        
+                    </div>
+                </div>
+                <div>
+                    <head>Conformité</head>
+                    <p>Pour être conformité avec la TEI il faut deux choses. D'une part si vous utilisez des éléments définis par la TEI, il faut que votre utilisation soit conforme à la sémantique de la TEI et que votre utilisation reste dans la portée de l'élément. La pire des accusations sur la liste TEI c'est de se rendre coupable de tag abuse.</p>
+                    <p>Deuxième point, il faut être explicite. Il faut avoir une documentation complète et ne pas se contenter de dire que l'on prend la TEI. Il faut aller plus loin. Et comme vous l'avez compris, l'objectif d'un ODD c'est de sélectionner les parties de la TEI qui vous sont nécessaire. L'utilité d'un ODD c'est de pouvoir exprimer cela de manière commode.</p>
+                    <p>Plus formellement parlant, comment peut-on valider tout cela. On peut par exemple savoir que tout élément qui appartient à l'espace de nom TEI, doit pouvoir être validé contre un schéma teiAll. Par conséquent toute personnalisation de la TEI sera un sous-ensemble de teiAll. L'objectif de ces règles est de faciliter l'échange des documents sans trop de préambule.</p>
+                    <p>La pire da</p>
+                </div>
+                <div>
+                    <head>Sujets avancés</head>
+                    <p>ODD est spécialement conçu pour la documentation. Il comporte notamment des éléments pour contenir du code, encoder les noms d'éléments, de valeurs, etc.</p>
+                </div>
+                <div>
+                    <head>Contraintes de données avec Schematron</head>
+                    <p>Ici un exemple de conrtainte qui s'aplique ici aux éléments div. Cet élément contenu par elementSpec de div donc s'y applique. Il indique que si le type de div est prose et mais qu'il n'y a pas d'élément p, c'est une erreur. Une division prosaïque doit au moins contenir un paragraphe.</p>
+                    <p>L'élément contraintSpec définit une contrainte, il dispose d'un attribut scheme pour spécifier le langage dans lequel s'exprime la constrainte, généralement isoschematron. L'attribut ident est obligatoire et il fournit un identifiant unique. Il rassemble un ou plusieurs constraint, l'élément constriant contient typiquement un assert ou un report de l'espace de nommage schematron. Enfin un test exprimé sous forme d'un XPath</p>
+                    <p>Le contenu de l'élément assert est affiché si le test est false, celui de report si le test est vrai. Plusieurs éléments schématrons disponibles pour ...</p>
+                </div>
+                <div>
+                    <head>Exemple d'applications typiques des règles de Schematron</head>
+                    <p>voir dia</p>
+                    <p>guillemets, contenu éléments langues. Peit aussi faire en sorte que si dispose d'un pointeur qui va pointer sous forme de Url, dans le schéma XML aucune manière de s'assurer que cela fonctionne, alors il est possible de valider.</p>
+                    <p>Règle un peu complexe, un identifiant et une contrainte. La contrainte indique que la règle s'applique dans le contexte de n'importe quel élément qui porte un attribut @target. Ici créée une variable schematron. L'effet de cette contrainte, c'est de dire que quelque part dans un target un pointeur qui indique une valeur qui n'existe pas. N'oublions pas que target peut avoir plusieurs identifiants. On va d'abord normaliser les blancs pour simplifier le pb. On utilise normalize-space(). On peut également découper la valeur avec tokenize(). start-with() permet d'extraire la valeur qui commence par #. Enfin id() qui permet de déterminer si la valeur de l'argument de cette fonction est utilisée quelque part dans le document comme valeur de xml-id. Finalement une expression XPath qui permet de dire qu'étant donné une séquence de valeurs booléenne est-ce que l'une d'elle correspond à la valeur de x.</p>
+                    <p>On n'est pas obligé d'utiliser cette approche Schematron. Dans beaucoup de cas pourrait utiliser une XSLT et l'appliquer pour tester. En effet beaucoup d'implémentation de Schematron prennent des grammaires Schematron et les transforme pour les appliquer en XSLT.</p>
+                    <p>Ici autre exemple qui dit que ne peut avoir plus de trois éléments q emboîtés les uns dans les autres.</p>
+                </div>
+                <div>
+                    <head>Traitement d'un ODD</head>
+                    <p>Jusqu'à présent, nous avons utilisé oXygen et Roma pour travailler avec des ODD. Il existe d'autres interfaces capables de travailler avec ODD.</p>
+                    <p>L'organigramme suivant peut être utile pour mieux comprendre ce qu'il se passe. On dispose d'abord des sources ODD des guidelines. D'autre part, on dispose de sa propre personalisation qui fait référence à ces sources ou d'autres spécifications. On dispose éventuellement d'additions, et de références à des groupes de spécifications.</p>
+                    <p>On a ensuite un ensemble de transformation dont le travail consiste à remettre ensemble tout cela pour produire une source révisée. Cette source révisée doit pouvoir resservir pour exécuter d'autres sources ODD mais aussi transformer cela en une version simplifiée de la TEI d'où peut générer de la documentation XML, ou encore des schémas XML ou RelaxNG.</p>
+                </div>
+                <div>
+                    <head></head>
+                    <p>Arrêtons-nous sur la partie des schémas externes. Supposons que l'on a besoin d'utiliser le vocabulaire MathML. Il n'est pas nécessaire de réinventer cela dans la TEI. Mais dans la TEI, on dispose de <gi>formula</gi> et l'on veut placer à l'intérieur de cet élément des contenus validables contre le schéma MathML.</p>
+                    <p>Pour cela inclure les composants du schema MathMl. Modifier le modèle de contenu de l'élément formula, et gérer les conflits éventuels.</p>
+                    <p>Solution qui contient schemaSpec, ici fait un moduleRef qui au lieu de référencer un module TEI référencie un module qui contient des déclarations en rng. Dans content, fait référence à un élément rng:ref qui fait référence à un patron de MathML. C'est ici l'attribut prefixe qui permet de désambiguïser les éléments entre eux par l'intermédiaire de leur espaces de nom.</p>
+                </div>
+                <div>
+                    <head>Questions</head>
+                    <p>Pour la modélisation, selon les objectifs du stage il est assez simple de faire une personnalisation directement dans Roma. Mais l'interface de Roma est un peu réduite elle vous permet seulement de modifier les éléments, on peut seulement modifier la présence ou l'absence de certains attributs, on peut parfois contraindre la valeur des attributs mais pas tout. Pour ma part je privilégie une approche beaucoup plus ouverte.</p>
+                    <p>Il existe encore une troisième solution que je n'ai pas présentée ici et qui consiste à utiliser l'outil oddByExemple qui est disponibles dans les feuilles de style des guidelines d'aller regarder dans la documentation du corpus et constituer un ODD à partir des documents existants. Forcément le corpus sera conforme à ce schéma, de même si des erreurs présentes les signalera. Cela peut donc constituer un bon point de départ dans le cas où vous aurez des corpus suffisamment avancés à partir desquels vous voudrez rétrospectivement créer un schéma dont vous auriez besoin.</p>
+                    <p>Supposons que vous ayez un corpus de textes très variés, et que vous êtes en train de créer ce corpus. Au commencement, vous n'aurez probablement aucune idée de la typologie à employer. Lorsque vous commencerez à travailler, vous allez entrer des valeurs de type sans les contraindre. Mais le risque est de créer une terminologie redondante, sans compter les fautes de frappes, etc. Le gros avantage de oddByExample c'est de voir toutes les valeurs de type qui sont déjà utilisées. Il vous permet encore de voir que pour un modèle de contenu donné, on n'utilise que 2% des éléments définis, alors cela vaut peut être le coup de supprimer ceux qui n'existent pas.</p>
+                    <p>Il faut savoir qu'il existe une liste de discussion, il existe une liste internationale anglo-saxone tei-l où vous trouverez une centaine d'experts mondiaux. Mais il existe également une liste francophone, pas très active mais sur laquelle vous pouvez posez des questions en français.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
