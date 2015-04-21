@@ -60,6 +60,11 @@ Un article qui à l’aide de graphiques permet de visualiser le fonctionnement 
 L’auteur décrit en détail la structure d’une archive Git, les différents objets constitutifs de la base de données et la manière dont Git gère les différentes branches et les HEADs. En bref : le pourquoi du comment nécessaire pour comprendre.
 
 
+### [Think Like (a) Git](http://think-like-a-git.net)
+
+Ce « guide pour le perplexe » aborde par le menu les logiques de graphe qui sous-tendent toute l’architecture de Git. Il s’adresse aux personnes qui utilisent déjà Git mais qui sont effrayées par un rebasage…
+
+
 Ouvrages
 ----------
 
@@ -70,13 +75,12 @@ L’ouvrage de Scott Chacon examine l’ensemble des fonctionnalités du systèm
 
 ### [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/fr/)
 
+Un ouvrage détaillé et circonstancié rédigé par Ben Lynn qui révêle la magie de Git de manière attrayante. L’ouvrage a été traduit dans de nombreuses langues.
+
 
 ### [Git User’s Manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html)
 
-Un manuel utilisateur pour Git du Linux Kernel Archives.
-
-Quelques références sur Git et les DH
----------
+Un manuel utilisateur pour Git.
 
 
 Travailler avec Github
@@ -86,21 +90,37 @@ Workflows, etc.
 
 ### [Contributing to Open Source on GitHub](https://guides.github.com/overviews/os-contributing)
 
+Un Guide GitHub pour contribuer à des projets Open source qui présente les méthodes de travail le plus couramment adoptées sur GitHub.
+
+
+### [Les workflows Git](https://www.atlassian.com/fr/git/workflows)
+
+Tutoriaux en anglais sur les différents modèles de Workflows possibles en travaillant avec git. Avec des exemples de mise en œuvre.
+
+
+### [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+
+Un système de branches pour le développement.
+
+
+### [Section "The Workflow" du Git user manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html#the-workflow)
+
 
 ### [The illustrated guide to recover commits](http://www.programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git/)
 
 Parceque c’est parfois nécessaire...
 
 
-### [Section "The Workflow" du Git user manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html#the-workflow)
+Quelques références sur Git et les Humanités Numériques
+---------
 
+tocome
 
-### [Les workflows Git](https://www.atlassian.com/fr/git/workflows)
-
-Tutoriaux en français sur les différents modèles de Workflows possibles en travaillant avec git.
 
 Rédiger avec Git
 ----------
+
+tocome
 
 
 Divers
@@ -111,3 +131,7 @@ Divers
 [Git cheatsheet](http://cheat.errtheblog.com/s/git)
 
 [Git reference](http://gitref.org/index.html)
+
+[ungit](https://github.com/FredrikNoren/ungit)
+
+[git ready](http://gitready.com)
