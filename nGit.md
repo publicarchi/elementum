@@ -1,7 +1,9 @@
 ---
 title: Guides Git
 file: nGit.md
-date: 5 mars 2014
+since: 5 mars 2014
+date: 21 avril 2015
+version: 002
 author: Emmanuel Chateau
 ---
 
