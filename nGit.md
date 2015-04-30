@@ -124,6 +124,17 @@ Rédiger avec Git
 
 tocome
 
+http://www.madebyloren.com/github-for-writers
+http://math.andrej.com/2013/06/20/the-hott-book/
+
+Outils conçus sur le modèle du protocole Git
+- [Authorea](https://www.authorea.com)
+- [Penflip](https://www.penflip.com)
+- [Poetica](https://poetica.com)
+- [Draft](https://draftin.com)
+
+- [Typewrite](https://typewrite.io) mais visualisation des contributions limitée
+- [Onword](http://onword.co)
 
 Divers
 ------------
@@ -137,3 +148,7 @@ Divers
 [ungit](https://github.com/FredrikNoren/ungit)
 
 [git ready](http://gitready.com)
+
+# Outils basés sur l’API GitHub
+
+- [Prose](http://prose.io)
