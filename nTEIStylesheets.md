@@ -42,35 +42,74 @@ saxon data.xml test.xsl logo=myLogo
 ```
 
 
-## Organisation des fichiers
-
-Les feuilles de styles TEI se présentent sous la forme d’une hiérarchie de fichiers. Pour les employer, on inclue ou importe ces fichiers.
-
 ### Exemple d’importation
 
 Dans l’exemple ci-dessous, on importe une transformation et l’on renseigne certains paramètres. Ensuite, on fournit une règle nommée.
 
-```xls
+```xsl
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    exclude-result-prefixes="xs"
-    version="2.0">
-    <xsl:import href="/Users/emmanuelchateau/Documents/informatique/TEIC/Stylesheets/release/xsl/xml/tei/stylesheet/slides/teihtml-slides.xsl"/>
-    <xsl:param name="logoFile">../Graphics/logo.png</xsl:param>
-    <xsl:param name="cssFile">teislides.css</xsl:param>
-    <xsl:param name="showNamespaceDecls">false</xsl:param>
-    <xsl:param name="forceWrap">true</xsl:param>
-    <xsl:param name="spaceCharacter"> </xsl:param>
-    <xsl:template name="lineBreak">
-        <xsl:param name="id"/>
-        <br/>
-    </xsl:template>
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+exclude-result-prefixes="xs"
+version="2.0">
+<xsl:import href="/Users/emmanuelchateau/Documents/informatique/TEIC/Stylesheets/release/xsl/xml/tei/stylesheet/slides/teihtml-slides.xsl"/>
+<xsl:param name="logoFile">../Graphics/logo.png</xsl:param>
+<xsl:param name="cssFile">teislides.css</xsl:param>
+<xsl:param name="showNamespaceDecls">false</xsl:param>
+<xsl:param name="forceWrap">true</xsl:param>
+<xsl:param name="spaceCharacter"> </xsl:param>
+<xsl:template name="lineBreak">
+<xsl:param name="id"/>
+<br/>
+</xsl:template>
 </xsl:stylesheet>
 ```
 
 Tandis qu’un `template match` s’applique à un élément, un `template name` ne s’applique à aucun élément en particulier mais définit seulement une règle qui pourra être appelée ailleurs.
 
 Ici, on propose un remplacement pour la règle nommée `lineBreak`
+
+
+## Organisation des fichiers
+
+Les feuilles de styles TEI se présentent sous la forme d’une hiérarchie de fichiers. Pour les employer, on inclue ou importe ces fichiers.
+
+L’arborescence de fichers rassemble les feuilles de style par formats de sortie (docx, epub, html, html5, latex, slides, etc.).
+
+- `docx/` conversion depuis ou vers MSWord
+- `epub/` conversion vers ePub
+- `html/` constructeur XSL FO
+- `latex/` constructeur LaTeX
+- `html/` conversion vers html
+- `html5/` conversion vers html5
+- `odd/` transformation de spécifications ODD
+- `pdf/` conversions vers pdf
+- …
+
+Outre ces répertoires, il y a trois répertoires spécifiques :
+- `profiles/` personnalisations
+- `commons/` transformations utilisées pour tout format de sortie
+- `tools/` utilitaires.
+
+À l’intérieur des répertoires de formats, le contenu des transformation est organisé en fonction des modules de la TEI :
+- `core.xsl` Éléments de base de la TEI
+- `dictionnaries.xsl` Module Dictionaries
+- `drama.xsl` Module Drama
+- …
+
+Le fichier `tei-params.xsl` fixe les paramètres et `tei.xsl` importe les règles communes.
+
+Le répertoire de profil `profile/` contient des sous-répertoires de personnalisation avec les normes de nommage suivantes : `nom/format/from.xsl` ou `nom/format/to.xsl` selon qu’il s’agit d’une conversion _depuis_ ou _vers_ un format donné.
+
+Dans ces fichiers, on peut faire référence à la transformation maître, de la manière suivante :
+
+```xsl
+<xsl:import jref="../../../epub/tei-to-epub.xsl"/>
+```
+
+
+## Configuration des scénarios dans Oxygen
+
+Les feuilles de style TEI sont distribuées avec l’éditeur XML oXygen. On peut donc y faire référence depuis le chemin de l’application, à l’intérieur du répertoire `framework`. La configuration du scénario de transformation permet de renseigner les valeurs de paramètres en donnant accès à leur documentation.
 
 
 
