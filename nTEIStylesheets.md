@@ -25,13 +25,13 @@ Ainsi, si vous voulez importez ou incluez des règles identiques à celles du fi
 
 Les variables peuvent être déclarées comme fils de l’élément `stylesheet` avec des éléments `variable`.
 
-```xslt
+```xsl
 <xsl:variable name="TEI">Text Encoding Initiative</xsl:variable>
 ```
 
 Il est également possible d’employer des paramètres directement comme fils de `stylesheet`, mais ceux-ci peuvent être écrasés lors de l’appel de la feuille de style.
 
-```xslt
+```xsl
 <xsl:param name="logo">../Graphics/logo</xsl:param>
 ```
 
@@ -50,7 +50,7 @@ Les feuilles de styles TEI se présentent sous la forme d’une hiérarchie de f
 
 Dans l’exemple ci-dessous, on importe une transformation et l’on renseigne certains paramètres. Ensuite, on fournit une règle nommée.
 
-```xlst
+```xls
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
