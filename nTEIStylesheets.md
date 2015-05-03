@@ -46,10 +46,31 @@ saxon data.xml test.xsl logo=myLogo
 
 Les feuilles de styles TEI se présentent sous la forme d’une hiérarchie de fichiers. Pour les employer, on inclue ou importe ces fichiers.
 
-Utilisation d’une enveloppe
+### Exemple d’importation
+
+Dans l’exemple ci-dessous, on importe une transformation et l’on renseigne certains paramètres. Ensuite, on fournit une règle nommée.
 
 ```xlst
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    version="2.0">
+    <xsl:import href="/Users/emmanuelchateau/Documents/informatique/TEIC/Stylesheets/release/xsl/xml/tei/stylesheet/slides/teihtml-slides.xsl"/>
+    <xsl:param name="logoFile">../Graphics/logo.png</xsl:param>
+    <xsl:param name="cssFile">teislides.css</xsl:param>
+    <xsl:param name="showNamespaceDecls">false</xsl:param>
+    <xsl:param name="forceWrap">true</xsl:param>
+    <xsl:param name="spaceCharacter"> </xsl:param>
+    <xsl:template name="lineBreak">
+        <xsl:param name="id"/>
+        <br/>
+    </xsl:template>
+</xsl:stylesheet>
 ```
+
+Tandis qu’un `template match` s’applique à un élément, un `template name` ne s’applique à aucun élément en particulier mais définit seulement une règle qui pourra être appelée ailleurs.
+
+Ici, on propose un remplacement pour la règle nommée `lineBreak`
 
 
 
