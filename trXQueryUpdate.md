@@ -11,7 +11,7 @@ Table des matières
 ========
 
 1. Bases
-    1.1. Les primitives de mise à jour
+ 1.1. Les primitives de mise à jour
     1.2. Comment les primitives de mise à jour se combinent avec le langage de base ?
     1.3. Le modèle de traitement
 2. Pour allez plus loin
@@ -21,7 +21,7 @@ Table des matières
     2.4. Ordre et conflits
 3. Conclusion
 
-La fonctionnalité de mise à jour XQuery Update est une extension relativement petite du langage XQuery qui fournit des moyens adaptés pour modifier des documents ou des données XML. Depuis qu’elle est devenue une `recommandation candidate` le 14 mars 2008, la [spécification XQuery Update Facility]() est aujourd’hui plutôt stable.
+La fonctionnalité de mise à jour XQuery Update est une relativement petite extension du langage XQuery qui fournit des moyens adaptés pour modifier des documents ou des données XML. Depuis qu’elle est devenue une `recommandation candidate` le 14 mars 2008, la [spécification XQuery Update Facility]() est aujourd’hui plutôt stable.
 
 Pourquoi une fonctionnalité de mise à jour en XML Query ? La réponse peut paraître évidente mais, après tout, le langage XQuery lui-même – ou encore son cousin XSLT2 – est suffisamment puissant pour écrire n’importe quelle transformation d’un arbre XML. Ainsi, une simple fonction `store` ou `put` pourrait sembler suffisante pour réaliser n’importe quelle opération de mise à jour de base de données. Bon, peut-être… En pratique, cela ne serait ni très naturel ou pratique, ni non plus très efficient (une telle approche nécessiterait de stocker tout le document et rendrait l’optimisation très difficile). Ainsi, comme nous allons le voir, la petite complexité ajoutée par XQuery Update semble valoir la peine.
 
@@ -112,7 +112,7 @@ Exemple :
 
 #### 2. par transformation sans effet de bord :
 
-XQUF dispose d’une opération supplémentaire appelée `tranform` qui met à jour la copie d’un nœud existant, sans modifier l’original et retourne l’abre transformé.
+XQUF dispose d’une opération supplémentaire appelée `tranform` qui met à jour la copie d’un nœud existant, sans modifier l’original et retourne l’arbre transformé.
 
 L’exemple suivant produit une version transformée de `doc.xml` sans toucher le document original :
 
@@ -145,11 +145,11 @@ Remarquez qu’_au sein de la clause modify_ XQUF interdit de modifier la _versi
 Syntaxe :
 
 ```xquery
-delete node location
+  delete node location
 ```
 
 ```xquery
-delete nodes location
+  delete nodes location
 ```
 
 L’expression _location_ représente une séquence de nœuds qui sont markés pour la suppression (le nombre effectif de nœud n’a pas besoin de correspondre au mot-clef `node` ou `node`).
@@ -159,15 +159,15 @@ L’expression _location_ représente une séquence de nœuds qui sont markés p
 Syntaxe :
 
 ```xquery
-insert (node|nodes) items into location
+  insert (node|nodes) items into location
 ```
 
 ```xquery
-insert (node|nodes) items as first into location
+  insert (node|nodes) items as first into location
 ```
 
 ```xquery
-insert (node|nodes) items as last into location
+  insert (node|nodes) items as last into location
 ```
 
 ```xquery
@@ -186,10 +186,10 @@ Remarquez que bien que le mot-clef `node` ou `node` soit employé, les items ins
 
 - Lorsque l’on utilise `into`, alors le nœud cible doit être un élément ou un document. Les items à insérer sont traités exactement comme les contenus d’un élément constructeur (`element constructor`).
 
-Par exemple, si `$target` pointe vers un élément vide `<CONT/>`, 
+Par exemple, si `$target` pointe vers un élément vide `<CONT/>`,
 
 ```xquery
-  insert nodes (attribute A { 2.1 }, <child1/>, "text", 1 to 3) 
+  insert nodes (attribute A { 2.1 }, <child1/>, "text", 1 to 3)
   into $target
 ```
 
@@ -203,7 +203,7 @@ Dans ce cas, les même règles que pour les constructeurs s’appliquent : l’
 
 - Quand les mot-clefs `as first` (et respectivement `as last`) sont employés, les items sont insérés avant (respectivement après) n’importe quel enfant existant de l’élément.
 
-Par exemple, si `$target` pointe vers un élément `<parent><kid/></parent>`, 
+Par exemple, si `$target` pointe vers un élément `<parent><kid/></parent>`,
 
 ```xquery
   insert node <elder/> as first into $target
@@ -248,7 +248,7 @@ ramène :
   <P>here is some text</P>
 ```
 
-- Les attributs sont un cas spécifique : ils peuvent seulement être remplacé par un nœud attribut. Les conflits de nommage peuvent générer des erreurs. 
+- Les attributs sont un cas spécifique : ils peuvent seulement être remplacé par un nœud attribut. Les conflits de nommage peuvent générer des erreurs.
 
 #### `replace value of node`
 
@@ -283,7 +283,7 @@ Par exemple si `$target` pointe ver un élément `<P order="old">some text</P>`,
 ```xquery
   replace value of node $target/@order with (1 to 3, <ell>...</ell>)
 ```
- 
+
 Ramène :
 
 ```xml
@@ -320,8 +320,8 @@ Ramène :
 Syntaxe :
 
 ```xquery
-  copy $var := node [, $var2 := node2 ...] 
-  modify updating-expression 
+  copy $var := node [, $var2 := node2 ...]
+  modify updating-expression
   return expression
 ```
 
@@ -476,6 +476,6 @@ Nous espérons sa large adoption comme langage de choix pour la mise à jour de 
 
 [ndtr : ajoutons aujourd’hui les bases de données XML natives libres et open source telles que BaseX ou eXist.]
 
- 
+
 
 We are looking forward to its wide adoption as the language of choice for updating XML databases. At the time this tutorial was written, there were already a few implementations: Monet DB (CWI), Qizx (XMLmind), Oracle Berkeley DB XML (Oracle), XQilla.
