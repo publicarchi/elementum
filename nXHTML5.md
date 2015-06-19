@@ -118,10 +118,6 @@ Document polyglotte minimal
 ```
 
 
--
-
-
-
 ## Questions
 
 QUST: Vérifier quel impact sur les navigateurs ?
