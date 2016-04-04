@@ -83,6 +83,77 @@ http://maxwellito.github.io/vivus/
 
 ## Zoom
 
+### IIPImage Client
+
+http://iipimage.sourceforge.net/documentation/clients/
+
+### MediaInfo (Norway)
+
+http://www.mediainfo.com
+
+Service commercial. Outils de visualisation, d’annotation et de sélection d’images, historique, etc.
+
+### OpenSea dragon
+
+http://openseadragon.github.io/examples/tilesource-iiif/
+https://github.com/openseadragon/svg-overlay
+
+### OpenLayers
+
+http://openlayers.org
+
+### Seadragon/SeaJax
+
+http://www.seadragon.com
+http://seajax.github.io/
+
+### ZPR (Stanford)
+
+### Sanddragon (British Library)
+
+http://sanddragon.bl.uk/#home
+
+### Djatoka Viewer
+https://github.com/jronallo/djatoka
+http://www.dlib.org/dlib/september08/chute/09chute.html
+http://fr.slideshare.net/hvdsomp/the-djatoka-image-server
+
+### IIIF Viewer
+
+http://www.klokantech.com
+http://klokantech.github.io/iiifviewer/
+
+### Georeferencer
+
+http://www.georeferencer.com
+
+### IIPMooViewer
+
+https://github.com/ruven/iipmooviewer
+
+### Universalviewer
+
+https://github.com/UniversalViewer/universalviewer
+http://player.digirati.co.uk/iiif.html
+
+### Wellcome Player
+
+http://digirati.com/case-studies/wellcome/
+http://player.digirati.co.uk
+
+### Leaflet-IIIF
+
+https://github.com/mejackreed/Leaflet-IIIF
+demo http://mejackreed.github.io/Leaflet-IIIF/examples/example.html
+
+### Diva.js
+
+http://ddmal.github.io/diva.js/
+
+### Mirador
+
+http://projectmirador.org
+
 ### Magnifier.js
 
 [Magnifier.js](http://mark-rolich.github.io/Magnifier.js/) est une librairie javascipt qui permet d’offrir un effet loupe sur des images. Elle propose des effets zoom in ou zoom out avec la souris. L’image agrandie peut être présentée directement ou dans un cadre séparé.

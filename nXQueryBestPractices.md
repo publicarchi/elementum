@@ -5,32 +5,32 @@ En XQuery comme avec tout autre langage, l’adoption d’un certain nombre de p
 
 ## Être explicite
 
-Lorsque l’on passe du code en revue, on a besoin de rapidement identifier :
+Lorsque l’on passe du code en revue, on a besoin de pouvoir rapidement identifier :
 - les dépendances
 - les arguments attendus par une fonction
 - le type de résultat d’une fonction
 - comprendre l’intention de l’auteur
 
-XQuery est un langage fortement typé. La signature des fonction XQuery facilite le débugage et permet de les documenté. Outre ce typage, l’utilisation de [xqDoc](http://xqdoc.org) peut permettre de rendre votre code plus explicite.
+XQuery est un langage fortement typé. La signature des fonction XQuery facilite le débugage et permet de la documenter. En plus de ce typage, l’utilisation de [xqDoc](http://xqdoc.org) permet de rendre votre code encore plus explicite.
 
-Lorsque vous écrivez du code, toujours :
+Lorsque vous écrivez du code, toujours il est bon de toujours veiller à :
 - déclarer les modules importés et les espaces de nom
 - déclarer les types et la cardinalité des arguments des fonctions
 - déclarer le type et la cardinalité du résultat
-- Utiliser xqDoc pour documenter vos fonctions
+- Utiliser xqDoc pour documenter ses fonctions
 
 
 ### Expliciter les types et les cardinalités
 
 - Facilite la refactorisation (erreurs statiques vs erreurs dynamiques)
 - Fournit des éléments de documentation
-- Inférer des intentions
+- Permet d’inférer des intentions
 - Facilite l’écriture de tests unitaires
 
 
 ### Utilisation de xqDoc
 
-Le temps que vous allez consacrer à la documentation de votre code peut vous faire gagner énormément de temps lorsque vous aurez à vous relire par la suite.
+Le temps consacré à la documentation de votre code peut vous faire gagner énormément de temps lorsque vous aurez à vous relire par la suite.
 
 En prenant le temps de signer vos fonctions, la documentation du code avec xqDoc consiste pour l’essentiel à renseigner les paramètres et la sortie.
 
@@ -55,9 +55,10 @@ Avec ces simples éléments et des signatures des fonctions, il sera possible de
 
 Choisir une version standardisée du language (au moins la version 1.0).
 
-En utilisant une version standardisée de XQuery, vous devez importez les modules propriétaires utilisés.
+En utilisant une version standardisée de XQuery, vous devez importer les modules propriétaires utilisés.
 
 Par exemple, pour une application BaseX, c’est une bonne pratique d’importer les modules explicitement :
+
 ```xquery
   xquery version "3.0" ;
   import module namespace db = "http://basex.org/modules/db" ;
@@ -84,7 +85,7 @@ Plutôt que :
   process()
 ```
 
-Vous pourriez déclarer explicitement le préfixe de la fonction :
+Il est préférable de déclarer explicitement le préfixe de la fonction :
 
 ```xquery
   xquery version "1.0" ;
@@ -116,20 +117,20 @@ Vous pourriez déclarer explicitement le préfixe de la fonction :
 
 ## Présentation du code
 
-Comme pour tout langage informatique, la consistance dans la présentation de votre code facilitera sa lecture.
+Comme pour tout langage informatique, la consistance dans la présentation de votre code facilitera sa lecture et sa compréhension.
 
 ### indentation
 
 Même s’il n’existe pas de règles standard pour l’indentation du code XQuery, fixez-vous des règles de présentation et appliquez les rigoureusement.
 
 - indentez votre code toujours de la même manière
-- veillez à la l’indentation du code XML
+- veillez à l’indentation du code en XML
 - définissez des règles d’indentation pour les expressions incluses, les tests, etc.
 
 
 ### Utilisation des espaces
 
-En XQuery, les espaces ne sont généralement pas significatifs. Leur emploi peut augmenter la lisibilité des fonctions incluses ou expressions XPath complexes.
+En XQuery, les espaces ne sont généralement pas significatifs. Leur emploi peut augmenter la lisibilité des fonctions incluses ou des expressions XPath complexes.
 
 
 ```xquery
@@ -201,6 +202,9 @@ En XQuery 3.0, l’emploi des Simple map operators peut parfois faciliter la lec
 ### factorisation des fonctions
 
 ... see Adam Retter
+
+
+### Affectation des Regex en variables
 
 
 ## Écrire des tests

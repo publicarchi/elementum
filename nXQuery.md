@@ -1,6 +1,5 @@
 # XQuery
 
----
 # Caractéristiques
 
 ### Langage fonctionnel
@@ -21,6 +20,18 @@
 ### Basé sur XPath
 
 ### Standardisé par le W3C
+
+---
+
+# FLOWR
+
+```xquery
+  let $document := fn:doc("tei.xml") 
+  for $persName in $document//tei:persName
+  where $persName/@id
+  order by $persName/@id 
+  return $persName/text()
+```
 
 ---
 
