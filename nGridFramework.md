@@ -78,6 +78,8 @@ http://designmodo.com/animate-svg-gradients/
 
 http://simpleicons.org
 
+https://vaadin.com/home (payant)
+
 ## tools
 
 http://www.modularscale.com
