@@ -6,16 +6,16 @@ date: 2014-06-27
 
 ## Introduction
 
-L’abandon de XHTML2 et le choix effectué par le W3C de poursuivre le développement de HTML5 se caractérise d’abord par l’abandon des contraintes syntaxiques propres au méta-langage XML. Toutefois, même si l’information à ce sujet est souvent restée peu claire ou difficile à trouver, il a toujours été possible d’écrire ses pages web en xHTML5. Le recours à ce formalisme s’avère particulièrement nécessaire lorsque l’on travaille avec le langage de requêtes XQuery ou le langage de transformation XSLT, ou bien généralement dans l’univers XML (sources XML, Xlink, SVG,  MathML, etc.).
+L’abandon de XHTML2 et le choix effectué par le W3C de poursuivre le développement de HTML5 se caractérise d’abord par le renoncement aux contraintes syntaxiques propres au méta-langage XML. Toutefois, même si l’information à ce sujet est souvent restée peu claire, ou difficile à trouver, il est toujours resté possible d’écrire ses pages web en (X)HTML5. Le recours à ce formalisme s’avère particulièrement nécessaire lorsque l’on travaille avec le langage de requêtes XQuery ou le langage de transformation XSLT, ou bien généralement dans l’univers XML (sources XML, Xlink, SVG,  MathML, etc.).
 
-En effet, si le langage de balisage HTML5 paraissait signer la fin de XHTML, la réalité s’est avérée un peu plus complexe. D’une part, la syntaxe XML subsiste et reste toujours valide puisque HTML5 a été conçu pour rester rétrocompatible avec HTML4 et XHTML. D’autre part, certaines règles syntaxiques propres à XHTML demeurent comme l’imbrication des éléments sans chevauchement, ou bien sont supportées comme des conventions optionnelles. Tout XHTML5 est du HTML5 valide, et XHTML5 présente plusieurs des propriétés de XML comme l’extensibilité en utilisant des espaces de noms, ou encore l’utilisation de XSLT pour transformer la page dans le navigateur. Ainsi, il est donc possible de bénéficier à la fois du meilleur de XHTML et des nouveaux éléments offerts HTML5.
+En effet, si le langage de balisage HTML5 paraissait signer la fin de XHTML, la réalité s’est avérée un peu plus complexe. D’une part, la syntaxe XML subsiste et reste toujours valide puisque HTML5 a été conçu afin de rester rétrocompatible avec HTML4 et XHTML. D’autre part, certaines règles syntaxiques propres à XHTML demeurent comme l’imbrication des éléments sans chevauchement, ou bien sont supportées comme des conventions optionnelles. Tout (X)HTML5 est du HTML5 valide, et (X)HTML5 présente plusieurs des propriétés de XML comme l’extensibilité en utilisant des espaces de noms, ou encore l’utilisation de XSLT pour transformer la page dans le navigateur. Ainsi, il demeure donc possible de bénéficier à la fois du meilleur de XHTML et des nouveaux éléments offerts HTML5.
 
-La recommandation candidate du W3C qui définit des documents polyglotes pour HTML5 devrait bientôt résoudre définitivement la question en offrant un cadre pour la compatibilité des deux langages de balisage.
+La [note du Groupe de travail W3C qui définit des documents polyglotes pour HTML5](https://www.w3.org/TR/html-polyglot/) résout définitivement la question en offrant un cadre pour la compatibilité des deux langages de balisage.
 
 
 ## Se conformer aux règles syntaxiques de XHTML
 
-Il est possible de contraindre la syntaxe de HTML5 pour qu’elle se conforme à XML, en utilisant XHTML5. Pour ce faire, il convient d’ajouter explicitement une déclaration d’espace de nom XHTML à l’élément <html> et respecter la syntaxe XML en fermant les éléments, en respectant la casse pour les noms d’éléments et en donnant des valeurs à tous les attributs. Un document XHTML doit être un document XML bien formé.
+Il est possible de contraindre la syntaxe de HTML5 pour qu’elle se conforme à XML, en produisant un document polyglotte. Pour ce faire, il convient d’ajouter explicitement une déclaration d’espace de nom XHTML à l’élément <html> et respecter la syntaxe XML en fermant les éléments, en respectant la casse pour les noms d’éléments et en donnant des valeurs à tous les attributs. Un document XHTML doit être un document XML bien formé.
 
 ```html
 <!DOCTYPE html>
@@ -33,6 +33,8 @@ Il est possible de contraindre la syntaxe de HTML5 pour qu’elle se conforme à
 ```
 
 Il est désormais possible de valider son XHTML5 avec un validateur pour obtenir un contrôle plus strict des erreurs. Cela n’est pour le moment pas proposé par le W3C, mais il on peut utiliser le service en ligne [http://html5.validator.nu]([http://html5.validator.nu]) (en choisissant l’option "Be lax about HTTP Content-Type"), ou bien un schéma [mais la spécification ne définit pas de DTD].
+
+Le projet [unsoup](https://github.com/unsoup) propose dorénavant également des schémas RelaxNG pour valider ses documents en HTML5 contre un schema. cf. https://github.com/unsoup/validator
 
 
 ## Servir la page comme du XHTML
@@ -83,12 +85,12 @@ La spécification de l’encodage du document utilise seulement UTF-8. HTML requ
 
 Les documents polyglottes utilisent la déclaration suivante, séparément ou en combinaison (notez qu’il ne peut y avoir qu’une seule déclaration d’encodage HTML) :
 - Au sein du document
-En utilisant le Byte Order Mark (BOM) character
-En utilisant la déclaration d’encodage HTML soit dans l’attribut `charset` de `<meta charset="UTF-8"/>` soit dans la forme alternative `<meta http-equiv="Content-Type" content="text/htm; charset=UTF-8"/>`
+  En utilisant le Byte Order Mark (BOM) character
+  En utilisant la déclaration d’encodage HTML soit dans l’attribut `charset` de `<meta charset="UTF-8"/>` soit dans la forme alternative `<meta http-equiv="Content-Type" content="text/htm; charset=UTF-8"/>`
 - En dehors du document
-En ajoutant `charset=utf-8` au type MIME/HTTP de l’en-tête Content-Type comme ci-dessous :
-`Content-type: text/html; charset=utf-8`
-`Content-type: application/xhtml+xml; charset=utf-8`
+  En ajoutant `charset=utf-8` au type MIME/HTTP de l’en-tête Content-Type comme ci-dessous :
+  `Content-type: text/html; charset=utf-8`
+  `Content-type: application/xhtml+xml; charset=utf-8`
 
 Le DOCTYPE
 Les documents polyglottes utilisent une déclaration de type de document (DOCTYPE) telle que définie dans le standard HTML5 et conforme aux règles suivantes :
@@ -97,8 +99,8 @@ Les documents polyglottes utilisent une déclaration de type de document (DOCTYP
 - PUBLIC, si présent en capitales
 - Un identifiant formel public (FPI), si présent, sensible à la casse
 - Une URI, si présente dans la déclaration de type de document sensible à la casse
- par exemple `about:legacy-compat`
- Notez que l’usage de about:legacy-compat dans des document XML peut conduire à des résultats de parsing non prévisibles.
+   par exemple `about:legacy-compat`
+   Notez que l’usage de about:legacy-compat dans des document XML peut conduire à des résultats de parsing non prévisibles.
 
  Namespace
  HTML5 a introduit un espace de nom par défaut pour l’élément racine html, svg, et MathMl. Les documents polyglotes déclarent ces espaces de noms par défaut sur l’élément racine pour maintenir la compatibilité avec XML.
@@ -175,12 +177,10 @@ Les documents XML n’ont pas nécessairement besoin d’un DOCTYPE, la spécifi
 
 ## Références
 
-[Summarized test results : Character encoding (XHTML5), W3C Internationalization,  2009-2012](http://www.w3.org/International/tests/html-css/character-encoding-xhtml/results-xhtml-encoding)
-
-[HTML5 A vocabulary and associated APIs for HTML and XHTML, W3C Last Call Working Draft, 17 june 2014](http://www.w3.org/TR/html5/) et en particulier http://www.w3.org/TR/html5/introduction.html#html-vs-xhtml et
-http://www.w3.org/TR/html5/the-xhtml-syntax.html
-
-[Polyglot Markup: A robust profile of the HTML5 vocabulary, W3C Editor's Draft, 07 may  2014](http://dev.w3.org/html5/html-polyglot/html-polyglot.html)
-
-
-http://www.nicolas-hoffmann.net/source/1419-Servir-un-site-en-application-xhtml-xml-XHTML5-et-IE.html
+- [Summarized test results : Character encoding (XHTML5), W3C Internationalization,  2009-2012](http://www.w3.org/International/tests/html-css/character-encoding-xhtml/results-xhtml-encoding)
+- [HTML5 A vocabulary and associated APIs for HTML and XHTML, W3C Last Call Working Draft, 17 june 2014](http://www.w3.org/TR/html5/) et en particulier http://www.w3.org/TR/html5/introduction.html#html-vs-xhtml et
+- http://www.w3.org/TR/html5/the-xhtml-syntax.html
+- [Polyglot Markup: A robust profile of the HTML5 vocabulary, W3C Working Group Note 29 September 2015](https://www.w3.org/TR/html-polyglot/)
+- http://www.nicolas-hoffmann.net/source/1419-Servir-un-site-en-application-xhtml-xml-XHTML5-et-IE.html
+- [Validateur unsoup](https://github.com/unsoup/validator)
+- [The Nu Html Checker (v.Nu)](https://validator.github.io/validator/)
