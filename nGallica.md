@@ -51,7 +51,30 @@ http://gallica.bnf.fr/ark:/12148/bpt6k5834013m/f10
 
 http://gallica.bnf.fr/ark:/12148/bpt6k5834013m/f10.highres
 
+## à voir
 
+Qualificateurs génériques `.description`, `.policy`
+
+Qualificateurs de type de contenu : rdf, xml, etc.
+
+Qualificateurs spécifiques à l’application
+
+ex : `.r=food` pour flaguer un contenu
+
+Avec les ARKs, l’URI qui référence la resource descriptive est construite en ajoutant un `?`, malheureusement, l’infrastructure technique de la Bnf n’a pas permis le support du `?` sans chaîne de requête (qui était confondu avec une requête vide).
+
+La bibliothèque nationale de France a donc fait le choix d’implémenter directement les ressources descriptives directement en utilisant des ARKs. Le mécanisme est donc inversé : depuis la ressource descriptive identifiée par un ARK, on accède à son contenu sous-jascent et pas l’inverse.
+
+Deux choix étaient alors possibles
+
+-  “suffix hash URI” : cas dans lequel on a l’URI http://example.com/resource pour une ressource web (par ex. une page web à propos d’une personne), et http://example.com/resource#classifier pour la chose sous-jascente (par ex. la personne elle-même). Un client de navigation pouvant automatiquement enlever le # pour la consommation ce qui repose sur l’architecture standard du web et les bonnes pratiques. 
+-  “prefix slash URI” : dans lequel on a l’URI http://example.com/doc/resource pour le document web et http://example.com/id/resource  pour la chose sous-jascente.  Cela requière une redirection HTTP (`HTTP 303 redirect`) depuis l’URI de la ressource vers l’URI du document web.
+
+Les bonnes pratiques du web sémantique mettent en évidence des questions encore irrésolues par les qualificateurs ARK. Comment nommé la chose sous-jascente quand un ARK est assigné à une ressource descriptive. Ce problème n’est pas entièrement  résolu par l’usage des `/`, et ce n’est ni réellement le cas d’un service ou d’un variant adressé par le `.` parce que les deux choses identifiées sont distinctes.
+
+With ARKs only the  “prefix slash  URI” strategy is possible for the current state of the standard, which means using e.g. http://data.bnf.fr/id/ark:/12148/ark:/12148/cb118905823 (the French poet Charles Baudelaire) and http://data.bnf.fr/doc/ark:/12148/cb118905823 (the record describing him). This was not implemented because the redirection rules would present too great an extra server burden for our application.  
+
+From a technical standpoint, in data.bnf.fr the decision was made to locally extend ARKs and use “hash URIs”. For example, we separate http://data.bnf.fr/ark:/12148/cb118905823 (web page about  Charles  Baudelaire)  from  http://data.bnf.fr/doc/ark:/12148/cb118905823#foaf:Person (Charles Baudelaire himself). 
 
 ## Références
 
