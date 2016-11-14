@@ -40,8 +40,6 @@ Certains logiciels comme Tesseract utilisent une approche basée sur deux passes
 - [Aletheia](http://www.primaresearch.org/tools) (avec Tesseract intégré)
 - [Ocropy](https://github.com/tmbdev/ocropy) est un projet open-source développé en Python et soutenu par Google qui utilisait initialement Tesseract comme moteur de reconnaissance mais qui a ensuite développé son propre outil.
 
-
-
 ## Références
 
 [Techniques et formats de conversion en mode texte. Bnf, pages professionnels](http://www.bnf.fr/fr/professionnels/numerisation_boite_outils/a.num_conversion_mode_texte.html)
