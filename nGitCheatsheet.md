@@ -116,6 +116,12 @@ Ajouter des alias au fichier `~/.gitconfig` :
   ign = ls-files -o -i --exclude-standard
 ```
 
+## Merge sur autre branche
+
+`git fetch . master:gh-pages`
+
+Avec git fetch . master:gh-pages, on indique donc d’envoyer le contenu de `./master` (la branche locale master) vers `./gh-pages` (la branche locale gh-pages).
+
 ## Sources
 
 http://cheat.errtheblog.com/s/git
