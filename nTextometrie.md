@@ -26,6 +26,10 @@ voir également http://lexicometrica.univ-paris3.fr/jadt/jadt2000/pdf/89/89.pdf
 
 Le [Projet Textométrie](http://textometrie.ens-lyon.fr) fédère des recherches et des développements logiciels en textométrie autour de la création d’une plateforme logicielle ouverte.
 
+### Medite
+
+http://obvil.paris-sorbonne.fr/developpements/medite
+
 ## Bibliographie
 
 PINCEMIN Bénédicte, HEIDEN Serge (2008) - "Qu’est-ce que la textométrie ? Présentation", *Site du projet Textométrie *, [http://textometrie.ens-lyon.fr/spip.php?rubrique80](http://textometrie.ens-lyon.fr/spip.php?rubrique80)
