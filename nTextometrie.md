@@ -1,3 +1,8 @@
+---
+title: Notes sur la textométrie
+author: Emmanuel Château-Dutier
+since: 2016-10
+---
 # Notes sur la textométrie
 
 ## Ressources pour le TAL du Français

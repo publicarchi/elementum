@@ -6,7 +6,7 @@ Lorsque l’on travaille avec des applications Java, il est parfois nécessaire 
 
 En Java, le CLASSPATH est un chemin vers un répertoire, ou une liste de répertoires, qui est employé par `ClassLoaders` pour trouver et charger les classes dans des programmes Java.
 
-Il est possible de spécifier le classpath soit en utilisant la variable d’environnement `CLASSPATH`, soit avec l’option de ligne de commande `-cp` ou `-classpath` lors de l’exécution d’un fichier JAR, ou bien encore avec l’attribut `Class-Path` dans le `manifest.mf` à l’intérieur d'un fichier JAR.
+Il est possible de spécifier le classpath soit en utilisant la variable d’environnement `CLASSPATH`, soit avec l’option de ligne de commande `-cp` ou `-classpath` lors de l’exécution d’un fichier JAR, ou bien encore avec l’attribut `Class-Path` dans le `manifest.mf` à l’intérieur d’un fichier JAR.
 
 Source :
 http://javarevisited.blogspot.fr/2011/01/how-classpath-work-in-java.html
@@ -86,7 +86,7 @@ Pour exécuter BaseX en mode serveur ou d’autres programmes, vous pourriez avo
 - Puis choisissez la version appropriée à télécharger dans la liste.
 Sur Mac OS X, sélectionnez `x64	221.98 MB  jdk-8u45-macosx-x64.dmg`
 - Ouvrez l’image disque téléchargée (nommé quelque chose comme  `jdk-8u45-macosx-x64.dmg`)
-- Dans la fenête qui s’ouvre, exécutez le programme d’installation en double-cliquant sur l’icône en forme de paquet.
+- Dans la fenêtre qui s’ouvre, exécutez le programme d’installation en double-cliquant sur l’icône en forme de paquet.
 - Suivre les instructions du programme d’installation de JDK
 
 **Et voilà !**

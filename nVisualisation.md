@@ -1,6 +1,5 @@
 # Outils de visualisation
 
-
 ## D3.js
 
 ## Vis.js

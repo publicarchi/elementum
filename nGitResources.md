@@ -1,18 +1,14 @@
 ---
-title: Guides Git
-file: nGit.md
 since: 5 mars 2014
 date: 21 avril 2015
 version: 002
 author: Emmanuel Chateau
 ---
 
-Guides Git
-==========
+#Guides Git
 
 
-Sélection de guides de démarrage pour Git
-----------
+## Sélection de guides de démarrage pour Git
 
 ### [Git Un petit guide](http://rogerdudler.github.io/git-guide/index.fr.html)
 
@@ -39,8 +35,7 @@ Le service GitHub propose plusieurs ressources bien conçues pour débuter. Nota
 Un pense-bête court et bien foutu qui couvre seulement des commandes de bases sans traiter des dépôts distants. Mais aussi un pdf de Treehouse très bien fait.
 
 
-Mieux comprendre le fonctionnement de Git
-----------
+## Mieux comprendre le fonctionnement de Git
 
 ### [The Git parable](http://tom.preston-werner.com/2009/05/19/the-git-parable.html)
 
@@ -67,8 +62,7 @@ L’auteur décrit en détail la structure d’une archive Git, les différents 
 Ce « guide pour le perplexe » aborde par le menu les logiques de graphe qui sous-tendent toute l’architecture de Git. Il s’adresse aux personnes qui utilisent déjà Git mais qui sont effrayées par un rebasage…
 
 
-Ouvrages
-----------
+## Ouvrages
 
 ### [ProGit par Scott Chacon (FR)](http://git-scm.com/book/fr)
 
@@ -85,8 +79,7 @@ Un ouvrage détaillé et circonstancié rédigé par Ben Lynn qui révêle la ma
 Un manuel utilisateur pour Git.
 
 
-Travailler avec Github
----------
+## Travailler avec Github
 
 Workflows, etc.
 
@@ -113,16 +106,14 @@ Un système de branches pour le développement.
 Parceque c’est parfois nécessaire...
 
 
-Quelques références sur Git et les Humanités Numériques
----------
+## Quelques références sur Git et les Humanités Numériques
 
-tocome
+@tocome
 
 
-Rédiger avec Git
-----------
+## Rédiger avec Git
 
-tocome
+@tocome
 
 http://www.madebyloren.com/github-for-writers
 http://math.andrej.com/2013/06/20/the-hott-book/
@@ -136,19 +127,17 @@ Outils conçus sur le modèle du protocole Git
 - [Typewrite](https://typewrite.io) mais visualisation des contributions limitée
 - [Onword](http://onword.co)
 
-Divers
-------------
 
-[Git (visual) cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html)
+## Divers
 
-[Git cheatsheet](http://cheat.errtheblog.com/s/git)
+- [Git (visual) cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html)
+- [Git cheatsheet](http://cheat.errtheblog.com/s/git)
+- [Git reference](http://gitref.org/index.html)
+- [ungit](https://github.com/FredrikNoren/ungit)
+- [git ready](http://gitready.com)
 
-[Git reference](http://gitref.org/index.html)
-
-[ungit](https://github.com/FredrikNoren/ungit)
-
-[git ready](http://gitready.com)
-
-# Outils basés sur l’API GitHub
+## Outils basés sur l’API GitHub
 
 - [Prose](http://prose.io)
+- [GrimoireLab](http://grimoirelab.github.io)
+- [HuBoard](https://huboard.com)

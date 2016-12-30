@@ -26,12 +26,13 @@ on top of TCP/IP
 
 ## HTTP Request Methods
 
-safe	idempotent	cachable
-HEAD	✓	✓	(✓)
-GET	✓	✓	(✓)
-PUT		✓
-DELETE		✓
-POST
+|      | safe | idempotent | cachable |
+|------|------|------------|----------|
+| HEAD | ✓ | ✓ | (✓) |
+| GET | ✓ | ✓ | (✓) |
+| PUT | ✓ | | |
+| DELETE | | | ✓ |
+| POST | | | |
 
 ## Operation	in SQL	in HTTP
 

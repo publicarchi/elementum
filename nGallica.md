@@ -1,3 +1,9 @@
+---
+author: Emmanuel Château-Dutier
+since: 2016-11-12
+version: 0.2
+---
+
 # Travailler avec Gallica
 
 ## Manipulations à partir des ARK
@@ -8,9 +14,9 @@ Pour les deux Name  Mapping  Authority, un ensemble initial de qualificateurs on
 
 Par exemple, dans gallica.bnf.fr, des qualificateurs ont été définis pour designer les pages des livres.
 
-*par exemple* : 
+*par exemple* :
 
-http://gallica.bnf.fr/ark:/12148/bpt6k5834013m/f10 pour identifier la page dix du document numérisé, `/f10n5` pour identifier l’intervalle de page dix à quatorze. 
+http://gallica.bnf.fr/ark:/12148/bpt6k5834013m/f10 pour identifier la page dix du document numérisé, `/f10n5` pour identifier l’intervalle de page dix à quatorze.
 
 http://gallica.bnf.fr/ark:/12148/bpt6k5834013m/f10.highres, `.medres`,  `.lowres`  and `.thumbnail`sont des qualificateurs qui peuvent  être employés pour identifier les variants d’une même page d’un ouvrage. `.text` et `.vocal`permettent d’accéder au plein texte ou la version vocale du même enregistrement.
 
@@ -21,7 +27,7 @@ L’ARK est typiquement un identifiant opaque, dépourvu de signification. Ce no
 Le **noyau invariable de l’identifiant** lui-même est obligatoire et est conçu pour être globalement non-ambigu, persistant et opaque. Pour ce faire, il présente une structure qui procède du plus général au plus spécifique de gauche à droite.
 
 - Le schème d’identification (`ark:/`) est une étiquette facilement accessible pour des processeurs textuels
-- Le numéro de l’autorité de nommage, _Name  Assigning  Authority  (NAA)_ composée de cinq à neuf chiffres pour l’opacité. L’unicité est garantie via un registre basé à la Bibliothèque de Californie. 
+- Le numéro de l’autorité de nommage, _Name  Assigning  Authority  (NAA)_ composée de cinq à neuf chiffres pour l’opacité. L’unicité est garantie via un registre basé à la Bibliothèque de Californie.
 - Ce nom d’ARK qui doit être opaque désigne un sous-domaine correspondant à des préfixes.
 - L’autorité de mappage de nom, _Name Mapping Authority (NMA)_ pour résoudre une ressource à partir de son nom de domaine.
 - Les parties qualifiantes optionnelles, qui permettent des services supplémentaires fournis par le NMAH en utilisant le standard ARK et les caractères réservés `.` et `/`. Ceux-ci sont habituellement utilisés à la BnF comme suit : pour le nommage des sous-partie d’une ressource (ex. une page spécifique d’un livre numérisé). Cela est réalisé par des qualificateurs précédés d’un `/` (ex : `/f19`).
@@ -33,7 +39,7 @@ Le **noyau invariable de l’identifiant** lui-même est obligatoire et est con�
 
 - http://texashistory.unt.edu/ark:/67531/metapth346793/  (ARK for the resource)
 - http://texashistory.unt.edu/ark:/67531/metapth346793/?  (its metadata)
-- http://texashistory.unt.edu/ark:/67531/metapth346793/??  (the NMA’s commitment) 
+- http://texashistory.unt.edu/ark:/67531/metapth346793/??  (the NMA’s commitment)
 
 ### Accéder au texte brut
 
@@ -67,14 +73,14 @@ La bibliothèque nationale de France a donc fait le choix d’implémenter direc
 
 Deux choix étaient alors possibles
 
--  “suffix hash URI” : cas dans lequel on a l’URI http://example.com/resource pour une ressource web (par ex. une page web à propos d’une personne), et http://example.com/resource#classifier pour la chose sous-jascente (par ex. la personne elle-même). Un client de navigation pouvant automatiquement enlever le # pour la consommation ce qui repose sur l’architecture standard du web et les bonnes pratiques. 
+-  “suffix hash URI” : cas dans lequel on a l’URI http://example.com/resource pour une ressource web (par ex. une page web à propos d’une personne), et http://example.com/resource#classifier pour la chose sous-jascente (par ex. la personne elle-même). Un client de navigation pouvant automatiquement enlever le # pour la consommation ce qui repose sur l’architecture standard du web et les bonnes pratiques.
 -  “prefix slash URI” : dans lequel on a l’URI http://example.com/doc/resource pour le document web et http://example.com/id/resource  pour la chose sous-jascente.  Cela requière une redirection HTTP (`HTTP 303 redirect`) depuis l’URI de la ressource vers l’URI du document web.
 
 Les bonnes pratiques du web sémantique mettent en évidence des questions encore irrésolues par les qualificateurs ARK. Comment nommé la chose sous-jascente quand un ARK est assigné à une ressource descriptive. Ce problème n’est pas entièrement  résolu par l’usage des `/`, et ce n’est ni réellement le cas d’un service ou d’un variant adressé par le `.` parce que les deux choses identifiées sont distinctes.
 
 With ARKs only the  “prefix slash  URI” strategy is possible for the current state of the standard, which means using e.g. http://data.bnf.fr/id/ark:/12148/ark:/12148/cb118905823 (the French poet Charles Baudelaire) and http://data.bnf.fr/doc/ark:/12148/cb118905823 (the record describing him). This was not implemented because the redirection rules would present too great an extra server burden for our application.  
 
-From a technical standpoint, in data.bnf.fr the decision was made to locally extend ARKs and use “hash URIs”. For example, we separate http://data.bnf.fr/ark:/12148/cb118905823 (web page about  Charles  Baudelaire)  from  http://data.bnf.fr/doc/ark:/12148/cb118905823#foaf:Person (Charles Baudelaire himself). 
+From a technical standpoint, in data.bnf.fr the decision was made to locally extend ARKs and use “hash URIs”. For example, we separate http://data.bnf.fr/ark:/12148/cb118905823 (web page about  Charles  Baudelaire)  from  http://data.bnf.fr/doc/ark:/12148/cb118905823#foaf:Person (Charles Baudelaire himself).
 
 ## Références
 

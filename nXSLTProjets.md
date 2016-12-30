@@ -2,7 +2,6 @@
 
 Quelques projets intéressants en XSLT
 
-
 ## Travail avec des documents TEI
 
 ### XSLT Stylesheets

@@ -1,5 +1,8 @@
-nSaxonOnYourMac
-======
+---
+title: Installer le processeur Saxon sur Mac
+---
+
+# Installer le processeur Saxon sur Mac
 
 Le paquet Saxon contient une collection d’outils destinés à manipuler des documents XML soit sous la forme de processeurs XSLT ou XQuery, soit sous la forme de bibliothèques Java.
 
@@ -17,7 +20,7 @@ Un fichier JAR (extension `.jar`)est une archive java exécutable, il contient t
 Saxon étant installé sur votre machine, vous pouvez l’invoquer de la manière suivante :
 
 ```bash
-java -jar /path/to/saxon.jar path/to/xmlfile.xml path/to/xslfile.xsl
+  java -jar /path/to/saxon.jar path/to/xmlfile.xml path/to/xslfile.xsl
 ```
 
 - La liste des options disponibles pour une transformation XSLT est présentée à cette adresse : http://www.saxonica.com/documentation/html/using-xsl/commandline.html
@@ -29,7 +32,7 @@ java -jar /path/to/saxon.jar path/to/xmlfile.xml path/to/xslfile.xsl
 Afin d’invoquer facilement Saxon en ligne de commande, le plus simple est de créer un alias dans son fichier `.bash_profile`
 
 ```bash
-alias saxon='java -jar /Library/Java/Extensions/SaxonHE9-5-1-6J/saxon9he.jar'
+  alias saxon='java -jar /Library/Java/Extensions/SaxonHE9-5-1-6J/saxon9he.jar'
 ```
 
 Il est désormais possible d’exécuter Saxon avec l’alias `saxon` en lui passant les paramètres nécessaires.
@@ -37,9 +40,8 @@ Il est désormais possible d’exécuter Saxon avec l’alias `saxon` en lui pas
 Par exemple, on exécute la classe de la manière suivante
 
 ```bash
-saxon -o:fichierRésultat.html source.xml programme.xsl
+  saxon -o:fichierRésultat.html source.xml programme.xsl
 ```
-
 
 ## Placer Saxon dans le CLASSPATH java
 
@@ -89,5 +91,5 @@ Pour exécuter une requête XQuery :
 
 ## How to change processor to Saxon in BaseX
 
-On a mac, we cope doing it putting the Saxon's jar files into `/Library/Java/Extensions/`
+On a mac, we cope doing it putting the Saxon’s jar files into `/Library/Java/Extensions/`
 Running basexhttp, the expression `xslt:processor()` returns "Saxon" and `xslt:version()` returns "2.0".

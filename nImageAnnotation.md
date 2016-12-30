@@ -1,4 +1,9 @@
-# Image annotation
+---
+author: Emmanuel Château-Dutier
+since: 2016-01-30
+---
+
+# Note sur l’annotation d’image
 
 Depuis plusieurs années des dispositifs d’annotation d’images se sont développés parallèlement à ceux d’annotation de textes. Ces logiciels offrent l’opportunité de développer des applications contributives pour travailler sur les images.
 
@@ -7,8 +12,8 @@ Depuis plusieurs années des dispositifs d’annotation d’images se sont déve
 `http://visuall.hypotheses.org`
 `http://scv.hypotheses.org`
 
-cf. : Séminaire ENS sur l'image numérique organisé à
-l'ENS de Paris, M. Mathias Blanc (sociologue, IRHis/CNRS) et Vincent Puig (IRI), 14 janvier 2016
+cf. : Séminaire ENS sur l’image numérique organisé à
+l’ENS de Paris, M. Mathias Blanc (sociologue, IRHis/CNRS) et Vincent Puig (IRI), 14 janvier 2016
 
 http://www.ens.fr/actualites/agenda/article/seminaire-de-recherche-sur-l-image-2849
 

@@ -1,3 +1,8 @@
+---
+author: Emmanuel Château-Dutier
+since: 2016-05-25
+---
+
 # Git cheatsheet
 
 ## revenir en arrière
@@ -12,7 +17,7 @@ Annuler le commit et tout ce qui a été indexé, en conservant les fichiers int
 
 `git reset --hard HEAD^`
 
-Tout annuler en jettant tous les changements non commités et en ramenant tout à l’état précédent (attention la commande peut être dangereuse)
+Tout annuler en jetant tous les changements non commités et en ramenant tout à l’état précédent (attention la commande peut être dangereuse)
 
 
 ## Annulations et problèmes

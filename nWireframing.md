@@ -1,8 +1,6 @@
-Wireframing avec Illustrator
-=====
+# Wireframing avec Illustrator
 
-Configuration d'Illustrator
-------
+## Configuration d’Illustrator
 
 ### Utiliser le pixel comme unité de mesure
 
@@ -24,8 +22,7 @@ File > Save for Web & Devices
 1024 x 768
 1280 x 1500
 
-Références
----------
+## Références
 
 http://www.sccc.premiumdw.com/web200/creating-a-website-wireframe-in-illustrator/
 

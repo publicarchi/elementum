@@ -2,7 +2,7 @@
 
 [Scott Murray, D3 Tutorials](http://alignedleft.com/tutorials/d3/)
 
-[Scott Murray, Interactive Data Visualization for the Web, O'Reilly](]http://chimera.labs.oreilly.com/books/1230000000345/) lecture en ligne gratuite
+[Scott Murray, Interactive Data Visualization for the Web, O’Reilly](]http://chimera.labs.oreilly.com/books/1230000000345/) lecture en ligne gratuite
 
 [Introduction à la librairie Javascrip d3.js](http://undisconnected.com/tutoriel-introduction-d3-js/)
 

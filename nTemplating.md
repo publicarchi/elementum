@@ -1,5 +1,10 @@
-Note sur le templating avec BaseX
-========
+---
+title: Note sur le templating avec BaseX
+author: Emmanuel Château-Dutier
+since: 2014-06-27
+---
+
+# Note sur le templating avec BaseX
 
 Diverses solutions peuvent être envisagées pour le templating avec BaseX :
 - utilisation d’un map

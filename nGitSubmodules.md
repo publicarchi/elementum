@@ -1,4 +1,4 @@
-name: nGitSubmodules.md
+
 
 # Utilisation des sous-modules de Git
 
@@ -26,4 +26,3 @@ G
 Références
 - http://www.getsymphony.com/learn/articles/view/getting-git-for-symphony-development/
 - http://www.getsymphony.com/learn/articles/view/on-git-submodules/
-

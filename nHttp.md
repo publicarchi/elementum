@@ -1,12 +1,11 @@
 ---
-title: Note sur HTTP
 filename: nHTTP.md
 author: Emmanuel Chateau
 version: 0.2
 ---
 
-
 # Note HTTP
+
 
 ## Présentation
 

@@ -1,4 +1,10 @@
-# nTEIStylesheets.md
+---
+title: Guide TEI Stylesheets
+author: Emmanuel Château-Dutier
+since: 2015-05-02
+---
+
+# Guide TEI Stylesheets
 
 ## Présentation
 
@@ -26,13 +32,13 @@ Ainsi, si vous voulez importez ou incluez des règles identiques à celles du fi
 Les variables peuvent être déclarées comme fils de l’élément `stylesheet` avec des éléments `variable`.
 
 ```xsl
-<xsl:variable name="TEI">Text Encoding Initiative</xsl:variable>
+  <xsl:variable name="TEI">Text Encoding Initiative</xsl:variable>
 ```
 
 Il est également possible d’employer des paramètres directement comme fils de `stylesheet`, mais ceux-ci peuvent être écrasés lors de l’appel de la feuille de style.
 
 ```xsl
-<xsl:param name="logo">../Graphics/logo</xsl:param>
+  <xsl:param name="logo">../Graphics/logo</xsl:param>
 ```
 
 En ligne de commande :
@@ -47,21 +53,21 @@ saxon data.xml test.xsl logo=myLogo
 Dans l’exemple ci-dessous, on importe une transformation et l’on renseigne certains paramètres. Ensuite, on fournit une règle nommée.
 
 ```xsl
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-xmlns:xs="http://www.w3.org/2001/XMLSchema"
-exclude-result-prefixes="xs"
-version="2.0">
-<xsl:import href="/Users/emmanuelchateau/Documents/informatique/TEIC/Stylesheets/release/xsl/xml/tei/stylesheet/slides/teihtml-slides.xsl"/>
-<xsl:param name="logoFile">../Graphics/logo.png</xsl:param>
-<xsl:param name="cssFile">teislides.css</xsl:param>
-<xsl:param name="showNamespaceDecls">false</xsl:param>
-<xsl:param name="forceWrap">true</xsl:param>
-<xsl:param name="spaceCharacter"> </xsl:param>
-<xsl:template name="lineBreak">
-<xsl:param name="id"/>
-<br/>
-</xsl:template>
-</xsl:stylesheet>
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    version="2.0">
+    <xsl:import href="/Users/emmanuelchateau/Documents/informatique/TEIC/Stylesheets/release/xsl/xml/tei/stylesheet/slides/teihtml-slides.xsl"/>
+      <xsl:param name="logoFile">../Graphics/logo.png</xsl:param>
+      <xsl:param name="cssFile">teislides.css</xsl:param>
+      <xsl:param name="showNamespaceDecls">false</xsl:param>
+      <xsl:param name="forceWrap">true</xsl:param>
+      <xsl:param name="spaceCharacter"> </xsl:param>
+    <xsl:template name="lineBreak">
+      <xsl:param name="id"/>
+      <br/>
+    </xsl:template>
+  </xsl:stylesheet>
 ```
 
 Tandis qu’un `template match` s’applique à un élément, un `template name` ne s’applique à aucun élément en particulier mais définit seulement une règle qui pourra être appelée ailleurs.
@@ -73,7 +79,7 @@ Ici, on propose un remplacement pour la règle nommée `lineBreak`
 
 Les feuilles de styles TEI se présentent sous la forme d’une hiérarchie de fichiers. Pour les employer, on inclue ou importe ces fichiers.
 
-L’arborescence de fichers rassemble les feuilles de style par formats de sortie (docx, epub, html, html5, latex, slides, etc.).
+L’arborescence de fichiers rassemble les feuilles de style par formats de sortie (docx, epub, html, html5, latex, slides, etc.).
 
 - `docx/` conversion depuis ou vers MSWord
 - `epub/` conversion vers ePub
@@ -103,7 +109,7 @@ Le répertoire de profil `profile/` contient des sous-répertoires de personnali
 Dans ces fichiers, on peut faire référence à la transformation maître, de la manière suivante :
 
 ```xsl
-<xsl:import jref="../../../epub/tei-to-epub.xsl"/>
+  <xsl:import jref="../../../epub/tei-to-epub.xsl"/>
 ```
 
 

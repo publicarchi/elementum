@@ -2,7 +2,7 @@
 
 ## Les protocoles d’identification
 
-### Authentication simple
+### Authentification simple
 
 ### Authentification Digest
 
@@ -13,7 +13,7 @@
 Pour accéder à un service compatible OpenID, l’utilisateur fournit simplement le nom de son IDP auquel le service (RP, Relying Party) déléguera la tâche d’authentifier l’utilisateur.
 
 Ce système présente plusieurs avantages.
-- 1°. Il évite d’avoir à créer plusieurs profils sur plusieurs sites différents. L’utlisateur peut se contenter d’avori reocurs à un profil unique sur un IDP pour accéder à tout site supportant OPenID ("Single Sign On").
+- 1°. Il évite d’avoir à créer plusieurs profils sur plusieurs sites différents. L’utilisateur peut se contenter d’avoir recours à un profil unique sur un IDP pour accéder à tout site supportant OpenID ("Single Sign On").
 - 2°. Cela permet de ne confier ses informations personnelles qu’à un seul site auquel on fait confiance. Le fournisseur de service n’a à connaître que l’OpenID de l’utilisateur et jamais son mot de passe.
 - 3°. Le système place l’utilisateur au cœur de la transaction et améliore de ce fait la protection de la vie privée.
 

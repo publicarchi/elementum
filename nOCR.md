@@ -1,3 +1,8 @@
+---
+title: Note sur l’Océrisation
+since: 2016-11
+---
+
 # Océrisation
 
 OCR Optical Character Recognition, en français reconnaissance optique des caractères.
@@ -35,15 +40,13 @@ Certains logiciels comme Tesseract utilisent une approche basée sur deux passes
 
 ## Service
 
-- En France, HumaNum offre un service d’océrisation avec Abby fine reader 
+- En France, HumaNum offre un service d’océrisation avec Abby fine reader
 - [Tesseract](https://github.com/tesseract-ocr/tesseract) (open source) est un programme développé en C et en C++ disponible sous licence Apache v 2.0. Développé à partir de 1985 comme logiciel propriétaire par la société Hewlett-Packard, son code a été publié sous la forme de logiciel libre et open source en 2005, son développement est désormais sponsorisé par Google.
 - [Aletheia](http://www.primaresearch.org/tools) (avec Tesseract intégré)
 - [Ocropy](https://github.com/tmbdev/ocropy) est un projet open-source développé en Python et soutenu par Google qui utilisait initialement Tesseract comme moteur de reconnaissance mais qui a ensuite développé son propre outil.
 
 ## Références
 
-[Techniques et formats de conversion en mode texte. Bnf, pages professionnels](http://www.bnf.fr/fr/professionnels/numerisation_boite_outils/a.num_conversion_mode_texte.html)
-
-http://www.generation-nt.com/comparatif-logiciel-ocr-roc-abbyy-omnipage-nuance-readiris-finereader-paperport-irislink-article-975981-1.html
-
-http://www.er-tim.fr/sites/default/files/memoire_m2_Lecailliez_final_v1.00.pdf
+- [Techniques et formats de conversion en mode texte. Bnf, pages professionnels](http://www.bnf.fr/fr/professionnels/numerisation_boite_outils/a.num_conversion_mode_texte.html)
+- http://www.generation-nt.com/comparatif-logiciel-ocr-roc-abbyy-omnipage-nuance-readiris-finereader-paperport-irislink-article-975981-1.html
+- http://www.er-tim.fr/sites/default/files/memoire_m2_Lecailliez_final_v1.00.pdf

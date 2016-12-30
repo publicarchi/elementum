@@ -7,5 +7,3 @@
 - [You don’t know JavaScript](https://github.com/getify/You-Dont-Know-JS)
 - [Eloquent JavaScript](http://eloquentjavascript.net)
 - [Deviens un ninja avec Angular 2](https://books.ninja-squad.com/angular2)
-
-

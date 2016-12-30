@@ -2,7 +2,6 @@
 
 En XQuery comme avec tout autre langage, l’adoption d’un certain nombre de principes simples peut permettre à la fois d’augmenter la lisibilité du code que vous produisez, sa maintenabilité et sa portabilité.
 
-
 ## Être explicite
 
 Lorsque l’on passe du code en revue, on a besoin de pouvoir rapidement identifier :
@@ -208,7 +207,6 @@ En XQuery 3.0, l’emploi des Simple map operators peut parfois faciliter la lec
 
 
 ## Écrire des tests
-
 
 
 ## Sources

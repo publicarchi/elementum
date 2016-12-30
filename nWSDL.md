@@ -1,13 +1,11 @@
 ---
-title: note WSDL
-filename: nWSDL.md
 date: 2014-03-05
 version: 1.0
 ---
 
-# WSDL ou WADL
+# Note sur WSDL ou WADL
 
-imaginer une extension de xqDoc pour une doc en WSDL 2.0 ou WADL d’un service RESTXQ
+@todo imaginer une extension de xqDoc pour une doc en WSDL 2.0 ou WADL d’un service RESTXQ
 
 
 ## WSDL
@@ -57,8 +55,7 @@ WSDL 2.0 définit deux espaces de noms supplémentaires qui peuvent être emplo
 - un espace de nom d’extensions http://www.w3.org/ns/wsdl-extensions qui inclue les définitions de trois attributs : deux d’entre eux sont utilisés pour associer un hyperlien dans un document XML avec la description d’un service web, et le troisième pour décrire l’opération d’un web service comme sûre.
 
 
-Source
--------
+## Source
 
 - [Describe REST Web services with WSDL 2.0, IBM developerWorks, 2008](http://www.ibm.com/developerworks/webservices/library/ws-restwsdl/)
 - [Web Services Description Language (WSDL) Version 2.0 Part 0: Primer](http://www.w3.org/TR/2007/REC-wsdl20-primer-20070626/)
@@ -67,8 +64,8 @@ Source
 - http://bitworking.org/news/193/Do-we-need-WADL
 - http://www.w3.org/Submission/wadl
 
-Recommandations
---------
+## Recommandations
+
 - [Web Services Description Language (WSDL) Version 2.0 Part 0: Primer](http://www.w3.org/TR/wsdl20-primer/)
 - [Web Services Description Language (WSDL) Version 2.0 Part 1: Core Language](http://www.w3.org/TR/wsdl20)
 - [Web Services Description Language (WSDL) Version 2.0 Part 2: Adjuncts](http://www.w3.org/TR/wsdl20-adjuncts/)

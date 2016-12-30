@@ -1,6 +1,7 @@
+---
 author: Emmanuel Chateau
-name: nXHTML5.md
 date: 2014-06-27
+---
 
 # Note XHTML5
 

@@ -1,3 +1,9 @@
+---
+author: Emmanuel Château-Dutier
+since: 2016-03-20
+---
+
+
 # Programmation fonctionnelle
 
 XQuery et XSLT ont la qualité d’être des langages fonctionnels. Si la notion de programmation fonctionnelle a bénéficié d’un regain d’intérêt récemment on évoque plus habituellement les langages [Haskell](https://www.haskell.org/) ou [Lisp](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29). On peut également programmer de manière fonctionnelle avec [Elm](http://elm-lang.org/) ou [Clojurescript](https://github.com/clojure/clojurescript) deux langages qui se compilent en JavaScript.
@@ -38,4 +44,4 @@ Lisp un des premiers langages fonctionnels développé par John McCarty au MIT p
 - https://fr.wikipedia.org/wiki/Programmation_fonctionnelle
 - https://en.wikipedia.org/wiki/Functional_programming
 - Hughes, John. "Why Functional Programming Matters." In Research Topics in Functional Programming. Edited by D Turner. Addison-Wesley, 1990. Why Functional Programming Matters.
-- Backus, John. "Can Programming Be Liberated From the Von Neumann Style?: A Functional Style and Its Algebra of Programs." Commun. ACM 21, no. 8 (1978): doi:10.1145/359576.359579. http://doi.acm.org/10.1145/359576.359579.	
+- Backus, John. "Can Programming Be Liberated From the Von Neumann Style?: A Functional Style and Its Algebra of Programs." Commun. ACM 21, no. 8 (1978): doi:10.1145/359576.359579. http://doi.acm.org/10.1145/359576.359579.

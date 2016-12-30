@@ -1,4 +1,8 @@
-
+---
+title: Solutions pour la publication scientifique en Open access
+author: Emmanuel Château-Dutier
+since: 2016-01-14
+---
 # Solutions pour la publication scientifique en Open access
 
 ## Annotum

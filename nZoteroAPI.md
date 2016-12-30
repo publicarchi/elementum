@@ -29,7 +29,6 @@ api.zotero.org/users/87937/item/102472156?username=apitest&apiKey={apiKey}
 
 ## Sources
 
-
 - [Tutoriel API Zotero](http://www.ahp-numerique.fr/index.php?title=Tutoriel_API_Zotero)
 - [Programmation en PHP de l’API Zotero](http://alpha.ahp-numerique.fr/phpZotero/)
 - [Zotero Web API v3 (documentation)](https://www.zotero.org/support/dev/web_api/v3/start)

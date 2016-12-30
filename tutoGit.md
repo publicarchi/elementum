@@ -14,7 +14,7 @@ Pour apprendre l’utilisation de Git, nous allons travailler à la rédaction d
 
 # TP Création d’un fichier texte
 
-Dans un répertoire 'projet', commençons par créer un fichier texte intitulé 'texte-1.txt', ajoutons-y notre texte dans un éditeur et sauvons.
+Dans un répertoire `projet`, commençons par créer un fichier texte intitulé `texte-1.txt`, ajoutons-y notre texte dans un éditeur et sauvons.
 
 ```bash
   mkdir projet
@@ -22,7 +22,7 @@ Dans un répertoire 'projet', commençons par créer un fichier texte intitulé 
   vim texte-1.txt
 ```
 
-Rmq : Pour sauver et quitter dans vim 'ESC puis :wq'
+Rmq : Pour sauver et quitter dans vim `ESC puis :wq`
 
 ---
 
@@ -77,7 +77,7 @@ Super ! nous disposons maintenant d’un projet Git. Un tel projet peut être c
 2. Une _zone d’indexation (Staging Area)_ où vous allez lister les changements que vous faîtes au répertoire de travail.
 3. Un _répertoire (Repository)_ où Git stocke de manière permanente ces changements en tant que versions différentes du projet.
 
-Le workflow de Git consiste à éditer des fichers dans le répertoire de travail, ensuite à les ajouter à la zone d’indexation, enfin de les enregistrer dans le répertoire Git. Avec Git, on sauve les changements avec un _commit_. C’est ce que nous allons voir plus en détail.
+Le workflow de Git consiste à éditer des fichiers dans le répertoire de travail, ensuite à les ajouter à la zone d’indexation, enfin de les enregistrer dans le répertoire Git. Avec Git, on sauve les changements avec un _commit_. C’est ce que nous allons voir plus en détail.
 
 ---
 
@@ -111,7 +111,7 @@ name: add
 
 # Suivre des fichiers
 
-Pour commencer à suivre le fichier `texte-1.txt`, celui-ci doit d’abord être ajouter à la zone d’indexation (staging area).
+Pour commencer à suivre le fichier `texte-1.txt`, celui-ci doit d’abord être ajouter à la zone d’indexation (_staging area_).
 
 On peut l’ajouter avec la commande suivante :
 
@@ -125,7 +125,7 @@ Où _nom-fichier_ est le chemin du fichier que vous ajoutez (par exemple `texte-
 
 # TP Suivre des fichiers
 
-1. Ajoutez `texte-1.txt` à la zone d’indeaction de Git. Souvenez-vous que vous allez devoir identifier le fichier par son nom.
+1. Ajoutez `texte-1.txt` à la zone d’indexation de Git. Souvenez-vous que vous allez devoir identifier le fichier par son nom.
 
 2. Vérifiez le statut du projet dans Git.
 Dans la sortie, notez que Git indique maintenant les changements à commiter avec "new file: texte-1.txt"
@@ -152,9 +152,9 @@ Changes to be committed:
 
 # Visualiser les différences
 
-Bon travail ! Maintenant que vous savez comment ajouter des fichers à la zone d’indexation, voyons comment visualiser les modifications.
+Bon travail ! Maintenant que vous savez comment ajouter des fichiers à la zone d’indexation, voyons comment visualiser les modifications.
 
-Imaginons que vous fassiez des modifications dans votre fichier, par exemple en tappant une ligne supplémentaire après que ce fichier soit suit. On peut désormais visualiser les différences entre le répertoire de travail (working directory) et la zone d’indexation (staging area) avec la commande suivante :
+Imaginons que vous fassiez des modifications dans votre fichier, par exemple en tapant une ligne supplémentaire après que ce fichier soit suit. On peut désormais visualiser les différences entre le répertoire de travail (_working directory_) et la zone d’indexation (_staging area_) avec la commande suivante :
 
 ```bash
   git diff filename
@@ -169,7 +169,7 @@ Imaginons que vous fassiez des modifications dans votre fichier, par exemple en 
 3. Depuis le terminal, utilisez cette nouvelle commande pour visualiser les différences entre le répertoire de travail et la zone d’indexation.
 4. Remarquez la sortie
 
-!! Pour quitter le mode diff tappez `q` sur votre clavier. Par défaut, Git utilise l’éditeur Vim.
+!! Pour quitter le mode diff tapez `q` sur votre clavier. Par défaut, Git utilise l’éditeur Vim.
 
 5. Ajoutez les changements à la zone d’indexation de Git. Souvenez-vous que vous devez identifier le fichier par son nom.
 [Coup de pouce](#add)
@@ -193,7 +193,7 @@ index e69de29..c02977f 100644
 
 Comme on vous l’indique en blanc, le fichier est dans la zone d’indexation.
 
-Les changements au fichier sont markés précédé d’un + et apparaissent en vert.
+Les changements au fichier sont marqués précédé d’un `+` et apparaissent en vert.
 
 ---
 
@@ -210,13 +210,13 @@ Pour cela, on utilise la commande `git commit`. Il faut lui ajouter l’option `
 Par convention, les messages de commit doivent être
 - entre guillemets
 - rédigés au présent
-- brefs (moins de 50 charactères lorsque l’on utilise l’option `-m`)
+- brefs (moins de 50 caractères lorsque l’on utilise l’option `-m`)
 
 ---
 
 # Création d’un premier commit
 
-1. Créez maintennant votre premier commit ! Dans le terminal tappez cette commande avec un message de commit. Ce message doit décrire les modifications que vous enregistrez.
+1. Créez maintennant votre premier commit ! Dans le terminal tapez cette commande avec un message de commit. Ce message doit décrire les modifications que vous enregistrez.
 
 Si vous rencontrez des difficultés à trouver le message, pensez à la manière dont le projet a évolué depuis son commencement.
 
@@ -266,10 +266,10 @@ Git est un système de contrôle de version
 
 Vous pouvez employer les commandes Git pour garder la trace des changements réalisés dans un projet
 - `git init` créée un nouveau répertoire Git
-- `git status` inspecte le contenu du répertoire de travail (working directory) et de la zone d’indexation (staging area)
-- `git add` ajoute des fichiers du repertoire de travail à la zone d’indexation (staging area)
-- `git diff` montre la différence entre le répetoire de travail (working directory) et la zone d’indexation (staging area)
-- `git commit` stocke de manière permanente les modifications de fichiers du répertoire intervenues dans la zone d’indexation (staging area)
+- `git status` inspecte le contenu du répertoire de travail (_working directory_) et de la zone d’indexation (_staging area_)
+- `git add` ajoute des fichiers du répertoire de travail à la zone d’indexation (_staging area_)
+- `git diff` montre la différence entre le répetoire de travail (_working directory_) et la zone d’indexation (_staging area_)
+- `git commit` stocke de manière permanente les modifications de fichiers du répertoire intervenues dans la zone d’indexation (_staging area_)
 - `git log` affiche la liste des commits précédents
 
 

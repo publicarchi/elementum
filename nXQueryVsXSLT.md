@@ -1,9 +1,5 @@
-nXQueryVsXSLT.md
-
 # Différences entre XQuery et XSLT
 
-
-##
 
 ## Traitement par défaut
 
