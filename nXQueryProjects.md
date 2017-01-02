@@ -72,6 +72,30 @@ power of XQuery’s FLWOR expressions, directly usable as an expression in Pytho
 
 complex path expressions, etc.
 
+### Fold
+
+https://github.com/xokomola/fold
+
+HTTP request routing library for BaseX
+
+
+### XQuery Markdown Parser
+
+https://github.com/wolfgangmm/exist-markdown
+
+https://github.com/xokomola/xq-markdown
+
+
+### Origami
+
+https://github.com/xokomola/origami
+
+Templating library for XQuery
+
+
+### Test unitaires
+
+http://docs.basex.org/wiki/Unit_Module
 
 
 ## Matériel pédagogique
