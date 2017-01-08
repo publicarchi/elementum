@@ -40,6 +40,10 @@ https://data.culturecommunication.gouv.fr/pages/home/
 
 [DBPedia](http://wiki.dbpedia.org)
 
+## Portails d’Open data institutionnels
+
+https://www.europeandataportal.eu/data/fr/group/education-culture-and-sport
+
 ## Canada
 
 https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-sur-les-oeuvres-de-la-collection-du-musee-des-beaux-arts-de-montreal

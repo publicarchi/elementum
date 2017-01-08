@@ -1,8 +1,17 @@
 ---
 author: Emmanuel Château-Dutier
+since: 2016-12-30
+version: 0.2
+tags: ontologies, modélisation, bibliographie
 ---
 
 # Ontologies académiques
+
+## Généralités
+
+A Comparative Analysis of Bibliographic Ontologies: Implications for Digital Humanities, http://dh2016.adho.org/abstracts/369
+
+## Ontologies académiques et bibliographiques
 
 ### The SPAR Ontologies
 
