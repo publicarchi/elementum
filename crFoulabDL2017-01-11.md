@@ -113,3 +113,10 @@ Nombreux conseils sur la mise en œuvre et le matériel nécessaire.
 
 aller voir http://karpathy.github.io/neuralnets/
 
+https://openai.com/about/
+
+https://www.quora.com/What-are-the-best-ways-to-pick-up-Deep-Learning-skills-as-an-engineer
+
+https://openai.com/requests-for-research/
+
+https://ycr.org
