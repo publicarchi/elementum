@@ -31,3 +31,85 @@ Batch normalization. A montré que meilleure optimization et régularisation dan
 
 Normaliser les entrée accélère l’entraînement. Elle est appliquée lors de la pre-activation. cf. dia.
 
+## Computer vision (lecture)
+
+Andrej Karpathy
+
+Considérer les images, la vidéo, etc. en nDimension
+
+Hubel et Wiesel, 1959, 1962, 1968 expérimentations pour déterminer ce que pouvait voir un chat.
+
+Neucognitron, Fukushima 1980. Pas de backpropagation même si assez proche des réseaux neuronaux.
+
+LeCun 90s. Gradient-based learning applied to document recognition, 1998. Alors back propagation en plus de la supervision. Circonvolution modèle. LeNet-5
+
+2011, beaucoup de gens au courants de ces modèles mais pas traités à l’échelle. Ne fonctionnaient pas encore bien. Détection de voitures dans les arbres à 99% !!!
+
+Souvent rechercher extraction de features, implémenter chacun de manière différente. De l’espace pour amélioration.
+
+Krizhevsky et Sutskever, Hinton, 2012. ImageNet Classification with Deep Convolutional Neural Networks, 2012. première fois passe à l’échelle avec les idées de LeCun.
+
+Revolution of Depth, passe de 3.57 courts ResNet, 22 couches Google net, etc.
+
+http://karpathy.github.io ConvNet et ImageNet. TLDR Human accuracy is somewhere 2-5% en fonction du temps dont dispose ! 
+
+Réduction de complexité et très bonne qualité des résultats. Transfère Learning fonctionne très bien. Reconnaissance train, transférables.
+
+https://keras.io pour utiliser ces résultats.
+
+ConvNets partout, Google Photo Search, Goddfellow et al 2014. Face versification Taignman et al. Whale récognition Kaggle Challenge. WeveNet and den Oord et al, 2016. Galawy Challenge Dielman.
+
+Atari Game playing, AlphaGo, etc. Convents pour agri.
+
+Usage en art, DeepDream, reddit.com/r/deepdream/
+
+NeuralStyle Gatys et al 2015
+
+Deep Neurol Networks Rival the Representation of Primate IT Cortex for Cor Visual Objet Recognition. Adieu et al, 2014.
+
+Création d’autant de plan d’activation que de couches d’analyse.
+
+Pooling layer fonctionne sur plusieurs taille d’image.
+
+ConvNetJS CIFAR-10
+
+http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html￼
+
+Yosinski #deepvis
+
+https://github.com/yosinski/deep-visualization-toolbox
+
+http://yosinski.com/deepvis
+
+ImageNet Challenge
+
+AlexNet 2012
+
+ZFNet 2013, basé sur AlexNet. https://www.clarifai.com
+
+VGGNet 2014, meilleur modèle aujourd’hui. Très consommateur de mémoire. Pas le gagnant mais une architecture simple.
+
+2014 GoogLeNet Szegedy et al. plus efficace. Moins de paramètres, car beaucoup moins de couches connectées. Optimiser pour la performance, même si moins élégant que VGGNet.
+
+ResNet, 2015 He et al, introduction de ? Ajout de couches, n’apporte pas forcément de meilleures performances. Un problème d’optimisation dans ce genre d’architecture.
+
+Torch publié par FaceBook. Une des raisons pour laquelle champs évolue très rapidement, très lié au fait que les gens partagent leur code. 
+
+arxiv-sanity.com
+
+apprentissage pour recommandations de papiers !
+
+Précisions sur l’acquisition. NVIDIA DIGITS DevBox Titan X GPUs
+
+https://developer.nvidia.com/devbox
+
+Construire sa machine mais 
+
+Cloud GPUs
+
+Plupart des choses adressables avec Keras. Sinon TensorFlow en second lieu.
+
+Nombreux conseils sur la mise en œuvre et le matériel nécessaire.
+
+aller voir http://karpathy.github.io/neuralnets/
+
