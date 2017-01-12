@@ -98,6 +98,12 @@ This taxonomy of digital research activities in the humanities has been develope
 
 ## Divers
 
+### Open bibliography 
+
+http://okfnlabs.org/bibjson/
+
+http://journal.code4lib.org/articles/7949
+
 http://linkeduniversities.org/lu/index.php/vocabularies/
 
 https://linkededucation.wordpress.com/data-models/schemas/
