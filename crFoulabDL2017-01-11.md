@@ -1,6 +1,7 @@
 ---
 author: Emmanuel Château-Dutier
 since: 2017-01-10
+tags: deep learning, computer vision
 ---
 
 # Notes Foulab, Deep Learning, 11 janvier 2017
