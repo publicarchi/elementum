@@ -10,6 +10,8 @@ https://github.com/tensorflow
 
 https://www.tensorflow.org
 
+Guide
+
 https://github.com/sherrym/tf-tutorial
 
 TensorFlow est une bibliothèque de machine learning développée par Google mise à disposition en septembre. Conçu pour pourvoir fonctionner dans différents contextes application.
@@ -47,3 +49,10 @@ Objectif : avec suffisamment d’échantillon tester ce que sont..
 
 https://try.jupyter.org
 
+http://www.tensorflowbook.com
+
+
+
+NLTK python
+
+http://www.nltk.org
