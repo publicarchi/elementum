@@ -16,6 +16,14 @@ http://heather.cs.ucdavis.edu/matloff/public_html/probstatbook.html
 
 http://www.mlyearning.org
 
+http://blog.rolffredheim.com
+
+http://www.dataschool.io/linear-regression-in-python/
+
+https://github.com/aymericdamien/TensorFlow-Examples
+
+https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/README.md
+
 ## Exemples de visualisations
 
 http://www.davidkelly.ie/projects/personae/

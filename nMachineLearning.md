@@ -1,3 +1,10 @@
+---
+author: Emmanuel Château-Dutier
+since: 2017-01-18
+tags: machine learning
+
+---
+
 # Divers Machine learning
 
 http://www.holehouse.org/mlclass/
@@ -14,7 +21,7 @@ http://www.asimovinstitute.org/neural-network-zoo/?utm_content=bufferb0b5f&utm_m
 
 ## Terminologie
 
-http://www.cse.unsw.edu.au/~billw/mldict.html
+<http://www.cse.unsw.edu.au/~billw/mldict.html>
 
 http://www.kdnuggets.com/2016/10/deep-learning-key-terms-explained.html
 

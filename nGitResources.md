@@ -97,8 +97,9 @@ Tutoriaux en anglais sur les différents modèles de Workflows possibles en trav
 
 Un système de branches pour le développement.
 
-
 ### [Section "The Workflow" du Git user manual](https://www.kernel.org/pub/software/scm/git/docs/user-manual.html#the-workflow)
+
+### [Getting Things Done with GitHub](http://www.ianbicking.org/blog/2014/03/use-github-issues-to-organize-a-project.html)
 
 
 ### [The illustrated guide to recover commits](http://www.programblings.com/2008/06/07/the-illustrated-guide-to-recovering-lost-commits-with-git/)
@@ -141,3 +142,10 @@ Outils conçus sur le modèle du protocole Git
 - [Prose](http://prose.io)
 - [GrimoireLab](http://grimoirelab.github.io)
 - [HuBoard](https://huboard.com)
+- [Waffle.io](https://waffle.io)
+- [OverV.io](https://overv.io)
+- [ZenHub](')https://www.zenhub.com)
+
+## Automatisations
+
+- [Hubot](https://hubot.github.com)
