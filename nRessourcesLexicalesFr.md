@@ -15,3 +15,7 @@ Le WOLF (Wordnet Libre du Français) est une ressource lexicale sémantique (wor
 http://blog.onyme.com/etude-de-lontologie-wordnet-libre-du-francais-wolf/
 
 http://www.aclweb.org/anthology/W14-6704
+
+
+
+http://www.cnrtl.fr/outils/
