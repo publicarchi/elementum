@@ -1,3 +1,4 @@
+
 BaseX Talk, discussion intéressantes
 ==========
 
@@ -18,6 +19,8 @@ recours au besoin.
 [Request Module](http://docs.basex.org/wiki/Request_Module)
 
 [Fetch Module](http://docs.basex.org/wiki/Fetch_Module)
+
+[Content-negociation with BaseX](https://www.mail-archive.com/basex-talk@mailman.uni-konstanz.de/msg08712.html)
 
 
 ## XML-TEI and XSLT
