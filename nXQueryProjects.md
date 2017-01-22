@@ -2,6 +2,22 @@
 
 Une sélection de projets XQuery intéressants.
 
+## EXPath
+
+http://expath.org
+
+https://github.com/exquery
+
+## EXQuery
+
+http://www.exquery.org/
+
+https://github.com/exquery
+
+## XQueryDoc
+
+https://github.com/xquery/xquerydoc
+
 
 ### Un client Git en XQuery
 
