@@ -10,6 +10,8 @@ https://www.rechercheisidore.fr/api
 
 https://orcid.org/organizations/integrators/API
 
+ArtStor/SharedShelf APIs http://internal.artstor.org/shared-shelf/s-html/features.shtml
+
 ## API muséales
 
 ### Répertoires

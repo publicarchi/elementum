@@ -13,3 +13,5 @@ https://github.com/kermitt2/grobid
 ## Pas forcément TEI
 
 https://iscpif.fr/gargantext/your-first-map/
+
+http://celestialteapot.com/pathology/

@@ -1,12 +1,15 @@
 ---
 author: Emmanuel Château-Dutier
 since: 2016-03-20
+tags: programmation, programmation fonctionnelle
 ---
 
 
 # Programmation fonctionnelle
 
 XQuery et XSLT ont la qualité d’être des langages fonctionnels. Si la notion de programmation fonctionnelle a bénéficié d’un regain d’intérêt récemment on évoque plus habituellement les langages [Haskell](https://www.haskell.org/) ou [Lisp](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29). On peut également programmer de manière fonctionnelle avec [Elm](http://elm-lang.org/) ou [Clojurescript](https://github.com/clojure/clojurescript) deux langages qui se compilent en JavaScript.
+
+Dans certains langages, la programmation fonctionnelle est surtout une manière d’écrire du code informatique dans laquelle on met l’accent sur l’écriture de fonction comme blocks constitutifs.
 
 ## Notion de fonction
 

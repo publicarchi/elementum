@@ -44,6 +44,8 @@ https://data.culturecommunication.gouv.fr/pages/home/
 
 https://www.europeandataportal.eu/data/fr/group/education-culture-and-sport
 
+http://statsandstories.canadacouncil.ca
+
 ## Canada
 
 https://www.donneesquebec.ca/recherche/fr/dataset/base-de-donnees-sur-les-oeuvres-de-la-collection-du-musee-des-beaux-arts-de-montreal
