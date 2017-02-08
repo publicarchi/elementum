@@ -8,6 +8,10 @@
 
 Timeline, chronologies.
 
+## Morphing geojson polygons into rectangles
+
+https://github.com/sebastian-meier/d3.geo2rect
+
 ## TimelineJS
 
 [TimelineJS](http://timeline.knightlab.com)
