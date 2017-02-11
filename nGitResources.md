@@ -152,3 +152,5 @@ Outils conçus sur le modèle du protocole Git
 ## Automatisations
 
 - [Hubot](https://hubot.github.com)
+- [Travis](https://travis-ci.org)
+
