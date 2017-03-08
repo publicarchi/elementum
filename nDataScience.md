@@ -4,6 +4,8 @@
 
 https://www.databasic.io/en/
 
+http://students.brown.edu/seeing-theory/
+
 https://speakerdeck.com/dave/introduction-to-interactive-data-visualisation
 
 https://bigdatauniversity.com/courses/data-science-101/
@@ -23,6 +25,8 @@ http://www.dataschool.io/linear-regression-in-python/
 https://github.com/aymericdamien/TensorFlow-Examples
 
 https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/README.md
+
+http://www.datasciencecentral.com/profiles/blogs/tutorial-foundations-of-machine-learning-and-data-science-for
 
 ## Exemples de visualisations
 

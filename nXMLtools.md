@@ -8,6 +8,20 @@ version: 0.1
 
 https://github.com/sergeche/xmlview
 
+https://github.com/AlainCouthures/xsltforms
+
+https://github.com/greendrake/jsxml
+
+https://github.com/t-davies/magicxml
+
+https://github.com/moovweb/tritium, http://www.tritium.io
+
+## Transformations
+
+https://github.com/BoyCook/XSLTJS
+
+https://github.com/vicmortelmans/xslt-in-the-browser
+
 https://github.com/sergeche/node-libxslt
 
 https://github.com/albanm/node-libxslt
@@ -16,14 +30,18 @@ https://github.com/albanm/node-libxml-xsd
 
 https://github.com/albanm/libxmljs
 
-https://github.com/AlainCouthures/xsltforms
+## Validation
 
-https://github.com/greendrake/jsxml
+http://www.thaiopensource.com/relaxng/jing.html
 
-https://github.com/t-davies/magicxml
+[RelaxNG validator in javascript](http://debeissat.nicolas.free.fr/relaxng.php)
 
-https://github.com/BoyCook/XSLTJS
+## Correcteurs
 
-https://github.com/moovweb/tritium, http://www.tritium.io
+http://jtidy.sourceforge.net
 
-https://github.com/vicmortelmans/xslt-in-the-browser
+https://github.com/ndmitchell/tagsoup
+
+## Pages
+
+http://relaxng.org

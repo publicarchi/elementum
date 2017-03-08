@@ -1,21 +1,55 @@
 # Sélection de framework CSS minimalistes responsive
 
+## Minimalistes
+
 http://getskeleton.com
+
+http://www.fitgrd.com
+
+http://furtive.co
+
+http://getchopstick.com
+
+https://picturepan2.github.io/spectre
+
+http://yegor256.github.io/tacit/
+
+https://milligram.github.io (avec compilation)
+
+http://cardinalcss.com (Less)
+
+http://concisecss.com (npm)
+
+http://siimple.juanes.xyz (npm)
+
+https://picnicss.com (npm)
+
+http://basscss.com
+
+http://muellergridsystem.com
+
+http://getbase.org
+
+http://daneden.github.io/Toast/
+
+https://chalarangelo.github.io/mini.css/
+
+http://blazecss.com
 
 https://imperavi.com/kube/
 
-http://www.fitgrd.com
+https://imperavi.com/kube/
+
+http://daneden.github.io/Toast/
 
 
 ## Typographiques
 
-http://devinhunt.github.io/typebase.css/
+http://devinhunt.github.io/typebase.css/ ++
 
 https://demo.sassline.com ++
 
 https://github.com/jakegiltsoff/typographyontheweb
-
-http://www.basscss.com
 
 http://corysimmons.github.io/typographic/
 
@@ -24,8 +58,6 @@ http://atatonic.timbenniks.nl
 http://stephanecurzi.me/baselinecss.2009/
 
 http://www.vcarrer.com/2009/06/1-line-css-grid-framework.html
-
-http://daneden.github.io/Toast/
 
 http://typeplate.com/demo.html
 
@@ -38,11 +70,17 @@ http://getbase.org
 
 http://purecss.io
 
+http://bulma.io
+
+https://getmdl.io
+
+https://getuikit.com
+
+https://www.muicss.com
+
 http://materializecss.com
 
 http://semantic-ui.com
-
-http://purecss.io
 
 http://metroui.org.ua
 
@@ -84,6 +122,8 @@ https://vaadin.com/home (payant)
 
 ## tools
 
+http://necolas.github.io/normalize.css/
+
 http://www.modularscale.com
 
 http://ffffallback.com
@@ -95,3 +135,7 @@ http://fontpair.co
 http://workmanship.io
 
 https://typographyontheweb.com
+
+## Divers
+
+https://material.angular.io

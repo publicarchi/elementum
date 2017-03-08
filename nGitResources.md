@@ -149,8 +149,12 @@ Outils conçus sur le modèle du protocole Git
 - https://government.github.com
 - https://github.com/integrations/apiary
 
-## Automatisations
+## Automatisations et Continuous delivery
 
 - [Hubot](https://hubot.github.com)
 - [Travis](https://travis-ci.org)
+- [Drone](https://github.com/drone/drone)
+- [Wercker](http://www.wercker.com)
+- [Bamboo](https://fr.atlassian.com/software/bamboo)
+- [Jenkins](https://jenkins.io)
 

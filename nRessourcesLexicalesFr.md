@@ -6,6 +6,16 @@ tags: tal
 
 # Ressources utiles pour le traitement automatique de la langue française
 
+## FNS SERMO
+
+Neufchâtel projet linguistique sur des corpus de sermons de la réforme. Travail sur des imprimés.
+
+https://libra.unine.ch/Projets/Projets-en-cours/29276
+
+http://www.atilf.fr/LGeRM/
+
+Outils Presto université de ENS Lyon
+
 ## WOLF (Wordnet Libre du Français)
 
 Le WOLF (Wordnet Libre du Français) est une ressource lexicale sémantique (wordnet) libre pour le français
