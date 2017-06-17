@@ -14,3 +14,5 @@
 
 [Easy form generator](https://github.com/MacKentoch/easyFormGenerator)
 
+http://angular-js.in/angular-dynamic-forms/
+

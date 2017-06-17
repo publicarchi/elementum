@@ -28,6 +28,12 @@ https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/README
 
 http://www.datasciencecentral.com/profiles/blogs/tutorial-foundations-of-machine-learning-and-data-science-for
 
+https://deeplearning4j.org/overview
+
+https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0
+
+https://medium.freecodecamp.com/the-best-data-science-courses-on-the-internet-ranked-by-your-reviews-6dc5b910ea40
+
 ## Exemples de visualisations
 
 http://www.davidkelly.ie/projects/personae/

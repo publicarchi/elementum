@@ -427,3 +427,8 @@ http://callmecavs.com/layzr.js/
 
 ### readable
 http://mds.sh/readable/
+
+## Avant/après
+
+[JQuery Before/After plugin](http://pageflow.io/en/features/#1476871651305-c9611034-dd19)
+

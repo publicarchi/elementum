@@ -1,72 +1,96 @@
 # Outils de visualisation
 
-## D3.js
+Cours
 
-## Vis.js
+http://d3indepth.com
+
+### D3.js
+
+### Vis.js
 
 [Vis.js](http://visjs.org) est une bibliothèque de visualisation dynamique de données dans le navigateur.
 
 Timeline, chronologies.
 
-## Morphing geojson polygons into rectangles
+### Morphing geojson polygons into rectangles
 
 https://github.com/sebastian-meier/d3.geo2rect
 
-## TimelineJS
+### TimelineJS
 
 [TimelineJS](http://timeline.knightlab.com)
 
 
-## Juxtapose
+### Juxtapose
 
 [Juxtapose](https://juxtapose.knightlab.com)
 
 
-## StoryMap
+### StoryMap
 
 [StoryMap](https://storymap.knightlab.com)
 
 
-## SoundCite
+### SoundCite
 
 [SoundCite](http://soundcite.knightlab.com)
 
-## Picture Story
+### Picture Story
 
 [Picture Story](http://picturestory.knightlab.com)
 
-## Polymaps
+### Polymaps
 
 http://polymaps.org
 
-## chartjs
+### chartjs
 
 http://www.chartjs.org
 
-## Raphaël
+### Raphaël
 
-## Sorttable, dragtable
+### Sorttable, dragtable
 
 http://www.kryogenix.org/code/browser/sorttable/
 
 http://www.danvk.org/wp/dragtable/
 
-## Shortcuts.js
+### Shortcuts.js
 
 http://www.openjs.com/scripts/events/keyboard_shortcuts/
 
-## Clusterize
+### Clusterize
 
 http://nexts.github.io/Clusterize.js/
 
-## Ploty.js
+### Ploty.js
 
 https://plot.ly/javascript/
 
-## Textures.js
+### Textures.js
 
 http://riccardoscalco.github.io/textures/
 
-## TNT Tree
+### TNT Tree
 
 http://tntvis.github.io/tnt.tree/examples/index.html
+
+## Formations
+
+https://d3plus.org
+
+https://medium.freecodecamp.com/an-overview-of-every-data-visualization-course-on-the-internet-9ccf24ea9c9b
+
+http://alignedleft.com/tutorials/d3/
+
+## Timelines
+
+http://bl.ocks.org/bunkat/1962173
+
+https://gist.github.com/slojo404/2416297
+
+http://square.github.io/cubism/
+
+https://bl.ocks.org/mbostock/34f08d5e11952a80609169b7917d4172
+
+https://developers.google.com/chart/interactive/docs/datesandtimes

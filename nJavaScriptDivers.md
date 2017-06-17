@@ -8,6 +8,8 @@
 - [Eloquent JavaScript](http://eloquentjavascript.net)
 - [Deviens un ninja avec Angular 2](https://books.ninja-squad.com/angular2)
 - http://jstherightway.org
+- http://substance.io
+- https://ina-foss.github.io/amalia.js/
 
 ## outils
 

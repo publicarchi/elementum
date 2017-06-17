@@ -108,6 +108,14 @@ https://github.com/xokomola/origami
 
 Templating library for XQuery
 
+### Thumbnailator
+
+https://github.com/expkg-zone58/ex-thumbnailator#tasks
+
+## Module SPARQL pour eXist
+
+https://github.com/ljo/exist-sparql
+
 
 ### Test unitaires
 

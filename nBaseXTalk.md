@@ -115,3 +115,17 @@ value='attachment;filename="{$filename}"'/>
 </restxq:response>
 };
 ```
+
+## Citation
+
+Thanks for your question. Here are the texts that I can recommend as references:
+
+• General information on BaseX (storage, query processor): Storing and
+Querying Large XML Instances, Christian Grün (my thesis)
+• XQuery Update: Efficient Structural Bulk Updates on the
+Pre/Dist/Size XML Encoding, Lukas Kircher et al.
+• XQuery, Function Inlining: Function Inlining in XQuery 3.0
+Optimization, Leonard Wörteler et al.
+• Always possible as well: The web site ([http://basex.org](http://basex.org/)).
+
+http://basex.org/about-us/publications/

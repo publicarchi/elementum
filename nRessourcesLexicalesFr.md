@@ -34,8 +34,27 @@ Stanford CoreNLP for French texts
 
 voir aussi http://www.nltk.org/api/nltk.stem.html#module-nltk.stem.snowball qui prend en charge le français
 
+## Alix
 
+http://obvil.lip6.fr/alix/
+
+https://github.com/oeuvres/Alix
 
 Maybe with TreeTagger ? I haven't try but this app can work in french
 [http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
 [http://txm.sourceforge.net/installtreetagger_fr.html](http://txm.sourceforge.net/installtreetagger_fr.html)
+
+## Tapor
+
+http://tapor.ca@
+
+## DériF (Dérivation en Français)
+
+- Last updated: 2013-01-29
+- Site: [http://www.cnrtl.fr/outils/DeriF/](http://www.cnrtl.fr/outils/DeriF/)
+
+DériF (Dérivation en Français) is a free, web based morphological analyzer for French. It lemmatizes a text and labels each lemma, out of context, with a grammatical category (noun, verb, adjective, etc.).
+
+## Corpus écrits
+
+http://explorationdecorpus.corpusecrits.huma-num.fr

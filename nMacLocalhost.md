@@ -34,13 +34,13 @@ whoami # afficher son nom d’utilisateur
 On créer ensuite un fichier de configuration
 
 ```bash
-cs /etc/apache2/users # aller dans le répertoire de configuration d’Apache
+cd /etc/apache2/users # aller dans le répertoire de configuration d’Apache
 vim username.conf # remplacez `username` par votre nom utilisateur
 ```
 
 On entre dans ce fichier la configuration du répertoire, et un renseigne la configuration du répertoire en remplaçant `username` par son nom d’utilisateur mac.
 
-```
+```xml
 <Directory "/Users/username/Sites/">
    AllowOverride All
    Options Indexes MultiViews FollowSymLinks
