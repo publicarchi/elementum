@@ -34,6 +34,8 @@ https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-inte
 
 https://medium.freecodecamp.com/the-best-data-science-courses-on-the-internet-ranked-by-your-reviews-6dc5b910ea40
 
+https://hackernoon.com/minimalistic-learning-path-to-become-a-data-scientist-c0a4f614bd09
+
 ## Exemples de visualisations
 
 http://www.davidkelly.ie/projects/personae/

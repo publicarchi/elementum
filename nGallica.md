@@ -85,3 +85,23 @@ From a technical standpoint, in data.bnf.fr the decision was made to locally ext
 ## Références
 
 http://dcpapers.dublincore.org/pubs/article/view/3704
+
+http://2007.jres.org/planning/pdf/163.pdf
+
+<https://medium.com/@seeksanusername/astuce1-récupérer-de-la-hd-sur-gallica-bef0a6cc7f89>
+
+ex : http://gallica.bnf.fr//iiif/ark:/12148/bpt6k1047050b/f291/full/3000/0/native.png
+
+ex : http://gallica.bnf.fr//iiif/ark:/12148/bpt6k1047050b/f291/full/full/0/native.png
+
+http://gallica.bnf.fr/blog/24032016/apprenez-lire-les-url-de-gallica
+
+https://fr.wikisource.org/wiki/Wikisource:Gallica
+
+http://wikirider.blogspot.ca/2014/04/telechargez-le-contenu-de-gallica-en.html
+
+https://gitorious.org/gallica-downloader/gallica-downloader/source/master
+
+https://prelia.hypotheses.org/441
+
+https://github.com/Dorialexander/Pyllica
