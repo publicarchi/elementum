@@ -112,6 +112,10 @@ Templating library for XQuery
 
 https://github.com/expkg-zone58/ex-thumbnailator#tasks
 
+### Simple StatsXQ
+
+https://github.com/timathom/simple-statsxq
+
 ## Module SPARQL pour eXist
 
 https://github.com/ljo/exist-sparql

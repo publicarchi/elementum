@@ -14,3 +14,19 @@
 ## outils
 
 http://intercoolerjs.org
+
+## Graphiques avec D3js
+
+### [greuler](https://github.com/mauriciopoppe/greuler)
+
+graph theory visualizations
+
+http://mauriciopoppe.github.io/greuler/#/
+
+### Function-plot
+
+2d function plotter on steroids!
+
+http://mauriciopoppe.github.io/function-plot/
+
+https://github.com/mauriciopoppe
