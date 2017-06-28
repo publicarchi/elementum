@@ -6,6 +6,10 @@ http://d3indepth.com
 
 ### D3.js
 
+### Candela 
+
+https://candela.readthedocs.io/en/latest/components/geo.html
+
 ### Vis.js
 
 [Vis.js](http://visjs.org) est une bibliothèque de visualisation dynamique de données dans le navigateur.

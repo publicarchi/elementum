@@ -15,6 +15,8 @@
 
 http://intercoolerjs.org
 
+http://paperjs.org
+
 ## Graphiques avec D3js
 
 ### [greuler](https://github.com/mauriciopoppe/greuler)

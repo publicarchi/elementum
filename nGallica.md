@@ -92,7 +92,7 @@ http://2007.jres.org/planning/pdf/163.pdf
 
 ex : http://gallica.bnf.fr//iiif/ark:/12148/bpt6k1047050b/f291/full/3000/0/native.png
 
-ex : http://gallica.bnf.fr//iiif/ark:/12148/bpt6k1047050b/f291/full/full/0/native.png
+ex : http://gallica.bnf.fr/iiif/ark:/12148/bpt6k1047050b/f291/full/full/0/native.png
 
 http://gallica.bnf.fr/blog/24032016/apprenez-lire-les-url-de-gallica
 
