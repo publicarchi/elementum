@@ -12,6 +12,8 @@ https://bigdatauniversity.com/courses/data-science-101/
 
 https://nnlm.gov/class/data-science-101-introduction-librarians/6502
 
+https://github.com/nzakas/computer-science-in-javascript
+
 ## Cours
 
 http://heather.cs.ucdavis.edu/matloff/public_html/probstatbook.html

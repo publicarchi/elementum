@@ -100,10 +100,10 @@ ex. HTTP/1.0 200 OK
 Ce statut fournit la version de HTTP utilisée par le serveur, le statut de la réponse sous forme numérique, le statut de la réponse sous forme de texte.
 Il existe cinq classes de statuts :
 - 1xx : Informations		pas utilisé en HTTP/1.0, employée avec HTTP/1.1
-- 2xx : Succès			requête traitée avec succès
-- 3xx : Redirection		redirection. La requête n’a pas été trouvée mais on sait où elle est
-- 4xx : Erreur client		requête incorrecte (par exemple erreur de syntaxe)
-- 5xx : Erreur serveur	requête correcte mais non satisfaite (problème interne au serveur, pas encore implémenté, etc.)
+ - 2xx : Succès		requête traitée avec succès
+  - 3xx : Redirectionredirection. La requête n’a pas été trouvée mais on sait où elle est
+  - 4xx : Erreur clientrequête incorrecte (par exemple erreur de syntaxe)
+ - 5xx : Erreur serveurrequête correcte mais non satisfaite (problème interne au serveur, pas encore implémenté, etc.)
 
 ### Les caches
 
@@ -315,6 +315,12 @@ Entrant et sortant se réfère aux chemins de la demande et de la réponse pour 
 Aller plus loin
 -----------
 [Configuration du serveur Apache HTTP](http://httpd.apache.org/docs/trunk/fr/compliance.html)
+
+[HTTP, sur MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+
+[HTTP access control (CORS) sur sur MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+
+[Using Fetch sur sur MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
 Sources
 --------

@@ -175,6 +175,10 @@ Les documents XML n’ont pas nécessairement besoin d’un DOCTYPE, la spécifi
 
 À la différence de XHTML1 par rapport à HTML4, le choix entre XHTML5 et HTML5 est exclusivement définit par le type Mime plutôt que par le DOCTYPE : HTML5 n’est plus formellement basé sur SGML, et n’est plus spécifié par une DTD.
 
+## Validation de HTML5
+
+[HTML Inspector](https://github.com/philipwalton/html-inspector) est un outil de contrôle qualité écrit en JavaScript qui fonctionne directement dans le navigateur. Il suffit de l’installer dans la page et d’exécuter la commande `HTMLInspector.inspect()` dans la console pour valider les pages.
+
 
 ## Références
 

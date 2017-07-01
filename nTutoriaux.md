@@ -12,12 +12,14 @@ Ce document liste un certain nombre de guides et tutoriaux utiles
 
 ### [HTML5 Rocks !](http://www.html5rocks.com/fr/)
 
-### [Javascript éloquent](http://fr.eloquentjavascript.net)
+### [Google Developers](https://developers.google.com)
 
-### [D3 book](http://alignedleft.com/work/d3-book)
+## Python
 
 ### [Google Python class](https://developers.google.com/edu/python/)
 
 ### [MIT Introduction to computation and programming using python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/)
+
+## Informatique
 
 http://www.openculture.com/computer_science_free_courses

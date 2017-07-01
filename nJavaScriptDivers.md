@@ -11,6 +11,8 @@
 - [Eloquent JavaScript](http://eloquentjavascript.net)
 - [Deviens un ninja avec Angular 2](https://books.ninja-squad.com/angular2)
 - http://jstherightway.org
+- [D3 book](http://alignedleft.com/work/d3-book)
+- https://www.dashingd3js.com/lessons/
 
 ## outils
 
