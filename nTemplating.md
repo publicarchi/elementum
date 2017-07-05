@@ -37,3 +37,76 @@ Liens:
 - [HTML Templating Module](http://exist-db.org/exist/apps/doc/templating.xml)
 
 - [XQuery/Generating Skeleton Typeswitch Transformation Modules](http://en.wikibooks.org/wiki/XQuery/Generating_Skeleton_Typeswitch_Transformation_Modules)
+
+## Hogan.js
+
+JavaScript templating from Twitter
+
+http://twitter.github.io/hogan.js/
+
+## doT
+
+The fastest + concise javascript template engine for nodejs and browsers. Partials, custom delimiters and more. 
+
+https://github.com/olado/doT
+
+## HandlebarsJS
+
+Handlebars provides the power necessary to let you build semantic templates effectively with no frustration.
+
+actif en 2017, basé sur Mustache
+
+http://handlebarsjs.com
+
+## KnockoutJs
+
+Knockout makes it easier to create rich, responsive UIs with JavaScript
+
+(actif 2017)
+
+http://knockoutjs.com
+
+- Pure JavaScript — works with any web framework
+- Small & lightweight — 59kb minified
+
+## Pug
+
+Pug – robust, elegant, feature rich template engine for Node.js https://pugjs.org
+
+https://github.com/pugjs/pug
+
+actif 2017, révision de Jade
+
+## UnderscoreJs
+
+http://underscorejs.org
+
+## JavaScript Templates
+
+1KB lightweight, fast & powerful JavaScript templating engine with zero dependencies. Compatible with server-side environments like node.js, module loaders like RequireJS and all web browsers. [https://blueimp.github.io/JavaScript-…](https://blueimp.github.io/JavaScript-Templates/)
+
+https://github.com/blueimp/JavaScript-Templates
+
+actif 2017
+
+## dustjs
+
+Asynchronous Javascript templating for the browser and server http://dustjs.com
+
+https://github.com/linkedin/dustjs/
+
+## EJS
+
+http://www.embeddedjs.com
+
+## John Resig Micro-Templating
+
+https://johnresig.com/blog/javascript-micro-templating/
+
+## JST
+
+http://blog.markturansky.com/BetterJavascriptTemplates.html
+
+## Liste
+
+https://github.com/nje/jquery/wiki/jquery-templates-proposal

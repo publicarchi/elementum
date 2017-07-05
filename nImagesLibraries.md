@@ -172,6 +172,12 @@ Licence : MIT
 
 Sources : https://github.com/scottcheng/cropit
 
+### Jcrop
+
+the jQuery Image Cropping Plugin
+
+http://deepliquid.com/content/Jcrop.html
+
 
 ## Ajustements
 
@@ -289,6 +295,12 @@ http://brutaldesign.github.io/swipebox/
 ### JQuery lightgallery
 
 http://sachinchoolur.github.io/lightGallery/
+
+### leps-slider
+
+Light weight, easy to use and pure JavaScript slide show library
+
+https://github.com/goVanilla/leps-slider
 
 ## Mise en page
 

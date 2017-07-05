@@ -23,3 +23,5 @@ Ce document liste un certain nombre de guides et tutoriaux utiles
 ## Informatique
 
 http://www.openculture.com/computer_science_free_courses
+
+https://github.com/astorfi/TensorFlow-World
