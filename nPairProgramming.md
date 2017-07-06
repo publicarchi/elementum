@@ -12,6 +12,10 @@ http://maxogden.github.io/screencat/
 
 http://www.mikogo.fr
 
+### iMessage
+
+Offre la possibilité de partager l’écran
+
 ## Sources
 
 https://fr.wikipedia.org/wiki/Programmation_en_binôme
