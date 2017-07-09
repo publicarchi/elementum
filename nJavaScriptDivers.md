@@ -8,13 +8,26 @@
 - [Axel Rauschmayer, Exploring ES2016 and ES2017](https://leanpub.com/exploring-es2016-es2017/read)
 - [Nicholas C. Zakas. Understanding ECMAScript 6](https://github.com/nzakas/understandinges6) ++
 - [You don’t know JavaScript](https://github.com/getify/You-Dont-Know-JS)
+- [Addy Osmani, Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 - [Eloquent JavaScript](http://eloquentjavascript.net)
 - [Deviens un ninja avec Angular 2](https://books.ninja-squad.com/angular2)
 - http://jstherightway.org
+- [The Modern JavaScript Tutorial. How it’s done now. From the basics to advanced topics with simple, but detailed explanations](https://javascript.info)
+- [Perfection Kills, Exploring JavaScript by Example](http://perfectionkills.com)
+- https://javascriptweblog.wordpress.com
 - [D3 book](http://alignedleft.com/work/d3-book)
 - https://www.dashingd3js.com/lessons/
 
-## outils
+## Styles d’écriture
+
+- [idiomatic.js](https://github.com/rwaldron/idiomatic.js/tree/master/translations/fr_FR)
+- [Google JavaScript guide](https://google.github.io/styleguide/javascriptguide.xml)
+
+## Outils
+
+### JSHint
+
+http://jshint.com
 
 ### IntercoolerJS
 
@@ -112,6 +125,10 @@ http://mauriciopoppe.github.io/greuler/#/
 http://mauriciopoppe.github.io/function-plot/
 
 https://github.com/mauriciopoppe
+
+### Cytoscape.js
+
+http://js.cytoscape.org
 
 ## Chronologies
 

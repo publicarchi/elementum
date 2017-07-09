@@ -344,7 +344,7 @@ http://troolee.github.io/gridstack.js/
 
 http://yconst.com/web/freetile/
 
-## Stalactite
+### Stalactite
 
 http://jonobr1.github.io/stalactite/
 
@@ -390,6 +390,10 @@ http://twitter.github.io/typeahead.js/
 ### Parsleyjs
 
 http://parsleyjs.org
+
+### Fullpage
+
+https://alvarotrigo.com/fullPage/pure-javascript/#firstPage
 
 ## Présentation et guides
 

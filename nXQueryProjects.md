@@ -19,7 +19,7 @@ https://github.com/exquery
 https://github.com/xquery/xquerydoc
 
 
-### Un client Git en XQuery
+## Un client Git en XQuery
 
 [eXgit](https://github.com/wsalesky/eXgit)
 
@@ -115,6 +115,10 @@ https://github.com/expkg-zone58/ex-thumbnailator#tasks
 ### Simple StatsXQ
 
 https://github.com/timathom/simple-statsxq
+
+### ANTLR4-based XQuery 1.0 parser (XQTS 1.0 compliant)
+
+https://github.com/bluezio/xquery-parser
 
 ## Module SPARQL pour eXist
 

@@ -89,6 +89,12 @@ https://github.com/blueimp/JavaScript-Templates
 
 actif 2017
 
+## Pure
+
+https://beebole.com/pure/
+
+https://github.com/pure/pure
+
 ## dustjs
 
 Asynchronous Javascript templating for the browser and server http://dustjs.com

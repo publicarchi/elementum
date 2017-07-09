@@ -16,6 +16,10 @@ Pendant longtemps, il était nécessaire d’écouter pour `readystatechange`, m
 
 On peut remplacer le nombre magique 4 par XMLHttpRequest.DONE
 
+[XMLHttpRequest, Living Standard — Last Updated 15 June 2017](https://xhr.spec.whatwg.org/#xmlhttprequestresponsetype)
+
+
+
 ## En utilisant seulement ES6/ES2015
 
 ```javascript
@@ -63,6 +67,8 @@ Pour charger un fichier JSON, il est possible d’employer la fonction `JSON.par
 voir https://developers.google.com/web/fundamentals/getting-started/primers/promises
 
 voir https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+avec `async` et `wait` (EcmaScript 2017) https://stackoverflow.com/questions/14220321/how-do-i-return-the-response-from-an-asynchronous-call/16825593#16825593
 
 ## Utilisation de la méthode `fetch()`
 
@@ -139,7 +145,7 @@ fetch('http://localhost:8984/gdp/bibliography/items/sauval1724', {
   method: 'get',
   redirect: 'follow',
   headers: new Headers({
-    'Content-Type': 'text/html'
+    'Content-Type': 'text/json'
   })
 })
   .then(status)
@@ -147,10 +153,44 @@ fetch('http://localhost:8984/gdp/bibliography/items/sauval1724', {
   .then(function(data) {
     console.log('Request succeeded with JSON response', data);
   })
-  .catch(function(error) {
-  console.log('Request failed', error);
+  .catch(function(Error) {
+  console.log('Request failed', Error);
 });
 ```
+
+
+
+Il n’existe pas de parseur natif pour XML avec `fetch()`, on peut alors utiliser un outil tiers ou bien le DOMParser natif (IE>9). 
+
+ou bien méthode load de l’objet XMLDocument
+
+L’absence de support de XML avec fetch() plaide en partie pour l’utilisation d’un templating avec JSON.
+
+```javascript
+function getCurrentCity(location) {
+	const lat = location.coords.latitude;
+	const lon = location.coords.longitude;
+	return fetch(apis.currentWeather.url(lat, lon))
+    	.then(response => response.text())
+	    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+    	.then(data => console.log(data))
+ }
+```
+}
+
+## Utilisation de l’API history
+
+cf. https://css-tricks.com/rethinking-dynamic-page-replacing-content/
+
+```javascript
+history.pushState(stateObject, "title", URL);
+```
+
+## Datalist
+
+https://dzone.com/articles/example-dynamic-html5-datalist
+
+https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScript
 
 ## Bibliothèques
 
@@ -166,12 +206,59 @@ browser asynchronous http requests
 
 [Reqwest](https://github.com/ded/Reqwest)
 
+### fetchival.js
 
+https://github.com/typicode/fetchival
 
+### Axios
 
+https://github.com/mzabriskie/axios
+
+MicroJS
+
+http://microjs.com/#ajax
+
+### MajaX
+
+majaX stands for micro asynchronous javascript and X
+
+http://cdn.simon.waldherr.eu/projects/majaX/
+
+### Zeptojs
+
+**Zepto** is a minimalist **JavaScript library for modern browsers** with a largely **jQuery-compatible API**. *If you use jQuery, you already know how to use Zepto.*
+
+http://zeptojs.com
+
+### Nanoajax
+
+An ajax library you need a microscope to see
+
+https://github.com/yanatan16/nanoajax
+
+### Cycle.js
+
+https://cycle.js.org
+
+## Frameworks
+
+### Riot.js
+
+Simple and elegant component-based UI library
+
+http://riotjs.com
+
+### VueJs
+
+https://forum.vuejs.org/t/vue-2-0-and-ajax-calls/75/17
+
+### Redux
+
+http://redux.js.org
 
 ## Ressources
 
 - http://ajaxpatterns.org (dead)
-- ​
+- https://css-tricks.com/rethinking-dynamic-page-replacing-content/
+- https://es5.github.io
 
