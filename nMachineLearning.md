@@ -19,6 +19,12 @@ http://devzum.com/2015/05/best-free-machine-learning-ebooks/
 
 http://www.asimovinstitute.org/neural-network-zoo/?utm_content=bufferb0b5f&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 
+http://www.tensorflowbook.com
+
+https://github.com/jtoy/awesome-tensorflow
+
+https://github.com/blackecho/Deep-Learning-TensorFlow
+
 ## Terminologie
 
 <http://www.cse.unsw.edu.au/~billw/mldict.html>

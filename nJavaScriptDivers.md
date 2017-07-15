@@ -22,6 +22,8 @@
 
 - [idiomatic.js](https://github.com/rwaldron/idiomatic.js/tree/master/translations/fr_FR)
 - [Google JavaScript guide](https://google.github.io/styleguide/javascriptguide.xml)
+- [AirBandB styleguide](https://github.com/airbnb/javascript)
+- [Hive project-guideline](https://github.com/wearehive/project-guidelines/?ref=heydesigner)
 
 ## Outils
 

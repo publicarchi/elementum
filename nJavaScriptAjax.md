@@ -194,6 +194,12 @@ https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScri
 
 ## Bibliothèques
 
+### Ajax
+
+Standalone AJAX library inspired by jQuery/zepto [https://component.jit.su/ForbesLindes…](https://component.jit.su/ForbesLindesay/ajax)
+
+https://github.com/ForbesLindesay/ajax
+
 ### Microajax
 
 Tiny AJAX library

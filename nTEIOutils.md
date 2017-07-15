@@ -8,6 +8,8 @@ Quelques outils intéressants pour travailler avec des documents TEI
 
 https://github.com/kermitt2/grobid
 
+https://github.com/sparkyc84/tei-zoner
+
 
 
 ## Pas forcément TEI
