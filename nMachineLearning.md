@@ -38,3 +38,9 @@ https://www.dezyre.com/article/top-10-machine-learning-algorithms/202
 http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
 
 http://thinkbigdata.in/best-known-machine-learning-algorithms-infographic/
+
+## Visualisation
+
+http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
+
+http://tinlizzie.org/histograms/

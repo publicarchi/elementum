@@ -1,6 +1,18 @@
 # Sélection de framework CSS minimalistes responsive
 
+## rmq
+
+Bourbon, plus clean du point de vue de la sémantique par rapport à d’autres solutions comme Bootstrap, mais aussi Burma.
+
+Même si l’approche de Bourbon fait apparaître les autres SAAS framework bordéliques, les discussions sur le web suggèrent que les avantages apportés par Bourbon ne sont plus si pertinents aujourd’hui lorsque l’on utilise auto-prefixer et la compilation des CSS. En revanche, la grille SASS de Neat serait toujours utile.
+
+Toutefois, depuis des fonctionnalités de développement moderne comme Flexbox pourraient ici encore être substituées. Mais Flexbox n’est pas nécessairement supportés par les anciens navigateurs.
+
+
+
 ## Minimalistes
+
+https://picturepan2.github.io/spectre (less)
 
 http://getskeleton.com
 
@@ -36,9 +48,7 @@ https://chalarangelo.github.io/mini.css/
 
 http://blazecss.com
 
-https://imperavi.com/kube/
-
-https://imperavi.com/kube/
+https://imperavi.com/kube/ ++
 
 http://daneden.github.io/Toast/
 
@@ -61,8 +71,11 @@ http://www.vcarrer.com/2009/06/1-line-css-grid-framework.html
 
 http://typeplate.com/demo.html
 
-
 ## sass framework
+
+https://vuetifyjs.com/layout/alignment
+
+http://materializecss.com
 
 http://bourbon.io/
 

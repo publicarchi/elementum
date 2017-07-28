@@ -50,3 +50,4 @@ Certains logiciels comme Tesseract utilisent une approche basée sur deux passes
 - [Techniques et formats de conversion en mode texte. Bnf, pages professionnels](http://www.bnf.fr/fr/professionnels/numerisation_boite_outils/a.num_conversion_mode_texte.html)
 - http://www.generation-nt.com/comparatif-logiciel-ocr-roc-abbyy-omnipage-nuance-readiris-finereader-paperport-irislink-article-975981-1.html
 - http://www.er-tim.fr/sites/default/files/memoire_m2_Lecailliez_final_v1.00.pdf
+- https://www.digitisation.eu

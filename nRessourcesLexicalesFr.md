@@ -44,6 +44,12 @@ Maybe with TreeTagger ? I haven't try but this app can work in french
 [http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
 [http://txm.sourceforge.net/installtreetagger_fr.html](http://txm.sourceforge.net/installtreetagger_fr.html)
 
+## Lexique
+
+http://lexique.org/telLexique.php
+
+The Historical Lexicon of French is focused on the 17th century, late Renaissance French. It is an intermediate period between Middle French (covered by LGeRM data – see [http://www.atilf.fr/dmf/LGeRM/](http://www.atilf.fr/dmf/LGeRM/)) and Modern French (covered by Morphalou data – see [http://www.cnrtl.fr/lexiques/morphalou/](http://www.cnrtl.fr/lexiques/morphalou/)).The current lexicon consists of 27,508 lemmata, 115,201 word forms and 141,152 lemma/word forms combinations.
+
 ## Tapor
 
 http://tapor.ca@
@@ -58,3 +64,9 @@ DériF (Dérivation en Français) is a free, web based morphological analyzer fo
 ## Corpus écrits
 
 http://explorationdecorpus.corpusecrits.huma-num.fr
+
+## Outils divers
+
+https://github.com/brightmart/text_classification?utm_content=buffer8d897&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+
+https://www.digitisation.eu/tools-resources/tools-for-text-digitisation/
