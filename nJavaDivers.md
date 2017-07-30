@@ -1,6 +1,10 @@
-# Java Divers
+---
+author: emchateau
+since: 2015
+tags: java, path
+---
 
-## Le CLASSPATH en Java
+# Le CLASSPATH en Java
 
 Lorsque l’on travaille avec des applications Java, il est parfois nécessaire de placer certains composants dans le CLASSPATH.
 
@@ -29,6 +33,12 @@ Il est également possible de fixer le classpath avec la ligne de commande suiva
 
 Il suffit d’inclure la ligne `export CLASSPATH="your classpath"` dans votre `.bash_profile` ou votre `.bashrc` qui sont les scripts lancés lorsque que vous ouvrez une ligne de commande.
 
+Pour fournir plusieurs chemins, on les sépare par deux points
+
+```bash
+export CLASSPATH=.:/path/toThe.jar:/path/toTheOher.jar
+```
+
 Réexécutez les scripts de configuration du terminal pour mettre à jour les variables d’environnement :
 ```bash
   .  chemin/.bashrc # exécuter à nouveau le .bashrc
@@ -48,6 +58,8 @@ La manière standard de définir un classpath pour une application Java consiste
   java -cp $CLASSPATH Test
 ```
 Par défaut, le CLASSPATH Java pointe vers le répertoire courant dénoté par `.` et il cherchera n’importe quelle classe dans le répertoire courant.
+
+voir aussi http://www3.ntu.edu.sg/home/ehchua/programming/howto/environment_variables.html
 
 
 ## Les fichiers JAR
@@ -84,12 +96,16 @@ Pour exécuter BaseX en mode serveur ou d’autres programmes, vous pourriez avo
 - Cliquez sur le bouton « Download » sous JDK
 - Dans le nouvel écran, cochez la case « Accept Licence agreement »
 - Puis choisissez la version appropriée à télécharger dans la liste.
-Sur Mac OS X, sélectionnez `x64	221.98 MB  jdk-8u45-macosx-x64.dmg`
+   Sur Mac OS X, sélectionnez `x64221.98 MB  jdk-8u45-macosx-x64.dmg`
 - Ouvrez l’image disque téléchargée (nommé quelque chose comme  `jdk-8u45-macosx-x64.dmg`)
 - Dans la fenêtre qui s’ouvre, exécutez le programme d’installation en double-cliquant sur l’icône en forme de paquet.
 - Suivre les instructions du programme d’installation de JDK
 
 **Et voilà !**
 
-
 sh ./basexhttp
+
+## Références
+
+- [Mac Users How To Install JDK 1.7, MySQL 5.5, Tomcat 7, …](http://www3.ntu.edu.sg/home/ehchua/programming/howto/MacUsers_HowTo.html)
+- [Environment Variables For Java Applications PATH, CLASSPATH, JAVA_HOME](http://www3.ntu.edu.sg/home/ehchua/programming/howto/environment_variables.html)
