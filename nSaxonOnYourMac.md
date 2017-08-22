@@ -21,7 +21,7 @@ Si Java n’est pas installé, une JDK peut être téléchargée depuis le [site
 
 ## Installer Saxon
 
-Les sources du processeur Saxon sont téléchargeables depuis le site de [Saxonica](http://saxonica.com/welcome/welcome.xml).
+Les sources du processeur Saxon sont téléchargeables depuis le site de [Saxonica](http://www.saxonica.com/download/download_page.xml).
 
 La version libre et open-source du processeur Saxon est la version dénommée `saxon9he.jar`. 
 
@@ -87,13 +87,49 @@ Il est également possible de créer un script shell qui sera disponible dans le
 
 ```bash
 cd /usr/local/bin
-echo "java -jar /Library/Java/Extensions/SaxonHE9-5-1-6J/saxon9he.jar" | sudo tee saxon # add -a for append
+printf '%s\n' '#!/bin/sh' 'java -jar /Library/Java/Extensions/SaxonHE9-5-1-6J/saxon9he.jar "$@"' | sudo tee saxon # add -a for append
 sudo chmod +x saxon
 ```
 
+(
 
+Voir si l’alternative ci-dessous ne serait pas préférable ?
 
-------
+```bash
+#!/bin/sh
+exec java -cp /usr/share/java/saxon9he.jar net.sf.saxon.Query "$@"
+```
+
+)
+
+Dès lors les options sont passées sous la forme suivante :
+
+```bash
+saxon [options] [params] # pour `java  -jar dir/saxon9he.jar [options] [params]`
+```
+
+On peut plus spécifiquement adresser des les différentes classes de saxon pour des transformations XSLT ou XQuery.
+
+Le processeur XQuery peut être invoqué depuis la ligne de commande ou à travers une API dans une application développée par l’utilisateur.
+
+```bash
+java net.sf.saxon.Query [options] -q:queryfile [ params...] ## XQuery invocation
+```
+
+Invocation d’une transformation XSL.
+
+```bash
+java net.sf.saxon.Transform -s:source -xsl:stylesheet -o:output # XSLT transform invocation
+```
+
+- Voir la [documentation](http://www.saxonica.com/documentation/index.html#!using-xsl/commandline) des options et des paramètres pour XSLT.
+- Voir la [documentation](http://www.saxonica.com/documentation/index.html#!using-xquery/commandline) des options et des paramètres pour XQuery.
+
+## Installer Saxon avec Homebrew
+
+Il existe une formule Homebrew pour Saxon qui peut faciliter l’installation sur un mac.
+
+http://brewformulas.org/Saxon
 
 ## pour linux
 
@@ -118,7 +154,11 @@ Pour exécuter une requête XQuery :
 On a mac, we cope doing it putting the Saxon’s jar files into `/Library/Java/Extensions/`
 Running basexhttp, the expression `xslt:processor()` returns "Saxon" and `xslt:version()` returns "2.0".
 
+## Divers
 
+Il faut noter qu’une version de Saxon a été portée en C et est disponible dans un environnement node.
+
+https://www.npmjs.com/package/saxon-node
 
 ## Références
 

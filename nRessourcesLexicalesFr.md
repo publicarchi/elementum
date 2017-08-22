@@ -70,3 +70,5 @@ http://explorationdecorpus.corpusecrits.huma-num.fr
 https://github.com/brightmart/text_classification?utm_content=buffer8d897&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 
 https://www.digitisation.eu/tools-resources/tools-for-text-digitisation/
+
+https://github.com/statsmaths/cleanNLP

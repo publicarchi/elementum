@@ -24,6 +24,7 @@
 - [Google JavaScript guide](https://google.github.io/styleguide/javascriptguide.xml)
 - [AirBandB styleguide](https://github.com/airbnb/javascript)
 - [Hive project-guideline](https://github.com/wearehive/project-guidelines/?ref=heydesigner)
+- https://standardjs.com
 
 ## Outils
 
@@ -144,6 +145,8 @@ http://js.cytoscape.org
 Sigma is a JavaScript library **dedicated to graph drawing**
 
 http://sigmajs.org
+
+https://p5js.org
 
 ## Outils de production
 

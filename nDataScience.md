@@ -38,6 +38,12 @@ https://medium.freecodecamp.com/the-best-data-science-courses-on-the-internet-ra
 
 https://hackernoon.com/minimalistic-learning-path-to-become-a-data-scientist-c0a4f614bd09
 
+https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb
+
+## Cours visualisation
+
+https://github.com/yrochat/ggplot2_tuto
+
 ## Exemples de visualisations
 
 http://www.davidkelly.ie/projects/personae/
@@ -49,3 +55,11 @@ https://bl.ocks.org/mbostock
 http://www.jeannicholashould.com
 
 http://101.datascience.community
+
+## Analyse de textes
+
+https://williamjturkel.net/teaching/history-9877a-digital-research-methods-fall-2016/
+
+https://williamjturkel.net/teaching/history-9877a-digital-research-methods-fall-2016/
+
+http://www.wolfram.com/language/elementary-introduction/2nd-ed/11-strings-and-text.html

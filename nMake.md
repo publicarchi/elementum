@@ -40,9 +40,9 @@ La première ligne définit la cible (*target*). Après les deux points, viennen
 
 Make définit également plusieurs [variables automatiques](http://www.gnu.org/software/make/manual/make.html#Automatic-Variables). Celles-ci sont les plus souvent utilisées :
 
--  `$@` le nom de fichier cyble
-- `$<` le nom de fichier du premier pré-requis
-- `$?` une liste séparée par des espaces de tous les pré-requis
+-  `$@` le nom de fichier cible
+-  `$<` le nom de fichier du premier pré-requis
+-  `$?` une liste séparée par des espaces de tous les pré-requis
 
 En utilisant ces variables automatiques, l’exemple précédent devient alors :
 
