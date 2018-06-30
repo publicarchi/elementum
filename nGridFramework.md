@@ -8,13 +8,29 @@ Même si l’approche de Bourbon fait apparaître les autres SAAS framework bord
 
 Toutefois, depuis des fonctionnalités de développement moderne comme Flexbox pourraient ici encore être substituées. Mais Flexbox n’est pas nécessairement supportés par les anciens navigateurs.
 
+## Flexbox et Grid
 
+https://speakerdeck.com/goetter/50-nuances-de-grilles
+
+https://coding.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
+
+https://www.24joursdeweb.fr/2017/choisir-sa-spec-de-positionnement-css/
+
+http://goetter.fr/livres/flexbox/
+
+super simple http://marko-zub.github.io/forme/#checkbox
+
+## Comparateur
+
+http://usablica.github.io/front-end-frameworks/compare.html
 
 ## Minimalistes
 
 https://picturepan2.github.io/spectre (less)
 
 http://getskeleton.com
+
+https://primer.github.io
 
 http://www.fitgrd.com
 
@@ -51,6 +67,10 @@ http://blazecss.com
 https://imperavi.com/kube/ ++
 
 http://daneden.github.io/Toast/
+
+http://sierra-library.github.io (scss)
+
+https://www.muicss.com
 
 
 ## Typographiques
@@ -152,3 +172,17 @@ https://typographyontheweb.com
 ## Divers
 
 https://material.angular.io
+
+https://bulma.io (flex box)
+
+### APP
+
+https://en.bem.info
+
+http://topcoat.io
+
+https://semantic-ui.com
+
+https://getuikit.com
+
+https://www.blazeui.com

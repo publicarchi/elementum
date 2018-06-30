@@ -34,6 +34,14 @@ Stanford CoreNLP for French texts
 
 voir aussi http://www.nltk.org/api/nltk.stem.html#module-nltk.stem.snowball qui prend en charge le français
 
+## « Les verbes français » de Jean Dubois et Françoise Dubois-Charlier (Version LVF+1)
+
+http://rali.iro.umontreal.ca/rali/?q=fr/node/1237
+
+## Dictionnaire Électronique des Mots — DEM, par Jean Dubois et Françoise Dubois-Charlier
+
+http://rali.iro.umontreal.ca/rali/dem/
+
 ## Alix
 
 http://obvil.lip6.fr/alix/
@@ -61,6 +69,10 @@ http://tapor.ca@
 
 DériF (Dérivation en Français) is a free, web based morphological analyzer for French. It lemmatizes a text and labels each lemma, out of context, with a grammatical category (noun, verb, adjective, etc.).
 
+## dictionnaire LVF (Les Verbes Français) de J. Dubois et F. Dubois-Charlier
+
+https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10432
+
 ## Corpus écrits
 
 http://explorationdecorpus.corpusecrits.huma-num.fr
@@ -72,3 +84,7 @@ https://github.com/brightmart/text_classification?utm_content=buffer8d897&utm_me
 https://www.digitisation.eu/tools-resources/tools-for-text-digitisation/
 
 https://github.com/statsmaths/cleanNLP
+
+https://nlp.stanford.edu/projects/glove/
+
+voir http://www.elex.is **ELEXIS** – **European Lexicographic Infrastructure**

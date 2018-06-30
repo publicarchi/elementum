@@ -1,4 +1,25 @@
-# Utiliser Ginco en LOD
+# Gestion de Thesaurus avec Ginco
+
+Note d'information DGP/SIAF/2014/007 du 7 octobre 2014relative à la mise en œuvre d'un environnement de création, de gestion et de diffusion de vocabulaires (listes d'autorité, thésaurus, terminologies) https://francearchives.fr/file/720dbf0bd1d5e6966d200c086a546428e3d266a5/static_7780.pdf
+
+Thésaurus pour la description et l'indexation des archives locales https://francearchives.fr/article/37828
+
+The Thesaurus for French Local Archives and the Semantic Web
+. Author links open the author workspace.Claire Sibille-deGrimoüard http://www.sciencedirect.com/science/article/pii/S1877042814040725
+
+HADOC Penser la production des données culturelles dans un contexte d'interopérabilitésémantique et organisationnelle Katell BriatteAtelier « Passés dans le présent », 10 avril 2014 http://passes-present.eu/sites/default/files/projets/intervention_hadoc_briatte.pdf
+
+http://www.culturecommunication.gouv.fr/Divers/Harmonisation-des-donnees-culturelles/Referentiels/Les-vocabulaires-scientifiques-et-techniques/L-application-GINCO
+
+http://blog.sparna.fr/2013/09/19/ginco-un-editeur-skos-open-source/
+
+https://github.com/culturecommunication/ginco
+
+http://culturecommunication.github.io/ginco/
+
+https://github.com/culturecommunication/ginco-diff
+
+## Utiliser Ginco en LOD
 
 Ginco est une des briques fonctionnelles du système d’information du Ministère de la culture et de la communication destinée à la gestion des référentiels. Ginco met en œuvre les principes définis dans la norme ISO 25964 : Information et documentation -- Thésaurus et interopérabilité avec d’autres vocabulaires publiée en 2011 et 2012. L’outil est mis en production pour plusieurs référentiels du ministère de la culture sur http://data.culture.fr/thesaurus/ Il permet notamment la publication des thésaurus sous forme de données liées dans les formats du web sémantique.
 

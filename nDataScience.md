@@ -14,6 +14,10 @@ https://nnlm.gov/class/data-science-101-introduction-librarians/6502
 
 https://github.com/nzakas/computer-science-in-javascript
 
+## Algo
+
+https://blogs.sas.com/content/subconsciousmusings/2017/04/12/machine-learning-algorithm-use
+
 ## Cours
 
 http://heather.cs.ucdavis.edu/matloff/public_html/probstatbook.html
@@ -40,6 +44,8 @@ https://hackernoon.com/minimalistic-learning-path-to-become-a-data-scientist-c0a
 
 https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb
 
+http://rocketdatascience.org/?p=482
+
 ## Cours visualisation
 
 https://github.com/yrochat/ggplot2_tuto
@@ -49,6 +55,17 @@ https://github.com/yrochat/ggplot2_tuto
 http://www.davidkelly.ie/projects/personae/
 
 https://bl.ocks.org/mbostock
+
+## Catalogues des visualisation
+
+- Data Visualization Type Catalogs Classic [https://datavizcatalogue.com ](https://t.co/taCEovH6Q9) 
+- Thorough [http://datavizproject.com ](https://t.co/2pfLUuodo7) 
+- R [https://www.r-graph-gallery.com ](https://t.co/AXO8lqmZvX) 
+- Python [https://python-graph-gallery.com ](https://t.co/0F8BhH77dS) 
+- FT Vocab [http://ft.com/vocabulary ](https://t.co/yNvl1mYhLH) 
+- Searched [http://visualizationuniverse.com/charts ](https://t.co/17eemP4Q7F) 
+- Tools [http://chartmaker.visualisingdata.com ](https://t.co/qr7Aergtuj) 
+- Weird [https://xeno.graphics ](https://t.co/K9Vmzkce7Z)
 
 ## blogs
 

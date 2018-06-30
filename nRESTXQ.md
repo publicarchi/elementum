@@ -80,6 +80,32 @@ Les annotations de méthode POST et PUT peuvent prendre un litéral optionnel qu
 
 ### Module de fonction REST (_REST Function Module_)
 
+## Exemples avec BaseX
+
+As I see in the XQM modules in the BaseX DBA application,
+it seems, that neither the '%rest:query-param' is needed
+
+Exactly; it’s only needed if you want to pass on query parameters. The
+query parameter string starts with the optional question mark in an
+URL; see e.g.:
+
+ https://duckduckgo.com?q=BaseX
+
+If you want to process query parameters, please take care that each
+annotation variable appears as separate parameter in your declared
+function. You might want to try the following version:
+
+declare
+ %rest:path("/list/{$category}")
+ %rest:query-param("page:category", "{$page-category}")
+ %output:method("html")
+function page:list(
+ $page:category as xs:string,
+ $page-category as xs:string?
+) {
+ (: etc :)
+};
+
 
 ## Références
 

@@ -15,8 +15,32 @@
 - [The Modern JavaScript Tutorial. How it’s done now. From the basics to advanced topics with simple, but detailed explanations](https://javascript.info)
 - [Perfection Kills, Exploring JavaScript by Example](http://perfectionkills.com)
 - https://javascriptweblog.wordpress.com
+
+## D3js
+
 - [D3 book](http://alignedleft.com/work/d3-book)
 - https://www.dashingd3js.com/lessons/
+
+## Tutoriaux
+
+### VueJS
+
+- <https://laracasts.com/>
+- <https://laracasts.com/series/learn-vue-2-step-by-step>
+
+### Meteor (fullstack framework)
+
+- <https://github.com/Urigo/awesome-meteor> (liste de ressources)
+- <http://meteor-up.com/> (easy deploy)
+
+### React
+
+- <http://buildwithreact.com/tutorial>
+
+## Cheatsheet (modern syntax)
+
+- https://github.com/DrkSephy/es6-cheatsheet
+- https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70 
 
 ## Styles d’écriture
 
@@ -25,6 +49,7 @@
 - [AirBandB styleguide](https://github.com/airbnb/javascript)
 - [Hive project-guideline](https://github.com/wearehive/project-guidelines/?ref=heydesigner)
 - https://standardjs.com
+- https://www.sitepoint.com/shorthand-javascript-techniques/
 
 ## Outils
 
@@ -49,6 +74,19 @@ http://paperjs.org
 Collection of classic computer science paradigms, algorithms and approaches written in JavaScript
 
 https://github.com/nzakas/computer-science-in-javascript
+
+### momentJS
+
+- <https://momentjs.com/> (gestion de date, time, timezones ...)
+
+### Lodash
+
+- <https://lodash.com/>
+- <https://css-tricks.com/debouncing-throttling-explained-examples/>
+
+### Underscore
+
+- <http://underscorejs.org/> (pre-written functions)
 
 ## Autocomplete
 
@@ -133,10 +171,70 @@ https://github.com/mauriciopoppe
 
 http://js.cytoscape.org
 
-## Chronologies
+## Autres bibliothèques pour le graphisme
 
-- [TimelineJS](https://github.com/NUKnightLab/TimelineJS) - A Storytelling Timeline built in JavaScript.
+### G2
+
+Grammaire visuelle d’après l’ouvrage *The Grammar Of Graphics* de Leland Wilkinson
+
+MIT
+
+https://antv.alipay.com/zh-cn/g2/3.x/index.html
+
+https://github.com/antvis/g2
+
+Organigrammes
+
+http://www.blogduwebdesign.com/ressource-javascript/librairie-JS-algorigrammes-flowchart-svg/2569
+
+https://codepen.io/Bogdan-Lyashenko/pen/XzmzNv
+
+yarn add js2flowchart
+
+### Semiotic
+
+https://emeeks.github.io/semiotic/
+
+### Cytoscape
+
+- <http://www.cytoscape.org/>
+
+### Graphs
+
+- [http://js.cytoscape.org](http://js.cytoscape.org/)
+
+### D3.js
+
+- bl.ocks : <https://bl.ocks.org/>
+- blockbuilder / avec moteur de recherche par fonction D3 : <http://blockbuilder.org/search>
+
+### Three.js
+
+- CJ Gammon : <https://www.youtube.com/watch?v=ABV1mK1CGOY>
+- Galerie d'exemples : <https://threejs.org/examples/>
+
+### Famous
+
+- <https://famous.org/learn/>
+
+### Chart.js
+
+- <http://www.chartjs.org/>
+
+### Highcharts.js
+
+- <https://www.highcharts.com/> (A été utilisé pour data.afd.fr. Hyper simple à prendre en main)
+
+[**Moment.js** ](https://github.com/moment/moment)— a lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+
+## Chronologies et Storytelling
+
+- [TimelineJS](https://github.com/NUKnightLab/TimelineJS) - A Storytelling Timeline built in JavaScript et http://timeline.knightlab.com
+- [Soundcite](http://soundcite.knightlab.com/)
+- [Juxtapose](http://juxtapose.knightlab.com/)
+- [Storymap](http://storymap.knightlab.com/)
 - [timesheet.js](https://github.com/semu/timesheet.js) - JavaScript library for simple HTML5 & CSS3 time sheets.
+- [Scene](https://scene.knightlab.com/)
 
 ## Graphisme et visualisation
 
@@ -147,6 +245,41 @@ Sigma is a JavaScript library **dedicated to graph drawing**
 http://sigmajs.org
 
 https://p5js.org
+
+### ThreeJS
+
+https://threejs.org
+
+## Cartographie
+
+cf. https://geoservices.ign.fr/documentation/utilisation_web/sdk.html
+
+https://github.com/piratefsh/js-motion-detector
+
+http://piratefsh.github.io/leaflet.geofencer/
+
+### Leaflet.js
+
+http://leafletjs.com
+
+- les + : très simple, libre, utile pour faire des premiers tests, totalement configurable
+- les - : vite limité
+
+### MapboxGL
+
+- Permet de faire beaucoup plus de choses que leafletm notamment via un service de fond de cartes. Gratuit jusqu'à une certaine utilisation.
+
+### OpenLayers 4
+
+- <https://openlayers.org/> : Le must have de la cartographie, utilisé par l'IGN, le SHOM, etc.
+
+### Turf.js
+
+- <http://turfjs.org/> : Librairie GIS (distance, slice, etc)
+
+### Proj4js
+
+- <http://proj4js.org/> : Transformation/Projections
 
 ## Outils de production
 

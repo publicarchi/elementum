@@ -16,6 +16,14 @@ Curl est un outil pour formuler des requêtes HTTP en ligne de commande.
 Exemple de page à requêter
 http://dbpedia.org/page/Walter_White
 
+http://dbpedia.org/resource/Walter_White
+
+http://data.culture.fr/thesaurus/data/ark:/67717/T96-467
+
+http://data.culture.fr/thesaurus/resource/ark:/67717/T96-467
+
+
+
 ## Bibliographie
 
 - [Everything curl](https://www.gitbook.com/book/bagder/everything-curl/details)

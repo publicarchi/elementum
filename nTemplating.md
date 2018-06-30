@@ -101,9 +101,13 @@ Asynchronous Javascript templating for the browser and server http://dustjs.com
 
 https://github.com/linkedin/dustjs/
 
-## EJS
+## ejs
 
-http://www.embeddedjs.com
+http://ejs.co
+
+## Embeddedjs
+
+http://www.embeddedjs.com remplacé par https://donejs.com
 
 ## John Resig Micro-Templating
 

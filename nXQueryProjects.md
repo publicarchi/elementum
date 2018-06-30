@@ -32,6 +32,10 @@ https://github.com/shabanovd/eXgit
 This software depends on the Git Java library here:
 https://github.com/eclipse/egit-github
 
+### git-sync-v2.xql
+
+https://gist.github.com/wsalesky/3d0a54167f4a7b4fe335c9718ccc53e3
+
 ### TEI Lite Editor
 
 [TEI Lite Editor](https://github.com/jdickie/TEILiteEditor)
@@ -120,6 +124,14 @@ https://github.com/timathom/simple-statsxq
 
 https://github.com/bluezio/xquery-parser
 
+#### Parsing RDF data in BaseX
+
+https://github.com/timathom/basex-rdf
+
+## Module Tableau BaseX
+
+https://github.com/eliudmeza/OOXML-Library-XQuery-BaseXdb
+
 ## Module SPARQL pour eXist
 
 https://github.com/ljo/exist-sparql
@@ -128,6 +140,14 @@ https://github.com/ljo/exist-sparql
 ### Test unitaires
 
 http://docs.basex.org/wiki/Unit_Module
+
+### XQuery in the browser
+
+http://www.xqib.org
+
+### OOXML library
+
+https://github.com/eliudmeza/OOXML-Library-XQuery-BaseXdb
 
 
 ## Matériel pédagogique

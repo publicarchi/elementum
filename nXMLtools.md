@@ -16,6 +16,8 @@ https://github.com/t-davies/magicxml
 
 https://github.com/moovweb/tritium, http://www.tritium.io
 
+https://github.com/xspec/xspec
+
 ## Transformations
 
 https://github.com/BoyCook/XSLTJS
@@ -45,3 +47,7 @@ https://github.com/ndmitchell/tagsoup
 ## Pages
 
 http://relaxng.org
+
+## Collations
+
+https://github.com/HuygensING/hyper-collate

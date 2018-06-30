@@ -24,11 +24,15 @@
 
 [DataBnf](http://data.bnf.fr)
 
+http://api.bnf.fr
+
 ### Ministère de la Culture et de la Communication (France)
 
 [Data culture](http://data.culture.fr/thesaurus)
 
 https://data.culturecommunication.gouv.fr/pages/home/
+
+https://beta.gouv.fr/startup/pop.html
 
 ### ISNI
 

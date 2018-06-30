@@ -23,7 +23,65 @@
 
 ---
 
+## Littéraux
+
+1
+
+'test'
+
+string(16+1)
+
+concat((16+1),  1)
+
+fn:concat('test', 'ajout')
+
+'e' || 1
+
+1 = 2
+
+```
+if (1 = 1)
+  then 'oui'
+  else 'non'
+```
+
+
+
 # FLOWR
+
+```
+let $msg := 'Hello World !'
+return $msg
+```
+
+```
+let $seq := (3, 2, 1)
+for $i in $seq
+return $i + 1
+```
+
+```
+let $seq := (3, 2, 1)
+for $i in $seq
+order by $i
+return $i 
+```
+
+```
+let $seq := (3, 2, 1)
+for $i in $seq
+order by $i ascending
+return $i 
+```
+
+```
+let $seq := (3, 2, 1)
+for $i in $seq
+order by $i descending
+return $i 
+```
+
+
 
 ```xquery
   let $document := fn:doc("tei.xml") 

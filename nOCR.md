@@ -45,6 +45,52 @@ Certains logiciels comme Tesseract utilisent une approche basée sur deux passes
 - [Aletheia](http://www.primaresearch.org/tools) (avec Tesseract intégré)
 - [Ocropy](https://github.com/tmbdev/ocropy) est un projet open-source développé en Python et soutenu par Google qui utilisait initialement Tesseract comme moteur de reconnaissance mais qui a ensuite développé son propre outil.
 
+## Outils
+
+https://www.pdflabs.com/docs/pdftk-cli-examples/
+
+https://stackoverflow.com/questions/6349984/shell-script-to-change-pdf-files-to-png-mac-os-10-3
+
+https://ademcan.net/blog/2013/04/10/how-to-convert-pdf-to-png-from-the-command-line-on-a-mac/
+
+http://www.cs.cmu.edu/~benhdj/Mac/unix.html#splitPDF
+
+```
+for i in *pdf; do sips -s format png $i --out `basename $i .pdf`.png; done
+for i in *; do sips -s format png $i --out $i.png; done
+```
+
+https://stackoverflow.com/questions/6349984/shell-script-to-change-pdf-files-to-png-mac-os-10-3
+
+```
+# diviser un pdf en plusieurs pages
+pdftk ledoux1804txt.pdf burst
+```
+
+```
+convert ledoux1804txt.pdf ledoux-%04d.jpg
+```
+
+
+
+### OpenConvert
+
+Text conversion tool (from e.g. Word, HTML, txt) to corpus formats TEI or FoLiA) <http://openconvert.clarin.inl.nl/>
+
+https://github.com/INL/OpenConvert
+
+### Guides
+
+http://hdw.artsci.wustl.edu/articles/154
+
+http://www.cis.uni-muenchen.de/ocrworkshop/program.html
+
+https://drive.google.com/drive/u/0/folders/0B7l10Bj_LprhQnpSRkpGMGV2eE0
+
+http://www.cis.uni-muenchen.de/ocrworkshop/program.html
+
+https://github.com/tmbdev/ocropy/wiki
+
 ## Références
 
 - [Techniques et formats de conversion en mode texte. Bnf, pages professionnels](http://www.bnf.fr/fr/professionnels/numerisation_boite_outils/a.num_conversion_mode_texte.html)
