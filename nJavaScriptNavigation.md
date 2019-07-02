@@ -52,3 +52,81 @@ http://rileyjshaw.com/challenger/
 ### jScroll
 
 http://jscroll.com
+
+https://speckyboy.com/infinite-scrolling/
+
+### Scroll to y
+
+https://github.com/daviferreira/scroll-to-y
+
+### Pagescroll
+
+https://www.cssscript.com/demo/one-page-scroll-dot-nav/
+
+https://www.cssscript.com/tag/one-page-scroll/
+
+https://github.com/Mobius1/Pageable
+
+selectable
+
+https://github.com/Mobius1/Selectable
+
+https://github.com/Mobius1/Selectr
+
+https://github.com/Mobius1/MiniBar
+
+https://github.com/Mobius1/Selectable-Table-Plugin
+
+https://github.com/fiduswriter/Simple-DataTables
+
+https://github.com/Mobius1/Rangeable
+
+https://github.com/Mobius1/Editable
+
+https://github.com/Mobius1/Filterable
+
+Forms
+
+https://github.com/eisenfox/foxholder
+
+https://github.com/electerious/formbase
+
+https://github.com/rubentd/dirrty (Jquery)
+
+https://github.com/RobinHerbots/Inputmask
+
+https://github.com/jshjohnson/Choices
+
+https://github.com/sebastiansulinski/cascading-dropdown
+
+https://github.com/styopdev/multiPicker
+
+### Pagination
+
+http://pagination.js.org
+
+## Listes
+
+http://youmightnotneedjqueryplugins.com
+
+
+
+Boutons CSS
+
+https://bttn.surge.sh
+
+https://labs.loupbrun.ca/buttons/
+
+https://iraul.github.io/pushy-buttons/
+
+btns.css
+
+https://press-css.io/
+
+https://lipis.github.io/bootstrap-social/
+
+https://csswizardry.com/beautons/
+
+http://skidding.github.io/obvious-buttons/
+
+https://zurb.com/playground/radioactive-buttons

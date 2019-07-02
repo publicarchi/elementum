@@ -48,7 +48,16 @@ http://rocketdatascience.org/?p=482
 
 ## Cours visualisation
 
-https://github.com/yrochat/ggplot2_tuto
+<https://github.com/yrochat/ggplot2_tuto>
+
+https://serialmentor.com/dataviz/, preview of Fundamentals of Data Visualization, O’Reilly, R Markdown.
+
+Great free online data visualization courses – learn from the best:
+by [@maartenzam](https://twitter.com/maartenzam)— <https://learno.net/instructors/maarten-lambrechts>
+by [@FILWD](https://twitter.com/FILWD) — <https://www.coursera.org/specializations/information-visualization>
+by [@katycns](https://twitter.com/katycns) — <https://ivmooc.cns.iu.edu>
+by [@albertocairo](https://twitter.com/albertocairo) — <https://journalismcourses.org/data-viz-course-material.html> & <http://www.thefunctionalart.com/p/instructors-guide.html>
+by [@karlgude](https://twitter.com/karlgude) — <https://www.coursera.org/learn/infographic-design/>
 
 ## Exemples de visualisations
 

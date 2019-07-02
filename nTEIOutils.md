@@ -16,6 +16,12 @@ http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/pluco
 
 http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/max
 
+### Arachne
+
+Aracne is an XQuery framework to edit, maintain and publish XML-TEI collections under eXist-db 
+
+https://github.com/orazionelson/aracne
+
 ## Pas forcément TEI
 
 https://iscpif.fr/gargantext/your-first-map/

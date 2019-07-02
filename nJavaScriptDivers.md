@@ -1,3 +1,8 @@
+---
+author: emchateau
+since: 2016-06-20
+tag: javascript
+---
 # Divers JavaScript
 
 ## Livres et documentation
@@ -15,11 +20,6 @@
 - [The Modern JavaScript Tutorial. How it’s done now. From the basics to advanced topics with simple, but detailed explanations](https://javascript.info)
 - [Perfection Kills, Exploring JavaScript by Example](http://perfectionkills.com)
 - https://javascriptweblog.wordpress.com
-
-## D3js
-
-- [D3 book](http://alignedleft.com/work/d3-book)
-- https://www.dashingd3js.com/lessons/
 
 ## Tutoriaux
 
@@ -88,6 +88,16 @@ https://github.com/nzakas/computer-science-in-javascript
 
 - <http://underscorejs.org/> (pre-written functions)
 
+### Velocity.js
+
+http://velocityjs.org
+
+#### Filepond
+
+https://pqina.nl/filepond
+
+https://github.com/pqina/filepond
+
 ## Autocomplete
 
 ### Ajax AutoComplete for jQuery
@@ -113,11 +123,15 @@ https://codepen.io/postleonardo/pen/PwdQmv
 
 ### Awesomplete
 
-Ultra lightweight, usable, beautiful autocomplete with zero dependencies
+Ultra lightweight, customizable, simple autocomplete widget with zero dependencies, built with modern standards for modern browsers. Because <datalist> still doesn’t cut it.
 
-Because <datalist> still doesn’t cut it.
+https://leaverou.github.io/awesomplete/
 
-http://leaverou.github.io/awesomplete/
+### List.js
+
+Tiny, invisible and simple, yet powerful and incredibly fast vanilla JavaScript that adds search, sort, filters and flexibility to plain HTML lists, tables, or anything.
+
+http://listjs.com
 
 ### datalist (HTML5)
 
@@ -149,7 +163,14 @@ https://github.com/goVanilla/highlighterJS
 
 cf. https://github.com/goVanilla
 
-## Graphiques avec D3js
+## D3js
+
+- [D3 book](http://alignedleft.com/work/d3-book)
+- https://www.dashingd3js.com/lessons/
+
+voir aussi http://nvd3.org cf. https://css-tricks.com/how-to-make-a-modern-dashboard-with-nvd3-js/#more-273899
+
+## Réalisation de Graphiques avec D3js
 
 ### Greuler
 
@@ -236,6 +257,76 @@ https://emeeks.github.io/semiotic/
 - [timesheet.js](https://github.com/semu/timesheet.js) - JavaScript library for simple HTML5 & CSS3 time sheets.
 - [Scene](https://scene.knightlab.com/)
 
+## Guides interactifs
+
+### Intro.js
+
+Step-by-step guide and feature introduction
+
+https://introjs.com
+
+### Hopscotch
+
+> Hopscotch is a framework to make it easy for developers to add product tours to their pages. Hopscotch accepts a tour JSON object as input and provides an API for the developer to control rendering the tour display and managing the tour progress.
+
+http://linkedin.github.io/hopscotch/#what-is
+
+### Chardin
+
+> Simple overlay instructions for your apps.
+
+http://heelhook.github.io/chardin.js/
+
+### Joyride
+
+Dans foundation
+
+https://foundation.zurb.com/sites/docs/v/5.5.3/components/joyride.html
+
+### pageguide.js
+
+http://tracelytics.github.io/pageguide/
+
+### Trip.js
+
+http://eragonj.github.io/Trip.js/
+
+### jquery.tutorme
+
+https://github.com/shannoncruey/jquery.tutorme
+
+### Alvaro's Simple Tour Plugin for jQuery
+
+http://alvaroveliz.github.io/aSimpleTour/
+
+### jQuery Impromptu
+
+https://trentrichardson.com/examples/Impromptu/
+
+### jQuery.tour.js
+
+https://github.com/yckart/jquery.tour.js
+
+http://yckart.github.io/jquery.tour.js/
+
+### Tour.js
+
+http://krawczyk.io/tour.js/
+
+### Bootstro.js
+
+http://clu3.github.io/bootstro.js/
+
+### Bootstraptour
+
+http://bootstraptour.com
+
+### Crumble
+
+> A quirky, interactive tour for your website or app.
+
+https://blog.tommoor.com/crumble/
+
 ## Graphisme et visualisation
 
 ### Sigma
@@ -281,6 +372,18 @@ http://leafletjs.com
 
 - <http://proj4js.org/> : Transformation/Projections
 
+## Cartographie, exemples
+
+https://github.com/sylvaindurand/france-choropleth
+
+https://www.sylvaindurand.org/france-choropleth/
+
+https://www.sylvaindurand.fr/graphiques-financiers-avec-d3/
+
+## Zoom
+
+https://github.com/Carpetsmoker/imgzoom/
+
 ## Outils de production
 
 ### modulejs
@@ -315,8 +418,6 @@ The hassle-free, hands-on table solutionfor building stunning web applications
 
 https://handsontable.com
 
-
-
-## Listes
+## Listes utiles
 
 https://www.diycode.cc/projects/sorrycc/awesome-javascript#articles-and-posts

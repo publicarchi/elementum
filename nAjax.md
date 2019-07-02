@@ -1,14 +1,24 @@
 ---
 author: emchateau
 since: 2017-07-01
-tags: javascript, ajax
+tags: javascript, ajax, histoire de l’internet
 ---
 
 # Ajax avec Javascript
 
-## Ajax
+## Court historique
 
-La programmation dite asynchrone a révolutionné le développement d’application web. L’architecture informatique dite Ajax pour *Asynchronous Javascript and Xml* a permis de construire des applications web et des sites web dynamiques interactifs fonctionnant côté client en utilisant les technologies disponibles dans les navigateurs (CSS, JSON, XML, le DOM et XMLHttpRequest). Cette terminologie a été introduite dans un article publié sur *Adaptive Path* par Jesse James Garrett le 18 février 2005.
+La programmation dite *asynchrone* a révolutionné le développement des applications web. En effet, l’architecture informatique dite Ajax pour *Asynchronous JavaScript + XML* a permis de construire des sites web dynamiques interactifs fonctionnant côté-client en utilisant les technologies disponibles dans les navigateurs (CSS, JSON, XML, le DOM et XMLHttpRequest). Cette terminologie a été introduite dans un article publié sur *Adaptive Path* par Jesse James Garrett le 18 février 2005 (2005). En 2006, Jesse James reçu le Rave Award for Technology du *Wired Magazine*, son rôle important dans le domaine a été souligné dans plusieurs publications comme *The New York Times*, *The Wall Street Journal* et *BusinessWeek*. Toutefois, comme le faisait remarquer Jesse en 2005, Ajax ne désigne pas une technologie en tant que telle mais plutôt la réunion d’un ensemble de technologies dont la convergence représentait un tournant dans ce qu’il était désormais possible de proposer aux utilisateurs sur le web. Les nombreuses interactions côté clients proposées par Google Suggest ou Google Map étaient alors caractéristiques de ce que l’on désignait alors comme des applications internet riches (*Rich Internet Applications*).
+
+Ainsi, Ajax (Asynchronous JavaScript + XML) implique
+
+- l’utilisation de présentation basées sur les standards avec XHTML et CSS
+- la présentation dynamique et interactive des contenus avec le Document Object Model
+- l’échange de données et leur manipulation avec XML et XSLT (à l’époque avec LibXML)
+- la réception de données asynchrone en utilisant XMLHttpRequest
+- et l’emploi de JavaScript pour lier l’ensemble
+
+La généralisation de la bibliothèque JQuery créée en 2006 par John Resig va faciliter l’adoption de ces techniques de développement web. Depuis quelques années, on tend de plus en plus à parler de XHR, abréviation de la fonction JavaScript dédiée `XMLHttpRequest`. Cette fonctionnalité est prise en charge par la plupart des frameworks JavaScript et réside au cœur de la conception des *Single page applications*. La nouvelle fonction `fetch()` de JavaScript a rendu l’utilisation de ces requêtes asynchrones plus aisées mais en renonçant au parsing de XML. Des fonctionnalités comme le *streaming* se sont depuis ajouter à ces techniques.
 
 ## Une manière moderne
 
@@ -17,8 +27,6 @@ Pendant longtemps, il était nécessaire d’écouter pour `readystatechange`, m
 On peut remplacer le nombre magique 4 par XMLHttpRequest.DONE
 
 [XMLHttpRequest, Living Standard — Last Updated 15 June 2017](https://xhr.spec.whatwg.org/#xmlhttprequestresponsetype)
-
-
 
 ## En utilisant seulement ES6/ES2015
 
@@ -192,13 +200,49 @@ https://dzone.com/articles/example-dynamic-html5-datalist
 
 https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScript
 
-## Bibliothèques
+## Bibliothèques JavaScript
 
-### Ajax
+http://youmightnotneedjquery.com
 
-Standalone AJAX library inspired by jQuery/zepto [https://component.jit.su/ForbesLindes…](https://component.jit.su/ForbesLindesay/ajax)
+### Classe minimale
 
-https://github.com/ForbesLindesay/ajax
+https://github.com/jakecyr/Slim-Http-JavaScript-Object
+
+### Axios
+
+Dépendance mais minimale et centrée sur AJAX. Axios s’inspire directement du service \$http d’Angular. Côté serveur et navigateur, promise API, pas de stream.
+
+387KB
+
+https://github.com/mzabriskie/axios
+
+https://www.npmjs.com/package/axios
+
+### Got
+
+> Simplified HTTP requests
+
+côté serveur, compatible avec électron
+
+245KB, cf. comparatif avec Axios
+
+https://github.com/sindresorhus/got
+
+### SuperAgent
+
+> Ajax with less suck - (and node.js HTTP client to match)
+
+http://visionmedia.github.io/superagent/
+
+### MicroJS
+
+2011-2017
+
+http://microjs.com/#ajax
+
+### fetchival.js
+
+https://github.com/typicode/fetchival
 
 ### Microajax
 
@@ -206,47 +250,45 @@ Tiny AJAX library
 
 [Microajax](https://code.google.com/archive/p/microajax/)
 
-### Reqwest
-
-browser asynchronous http requests
-
-[Reqwest](https://github.com/ded/Reqwest)
-
-### fetchival.js
-
-https://github.com/typicode/fetchival
-
-### Axios
-
-https://github.com/mzabriskie/axios
-
-MicroJS
-
-http://microjs.com/#ajax
-
-### MajaX
-
-majaX stands for micro asynchronous javascript and X
-
-http://cdn.simon.waldherr.eu/projects/majaX/
-
-### Zeptojs
-
-**Zepto** is a minimalist **JavaScript library for modern browsers** with a largely **jQuery-compatible API**. *If you use jQuery, you already know how to use Zepto.*
-
-http://zeptojs.com
-
 ### Nanoajax
 
-An ajax library you need a microscope to see
+> An ajax library you need a microscope to see
 
 https://github.com/yanatan16/nanoajax
 
-### Cycle.js
+### MajaX
 
-https://cycle.js.org
+> majaX stands for micro asynchronous javascript and X
+
+http://cdn.simon.waldherr.eu/projects/majaX/
+
+### Ajax
+
+Standalone AJAX library inspired by jQuery/zepto [https://component.jit.su/ForbesLindes…](https://component.jit.su/ForbesLindesay/ajax)
+
+https://github.com/ForbesLindesay/ajax
+
+### Reqwest
+
+> browser asynchronous http requests
+
+https://github.com/ded/Reqwest
+
+### Zeptojs
+
+> **Zepto** is a minimalist **JavaScript library for modern browsers** with a largely **jQuery-compatible API**. *If you use jQuery, you already know how to use Zepto.*
+
+http://zeptojs.com
 
 ## Frameworks
+
+### Mithril
+
+> Mithril is a modern client-side Javascript framework for building Single Page Applications. It's small (< 8kb gzip), fast and provides routing and XHR utilities out of the box.
+
+https://mithril.js.org
+
+https://scrimba.com/c/cast-1746
 
 ### Riot.js
 
@@ -258,6 +300,18 @@ http://riotjs.com
 
 https://forum.vuejs.org/t/vue-2-0-and-ajax-calls/75/17
 
+Nota vue-ressource est le plugin qui fournit les services pour les XMLHttpRequest sur JSONP
+
+https://github.com/pagekit/vue-resource/blob/HEAD/docs/api.md, https://www.npmjs.com/package/vue-resource
+
+cf. https://stackoverflow.com/questions/50833398/how-to-import-a-local-stored-xml-file-in-vue-and-edit-it
+
+### Cycle.js
+
+> A functional and reactive JavaScript framework for predictable code
+
+https://cycle.js.org
+
 ### Redux
 
 http://redux.js.org
@@ -268,3 +322,6 @@ http://redux.js.org
 - https://css-tricks.com/rethinking-dynamic-page-replacing-content/
 - https://es5.github.io
 
+## Bibliographie
+
+- Garret, James (2005). Ajax: A New Approach to Web Applications. Adaptive path, 18 février 2005. <http://adaptivepath.org/ideas/ajax-new-approach-web-applications/>

@@ -95,6 +95,7 @@ If you want to process query parameters, please take care that each
 annotation variable appears as separate parameter in your declared
 function. You might want to try the following version:
 
+```xquery
 declare
  %rest:path("/list/{$category}")
  %rest:query-param("page:category", "{$page-category}")
@@ -105,6 +106,9 @@ function page:list(
 ) {
  (: etc :)
 };
+```
+
+
 
 
 ## Références

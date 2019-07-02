@@ -40,7 +40,7 @@ Ouvrir une fenêtre de Terminal (le programme se trouve dans /Applications/Utili
 
 http://localhost/
 
-Les fichiers partagés dans le système de fichiers dans `/Library/webServer/Documents`
+Les fichiers partagés dans le système de fichiers dans `/Library/WebServer/Documents`
 
 ## Racine utilisateur web
 
@@ -50,7 +50,31 @@ Qui sert le répertoire Sites du compte utilisateur qui peut être créé à la 
 
 La mise à jour conserve le dossier Sites mais ne permet pas de servir les fichiers. Il faut pour cela créer un fichier `username.conf`
 
-`/etc.apache2/users/``
+`/etc/apache2/users/`
+
+```
+<Directory "/Users/emmanuelchateau/Sites/">
+  Options Indexes MultiViews
+  Require all granted
+</Directory>
+```
+
+ou
+
+```
+<Directory "/Users/emmanuelchateau/Sites/">
+  AddLanguage fr .fr
+  LanguagePriority fr en de
+  ForceLanguagePriority Fallback
+  Options Indexes MultiViews
+  AllowOverride All
+  Order allow,deny
+  Allow from localhost
+  Require all granted
+</Directory>
+```
+
+
 
 ## Sources
 

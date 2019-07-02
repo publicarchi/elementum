@@ -15,8 +15,8 @@ Rmq : Ce Guide est valable pour Sierra
 Créer un répertoire personnel qui sera servi en local (ce répertoire n’est plus créé par défaut).
 
 ```bash
-mkdir ~/Sites
-echo "<html><body><h1>Mon site fonctionne !</h1></body></html>" > ~/Sites/index.html
+mkdir ~/Sites # créer un répertoire Sites
+echo "<html><body><h1>Mon site fonctionne !</h1></body></html>" > ~/Sites/index.html # crer un fichier index.html dans le répertoire Sites
 ```
 
 Cette page devra être visible à l’adresse [http://localhost/~username](http://localhost/~username)
@@ -56,9 +56,9 @@ sudo chmod 644 username.conf # remplacer username par son nom d’utilisateur
 
 Le 6 donne les droits d’écriture et de lecture au propriétaire du fichier. Les deux 4 restreignent l’accès en lecture seule au Group et Other.
 
-Aller dans `etc/apache2`, et activer les modules http
+Aller dans `etc/apache2`, et activer les modules http voulus.
 
-D’abord faire une copie du fichier de configuration
+Faites d’abord une copie du fichier de configuration
 
 ````bash
 cd ..
@@ -68,7 +68,7 @@ cp httpd.conf httpd.conf.bak # faire une copie de sauvegarde du fihier de config
 
 Dans le fichier `http.conf` un certain nombre modules doivent être activés : les lignes doivent être décommantées en enlevant le `#`.
 
-Ouvrir le fichier avec sudo.
+Ouvrir le fichier avec sudo et retirer les # du début des lignes suivantes :
 
 ```LoadModule authz_host_module libexec/apache2/mod_authz_host.so
 LoadModule authz_host_module libexec/apache2/mod_authz_host.so
@@ -80,7 +80,7 @@ Include /private/etc/apache2/extra/httpd-userdir.conf
 Include /private/etc/apache2/extra/httpd-vhosts.conf
 ```
 
-## Mettre à jour le httpd-userdir.conf
+### Mettre à jour le httpd-userdir.conf
 
 éditer le `http-userdir.conf` situé dans le répertoire `extra`
 
@@ -95,7 +95,7 @@ Puis éditer `httpd-userdir.conf`, en décommandant la ligne suivante :
 Include /private/etc/apache2/users/*.conf
 ```
 
-## Redémarrer Apache
+### Redémarrer Apache
 
 ```bash
 sudo apachectl restart
@@ -188,11 +188,14 @@ Pour vérifier que tout fonctionne, créez un fichier php de test dans votre ré
 ?>
 ```
 
-
-
 ## Sources
 
-https://web.archive.org/web/20161018141829/http://digitalshore.io/local-web-development-environment-apache-macos-sierra-10-12/
+- <https://web.archive.org/web/20161018141829/http://digitalshore.io/local-web-development-environment-apache-macos-sierra-10-12/>
+- voir <https://websitebeaver.com/set-up-localhost-on-macos-high-sierra-apache-mysql-and-php-7-with-sslhttps>
+- <https://www.lullabot.com/articles/setting-up-my-mac-without-mamp> (2013) intéressant notamment pour les sockets, mais le problème n’existe peut-être plus avec Sierra
+- <https://www.hongkiat.com/blog/osx-apache-mysql-php-part-1/>
+- <https://www.hongkiat.com/blog/osx-apache-mysql-php-part-2/>
+- Sur Linux, voir http://fr.open-lamp.com/installer-et-configurer-un-serveur-web-sous-linux-debian-ou-ubuntu/
 
 
 

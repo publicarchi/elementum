@@ -8,6 +8,18 @@
 
 [CKAN](http://ckan.org)
 
+
+
+### GLAM flavoured Semantic Web List
+
+https://github.com/ncarboni/GLAM-Semantic-Web
+
+>A curated list of various semantic web and linked data resources for heritage, humanities and art history practitioners.
+
+Consortium for Open Research Data in the Humanities https://docs.cordh.net
+
+
+
 ## Services
 
 ### OCLC
@@ -43,6 +55,10 @@ https://beta.gouv.fr/startup/pop.html
 [Wikidata](https://www.wikidata.org)
 
 [DBPedia](http://wiki.dbpedia.org)
+
+### Humanities Data
+
+https://humanitiesdata.com
 
 ## Portails d’Open data institutionnels
 

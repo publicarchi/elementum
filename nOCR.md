@@ -79,6 +79,33 @@ Text conversion tool (from e.g. Word, HTML, txt) to corpus formats TEI or FoLiA)
 
 https://github.com/INL/OpenConvert
 
+### Kraken
+
+http://kraken.re
+
+Installation https://github.com/mittagessen/kraken/blob/master/.travis.yml#L12-L27
+
+Documentation https://github.com/mittagessen/kraken/blob/master/docs/training.rst
+
+https://github.com/lascivaroma/lexical/tree/master/ocr-training/anthologia-latina
+
+Initial ground truth was generated through Tesseract then converted using an ad-hoc [XSL converting hOCR to Kraken correction environment](https://gist.github.com/PonteIneptique/c866c3387f7a5709dbd17b86123b37c5).
+
+Install Kraken
+
+```
+ketos extract pages/*.html -o extract -u NFD -s
+```
+
+Characters count
+
+```
+awk '{for (i=1;i<=NF;i++) a[$i]++} END{for (c in a) print c,a[c]}' FS="" extract/*.txt > characters.with_case.txt
+sed 's/\(.\)/\1\n/g' extract/*.txt | sort | uniq -ic | sort -k 2 > characters.txt
+```
+
+
+
 ### Guides
 
 http://hdw.artsci.wustl.edu/articles/154
@@ -91,9 +118,64 @@ http://www.cis.uni-muenchen.de/ocrworkshop/program.html
 
 https://github.com/tmbdev/ocropy/wiki
 
+## Transkribus
+
+https://transkribus.eu/Transkribus/
+
+## Formats
+
+Abby FineReader XML <https://abbyy.technology/en:features:ocr:xml>
+
+https://abbyy.technology/en:features:ocr:xml
+
+ALTO  <https://www.loc.gov/standards/alto/>
+
+https://github.com/altoxml/documentation/wiki/Software
+
+Page <http://www.primaresearch.org/schema/PAGE/gts/pagecontent/2017-07-15/pagecontent.xsd>
+
+hOCR <https://en.wikipedia.org/wiki/HOCR>
+
+Conversions
+
+- http://james.blushingbunny.net/omnipage2TEI/
+- https://github.com/dariok/page2tei
+- https://github.com/cneud/ocr-conversion-scripts
+- https://github.com/INL/OpenConvert
+
+voir ce que fait Syd Bauman http://tei-l.970651.n3.nabble.com/OCRed-XML-samples-td4031040.html
+
+## Services commerciaux
+
+https://www.digitisation.eu
+
+**Word Pro** , Pondicherry
+
+saisie de textes multilingue de haute précision
+
+11, Canteen Street, 
+
+1st Floor, East Wing
+
+Pondicherry 605001
+
+INDIA
+
+tel: 00 91 413 2223034
+
+cel: 00 91 94422 94226
+
+[www.wordpro-pondicherry.com](http://www.wordpro-pondicherry.com/)
+
+   .............................
+
 ## Références
 
 - [Techniques et formats de conversion en mode texte. Bnf, pages professionnels](http://www.bnf.fr/fr/professionnels/numerisation_boite_outils/a.num_conversion_mode_texte.html)
 - http://www.generation-nt.com/comparatif-logiciel-ocr-roc-abbyy-omnipage-nuance-readiris-finereader-paperport-irislink-article-975981-1.html
 - http://www.er-tim.fr/sites/default/files/memoire_m2_Lecailliez_final_v1.00.pdf
 - https://www.digitisation.eu
+
+## À voir
+
+https://ocr-d.github.io

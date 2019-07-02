@@ -13,13 +13,12 @@ Le modèle conceptuel de référence CIDOC
 Présentation
 --------
 
->>>
-Le modèle conceptuel de référence (CRM) CIDOC fournit des définitions et une structure formelle pour la description de concepts implicites et explicites et leurs relations qui s’utilisent dans la documentation du patrimoine culturel.
+>
+>Le modèle conceptuel de référence (CRM) CIDOC fournit des définitions et une structure formelle pour la description de concepts implicites et explicites et leurs relations qui s’utilisent dans la documentation du patrimoine culturel.
 
 CIDOC-CRM est destiné à promouvoir une compréhension partagée de l’information culturelle en fournissant un cadre de travail sémantique commun extensible vers lequel n’importe quelle information du patrimoine culturel puisse être alignée (_mapped to_). Il est destiné à être un language commun pour les experts et les implémentateurs pour formuler les pré-requis des systèmes d’information et pour servir de guide de bonnes pratiques pour la modélisation conceptuelle. De ce point de vue, il peut fournir la "colle sémantique" nécessaire pour médier différentes sources de d’information patrimoniale telles que celles publiées par les musées, les bibliothèques et les archives.
 
 Le CIDOC-CRM est issue de dix années de travail du CIDOC Documentation Standards Working Group et du CIDOC CRM SIG qui sont des groupes de travail de CIDOC. Depuis le 9 décembre 2006 c’est devenu une norme internationale [ISO 21127:2006](http://www.iso.org/iso/catalogue_detail?csnumber=34424).
-<<<
 
 
 Le modèle conceptuel de référence CIDOC est une ontologie formelle destinée à faciliter l’intégration, la médiation et l’échange d’informations patrimoniales et culturelles hétérogènes. Il a été développé par une équipe interdisciplinaire composée d’experts issus de différents champs tels que les sciences informatiques, l’archéologie, le monde des musées ou de la documentation, l’histoire de l’art, les sciences naturelles, ou les sciences des bibliothèques, et la philosophie, sous l’égide du comité international pour la documentaion (CIDOC) de l’International Council of Museums (ICOM).
@@ -48,6 +47,24 @@ Utilisation
 -------
 
 Un modèle conceptuel de référence peut être employé comme une aide intellectuelle pour la formulation d’un modèle de données et son implémentation.
+
+## Exemples d’utilisations
+
+### CIDOC-CRM Best practices
+
+http://www.cidoc-crm.org/best_practices
+
+### Consortium for Open Research Data in the Humanities 
+
+https://docs.cordh.net
+
+### **S**wiss **A**rt **R**esearch **I**nfrastructure project - SARI
+
+https://docs.swissartresearch.net
+
+### Linked Art
+
+https://linked.art
 
 
 Références

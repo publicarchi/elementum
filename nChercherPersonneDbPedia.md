@@ -52,7 +52,12 @@ Afficher les 1 000 premiers objets de la page "catégorie" intitulés "Œuvre c
   LIMIT 1000
 ```
 
+## Recherches dans Open street map
+
+https://wiki.openstreetmap.org/wiki/SPARQL_examples
+
 ## Sources
+
 - http://www.informatheque.fr/articles/enrichir-son-catalogue-avec-dbpedia-0
 - http://www.informatheque.fr/articles/enrichir-son-catalogue-avec-dbpedia-comment
 

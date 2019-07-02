@@ -98,6 +98,16 @@ This taxonomy of digital research activities in the humanities has been develope
 
 ## Divers
 
+### Consortium for Open Research Data in the Humanities 
+
+https://docs.cordh.net
+
+### GND Ontology
+
+> GND stands for "Gemeinsame Normdatei" (Integrated Authority File) and offers a broad range of elements to describe authorities. The GND originates from the German library community and aims to solve the name ambiguity problem in the library world. Corresponding data is usually expressed in a customized MARC 21 Authority Format ([GND MARC Format](http://www.dnb.de/SharedDocs/Downloads/DE/DNB/standardisierung/gnd_marc_datenformat_1.1.pdf?__blob=publicationFile)) which is quite domain specific and is not used beyond the library and publisher world. The GND ontology tries to bridge this gap by providing a format specification for the usage in the semantic web.
+
+https://d-nb.info/standards/elementset/gnd
+
 ### Open bibliography 
 
 http://okfnlabs.org/bibjson/
@@ -138,4 +148,20 @@ Probablement obsolète, remplacée par SPAR
 
 http://linkedscience.org/lsc/ns/
 
-The Core LSC definitions presented here are written using a computer language (RDF/OWL) that makes it easy for software to process some basic facts about the terms in the Linked Science Core Vocabulary, and consequently about the things described using LSC.
+> The Core LSC definitions presented here are written using a computer language (RDF/OWL) that makes it easy for software to process some basic facts about the terms in the Linked Science Core Vocabulary, and consequently about the things described using LSC.
+
+### Information Artifact Ontology
+
+> The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.
+
+http://obofoundry.org/ontology/iao.html
+
+### BFO Basic formal ontology
+
+http://basic-formal-ontology.org/users.html
+
+### Records in Contexts - Conceptual Model
+
+https://www.ica.org/en/egad-ric-conceptual-model
+
+### BioCRM

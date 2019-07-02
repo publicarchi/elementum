@@ -2,6 +2,7 @@
 author: Emmanuel Château-Dutier
 since: 2016-11-12
 version: 0.2
+tags: ark, api
 ---
 
 # Travailler avec Gallica
@@ -105,3 +106,7 @@ https://gitorious.org/gallica-downloader/gallica-downloader/source/master
 https://prelia.hypotheses.org/441
 
 https://github.com/Dorialexander/Pyllica
+
+## Voir aussi
+
+- [nIIIF.md](nIIIF.md)

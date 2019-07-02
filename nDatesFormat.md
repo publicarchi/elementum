@@ -1,5 +1,13 @@
 # Formats de dates
 
+Outils
+
+https://github.com/inukshuk/edtf.js
+
+https://github.com/nicompte/edtfy
+
+http://www.loc.gov/standards/datetime/implementations.html
+
 ## ISO DIS 8601, Data elements and interchange formats -- Information interchange -- Representation of dates and times
 
 La révision de l’ISO 8601-2004 intègre diverses fonctionnalités développées par la bibliothèque du congrès avec l’Extended Date/Time Format (EDTF) mais avec des modifications de syntaxe. Cette spécification se compose de deux parties.
@@ -100,3 +108,7 @@ ISO 8601:2004 is applicable whenever representation of dates in the Gregorian ca
 ISO 8601:2004 does not cover dates and times where words are used in the representation and dates and times where characters are not used in the representation.
 
 ISO 8601:2004 does not assign any particular meaning or interpretation to any data element that uses representations in accordance with ISO 8601:2004. Such meaning will be determined by the context of the application.
+
+
+
+Soyons progressifs

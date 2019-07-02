@@ -5,6 +5,8 @@ date: 2014-06-27
 
 # Note XHTML5
 
+Attention, en 2018 un message apparaît sur le site du W3C annonçant que le standard polyglott ne serait plus maintenu.
+
 ## Introduction
 
 L’abandon de XHTML2 et le choix effectué par le W3C de poursuivre le développement de HTML5 se caractérise d’abord par le renoncement aux contraintes syntaxiques propres au méta-langage XML. Toutefois, même si l’information à ce sujet est souvent restée peu claire, ou difficile à trouver, il est toujours resté possible d’écrire ses pages web en (X)HTML5. Le recours à ce formalisme s’avère particulièrement nécessaire lorsque l’on travaille avec le langage de requêtes XQuery ou le langage de transformation XSLT, ou bien généralement dans l’univers XML (sources XML, Xlink, SVG,  MathML, etc.).
@@ -189,3 +191,6 @@ Les documents XML n’ont pas nécessairement besoin d’un DOCTYPE, la spécifi
 - http://www.nicolas-hoffmann.net/source/1419-Servir-un-site-en-application-xhtml-xml-XHTML5-et-IE.html
 - [Validateur unsoup](https://github.com/unsoup/validator)
 - [The Nu Html Checker (v.Nu)](https://validator.github.io/validator/)
+- http://philarcher.org/diary/2011/polyglot/
+- http://xmlplease.com/xhtml/xhtml5polyglot/
+- <https://en.wikibooks.org/wiki/Polyglot_markup,_how_to>

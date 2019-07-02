@@ -1,14 +1,16 @@
-# Tuto Git
+---
+author: emchateau
+since: 2015-12-02
+---
+# Versionner ses fichiers avec Git [tutoriel]
 
 ---
 
 # Git
 
-Git est un logiciel de versionning, c’est à dire un logiciel qui vous permet de conserver la trace des changements que vous effectuez sur des fichiers au cours du temps.
+Git est un logiciel de versionning, c’est à dire un logiciel qui vous permet de conserver la trace des changements que vous effectuez sur des fichiers au cours du temps. Git enregistre toutes les modifications que vous faites à un projet, en stockant ces modifications, il vous permet d’y faire référence comme de besoin ou de revenir à une version antérieure du fichier.
 
-Git enregistre toutes les modifications que vous faites à un projet, et en stockant ces modifications il vous permet d’y faire référence comme de besoin.
-
-Pour apprendre l’utilisation de Git, nous allons travailler à la rédaction d’un fichier.
+Dans ce tutoriel, nous allons travailler à la rédaction d’un simple fichier texte pour apprendre l’utilisation de Git.
 
 ---
 
@@ -272,9 +274,8 @@ Vous pouvez employer les commandes Git pour garder la trace des changements réa
 - `git commit` stocke de manière permanente les modifications de fichiers du répertoire intervenues dans la zone d’indexation (_staging area_)
 - `git log` affiche la liste des commits précédents
 
-
 ---
 
 # sources
 
-cf. CodeCademy
+- cf. CodeCademy
