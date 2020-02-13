@@ -25,6 +25,10 @@ https://github.com/jtoy/awesome-tensorflow
 
 https://github.com/blackecho/Deep-Learning-TensorFlow
 
+## Cours
+
+https://mml-book.github.io/
+
 ## Terminologie
 
 <http://www.cse.unsw.edu.au/~billw/mldict.html>

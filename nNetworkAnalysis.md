@@ -140,7 +140,7 @@ Le format PSI-MI  est un format d’échange XML pour les interactions protéiqu
 
 GraphML est un format XML de description de graphes issus des efforts de la communauté des acteurs de la visualisation de graphes pour définir un format commun pour l’échange de données en structure de graphe. Le travail initié en 2000 a fait l’objet d’une spécification en 2001. Le format supporte l’ensemble des structures de graphes (orientées, non-orientées, mixtes, hyper graphes, et des attributs spécifiques pour les applications).
 
-Un fichier GraphML est un fichier XML dont le nœud rapide est un élément `graphml` qui contient un élément graph qui lui même continent une séquence non ordonnées de `node` et de `edge`. Chaque nœud `node` doit disposer d’un attribut `@id` distinct et chaque `edge` dispose d’attributs `@source` et `@target` pour identifier les sommets d’un edge.
+Un fichier GraphML est un fichier XML dont le nœud racine est un élément `graphml` qui contient un élément graph qui lui même continent une séquence non ordonnées de `node` et de `edge`. Chaque nœud `node` doit disposer d’un attribut `@id` distinct et chaque `edge` dispose d’attributs `@source` et `@target` pour identifier les sommets d’un edge.
 
 Le format est utilisé nativement par yEd et Gephi
 

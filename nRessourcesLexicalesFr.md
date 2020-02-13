@@ -103,9 +103,33 @@ https://github.com/statsmaths/cleanNLP
 
 https://nlp.stanford.edu/projects/glove/
 
-voir http://www.elex.is **ELEXIS** – **European Lexicographic Infrastructure**
+## ELEXIS – European Lexicographic Infrastructure
 
-<em>Graphist</em>: Logiciel de lemmatisation indexation et modernisation automatique de textes anciens https://www.digitalstudies.org/articles/10.16995/dscn.215/print/
+voir http://www.elex.is 
+
+## Outils pour le français ancien et moderne
+
+### Graphist : Logiciel de lemmatisation indexation et modernisation automatique de textes anciens
+
+Laurent Catach
+
+Graphiste est un programme informatique pour la lemmatisation, l’indexation et la modernisation des documents écrits en français de la Renaissance, de l’époque classique ou moderne. Le programme développé par l’équipe du CNRS Histoire et Structure de l’Orthographe (HESO).
+
+>Le projet a donc bénéficié d'un environnement particulièrement riche en compétences, et constitue d'une certaine façon une synthèse de nombreux travaux linguistiques menés à HESO depuis plus de 20 ans par Nina Catach et son équipe, en matière de lexicologie, de morphologie et d'histoire de l'orthographe ([N. Catach 1985](https://www.digitalstudies.org/articles/10.16995/dscn.215/print/#catach_n)).
+
+Utilisation du DAC qui contient la première édition du *Dictionnaire de l’Académie française* 1694
+
+Décès prématuré de Nina Catach en 1998
+
+https://www.digitalstudies.org/articles/10.16995/dscn.215/print/
+
+https://homes.chass.utoronto.ca/~wulfric/siehlda/clermont/cat_bib.htm
+
+http://projects.chass.utoronto.ca/chwp/catach_l/index.html
+
+**Catach**, L. (1994). "GRAPHIST: logiciel de lemmatisation, indexation et modernisation automatique de textes anciens", *Early Dictionary Databases* (éd. I. Lancashire & T.R. Wooldridge) = *CCH Working Papers*, 4, 183-196 et *Informatique et dictionnaires anciens* (éd. T.R. Wooldridge) = *Dictionnairique et lexicographie*, 3 (1995), 183-196; rééd. in [*CH Working Papers*, B.25](http://www.chass.utoronto.ca:8080/epc/chwp/) (1996).
+
+**Catach**, N. & L. **Catach** (1994). "Le projet GRAPHIST et la recherche en industries de la langue", Congrés ALLC-ACH (Paris, avril).
 
 <https://projects.chass.utoronto.ca/chwp/catach_l/index.html>
 
@@ -133,3 +157,34 @@ http://lexicometrica.univ-paris3.fr/jadt/jadt2000/pdf/89/89.pdf
 
 gestion des hétérographes
 
+#### TreeTagger et Flemm
+
+TreeTagger (Stein et Schmid 1995) et Flemm (Namer 2000). TreeTagger, on l’a dit, est un outil permettant d’assigner automatiquement des annotations morpho-syntaxiques. Flemm est un ensemble de modules Perl permettant d’analyser la flexion du français moderne dans des corpus préalablement étiquetés par le TreeTagger.
+
+www.ling.uqam.ca/forum/satoman/images/jadt2010_submission_54-1.doc
+
+### Étienne Brunet
+
+Université de Nice, lemmatiseur du français moderne
+
+### ATLIF
+
+Souvay lemmatiseur sur Dictionnaire français moyen
+
+### Français contemporain
+
+Analyseur syntaxique FRMG développé à INRIA
+
+http://alpage.inria.fr/frmgwiki/frmg_main/frmg_server
+
+> Pour une phrase donnée, l'analyseur essaie de retourner la meilleure structure grammaticale. L'analyseur FRMG résulte de la compilation de la [grammaire FRMG](http://alpage.inria.fr/frmgwiki/node/4305)dans l'environnement DyaLog. C'est un analyseur robuste et à large couverture du français. Il est utilisé pour le [traitement de très gros corpus](http://alpage.inria.fr/frmgwiki/wiki/quelques-applications-de-frmg), a participé aux campagnes d'évaluation EASy et Passage, et peut se [comparer](http://alpage.inria.fr/frmgwiki/wiki/performances-de-frmg) aux analyseurs statistiques sur leur corpus d'entraînement tout en restant stable hors domaine.
+>
+> FRMG peut analyser une chaîne de mots et plus généralement un treillis de mots reflétant des ambiguïtés sur les mots et leur segmentation. Il calcule l'ensemble de toutes les analyses possibles, en s'appuyant sur des techniques d'[analyse par charte](http://en.wikipedia.org/wiki/Chart_parser) ([programmation dynamiqu](http://fr.wikipedia.org/wiki/Programmation_dynamique)e). Une phase de désambiguïsation permet ensuite de sélectionner la meilleure analyse parmi l'ensemble généralement très grand de toutes les analyses. Cette phase de désambiguïsation peut faire appel à un modèle statistique appris sur un corpus annoté (*treebank*) pour de meilleures [performances](http://alpage.inria.fr/frmgwiki/node/6325).
+>
+> Pour la version de l'analyseur utilisable en ligne sur ce site, il est à noter qu'elle n'utilise pas un tel modèle statistique de désambiguïsation pour des raisons de temps de latence (le temps de chargement des modèles de quelques secondes est trop couteux pour une simple phrase et ne se justifie que lors du traitement de corpus). D'autre part, divers réglages (sur la segmentation en phrases/mots, sur la détection des entités nommées, sur l'utilisation de restrictions de sélection, ...) peuvent influer sur les performances et expliquer certaines différences entre la version en ligne et les résultats sur corpus.
+>
+> FRMG ainsi que l'ensemble de la chaîne de traitement ALPAGE sont librement disponibles. Mais n'hésitez pas à nous contacter pour plus d'informations et de conseils si vous souhaitez utiliser nos outils pour vos applications, commerciales ou non.
+
+## CamemBERT
+
+https://camembert-model.fr/

@@ -256,6 +256,9 @@ https://emeeks.github.io/semiotic/
 - [Storymap](http://storymap.knightlab.com/)
 - [timesheet.js](https://github.com/semu/timesheet.js) - JavaScript library for simple HTML5 & CSS3 time sheets.
 - [Scene](https://scene.knightlab.com/)
+- https://h5p.org
+- https://idyll-lang.org ++
+- http://staging.famous.org
 
 ## Guides interactifs
 
@@ -372,7 +375,7 @@ http://leafletjs.com
 
 - <http://proj4js.org/> : Transformation/Projections
 
-## Cartographie, exemples
+### Cartographie, exemples
 
 https://github.com/sylvaindurand/france-choropleth
 
@@ -382,7 +385,13 @@ https://www.sylvaindurand.fr/graphiques-financiers-avec-d3/
 
 ## Zoom
 
+### ImgZoom
+
 https://github.com/Carpetsmoker/imgzoom/
+
+### OpenSeadragon
+
+https://openseadragon.github.io/
 
 ## Outils de production
 

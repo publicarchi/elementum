@@ -16,6 +16,15 @@ http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/pluco
 
 http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/max
 
+
+
+Juxta http://juxtacommons.org
+https://ride.i-d-e.de/issues/issue-11/web-based-collation-tools/
+
+Collatex https://collatex.net
+
+http://collatex.obdurodon.org
+
 ### Arachne
 
 Aracne is an XQuery framework to edit, maintain and publish XML-TEI collections under eXist-db 

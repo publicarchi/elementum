@@ -57,9 +57,15 @@ Utilisée par React mais aussi Vue (mais pas sa 1er)
 
 https://reactjs.org/docs/introducing-jsx.html
 
+### elm
+
+https://elm-lang.org/
+
 ### Svelte
 
 https://svelte.technology
+
+https://ractive.js.org/
 
 ### Liquid
 
@@ -178,6 +184,30 @@ https://kbrsh.github.io/moon/
 ### Liste
 
 https://github.com/nje/jquery/wiki/jquery-templates-proposal
+
+## Templating Python
+
+https://wiki.python.org/moin/Templating
+
+- string.Template
+- mustache
+- ctemplate-python
+
+https://www.fullstackpython.com/template-engines.html
+
+à comparer avec XSLT
+
+## Nouveau ++
+
+Svelte https://svelte.dev/
+
+Sapper https://sapper.svelte.dev/
+
+https://infernojs.org/
+
+https://stenciljs.com/
+
+https://preactjs.com/
 
 ## Sources
 

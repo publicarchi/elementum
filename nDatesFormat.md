@@ -112,3 +112,11 @@ ISO 8601:2004 does not assign any particular meaning or interpretation to any da
 
 
 Soyons progressifs
+
+## Liens
+
+https://github.com/arttracks/cultural_dates
+
+http://www.museumprovenance.org/reference/dates/
+
+https://www.slideshare.net/workergnome/fuzzy-dates-the-digital-humanities

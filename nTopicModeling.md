@@ -35,5 +35,16 @@ https://spacy.io
 
 > spaCy is designed to help you do real work — to build real products, or gather real insights. The library respects your time, and tries to avoid wasting it. It's easy to install, and its API is simple and productive. We like to think of spaCy as the Ruby on Rails of Natural Language Processing.
 
+## Word vectors
 
+An R package for building and exploring word embedding models.
+
+https://github.com/bmschmidt/wordVectors
+
+cf. tutoriaux 
+
+- https://github.com/NEU-DSG/wwp-public-code-share/tree/master/WordVectors
+- https://jmclawson.net/blog/posts/word-vector-utilities/
+- https://github.com/NEU-DSG/wwp-public-code-share/blob/master/WordVectors/introduction_word2vec.Rmd
+- https://github.com/NEU-DSG/wwp-public-code-share/blob/master/WordVectors/template_word2vec.Rmd
 

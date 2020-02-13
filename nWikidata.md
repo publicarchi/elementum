@@ -60,3 +60,77 @@ SELECT ?item ?itemLabel ?genderLabel (GROUP_CONCAT(DISTINCT ?occupationLabel; SE
 Exemple de requête en chronologie
 
 <https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20DISTINCT%20%3Fauthor%20%3FauthorLabel%20%3Fimage%20%3Fdate%20%20WHERE%20%7B%0A%20%20%3Fauthor%20wdt%3AP106%20wd%3AQ11900058%20.%0A%20%20%3Fauthor%20wdt%3AP569%20%3Fdate%20FILTER((YEAR(%3Fdate)%3E500)%26%26(YEAR(%3Fdate)%3C1440)).%0A%20%20OPTIONAL%20%7B%3Fauthor%20wdt%3AP18%20%3Fimage%20.%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2C%20it%2C%20de%2C%20es%2C%20fr%22%20%7D%0A%7D%20ORDER%20BY%20%3FauthorLabel>
+
+
+
+Exemple #Liste de souverains de France et de Navarre illustrés avec leur date de naissance et/ou de décès
+
+```sparql
+SELECT ?human ?humanLabel ?dob ?dod ?isni
+WHERE
+{
+	?human wdt:P31 wd:Q5
+    ; wdt:P39 wd:Q3439798 .
+	?human wdt:P18 ?picture .
+	OPTIONAL { ?human wdt:P569 ?dob . ?human wdt:P570 ?dod }.
+    OPTIONAL { ?human wdt:P213 ?isni }.
+	BIND(YEAR(?dob) as ?yob) . #if available: year
+	BIND(YEAR(?dod) as ?yod) .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "fr" .
+	}
+}
+LIMIT 88
+```
+
+Le problème, c’est qu’aussi peu croyable que cela puisse paraître, le modèle de Wikipédia ne contient pas de catégorie souverain ou chef d’État !!!
+
+Mais si veut extraire les informations par nationalité, par exemple Royaume de France :
+
+```sparql
+#Liste de souverains de France et de Navarre illustrés avec leur date de naissance et/ou de décès
+
+SELECT ?human ?humanLabel ?dob ?dod ?isni ?picture
+WHERE
+{
+	?human wdt:P31 wd:Q5
+    ; wdt:P27 wd:Q70972 .
+	?human wdt:P18 ?picture .
+	OPTIONAL { ?human wdt:P569 ?dob . ?human wdt:P570 ?dod }.
+    OPTIONAL { ?human wdt:P213 ?isni }.
+	BIND(YEAR(?dob) as ?yob) . #if available: year
+	BIND(YEAR(?dod) as ?yod) .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "fr" .
+	}
+}
+LIMIT 88
+```
+
+La requête ne rapporte que 88 individus !
+
+Comment imaginer croiser avec fonction de monarque si peu nombreux à être renseignés ?
+
+```sparql
+SELECT ?human ?humanLabel ?dob ?dod ?isni ?picture
+WHERE
+{ ?human wdt:P31 wd:Q5 .
+  {?human wdt:P39 wd:Q3439798 .} 
+  UNION 
+  {?human wdt:P39 wd:Q18384454 .}
+  UNION 
+  {?human wdt:P31 wd:Q22923081 .}
+
+	?human wdt:P18 ?picture .
+	OPTIONAL { ?human wdt:P569 ?dob . ?human wdt:P570 ?dod }.
+    OPTIONAL { ?human wdt:P213 ?isni }.
+	BIND(YEAR(?dob) as ?yob) . #if available: year
+	BIND(YEAR(?dod) as ?yod) .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "fr" .
+	}
+}
+ORDER BY ?dob
+LIMIT 88
+```
+

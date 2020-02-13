@@ -79,6 +79,14 @@ Text conversion tool (from e.g. Word, HTML, txt) to corpus formats TEI or FoLiA)
 
 https://github.com/INL/OpenConvert
 
+## Calamari
+
+https://github.com/Calamari-OCR/calamari
+
+[Calamari](https://github.com/Calamari-OCR/calamari) is built on [TensorFlow](https://www.tensorflow.org/tutorials/), an open-source machine learning library, which allows Calamari to take  advantage of TensorFlow's neural network capacity. It's relatively  straightforward to use, but it comes with some tricky dependencies.  Because Calamari only does text recognition, you have to use another  engine (they recommend OCRopus) to increase contrast, deskew, and  segment the images you want to read. OCRopus requires Python 2, and  Calamari is written in Python 3 — not an insurmountable obstacle but one to be alert to.
+
+http://techsoupforlibraries.org/blog/the-best-ocr-tools-to-digitize-text-compared
+
 ### Kraken
 
 http://kraken.re
@@ -104,7 +112,9 @@ awk '{for (i=1;i<=NF;i++) a[$i]++} END{for (c in a) print c,a[c]}' FS="" extract
 sed 's/\(.\)/\1\n/g' extract/*.txt | sort | uniq -ic | sort -k 2 > characters.txt
 ```
 
+http://kraken.re/training.html
 
+2019-10 : il est possible d’entraîner la segmentation.
 
 ### Guides
 
@@ -118,9 +128,29 @@ http://www.cis.uni-muenchen.de/ocrworkshop/program.html
 
 https://github.com/tmbdev/ocropy/wiki
 
-## Transkribus
+## Handwritten Text Recognition (HTR)
+
+### Transkribus
 
 https://transkribus.eu/Transkribus/
+
+Modèle basé sur IA
+
+Création de modèles langagiers. Modèle de développement où READ utilise les données utilisateurs pour mettre au point des modèles langagiers qui feront par la suite l’objet d’une commercialisation.
+
+Possibilités d’export de document aux format TEI.
+
+Qualité des images : une bonne résolution d’image n’est pas nécessaire (1 Mega suffisant). Les développeurs du logiciel disent que 30 pixels par caractère suffit pour la reconnaissance.
+
+Le logiciel permet le partage de collections. Les documents analysés avec la reconnaissance de manuscrit sont interrogeables avec un moteur de recherche interne (SolR). Les documents sont balisés avec un sous-ensemble de la Text Encoding Initiative (TEI) qui peut servir à gérer les documents. Toutefois, pour certains traitement fins, il vaut sans doute mieux travailler certaines métadonnées à l’extérieur du logiciel. Par ailleurs, certains types de balisage ne sont pas forcément nécessaire pour l’entraînement d’un modèle. L’ensemble des données sont accessibles par l’intermédiaire d’une API. Afin de travailler de manière collaborative dans l’interface il peut être nécessaire de développer des règles de nommage ou bien de construire un outil basé sur des requêtes de l’API.
+
+Les modèles langagiers sont générés par Transkribus. Les utilisateurs sont propriétaires de leurs données mais Transkribus contrôle la création de modèle. Se pose la question du statut des modèle produits.
+
+Plusieurs manières de procéder. Si une écriture régulière et grand nombre de pages. Peut-être intéressant de procéder avec un modèle spécifique. Il est également possible de travailler avec un modèle générique ou un modèle générique et des sous-modèles.
+
+Option P2PaLA letter analysis
+
+L’année dernière le développeur principal du projet pensait passer à un modèle payant en 2019. Modèle économique qui vise à desservir les centres d’archives pour la transcription de grosses masses de documentation.
 
 ## Formats
 
@@ -175,7 +205,13 @@ cel: 00 91 94422 94226
 - http://www.generation-nt.com/comparatif-logiciel-ocr-roc-abbyy-omnipage-nuance-readiris-finereader-paperport-irislink-article-975981-1.html
 - http://www.er-tim.fr/sites/default/files/memoire_m2_Lecailliez_final_v1.00.pdf
 - https://www.digitisation.eu
+- Benchmark https://github.com/factful/ocr_testing
+- http://techsoupforlibraries.org/blog/the-best-ocr-tools-to-digitize-text-compared
+- https://ocr-d.github.io/
+- https://ocr-d.github.io/core/
 
 ## À voir
 
 https://ocr-d.github.io
+
+https://github.com/OCR-D/
