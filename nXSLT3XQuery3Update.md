@@ -331,7 +331,7 @@ En XSLT 2.0, on peut s’occuper d’un nœud texte de la manière suivante :
 <element id="{generate-id()}"><xsl:value-of select="node"/></element>
 ```
 
-En XSLT 3.0, les expressions entre accolades peuvent être utilisées pour produire des nœuds textes en utilisant la déclaration `expand-text=« yes"`
+En XSLT 3.0, les expressions entre accolades peuvent être utilisées pour produire des nœuds textes en utilisant la déclaration `expand-text="yes"`
 
 ```xml
 <xsl:stylesheet...expand-text="yes">
@@ -363,7 +363,7 @@ Dans certaines transformations, l’élément englobant doit seulement être ren
     <xsl:for-each select="item">
       <li>...</li>
     </xsl:for-each>
-  </element>
+  </ul>
 </xsl:if>
 ```
 
@@ -456,6 +456,23 @@ Un template nommé `xsl:initial-template` sera invoqué en premier.
 ```
 
 C’est en particulier utile lorsque l’entrée n’est pas du XML ou quand une feuille de style génère seulement une sortie.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  exclude-result-prefixes="xs"
+  version="3.1">
+  <xsl:param name="seq" as="xs:string*" select="'c', 'a', 'b', 'z'"/>
+  <xsl:template name="xsl:initial-template">
+    This is a test <xsl:value-of select="sort($seq)"/>
+  </xsl:template>
+</xsl:stylesheet>
+```
+
+En ligne de commande, avec Saxon 9.xx, passer un paramètre `-it` avec la valeur `Q{http://www.w3.org/1999/XSL/Transform}initial-template`. Si le nom du template est omis, la valeur par défaut est `xsl:initial-template`.
+
+Dans Oxygen, sélectionner le processeur Saxon 9.xx et dans les paramètres avancés du processeur renseigner la valeur du paramètre `-it` avec `Q{http://www.w3.org/1999/XSL/Transform}initial-template`
 
 #### Manipulations de JSON
 

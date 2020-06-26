@@ -62,6 +62,8 @@ http://www.cbmc.it/fastcent/doc/SifFormat.htm
 
 @url http://www.infosun.fmi.uni-passau.de/Graphlet/GML/ [inactif] voir https://web.archive.org/web/20170601041145/http://www.fim.uni-passau.de/index.php?id=17297&L=1
 
+@url https://web.archive.org/web/20060824191148/http://www.infosun.fmi.uni-passau.de/Graphlet/GML/gml-tr.html
+
 >GML (Graph Modelling Language): There are many different programs that work with graphs but almost all of them use their own file format. As a consequence, exchanging graphs between different programs is almost impossible. Simple tasks like exchange of data, externally reproducible results or a common benchmark suite are much harder than neccessary.
 >Therefore, we have developed a new file format for the Graphlet system: GML. GML supports attaching arbitrary information to graphs, nodes and edges, and is therefore able to emulate almost every other format.
 
@@ -137,6 +139,10 @@ Le format PSI-MI  est un format d’échange XML pour les interactions protéiqu
 @name GraphML
 
 @url http://graphml.graphdrawing.org/
+
+https://web.archive.org/web/20200511231546/http://graphml.graphdrawing.org/
+
+http://cs.brown.edu/people/rtamassi/gdhandbook/chapters/graphml.pdf 
 
 GraphML est un format XML de description de graphes issus des efforts de la communauté des acteurs de la visualisation de graphes pour définir un format commun pour l’échange de données en structure de graphe. Le travail initié en 2000 a fait l’objet d’une spécification en 2001. Le format supporte l’ensemble des structures de graphes (orientées, non-orientées, mixtes, hyper graphes, et des attributs spécifiques pour les applications).
 

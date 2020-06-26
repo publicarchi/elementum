@@ -1,6 +1,30 @@
 # XQuery NLP
 
-Fonctionnalités 
+Tutoriaux
+
+- Text Mining at Scale https://gist.github.com/emchateau/c17de15f2d11b135116bce8f60efb6ef
+- XQuery and XPath Full Text 1.0 https://gist.github.com/emchateau/8275ab308e31b686b058872ba51d5d45
+
+Partition du corpus 
+
+(sélection avec XPath d’une collection de poèmes dans un recueil)
+
+Affichage d’un échantillon
+
+Lister les titres
+
+Normaliser 
+
+```
+  let $poemText := 
+    fn:string-join($poem//text(), " ") =>
+    fn:translate("—'*‘’.,?!:;-","") =>
+    fn:normalize-space()
+```
+
+
+
+## Fonctionnalités 
 
 ## dplyr (R)
 

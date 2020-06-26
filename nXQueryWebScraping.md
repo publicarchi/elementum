@@ -122,7 +122,7 @@ let $request :=
 let $response := http:send-request($request)
 let $record := 
 	<record>
-		<date>{current-dateTime()}</date>
+		<date>{fn:current-dateTime()}</date>
 		{
           $request,
           $response

@@ -2,6 +2,246 @@
 
 Traitement automatique du langage, NLP
 
+Larochelle, Hugo. s. d. *Traitement automatique des langues*. Consulté le 9 avril 2020. https://www.youtube.com/watch?v=waTZl_IbDdo&list=PL6Xpj9I5qXYHMDt3aBiI2KVff8c5Cwlfe.
+
+Il existe plusieurs approches du traitement automatique de la langue. La plus fréquemment employée est une approche statistique, c’est-à-dire que l’on va utiliser des données pour essayer de fournir les connaissance linguistiques au système que l’on cherchera à développer. Cette « connaissance » sera donc obtenue de manière empirique. « You shall know a word by the company it keeps » (1957). C’est par le contexte observé des mots que pourra extraire une compréhension de la syntaxe des mots et de leur sémantique. Cette approche a permis d’attaquer des problèmes hors de portée des techniques précédentes.
+
+Auparavant, des approches à base de règles ont été beaucoup développées. Ces approches s’avèrent moins efficace face à des problèmes complexes. Au cours des années 1960-1985, le domaine était dominé par l’approche du rationalisme. Pour un aperçu sur l’histoire de ces approches, cf. :
+
+- Manning, Christopher D. et Hinrich Schütze. 1999. *Foundations of statistical natural language processing*. Cambridge, Mass : MIT Press. Chapitre 1
+- Jurafsky, Dan et James H Martin. 2008. *Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition*. 2e édition. Delhi : Pearson Education. Chapitres 1.5 et 1.6
+
+### Pourquoi le traitement automatique de la langue est-il difficile ?
+
+Interpréter une phrase correctement est une tâche difficile. Plusieurs difficultés doivent être surmontées.
+
+- Ambiguïté : il n’est pas rare qu’une phrase puisse être interprétée de plusieurs manières. ex. Pour une même phrase, plusieurs arbres syntaxiques sont possibles. *Our company is training workers* (Manning & Schütz)
+- Métaphores. Utilisation des mots qui rend une approche à base de règles prédéfinies ardue.
+- Variation dans le sens dans le temps et de nouveaux mots peuvent être introduits dans la langue.
+
+### Pourquoi l’approche statistique est-elle intéressante ?
+
+Dans l’approche statistique on va commencer par définir des modèles probabilistes du langage. Et estimer de manière automatisées, les paramètres du modèle probabiliste à partir de données. Les probabilités permettent de gérer l’incertitude sur l’interprétation (ambiguïté). L’exploitation de données permet d’adapter automatiquement les modèles (métaphore, variation dans le temps, etc.).
+
+### Propriétés statistiques de données textuelles
+
+Le point de départ du TAL statistique ce sont les données. On parle donc de **corpus** qui constituent des collections de textes ou de documents. Il s’agit de l’ensemble de nos données. Il existe certaines structures ou propriétés qui sont typiques de données textuelles et facilement observables.
+
+#### Fréquence
+
+Exemple de statistiques des mots du roman *Tom Sawyer* (Manning & Schütz). Classement des mots par **fréquence** : peu de mots fréquents, beaucoup de mots rares. Les mots différents sont nombreux et gérer le fait qu’il y a des mots pour lesquels on a peu d’observation, la **parcimonie** (*sparsity*) est un problème en TAL.
+
+#### Classe fermée
+
+Les mots les plus fréquents dans les corpus appartiennent le plus souvent à des classes syntaxiques que l’on va dire fermées. Les **classes fermées** sont les classes pour lesquelles des mots ne sont jamais invités. Ils n’ont quasiment pas variés depuis deux ans ans dans la langue.
+
+- déterminants : un, le, son, etc.
+- pronoms : je, tu, il, etc.
+- conjonctions: mais, ou, et, donc, etc.
+- prépositions : pour, de, etc.
+
+ex. statistique des mots du roman *Tom Sawyer* (Manning & Schütz)
+
+#### Loi de Zipf
+
+Une propriété que l’on observe presque toujours dans les données textuelles a été caractérisée par George Kingsley Zipf (1902-1950). 
+
+D’après la loi de Zipf : la fréquence *f* d’un mot est (approximativement) inversement proportionnelle à son rang *r*.
+
+```f x 1/r ou f x r = k```
+
+La fréquence est inversement proportionnelle à son rang r. Ou la fréquence multipliée par le rang d’un mot est égale à une constante *k* inconnue.
+
+Le rang du mot est la place du mot dans leur ordonnancement par ordre croissant de fréquence. Plus regarde loin dans la liste ordonnées des mots, plus la fréquence va diminuer selon un taux de 1/r. Ce qui implique que si on passe du rang 1 à 2, la fréquence va beaucoup diminuer alors que si l’on passe d’un mot qui a le rang 4000 à 40001, la fréquence diminuera peu. 
+
+On aura donc beaucoup de mots qui auront des fréquences presque égales mais très basses mais très peu de mots qui auront des fréquences très élevées.
+
+ex. *Tom Sawyer* (Manning & Schütz). Souvent un produit qui est autour de 8 ou 9. 
+
+ex. Autre illustration sur une échelle logarithmique (distribution au prend la forme d’une droite descendante)
+
+```
+f x r = k => log f + log r = log k => log f = -log r + log k
+```
+
+#### Collocations
+
+Autre exemple bien connu, celui des collocations. Les collocations sont des phrases courts dont le sens va « au-delà » de la combinaison des sens de ses mots. 
+
+- Celles-ci pourraient être inclues dans un dictionnaire. 
+- Si un mot apparaît dans une collocation, il pourrait être traduit différemment
+
+Exemples : *disk drive*, *make up*, *printemps érable*
+
+ex. New York Times (Manning & Schütz). Sélections des paires nom-nom et adjectif-nom les plus fréquentes (motif de partie du discours). Souvent, parmi les paires les plus fréquentes des associations que l’on pourrait inclure comme des collocations.
+
+Une collocation de mot sera une combinaison de deux ou plusieurs mots dont l’utilisation sera différente. Cette méthode par fréquence est une manière simple de détecter les collocations, mais il existe d’autres méthodes statistiques pour identifier des utilisations différentes de ces mots que si les observaient isolément.
+
+### Manipulation de textes
+
+Avant d’appliquer une méthode statistique, on doit définir la forme que doivent prendre les données.
+
+- la forme désirée devra souvent varier selon l’application
+- le choix de la forme peut avoir un impact significatif sur les résultats
+
+Parfois des aller-retours.
+
+Transformer les données sous la forme désirée nécessitera de définir certaines règles de transformations (pas forcément statistiques). Souvent des règles qui sont inspirées par des connaissances linguistiques pour faciliter le travail et les performances.
+
+#### Document
+
+Il existe plusieurs outils et algorithmes de base qui sont utiles pour manipuler du texte et le transformer. On suppose le plus souvent que les documents sont déjà dans un format électronique purement textuel (UTF-8, ASCII).
+
+- un document sera donc une longue chaîne de caractères
+- à cette étape, on suppose que les balises aient été élevées, même si elles peuvent parfois être utiles pour l’analyse (localise phrases, paragraphes, parties, etc.)
+
+#### Les expressions régulières
+
+On utilisera très souvent pour du traitement de texte et la recherche simple des expressions régulières.
+
+Une **expression régulière (ER)** est une façon simple de caractériser un ensemble de chaînes de caractères, de façon compacte.
+
+- ex. toutes chaînes de caractères correspondant à un montant en argent
+
+C’est un formalisme utile pour faire de l’extraction d’information (simple) dans des données textuelles.
+
+- l’outil Unix `grep -E` retourne toutes les lignes contenant une ER
+- l’outil Unix `perl -p -e` permet d’appliquer des remplacements
+
+L’expression régulière la plus simple consiste à préciser une seule chaîne de caractères
+
+- une **correspondance** (match) est obtenue pour chaque sous-chaîne trouvée
+- la casse (minuscule ou majuscule) est respectée
+
+NB : en Perl les expressions régulières sont encadrées par des `/` (dans le livre sont seulement soulignées les premières occurence des correspondances)
+
+#### Disjonction, négation, répétition
+
+Les opérations de disjonction, négation, répétition, vont nous permettre de manipuler du texte de manière plus approfondie avec des expressions régulières.
+
+#### Dijonction
+
+Pour correspondre à plus d’une chaîne, on peut utiliser des disjonctions de caractères à l’aides des crochets `[`et `]`.
+
+- `[wW]` *w* ou *W*
+- `[abc]` *a* ou *b*, ou *c*
+
+L’utilisation d’**intervalles** est aussi permise pour faire des dijonctions
+
+- `[A-Z]` l’ensemble des majuscules
+- `[0-9]` un chiffre de 0 à 9
+
+#### Négation
+
+Le symbole `^` permet de formuler une **négation**. Il doit être à l’intérieur de crochets et être le premier symbole.
+
+- `[^A-Z]` tout sauf une majuscule
+- `[^Ss]` ni *S* ni *s*
+- `[^\.]` pas un point
+
+Le signe circonflexe peut toutefois être utile s’il n’est pas placé au début d’une expression
+
+- `[e^]`soit *e* ou *^*
+- `a^b` le motif *a^b*
+
+S’il se trouve au début de l’ER, il correspond à un début de ligne (`$` fin de ligne).
+
+#### Caractère optionnel, répétitions
+
+Le symbole `?` permet d’identifier un caractère qui est **facultativement** présent. Le caractère optionnel est celui qui précède le `?`
+
+- `woodchucks?` *woodchuck* ou *woodchucks*
+- `colou?r` *color* ou *colour*
+
+Les symboles `*` et `+` permettent d’exprimer un nombre arbitraire (possiblement 0 pour `*`) de **répétitions**.
+
+- `a*` correspond à *a*, *aa*, *aaa*, etc. ainsi que la chaîne vide
+- pour ne pas inclure la chaîne vide : `aa*` ou `a+`
+
+#### Disjonctions de chaînes
+
+Les crochets permettent des disjonctions de caractères individuels. Pour faire une disjonction sur des chaînes de caractères, on utilise le symbole `|`.
+
+- `cat|dog` correspond avec la présence du mot *cat* ou du mot *dog*
+
+On peut appliquer à une sous-chaîne de l’ER, à l’aide de parenthèses.
+
+- `gupp(y|ies)` correspond à *guppy* et *guppies*
+
+#### Combinaison d’opérations
+
+Il est ensuite possible de combiner ces opérations. Pour ce faire il existe des priorités entre ces opérations. Les voici par ordre descendant :
+
+- Parenthesis	`()`
+- Couters `*` `+` `{}`
+- Sequences and anchors `the ^my end$`
+- Dijunction `|`
+
+ex. pour une entête de tableau comme *Column 1 Column 2*, etc.
+
+`(Column [0-9]+ +)+`
+
+#### Correspondance vorace
+
+Si la priorité des opérations règles les ambiguïtés d’interprétation. Mais une expression régulière peut encore être ambigüe d’une autre manière.
+
+- `[a-z]+` correspond à un mot en minuscule et tous ses préfixes
+
+Pour résoudre ce genre d’ambiguïtés, on a recours à la correspondance la plus longue possible à chaque fois, de **façon vorace**. On la continue jusqu’à ce que ne puisse plus faire de correspondance puis répète.
+
+#### Caractères spéciaux
+
+Certains caractères servent d’opérateurs (`*`, `[`, etc.), d’autres ont une signification spéciale comme le `.` pour tout caractère.
+
+Une barre oblique inverse est utilisée pour faire référence à ces caractères plutôt qu’aux opérateurs.
+
+- `\*` une astérisque
+- `\.` un point
+- `\?` un point d’interrogation
+- `\n` une nouvelle ligne
+- `\t` une tabulation
+
+#### Alias
+
+Certains **alias** existent afin de faire facilement référence à des ensembles communs de caractères.
+
+- `\d` [0-9] n’importe quel chiffre
+- `\D` [\^0-9] n’importe quel caractère non chiffre
+- `\w` [a-zA-Z0-9_] n’importe quel caractère alphanumérique ou underscore
+- `\W` [\^\w] un caractère non-alphanumérique
+- `\s` [ \r\t\n\f] n’importe quel espace (espace, fabulation, etc.)
+- `\S` [\^\s] non espace
+
+#### Symboles de répétitions
+
+Il existe d’autres façons de définir des répétitions en dehors de `*`, `+`, `?` pour spécifier plus précisément un nombre de répétitions.
+
+- `*` zéro ou plusieurs occurrences de l’expression ou du caractère précédent
+- `+` une ou plusieurs occurrences de l’expression ou du caractère précédent
+- `?` exactement zéro ou plusieurs occurrences de l’expression ou du caractère précédent
+
+- `{n}` *n* occurrences du caractère précédent ou de l’expression précédente
+- `{n,m} de `m` à ` *n* occurrences du caractère précédent ou de l’expression précédente
+- `{n,}` au moins *n* occurrences du caractère précédent ou de l’expression précédente
+
+#### Substitutions
+
+Une des utilisations possibles des expressions régulières consiste à faire des substituons dans le texte.
+
+L’outil Unix `perl ` avec les paramètres `-p` et `-e` permet d’appliquer des **substitutions** avec des ER.
+
+```perl
+cat *.txt | perl -p -e "s/coulour/color/g"
+```
+
+Le `s` au début spécifie qu’une substitution est appliquée
+
+Le `g` à la fin spécifie qu’une substitution est appliquée à chaque correspondance trouvée (pas seulement la première).
+
+Les correspondances sont trouvées de façon vorace, sans chevauchement.
+
+(continuer)
+
 ## Textométrie
 
 Selon M. Tournier, la lexicometrie aussi appelée : logométrie, analyse automatique,

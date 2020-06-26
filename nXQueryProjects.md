@@ -2,6 +2,10 @@
 
 Une sélection de projets XQuery intéressants.
 
+## XBow
+
+https://github.com/line-o/xbow
+
 ## BaseX SFTP
 
 BaseX XQuery module for interacting with SFTP sites
@@ -236,6 +240,12 @@ http://www.saxonica.com/welcome/welcome.xml
 ### xqerl, Erlang XQuery 3.1 Processor and XML Database
 
 https://github.com/zadean/xqerl
+
+### Rumble
+
+JSONiq native implémentation.
+
+http://rumbledb.org/
 
 ## Listes
 

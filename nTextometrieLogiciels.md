@@ -1,5 +1,13 @@
 ## Logiciels de textométrie
 
+Guides et tutoriaux
+
+Python for text analysis, As taught at the Vrije Universiteit Amsterdam in the Humanities Research Master: Linguistics (track Human Language Technology) and the Minor Digital Humanities and Social Analytics (BA).
+
+https://github.com/cltl/python-for-text-analysis
+
+http://www.cltl.nl/
+
 ### TXM
 
 ### Logiciel Lexico
