@@ -14,6 +14,12 @@ http://www.geobib.fr/tool/iiif/
 
 https://blog.cogapp.com/hold-the-front-page-125f140147c2
 
+http://www.cite-ideale.fr/le-plan-de-saint-gall-vers-un-monastere-ideal/
+
+https://journals.openedition.org/cem/13624?lang=en
+
+https://www.campus-galli.de/klosterplan/?lang=en
+
 ## Outils
 
 Wax

@@ -124,8 +124,6 @@ http://www.cis.uni-muenchen.de/ocrworkshop/program.html
 
 https://drive.google.com/drive/u/0/folders/0B7l10Bj_LprhQnpSRkpGMGV2eE0
 
-http://www.cis.uni-muenchen.de/ocrworkshop/program.html
-
 https://github.com/tmbdev/ocropy/wiki
 
 ## Handwritten Text Recognition (HTR)
@@ -174,6 +172,137 @@ Conversions
 - https://github.com/INL/OpenConvert
 
 voir ce que fait Syd Bauman http://tei-l.970651.n3.nabble.com/OCRed-XML-samples-td4031040.html
+
+## Segmentation
+
+FineReader et CITLab dans Transkribus
+
+FineReader
+
+- très bon pour la détection des zones, le typage et l’ordonnancement
+- segmentation et transcription indissociables ; pas de HTR
+
+CITLab
+
+- adaptation au type de document ; entraînable
+- moins bon que FineReader (même pour le ms car typage et ordonnancement moindre qualité pour les documents complexes, dans le cas de la presse)
+
+Dans TimeUs pour écriture fin XIXe, HTR 5,2% erreur
+
+Presse, et monographies Kraken. Création propre modèle.
+
+Transcription pas toujours entièrement obtimisable. Scripts de transformation de textes brut ou d’interaction avec Kraken. Modélisation de la structure de chaque ensemble, en rendre compte dans les formats de fichiers.
+
+Régularisation des graphies pour les détecter rapidement. Les développer pour ressembler à du langage naturel (HTR). Résoudre les césures.
+
+Développement module de correction automatiques en travaillant sur des contextes.
+
+Structuration 
+
+## Redressement image
+
+ScanTailor pour redressement images
+
+## Rdv Alix Chagué, 8 octobre 2020
+
+Laboratoire Almanach
+
+Travail en cours sur le Minutier central, projet Lectorep. Se dégage actuellement de l’ANR TimeUs.
+
+Lectorep dans le cadre d’une convention cadre entre l’INRIA et le MCC. Troisième itération, prolongée d’un an.
+
+Technique
+
+Entraînement des modèles de Kraken présentée en ligne est obsolète. Deux manières d’entraîner, avec html mais pas d’entraînement de la segmentation. Dans eScriptorium, possible de faire de la segmentation sémantique qui permet d’aider à faire un export TEI. Actuellement Kraken ne fait pas d’export TEI. Besoin d’une XSLT mais une réflexion en cours. Laurent Romary participe au Lectorep donc très TEI, idée de pouvoir proposer une sortie TEI qui sera modifiée. Mais plus de projet, plus possible de créer un scénario.
+
+Dessiner les bases lignes, puis bleu pour dessiner des polygones autour de la ligne.
+
+A créé un truc pour syphonner les données entraînées par Transkribus. Possible d’également importer des transcriptions XML Alto ou transcription XML Page. Transkribus Alto 2 mais eScriptorium Alto 4. Alix a fait un script pour convertir les fichiers. Possible de pouvoir partager des modèles.
+
+Une interface graphique mais présent sur Herokuapp.
+
+Entraîner la segmentation « line and regions ». Alors créée des groupes de ligne comme pour les paragraphes. Notre modèle ne sait pas faire.
+
+L’idée avec eScriptorium être une interface. 
+
+Discussion Kraken, Transkribus. Stockel qui gère le projet Scripta dans lequel développé eScriptorium. Lien avec le développeur principal de Kraken.
+
+Plusieurs modes pour voir l’ordre des lignes. Mode zones.
+
+Sélectionner toutes les images > Train segmenter ou recogniser.
+
+Donner un nom, entraîner from scratch ou finetuner un modèle.
+
+Une fois qu’il est entraîné, disponible dans une liste.
+
+- Fichier entraînement partageable.
+- Ground fact, images et transcriptions
+
+Les ground facts sont des images et des fichiers Alto. Les fichiers Alto et Pages sont les fichiers pivots de Kraken.
+
+https://gitlab.inria.fr/scripta/escriptorium  pour faire des tickets
+
+également une API pour escriptorim
+
+https://gitlab.inria.fr/scripta/escriptorium 
+
+http://traces6.paris.inria.fr/api/
+
+eScriptorium développé avec Kraken par Daniel Stoekl EPHE dans le cadre de Scripta. Approché Benjamin? sans doute car travail sur des écritures non-latines ou avec sens de lecture différent.
+
+Daniel Stoekl travaillait avec Laurent Romary dans le cadre de l’équipe ALMAnaCH. Plus le cas aujourd’hui.
+
+Lectaurep est un projet de l’équipe ALMAnaCH. De même que Time Us et DAHN.
+
+Autour de Scripta Vietnamica et Tikoum Sofrim (hébreux).
+
+Lectraurep est un projet mené de front avec le DMC des Archives nationales. Marie-Françoise Limon Bonnet et Aurélia Rostaing (Minutier central).
+
+Phase 1 (2018), stage du M2 TNAH pour explorer la possibilité d’utiliser Transkribus ou explorer autre chose. Finalement décidé eScriptorium.
+
+DMOASI Département de la maîtrise œuvre et ouvrage et service informatique aux Archives nationales : Gaetano Piraino (ancien TNAH, vision plus maîtrise ouvrage) et Frédéric Zamareno.
+
+Le projet Lectaurep à 80% anciens AP ou TNAH. 
+
+SCRIPTA développe l’interface. ALMAnaCH qui travaille sur les modèles et cas d’usage français.
+
+Laurent Romary qui est le boss.
+
+Benoît Sago chef d’équipe. Laurent Romary qui fait les sujets DHs.
+
+DAHN Carmen Brando. Partenariat de Laurent EHESS INRIA. Anne Baillot.
+
+Atelier 21 octobre. Demandera si gens OK pour contribuer doc. Et mettre en contact des gens.
+
+Contrat jusqu’en novembre 21. En profiter pour avoir un an d’ici la fin de mon contrat de réfléchir à une thèse. Veut travailler sur le HTR. Pas encore de perspectives de financement. 
+
+
+
+École du Louvre
+
+- Françoise Zalek (documentation)
+- Christophe Leclerc (HA numérique)
+- Alix Chagué typologie numérique
+
+ajouter de la technique dans la formation.
+
+https://lectaurep.hypotheses.org/equipe-projet
+
+
+
+
+
+HTR-United sur Github pour partager Ground truth.
+
+https://github.com/HTR-United/htr-united
+
+
+
+
+
+
+
+
 
 ## Services commerciaux
 

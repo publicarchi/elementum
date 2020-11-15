@@ -91,6 +91,38 @@ return $i
   return $persName/text()
 ```
 
+
+
+```xquery
+for $i in (1, 2, 3)
+return $i
+```
+
+```xquery
+for $i in (1, 2, 3)
+return $i * $i
+```
+
+
+
+
+
+```xquery
+for $i in (1, 2, 3)
+return if ($i mod 2 = 0) then $i * $i
+```
+
+
+
+```xquery
+for $i in (1, 2, 3)
+return if ($i mod 2) then $i * $i
+```
+
+
+
+
+
 ---
 
 http://www.tutorialspoint.com/xquery/xquery_quick_guide.htm

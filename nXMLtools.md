@@ -6,6 +6,8 @@ version: 0.1
 
 # Outils XML
 
+http://textalign.net/
+
 https://github.com/pgfearo/xmlspectrum
 
 https://github.com/maxtoroq/rng.xsl (under dev)
