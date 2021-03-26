@@ -35,7 +35,7 @@ On créer ensuite un fichier de configuration
 
 ```bash
 cd /etc/apache2/users # aller dans le répertoire de configuration d’Apache
-vim username.conf # remplacez `username` par votre nom utilisateur
+sudo vim username.conf # remplacez `username` par votre nom utilisateur
 ```
 
 On entre dans ce fichier la configuration du répertoire, et un renseigne la configuration du répertoire en remplaçant `username` par son nom d’utilisateur mac.
@@ -47,6 +47,21 @@ On entre dans ce fichier la configuration du répertoire, et un renseigne la con
    Require all granted
 </Directory>
 ```
+
+ou bien, en fonction de la configuration choisie
+
+```xml
+<Directory "/Users/emmanuelchateau/Sites/">
+  AddLanguage fr .fr
+  AddHandler perl-script .pl
+  PerlHandler ModPerl::Registry
+  Options Indexes MultiViews FollowSymLinks
+  AllowOverride All
+  Require host localhost
+</Directory>
+```
+
+
 
 Le répertoire doit être accessible en lecture pour Apache 
 
@@ -197,5 +212,12 @@ Pour vérifier que tout fonctionne, créez un fichier php de test dans votre ré
 - <https://www.hongkiat.com/blog/osx-apache-mysql-php-part-2/>
 - Sur Linux, voir http://fr.open-lamp.com/installer-et-configurer-un-serveur-web-sous-linux-debian-ou-ubuntu/
 
+https://web.archive.org/web/20161018141829/http://digitalshore.io/local-web-development-environment-apache-macos-sierra-10-12/
 
+PHP Big Sur
 
+**https://discussions.apple.com/docs/DOC-250003138**
+
+https://getgrav.org/blog/macos-bigsur-apache-multiple-php-versions
+
+https://tech-cookbook.com/2020/11/14/setting-up-your-local-web-server-on-macos-big-sur-11-0-1-2020-mamp-macos-apache-mysql-php/

@@ -6,7 +6,7 @@ tags: xml, outils, jing, mac
 
 # Jing sur mon mac
 
-[Jing]() est une application qui permet de valider des documents XML contre un schema [RelaxNG](http://relaxng.org) dans les syntaxes XML ou compacte. Trang est une application de conversion de schémas XML vers ou depuis RelaxNG. Ce sont des logiciels libres et ouverts (licence BSD) écrits en Java par James Clark.
+[Jing](https://github.com/relaxng/jing-trang) est une application qui permet de valider des documents XML contre un schema [RelaxNG](http://relaxng.org) dans les syntaxes XML ou compacte. [Trang](https://github.com/relaxng/jing-trang) est une application de conversion de schémas XML vers ou depuis RelaxNG. Ce sont des logiciels libres et ouverts (licence BSD) écrits en Java par James Clark.
 
 ## Pré-requis
 
@@ -62,6 +62,12 @@ sudo chmod +x saxon
 
 ## Créer un écrit
 
+## Installaton avec Brew
+
+```bash
+brew install jing-trang
+```
+
 ## Références
 
 - https://github.com/relaxng/jing-trang
@@ -72,4 +78,4 @@ sudo chmod +x saxon
 
 - http://www.thaiopensource.com/relaxng/
 
-  ​
+  
