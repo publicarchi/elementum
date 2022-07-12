@@ -134,3 +134,28 @@ ORDER BY ?dob
 LIMIT 88
 ```
 
+```SPARQL
+#Où est Anvers dans le monde ?
+#defaultView:Map
+SELECT DISTINCT ?settlement ?name ?coor
+WHERE
+{
+  
+   ?subclass_settlement wdt:P279+ wd:Q486972 .
+   ?settlement wdt:P31 ?subclass_settlement ;
+               wdt:P625 ?coor ;
+                rdfs:label ?name .
+   FILTER regex(?name, "Antwerp", "i")
+
+}
+```
+
+
+
+## Références
+
+https://gist.github.com/ColinMaudry/6fd6a5f610f0ac3e6696
+
+https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service
+
+https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual

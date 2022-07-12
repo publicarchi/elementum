@@ -52,7 +52,7 @@ http://semantic-ui.com/
 
 ### Skel
 
-A lightweight responsive framework for the www [http://skel.io](http://skel.io/)
+A lightweight responsive framework for the www [http://skel.io](http://skel.io/) (mort 2021)
 
 https://github.com/ajlkn/skel
 

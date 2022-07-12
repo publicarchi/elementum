@@ -2,6 +2,38 @@
 
 Une sélection de projets XQuery intéressants.
 
+### Exist XQuery templating
+
+https://github.com/eXist-db/templating
+
+### XQuery modules
+
+https://github.com/LeoWoerteler/xq-modules
+
+### OpenSiddur
+
+https://github.com/opensiddur/opensiddur
+
+XQuery complet avec BaseX
+
+### xQuery AirTable
+
+https://github.com/joewiz/airtable.xq
+
+### SocrateX & Application checker
+
+https://github.com/microsoft/Dynamics365FO-AppChecker/
+
+https://ariste.info/en/2021/06/socratex-application-checker/?mtm_campaign=socratex&mtm_source=twitter
+
+### Converting Roman numerals with XQuery & XSLT I–IV
+
+https://joewiz.org/2021/05/30/converting-roman-numerals-with-xquery-xslt/
+
+## Brackit
+
+https://github.com/sirixdb/brackit
+
 ## XBow
 
 https://github.com/line-o/xbow
@@ -120,6 +152,12 @@ https://github.com/kefo/rdfxq
 
 https://github.com/apb2006/uploadxq
 
+### exist Markdown
+
+Markdown Parser in XQuery
+
+https://github.com/eXist-db/exist-markdown
+
 ### XQuery Markdown Parser
 
 [XQuery Markdown Parser](https://github.com/mathias-goebel/exist-markdown)
@@ -158,6 +196,16 @@ HTTP request routing library for BaseX
 https://github.com/wolfgangmm/exist-markdown
 
 https://github.com/xokomola/xq-markdown
+
+https://github.com/msmid/markdown2docbook/tree/master/src
+
+https://github.com/eXist-db/exist-markdown/blob/master/content/markdown.xql
+
+### Higher-Order XQuery Modules
+
+This repository contains various algorithms and data structures implemented in pure [XQuery 3.0](http://www.w3.org/TR/xquery-30/). They all are purely functional and mostly inspired by Chris Okasaki's excellent [Purely Functional Data Structures](http://www.amazon.com/Purely-Functional-Structures-Chris-Okasaki/dp/0521663504) and similar modules written in [Haskell](http://en.wikipedia.org/wiki/Haskell_(programming_language)).
+
+https://github.com/LeoWoerteler/xq-modules
 
 
 ### Origami
@@ -254,6 +302,10 @@ http://rumbledb.org/
 https://github.com/joewiz/xquery-power
 
 https://github.com/joewiz/learn-xquery
+
+## Annotations
+
+https://github.com/CoPhi/euporia
 
 
 ## Matériel pédagogique

@@ -126,6 +126,12 @@ https://drive.google.com/drive/u/0/folders/0B7l10Bj_LprhQnpSRkpGMGV2eE0
 
 https://github.com/tmbdev/ocropy/wiki
 
+## Grobid dictionnaries
+
+http://cloud.science-miner.com/grobid/
+
+https://github.com/kermitt2/grobid
+
 ## Handwritten Text Recognition (HTR)
 
 ### Transkribus
@@ -288,21 +294,15 @@ ajouter de la technique dans la formation.
 
 https://lectaurep.hypotheses.org/equipe-projet
 
-
-
-
-
-HTR-United sur Github pour partager Ground truth.
+## HTR-United sur Github pour partager Ground truth
 
 https://github.com/HTR-United/htr-united
 
+## eScriptorium
 
+https://gitlab.inria.fr/scripta/escriptorium
 
-
-
-
-
-
+https://escripta.hypotheses.org
 
 ## Services commerciaux
 
@@ -338,9 +338,11 @@ cel: 00 91 94422 94226
 - http://techsoupforlibraries.org/blog/the-best-ocr-tools-to-digitize-text-compared
 - https://ocr-d.github.io/
 - https://ocr-d.github.io/core/
+- Chagué, Alix. 2021. « Comment faire lire des gribouillis à mon ordinateur ? par Alix Chagué ». *MATE-SHS*. 11 mars. https://mate-shs.cnrs.fr/actions/tutomate/tuto31-lire-des-gribouillis-chague/.
 
 ## À voir
 
 https://ocr-d.github.io
 
 https://github.com/OCR-D/
+

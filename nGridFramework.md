@@ -8,6 +8,74 @@ Même si l’approche de Bourbon fait apparaître les autres SAAS framework bord
 
 Toutefois, depuis des fonctionnalités de développement moderne comme Flexbox pourraient ici encore être substituées. Mais Flexbox n’est pas nécessairement supportés par les anciens navigateurs.
 
+## Outils datavis
+
+https://gridjs.io/
+
+## Sélection 2021
+
+https://smolcss.dev/
+
+https://headlessui.dev/
+
+https://www.agnosticui.com/
+
+https://picocss.com/
+
+Bulma https://bulma.io/
+
+Tailwindcss https://tailwindcss.com/
+
+Taychons https://tachyons.io/ (vieux)
+
+Carbon design system https://www.carbondesignsystem.com/
+
+« Charts.css ». s. d. Charts.css. Consulté le 22 janvier 2022. https://chartscss.org/.
+
+« Layout patterns ». s. d. Web.dev. Consulté le 22 janvier 2022. https://web.dev/patterns/layout/.
+
+« Luxa CSS ». s. d. Consulté le 22 janvier 2022. https://luxacss.com/.
+
+« Open Props: sub-atomic styles ». s. d. Consulté le 22 janvier 2022. https://open-props.style/.
+
+« The Component Gallery ». s. d. Consulté le 22 janvier 2022. https://component.gallery/.
+
+« Theatre.js - JavaScript Motion Design Library ». s. d. Consulté le 22 janvier 2022. https://www.theatrejs.com/.
+
+[Svelte-material](https://sveltematerialui.com)
+
+[Carbon-Svelte](https://carbon-svelte.vercel.app/)
+
+[Smelte Tailwindcss](https://smeltejs.com/)
+
+[Svelterial](https://svelterialjs.github.io)
+
+[svelte-chota](https://alexxnb.github.io/svelte-chota/install)
+
+https://demos.creative-tim.com/notus-svelte/
+
+https://svelthree.dev/
+
+https://github.com/troxler/awesome-css-frameworks
+
+https://picturepan2.github.io/spectre/utilities/shapes.html
+
+https://svelkit.js.org/spectre/api/
+
+https://primer.style/
+
+https://getbase.org/
+
+https://igoradamenko.github.io/awsm.css/elements.html
+
+https://picturepan2.github.io/spectre/
+
+Courriels https://bojler.slicejack.com/
+
+https://ajusa.github.io/lit minimalist
+
+https://watercss.kognise.dev/
+
 ## Guides Flexbox et Grid
 
 https://speakerdeck.com/goetter/50-nuances-de-grilles

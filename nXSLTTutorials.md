@@ -35,6 +35,9 @@ Wilmott, Sam. s. d. « Regular Expressions in XSLT 2.0, XQuery 1.0 and XPath 2.0
 
 ## Tutoriaux XSLT 3.0
 
+> declarative (functional) tree transformation language with referential transparency and implicit dispatch
+
+- Quin, Liam. s. d. « Exciting new features in XSLT 3 for book publishers ». *BookNet Canada*. Consulté le 4 novembre 2019. https://www.booknetcanada.ca/blog/2019/1/9/exciting-new-features-in-xslt-3-for-book-publishers.
 - Liam Quin. XSLT 3: Clearer, faster, wider, stronger, https://youtu.be/p8087hIYX2M
 - https://archive.xmlprague.cz/2017/files/presentations/prague-w3c.pdf
 - http://www.datypic.com/services/xslt/whatsnew3.html

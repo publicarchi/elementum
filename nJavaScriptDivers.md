@@ -5,6 +5,14 @@ tag: javascript
 ---
 # Divers JavaScript
 
+## Tutoriaux
+
+- [The Modern JavaScript Tutorial. How it’s done now. From the basics to advanced topics with simple, but detailed explanations](https://javascript.info)
+- https://github.com/getify/You-Dont-Know-JS
+- https://modern-web.dev
+- http://jstherightway.org
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
 ## Livres et documentation
 
 - [Axel Rauschmayer, Exploring ES6, Upgrade to the next version of JavaScript](http://exploringjs.com)
@@ -16,12 +24,16 @@ tag: javascript
 - [Addy Osmani, Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 - [Eloquent JavaScript](http://eloquentjavascript.net)
 - [Deviens un ninja avec Angular 2](https://books.ninja-squad.com/angular2)
-- http://jstherightway.org
-- [The Modern JavaScript Tutorial. How it’s done now. From the basics to advanced topics with simple, but detailed explanations](https://javascript.info)
 - [Perfection Kills, Exploring JavaScript by Example](http://perfectionkills.com)
 - https://javascriptweblog.wordpress.com
+- [Learning JavaScript Design Patterns](https://www.patterns.dev/posts/classic-design-patterns/)
 
-## Tutoriaux
+## Sites
+
+- https://www.javascript.com
+- https://www.echojs.com
+
+## Tutoriaux frameworks
 
 ### VueJS
 
@@ -163,14 +175,38 @@ https://github.com/goVanilla/highlighterJS
 
 cf. https://github.com/goVanilla
 
-## D3js
+## Visualisation de données
+
+### C3.js D3-based reusable chart library
+
+déclinaison de D3
+
+https://c3js.org
+
+### Charts.js
+
+Open SOurce. HTML5 based JavaScript, canvas au lieu de SVG.
+
+https://www.chartjs.org
+
+### Chartist.js
+
+SVG based library. No dependancies.
+
+https://gionkunz.github.io/chartist-js/
+
+### Sigma JS
+
+https://www.sigmajs.org/
+
+### D3js
 
 - [D3 book](http://alignedleft.com/work/d3-book)
 - https://www.dashingd3js.com/lessons/
 
 voir aussi http://nvd3.org cf. https://css-tricks.com/how-to-make-a-modern-dashboard-with-nvd3-js/#more-273899
 
-## Réalisation de Graphiques avec D3js
+### Réalisation de Graphiques avec D3js
 
 ### Greuler
 
@@ -248,6 +284,10 @@ https://emeeks.github.io/semiotic/
 
 [**Moment.js** ](https://github.com/moment/moment)— a lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
 
+### Gantt
+
+https://frappe.io/gantt
+
 ## Chronologies et Storytelling
 
 - [TimelineJS](https://github.com/NUKnightLab/TimelineJS) - A Storytelling Timeline built in JavaScript et http://timeline.knightlab.com
@@ -259,6 +299,19 @@ https://emeeks.github.io/semiotic/
 - https://h5p.org
 - https://idyll-lang.org ++
 - http://staging.famous.org
+
+Propriétaires
+
+Micrio https://micr.io/
+
+Ultra resolution storytelling on the web -- a proud @Q42
+ product https://app.nos.nl/namenmonument/
+
+https://thingsthattalk.net/en/about
+
+https://www.fabrique.nl/
+
+https://www.q42.nl/
 
 ## Guides interactifs
 

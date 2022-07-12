@@ -163,6 +163,30 @@ TreeTagger (Stein et Schmid 1995) et Flemm (Namer 2000). TreeTagger, on l’a di
 
 www.ling.uqam.ca/forum/satoman/images/jadt2010_submission_54-1.doc
 
+https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
+
+### Open Corpus Workbench
+
+https://www.ims.uni-stuttgart.de/forschung/projekte/corpus-workbench/
+
+http://cwb.sourceforge.net/
+
+> The IMS Open Corpus Workbench (CWB) is a collection of **open-source** tools for managing and querying **large text corpora** (up to 2 billion words) with **linguistic annotations**. Its central component is the flexible and efficient query processor **CQP**.
+
+Doit travailler en format VRT
+
+CQP en ligne de commande qui fonctionne le mieux
+
+http://cwb.sourceforge.net/files/CQP_Tutorial.pdf
+
+http://fedora.clarin-d.uni-saarland.de/teaching/Corpus_Linguistics/Tutorial_CQP_I.html
+
+CQP Web (difficile à installer)
+
+https://corpora.clarin-d.uni-saarland.de/cqpweb/
+
+TXM
+
 ### Étienne Brunet
 
 Université de Nice, lemmatiseur du français moderne
@@ -188,3 +212,8 @@ http://alpage.inria.fr/frmgwiki/frmg_main/frmg_server
 ## CamemBERT
 
 https://camembert-model.fr/
+
+## Le Dictionnaire électronique des synonymes · DES
+
+http://crisco.unicaen.fr/dictionnaire-electronique-des-synonymes/actualites-des/
+

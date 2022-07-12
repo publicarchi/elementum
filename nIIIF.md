@@ -2,6 +2,46 @@
 tags: iiif, api
 ---
 
+## International Image Interoperability Framework (IIIF)
+
+https://iiif.io/
+
+« Enabling Richer Access to the World’s Images »
+
+Initiative communautaire regroupant des musées et des bibliothèques ou des entreprises pour concevoir des entrepôts pour la distribution d’images.
+
+Dispositif fondé sur la définition d’Interfaces programmables bien définies.
+Encourage le développement de logiciels.
+
+Exemples de ressources
+
+- https://github.com/IIIF/awesome-iiif
+- https://github.com/ouvroir/labouvroir/blob/main/ressources/iiifResources.yml
+
+Communauté
+
+- https://training.iiif.io
+- https://iiif.io/community/#community-groups-committees
+- https://github.com/ryanfb/iiif-universe
+
+## Visionneuses
+
+### Mirador
+
+https://projectmirador.org/
+
+## Projets
+
+### Inquire
+
+http://inquire.armtest.uk
+
+### OCLC ResearchWorks IIIF Explorer
+
+OCLC ResearchWorks has created an index of all of the images in the CONTENTdm digital content management systems hosted by OCLC.The IIIF Explorer offers a way to search across those collections.This prototype is called the "IIIF Explorer" because the CONTENTdm images are associated with documents that use the IIIF (International Image Interoperability Framework) "Presentation Manifest" standard.IIIF Presentation Manifests and related images are presented with a viewer provided by Project Mirador.The IIIF Explorer is an experimental prototype system, available for testing and evaluation. Please note that data in the IIIF Explorer index is not guaranteed to be current with the source CONTENTdm collections, facets for type, audience, creator, etc. are partially representative of the source data based on preliminary metadata analysis and reconcilition, and the user interface is in early stages of development and testing.
+
+https://researchworks.oclc.org/iiif-explorer/
+
 # Resources utiles IIIF
 
 International Image Interoperability Framework IIIF
