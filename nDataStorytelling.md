@@ -6,13 +6,20 @@ https://github.com/russellgoldenberg/scrollama
 
 ## Chronologie
 
-- https://github.com/riksantikvarieambetet/VIKUS-Viewer-Nationalmuseum
+- **https://github.com/NUKnightLab/TimelineJS3**
+- https://github.com/twitter/labella.js
+- https://squarechip.github.io/timeline/
+- https://timelinestoryteller.com
+- **https://github.com/riksantikvarieambetet/VIKUS-Viewer-Nationalmuseum**
 - https://github.com/2d-inc/HistoryOfEverything
 - http://timeline.knightlab.com/
 - https://github.com/ilkeryilmaz/timelinejs
 - https://github.com/jiahuang/d3-timeline
 - https://github.com/wellcometrust/timeline
 - https://github.com/kgeographer/geojson-t
+- http://www.simile-widgets.org/timeline/ (abadonné)
+- https://github.com/Lab21k/standalone-timeline/
+- https://github.com/simile-widgets/exhibit
 
 ## Datavis
 

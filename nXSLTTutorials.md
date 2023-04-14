@@ -3,6 +3,61 @@ since: 2020-05-19
 tags: xslt, guides
 ---
 
+# Guide XSLT
+
+## Qu’est-ce que XSLT ?
+
+[librement adapté de la spécification]
+
+Une transformation est exprimée sous la forme d’une feuile de style (stylesheet). Une feuille de style est constituée d’un ou plusieurs doucments XML bien formés ses conformant à la spécification sur les espaces de noms.
+
+Une feuille de style, inclue généralement un mélange d’élémenst définis par XSLT placés dans l’espace de nom de XSLT `http://www.w3.org/1999/XSL/Transform` et un mélange d’autres éléments.
+
+Le terme feuille de style reflète le fait que XSLT est destiné à ajouter des informations de stylage à des documents sources XML en les transformant en un document consistant de XSL formating objects (XSL-FO) ou dans un autre format de présentation comme HTML, XHTML, ou SVG. Cependant XSLT est également employé pour toutes sortes de tâche de transformation, et pas seulement dans des buts de formattage ou d’applications de présentation.
+
+Une transformation exprimée en XSLT décrit des règles pour transformer les données en entrée en données de sortie. Ces données sseront toute des instances du XDM data model. Dans le cas le plus simple et le plus commun, l’entrée est un document XML désigné arbre source (source tree), la sortie est un document XML appelé abre résultat (result tree). Il est également possible de traiter plusieurs documents sources ou de générer plusieurs documents résultats et de traiter d’autres formats que XML.
+
+La transformation est réalisée au moyen d’un ensemble de **règles modèles (template rules)**. Un règle modèle associe un **motif (pattern)** qui correspond typiquement à des nœuds dans le document sources, avec un **constructeur de séquence (sequence constructor)**. Dans la plupart des cas, le constructeur de séquence provoquera la cosnrtuction de nouveaux nœuds qui peuvent faire partie d’un **arbre résultat (result tree)**. La structure de l’arbre résulatt peut être complètement différente de la structure des arbres sources. Lors de la construction d’un abre résultat, les nœuds des arbres sources peuvent être filtrés et réordonnés, et des structures arbritraires peuvent être ajoutées. Ce mécanisme permet à une feuille de style d’être applicable à une large classe de documents qui présentent des structures sources similaires.
+
+Les **feuilles de style (stylesheets)** on une structure modulaire ; elles peuvent contenir plusierus package développés indépendamment les uns des autres, et chaque package peut cosntitué en plusieurs modules de feuilles de style.
+
+- [Definition: un **motif (pattern)** spécifie un ensemble de conditions sur un item. Un item qui satisfie les conditions matche le motif ; un item qui ne satisfait pas les conditions ne matche pas.]
+  Il existe deux types de motifs :
+  - Un **motif de prédicat (predicate pattern)** est écrit sous la forme d’un point `.` suivi par un ou plusieurs prédicats entre crochets et matche n’importe quel item pour lesquels chaque prédicat est évalué vrai `true`.
+    Cette construction peut être employée pour matcher des items de n’importe quel type (nœud, valeur atomique, ou un item de fonction).
+  - un **motif de sélection (selection pattern)** utilise un sous-ensemble de la syntaxe des expressions de chemin (path expressions), et il est défini pour matcher un nœud dans l’expression de chemin correspondante qui sélectionne le nœud. Les motifs de sélection peuvent aussi être formés en combinaison d’autres motifs utilisant l’union, l’intersection et différents opérateurs.
+- [Definition: un **constructeur de séquence (sequence constructor)** est une séquence de zéro ou plusieurs nœuds adjascents dans la feuille de style qui peuvent être évalués pour retourenr une séquence de nœuds, des valeurs atomiques, ou des items de fonction.
+
+## Nouveautés de XSLT 3.0
+
+- Streaming
+
+  - `xsl:source-document`
+  - mode
+  - `xsl:iterate`
+  - `xsl:merge`
+  - `xsl:fork`
+  - accumulators
+
+- une instruction `xsl:evaluate` instruction qui permet l’expression d’expressions XPath qui sont construites de manière dynamique ou lue depuis un document source ;
+
+- des améliorations de la syntaxe des motifs qui permettent notamment les valeurs atomiques comme les nœuds ;
+
+- une instruction `xsl:try` qui permet de retrouver des erreurs dynamiquement ;
+
+- l’élément `xsl:global-context-item` pour la délcation les attendus d’une feuille de style
+
+- une nouvelle instruction `xsl:assert` pour assister les dévelopeurs dans la production de code robuste.
+
+- XSLT 3.0 apporte également les améliorations instroduites dans le langage XPath et la librairie de fonctions standard.
+
+  - variables peuvent être liées dans une expression XPath avec la clause `let`
+  - les fonctions sont des citoyens de première classe, elle peuvent être passées comme arguments d’autres fonctions
+  - de nombreuses nouvelles fonctions sont disponibles dont `parse-xml` et `serialise` pour convertir des représentations lexicales et des arbres.
+  - support des maps.
+
+  cf. https://www.w3.org/TR/xslt-30/#changes-since-2.0
+
 # Tutoriaux XSLT 2.0
 
 David J. Birnbaum http://dh.obdurodon.org  

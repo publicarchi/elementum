@@ -84,10 +84,10 @@ return $i
 
 
 ```xquery
-  let $document := fn:doc("tei.xml") 
+  let $document := fn:doc("tei.xml")
   for $persName in $document//tei:persName
   where $persName/@id
-  order by $persName/@id 
+  order by $persName/@id
   return $persName/text()
 ```
 
@@ -126,3 +126,5 @@ return if ($i mod 2) then $i * $i
 ---
 
 http://www.tutorialspoint.com/xquery/xquery_quick_guide.htm
+
+https://www.ibm.com/docs/en/db2-for-zos/11?topic=zos-xml

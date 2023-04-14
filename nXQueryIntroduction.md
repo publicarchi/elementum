@@ -6,23 +6,41 @@ author: emchateau
 
 # Introduction XQuery
 
+[XQuery](https://www.w3.org/TR/xquery-31/) est un langage de requêtes applicable à un grand nombre de sources de données qu’elles soient encodées en XML ou représentée en JSON. 
+
+Le langage opère notamment sur le modèle de données XML ([XML Data Model (XDM)](https://www.w3.org/TR/xpath-datamodel-31/)). Là où XSLT est destiné à transformer des données XML, XQuery est principalement destiné à faire des recherche dans des données XML. Il s’utilise habituellement avec une base de données XML capable d’indexer les nœuds d’un document XML. Mais c’est aussi un langage de programmation turing complet qui peut être utilisé dans de nombreuses applications. XQuery est principalement efficace lorsqu’il s’agit de manipuler ou de concilier des données de différents genre.
+
+XQuery est un langage hôte de [XPath](https://www.w3.org/TR/xpath-31/). Ainsi, XPath est généralement un sous-ensemble de XQuery. Autrement dit, toute expression XPath sera une expression XQuery valide. Le langage XQuery apporte toutefois un certain nombre de fonctionnalités pour requêter et manipuler des données XML. La version 3.1 du langage étend XQuery pour travailler sur des données JSON en ajoutant des types *maps* et *arrays* au langage.
+
+Plusieurs extensions de XQuery peuvent s’avérer utiles : XQuery Update est destiné à facilier la mise à jour de documents XML, XQuery Full-text sert à faire des recherches dans des chaînes de caractères, ou faciliter la réalisation de requêtes REST.
+
 ## Les types définis par le XML Data Model (XDM)
+
+Dans le [XML Data Model (XDM)](https://www.w3.org/TR/xpath-datamodel-31/), toutes les expressions XPath ramènent une séquence. Une séquence se compose de zéro, un ou plusieurs items. Les items peuvent être des littéraux, des valeurs atomiques ou des fonctions.
+
+### Valeurs atomiques
+
+Voici quelques exemples de création de valeurs atomiques définies par le modèle de données :
+
+Chaîne de charactère (*string*)
 
 ```xquery
 'string' (: chaîne de caractères :)
 ```
 
+Entier (*integer*)
+
 ```xquery
 1 (: entier :)
 ```
+
+Expression arithmétique
 
 ```xquery
 1 + 1 + 1 (: somme :)
 ```
 
-```xquery
-<p/> (: constructeur direct :)
-```
+Séquence
 
 ```xquery
 1, 2, 3 (: séquence :)
@@ -34,7 +52,30 @@ Concaténations et conversions
 1 || 2 || 3
 ```
 
+### Création des nœuds XML
+
+Le XML Data Model définit 7 types de nœuds. En XQuery, il est possible de créer des nœuds en utilisant des constructeurs directs (littéraux) ou bien en les comptant.
+
+Constructeurs directs
+
+```xquery
+<p/> (: constructeur direct d’un élément XML p :)
+<p xml:id="id01"/> (: constructeur direct d’un élément XML p vide avec un attribut @id qui avec la valeur id01 :)
+```
+
+```xquery
+element p { '' } (: computation d’un élément XML p vide :)
+element p {
+	attribute xml:id { 'id01' }
+	''
+} (: computation d’un élément XML p vide avec un attribut @id qui avec la valeur id01 :)
+```
+
 ## Structures FLOWR
+
+FLOWR pour For, Let, Order by, Where, Return
+
+Affecter et retourner une variable
 
 ```xquery
 let $var := 'texte'
@@ -54,7 +95,7 @@ return
 		<p>{$var}</item>
 ```
 
-Utilisation d’une boucle for
+Utilisation d’une boucle `for`
 
 ```xquery
 let $sequence := (1, 2, 3)
@@ -84,7 +125,17 @@ return <liste>{$content}</liste>
 
 Définition d’une fonction
 
-Appels d’une fonction
+```xquery
+declare function nomDeFonction($param) {
+	'corps de la fonction'
+};
+```
+
+Appels de fonction
+
+```xquery
+nomDeFonction($param)
+```
 
 Typage de la fonction
 

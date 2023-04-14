@@ -8,6 +8,8 @@ Quelques outils intéressants pour travailler avec des documents TEI
 
 https://github.com/C2DH/open-tei-transviewer
 
+https://github.com/notesjor/corpusexplorer2.0
+
 ## Facsimile
 
 https://github.com/sparkyc84/tei-zoner

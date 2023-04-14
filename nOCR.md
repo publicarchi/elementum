@@ -42,8 +42,11 @@ Certains logiciels comme Tesseract utilisent une approche basée sur deux passes
 
 - En France, HumaNum offre un service d’océrisation avec Abby fine reader
 - [Tesseract](https://github.com/tesseract-ocr/tesseract) (open source) est un programme développé en C et en C++ disponible sous licence Apache v 2.0. Développé à partir de 1985 comme logiciel propriétaire par la société Hewlett-Packard, son code a été publié sous la forme de logiciel libre et open source en 2005, son développement est désormais sponsorisé par Google.
+  https://github.com/tesseract-ocr
 - [Aletheia](http://www.primaresearch.org/tools) (avec Tesseract intégré)
 - [Ocropy](https://github.com/tmbdev/ocropy) est un projet open-source développé en Python et soutenu par Google qui utilisait initialement Tesseract comme moteur de reconnaissance mais qui a ensuite développé son propre outil.
+- [Kraken](https://kraken.re) kraken is a turn-key OCR system optimized for historical and non-Latin script material.
+- Projet https://www.ocr4all.org/
 
 ## Outils
 
@@ -326,6 +329,24 @@ cel: 00 91 94422 94226
 
 [www.wordpro-pondicherry.com](http://www.wordpro-pondicherry.com/)
 
+## Prakrit texts
+
+Projet de OCR de milliers de livres avec Kraken
+
+https://github.com/aso2101/prakrit_texts
+
+## Formats
+
+### PageXML
+
+https://ocr-d.de/en/gt-guidelines/trans/trPage.html
+
+https://github.com/omni-us/pagexml
+
+Library in C++ and a python wrapper for dealing with Page XML files
+
+
+
    .............................
 
 ## Références
@@ -346,3 +367,10 @@ https://ocr-d.github.io
 
 https://github.com/OCR-D/
 
+
+
+
+
+https://github.com/INL/OpenConvert
+
+https://github.com/opf/text-extractor

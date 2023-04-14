@@ -1,5 +1,77 @@
 # Julia NLP
 
+## JuliaText
+
+https://github.com/JuliaText
+
+> JuliaLang Organisation for Natual Language Processing, (textual) Information Retrieval, and Computational Linguistics
+
+### Text Analysis
+
+https://github.com/JuliaText/TextAnalysis.jl
+
+> Julia package for text analysis
+
+### Word Tokenizer
+
+> High performance tokenizers for natural language processing and other related tasks
+
+https://github.com/JuliaText/WordTokenizers.jl
+
+### Embeddings
+
+https://github.com/JuliaText/Embeddings.jl
+
+> Functions and data dependencies for loading various word embeddings (Word2Vec, FastText, GLoVE)
+
+### Languages
+
+https://github.com/JuliaText/Languages.jl
+
+> A package for working with human languages
+
+### Word2Vec
+
+https://github.com/JuliaText/Word2Vec.jl
+
+>Word2Vec takes a text corpus as input and produces the word vectors as output. Training is done using the original C code, other functionalities are pure Julia. See [demo](http://nbviewer.ipython.org/github/JuliaText/Word2Vec.jl/blob/master/examples/demo.ipynb) for more details.
+
+
+
+https://github.com/JuliaText/Embeddings.jl
+
+https://word2vec.news-r.org
+
+## WordNet
+
+https://github.com/JuliaText/WordNet.jl
+
+> A Julia package for Princeton's WordNet®.
+
+## Bert like
+
+### Transformers.jl 
+
+> Julia implementation of Transformers models
+
+https://chengchingwen.github.io/Transformers.jl/dev/
+
+### ALBERT
+
+> ALBERT(A Lite BERT for Self-Supervised Learning of Language Representations) implementation in Julia
+
+https://github.com/tejasvaidhyadev/ALBERT.jl
+
+## A voir
+
+https://github.com/oxinabox/DataDeps.jl
+
+https://github.com/tejasvaidhyadev AU MILA
+
+http://tejasvaidhyadev.github.io
+
+## Divers
+
 Avik Sengupta. Natural Language Processing workshop using Julia, JuliaCon 2018. https://youtu.be/f7RNuOLDyM8
 
 Aussi travail Lindoln sur la collection de corpus langagiers.

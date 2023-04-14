@@ -1,5 +1,7 @@
 # XSLT in the Browser
 
+« Associating Style Sheets with XML documents 1.0 (Second Edition) ». 2010. Recommendation. W3C. Consulté le 27 novembre 2022. https://www.w3.org/TR/xml-stylesheet/.
+
 Browsers do not yet support XSLT 2.0, natively.
 
 - [Saxon 9 CE](http://www.saxonica.com/ce/index.xml) is a JavaScript-based XSLT 2.0 implementation. Now replaced by Saxon-JS

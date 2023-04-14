@@ -360,9 +360,9 @@ Car xs:error ramène toujours une erreur. Ne jamais computer.
 
 ### Le type *map*
 
-XPath 3.1 introduit la définition de maps. Un **map** est un nouveau type d’item dans le modèle de données XDM à côté des nœuds et des valeurs atomiques. En réalité, un map est une sorte de fonction, on peut le concevoir comme une fonction définie de manière étendue (en tabulant la valeur de la fonction pour tous les arguments possibles) plutôt que de manière intentionnelle (au moyen d’un algorithme). cf. Michael Kay
+XPath 3.1 introduit la définition de maps. Un **map** est un nouveau type d’item dans le modèle de données XDM à côté des nœuds et des valeurs atomiques. Un map est une fonction extentionnelle (extensional function). Comment passe d’un ensemble de valeurs à l’autre en listant toutes les entrées. En réalité, un map est une sorte de fonction, on peut le concevoir comme une fonction définie de manière étendue (en tabulant la valeur de la fonction pour tous les arguments possibles) plutôt que de manière intentionnelle (au moyen d’un algorithme). cf. Michael Kay
 
-Un map est un ensemble d’**entrées** (*entry*). Chaque entrée prend la forme d’une **parie clef-valeur** (*key-value pair*). La **clef** (key) est toujours une valeur atomique (*atomic value)*. La **valeur** (*value*) peut prendre n’importe quelle valeurs du modèle XDM : c’est-à-dire une séquence de nœuds, de valeurs atomiques, de fonctions, ou de maps.
+Un map est un ensemble d’**entrées** (*entry*). Chaque entrée prend la forme d’une **parire clef-valeur** (*key-value pair*). La **clef** (key) est toujours une valeur atomique (*atomic value)*. La **valeur** (*value*) peut prendre n’importe quelle valeurs du modèle XDM : c’est-à-dire une séquence de nœuds, de valeurs atomiques, de fonctions, ou de maps.
 
 Comme les séquences, les maps sont **immuables** (*immutable*). Lorsque l’on ajoute une entrée à un map, on obtient un nouveau map et l’original reste inchangé. De même, comme les séquences, les maps n’ont pas de type intrinsèque propre mais plutôt un type qui peut être déduit de ce qu’elles contiennent. Un map est conforme au type *map(K, V)* si toutes les clefs sont de type *K* et toutes les valeurs sont de type *V*. Par exemple, si les clés sont toutes des chaînes de caractères et les valeurs des éléments, alors le map est conforme au type `map(xs:string, element(employee))`.
 
@@ -618,6 +618,24 @@ return $x - $y
 let $ := 5
 	return let $y := 2
 		return $x - $y
+```
+
+### Rappel sur l’expression `for` et les expressions conditionnelles `if` et `else`
+
+XPath 2.0 avait également introduit une expression `for`
+
+```xquery
+for $i in (1 to 30) return $i * $i
+```
+
+```xquery
+for $a in /nuts, $b in ('flour', 'surprise') return $a || ' ' || $b
+```
+
+XPath 2.0 permet l’utilisation d’expressions conditionnelles
+
+```xquery
+if (//element) then 'yes'
 ```
 
 ### Référencer, appeler et définir une fonction

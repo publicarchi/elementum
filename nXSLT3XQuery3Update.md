@@ -5,25 +5,27 @@ since: 2017-02-11
 
 # Feed Back sur les Spécifications XSLT et XQuery 3 par Michael Kay
 
-Près de 10 ans après XSLT 2, pour la version 3 des langages, Michael Kay a offert à XMLPrague 2017 un point d’information sur l’état des différents langages. Dans cette présentation, il a notamment cherché à dégager les aspects de cette nouvelle version du langage qui constituent de véritables changements.
-
-Deux changements stratégiques pour XQuery : les fonctions de haut-niveau pour leur capacité à prendre en compte la variété et le changement, et le support de JSON car toutes les données ne sont pas en XML.
+Près de 10 ans après XSLT 2, Michael Kay a offert à XMLPrague 2017 un point d’information sur l’état des différents langages dans leur version 3. Au cours de cette présentation, il a notamment cherché à dégager les aspects de cette nouvelle version du langage qui constituent de véritables nouveautés. Deux changements sont stratégiques pour XQuery et XSLT : les fonctions de haut-niveau pour leur capacité à prendre en compte la variété et le changement, et le support de JSON car toutes les données ne sont pas en XML.
 
 ## Fonctions d’ordre supérieur
 
 L’introduction de fonction d’ordre supérieur peut être appréciée du point de vue de leur élégance en terme de programmation. Mais cette nouveauté apporte également des fonctionnalités importantes car elle donne la possibilité de traiter les choses de manière dynamique. Ces fonctions de haut-niveau offrent la capacité de prendre en charge la variété et le changement. Au sein du langage XSLT, le mécanisme du *templating* offrait déjà des réponses à ces questions.
 
-On peut passer un paramètre à une requête de sorte que l’action peut être effectuée de manière différente. Aussi, il ne s’agit pas seulement d’une manière élégante de programmer mais de quelques chose qui présente le potentiel de pouvoir rendre les applications plus scalables.
+On peut passer un paramètre à une requête de sorte que l’action peut être effectuée de manière différente. Aussi, il ne s’agit pas seulement d’une manière élégante de programmer mais de quelques chose qui présente le potentiel de pouvoir rendre les applications qui montent mieux en charge.
 
 ## Support de JSON
 
-Une des nouveautés importantes de cette version concerne l’introduction du support de JSON. MK ne croit pas que XQuery sera un jour largement utilisé sur le web pour traiter du JSON, pour plusieurs raisons : d’abord pour une raison culturelle, au sens où le langage provient d’un terrain distinct. Cependant ce support de JSON était nécessaire pour des raisons stratégiques car les personnes qui utilisent XML n’utilisent pas seulement du XML, et il est très important que leurs outils rencontrent tous les besoins de ces utilisateurs. Il s’agit donc d’étendre la portée du langage.
+Une des nouveautés importantes de cette version concerne l’introduction du support de JSON. MK ne croit pas que XQuery ou XSLT seront un jour largement utilisés sur le web pour traiter du JSON, cela pour plusieurs raisons : d’abord pour une raison culturelle, au sens où les langages proviennent d’un terrain distinct. Cependant ce support de JSON était nécessaire pour des raisons stratégiques car les personnes qui utilisent XML n’utilisent pas seulement du XML, et il est très important que leurs outils rencontrent tous les besoins de ces utilisateurs. Il s’agit donc d’étendre la portée du langage.
 
 Il est désormais possible de parser des fichiers JSON en XSLT ou en XQuery. Un nouvel objet *map* a été introduit dans le langage qui est plus expressif que les simples objets JSON. Par ailleurs un nouvel objet *array* a également été introduit.
 
 ## Streaming et Packaging
 
-Le streaming et le packaging sont deux choses qui présentent des enjeux pour la scalabilité de XSLT. Le Streaming permet de prendre en charge de larges sources de documents, et le packaging est utile pour la production de grandes applications très stratégiques en terme de maintenance.
+Le streaming et le packaging sont deux choses qui présentent des enjeux pour la monté en charge de XSLT. Le Streaming permet de prendre en charge de larges sources de documents, et le packaging est utile pour la production de grandes applications très stratégiques en terme de maintenance.
+
+- `xsl:stream`
+- `xsl:source-document` et `xsl:iterate`
+- `xsl:where-populated` `xsl:on-empty`, `xsl:on-non-empty`
 
 ## Sérialisation HTML5 et JSON
 
@@ -61,11 +63,39 @@ Entrée et sortie non-hiérarchiques, importantes pour XSLT.
 
 Petites choses qui donnent le sourire et améliorent l’expérience.
 
-Nouveaux opérateurs : `!`, `||`, `?`, `=>` (|| vient de sequel)
+### Nouveaux opérateurs
+
+Nouveaux opérateurs : `!`, `||`, `?`, `=>` (`||` provient de sequel)
 
 Possibilité de faire des chaînage de fonctions, au lieu de dire string before, etc. possibilité de mettre le résultat d’une fonction dans la suivante.
 
+### Text Value Template
+
 *Text Value template* en XSLT très appréciable évidemment.
+
+> XSLT 3.0 has Text Value Templates https://www.w3.org/TR/xslt-30/#text-value-templates that allow the use of curly braces in text nodes, as a shorter alternative to `xsl:value-of`.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="xs"
+    expand-text="yes"
+    version="3.0">
+	  <xsl:param name="seq" as="xs:string*" select="'c', 'a', 'b', 'z'"/>
+    <xsl:template name="xsl:initial-template">
+        This is a test {sort($seq)}
+    </xsl:template>
+</xsl:stylesheet>
+```
+
+[exemple de Liam Quin où donne un nombre de chaussettes avec xsl:message]
+
+Il est possible de l’activer ou le désactiver en ajoutant l’attribut `expand-text="yes"` ou `expand-text="no"` à n’importe quel élément XSLT, y compris `xsl:stylesheet`.
+
+Il est également possible d’utiliser l’élément `xsl:expand-text` pour un constructeur d’élément direct ou un élément d’extension. 
+
+### Union Types
 
 Union Types possible maintenant d’écrire des fonctions qui opèrent sur une date ou une heure, au lieu d’écrire deux fonctions distinctes.
 
@@ -182,6 +212,9 @@ sort(//employee,
 	function($e){current-date() - $e/joining-date})
 ```
 
+- Fonctions anonymes
+- Utilisation de `?`
+
 ### XPath 3.0
 
 Clef pour XSLT 3.0 et XQuery 3.0
@@ -212,9 +245,8 @@ Getting closer: 2nd Last Call in October 2014●A big and complex spec, getting 
 
 ### Reste à faire
 
-XQuery Update 3.1
-
-Full Text 3.1
+- XQuery Update 3.1
+- Full Text 3.1
 
 ## BestFeature in XSLT 3.0
 
@@ -229,7 +261,7 @@ https://www.biglist.com/lists/lists.mulberrytech.com/xsl-list/archives/201910/th
 
 ### Nouveaux opérateurs XPath
 
-#### Simple map operators (`!`)
+#### Simple map operator (`!`)
 
 Pas de restriction sur les opérandes qui peuvent être des nœuds ou n’importe quel type de séquence. Cet opérateur est comparable à l’opérateur `/` mais ce dernier est plus restrictif, il ne peut évaluer que des nœuds à gauche. Ses résultats suppriment toutes les redondances parmi les résultats, pas dans le cas du `!`, ensuite les résultats apparaissent dans l’ordre des nœuds du documents depuis lesquels sont produits alors que les résultats de l’opérateur simple map ne sont pas ordonnés, ils apparaissent dans l’ordre où l’expression est évaluée.
 
@@ -295,6 +327,8 @@ On ne peut pas remplacer l’opérateur simple map par `/` car produirait une s�
 
 #### Arrow operator (`=>`)
 
+L’opérateur fléché prend le résultat de l’expression de gauche comme premier argument de la foction de droite.
+
 ```xquery
 'hello' => upper-case()
 ```
@@ -304,6 +338,20 @@ Résultat
 ```xquer
 'HELLO'
 ```
+
+Le simple map operator fonctionne sur chaque item dans la séquence à son tour, un peu à la manière des prédicats `[]` tandis que l’opérateur flêché `=>` fonctionne sur le résultat dans son ensemble.
+
+```xquery
+string-to-codepoints("Henri") ! count(.)
+```
+
+A pour résultat `(1 1 1)`, tandis que :
+
+```xquery
+string-to-codepoints("Henri") => count(.)
+```
+
+A pour résultat `5`.
 
 #### String concaténation (`||`)
 
@@ -334,7 +382,7 @@ En XSLT 2.0, on peut s’occuper d’un nœud texte de la manière suivante :
 En XSLT 3.0, les expressions entre accolades peuvent être utilisées pour produire des nœuds textes en utilisant la déclaration `expand-text="yes"`
 
 ```xml
-<xsl:stylesheet...expand-text="yes">
+<xsl:stylesheet ... expand-text="yes">
   <element id="{generate-id()}">{node}</element>
 </xsl:stylesheet...expand-text>
 ```
@@ -434,6 +482,10 @@ Illégal
 l’attribut `@select` n’est pas AVT, il doit directement contenir une expression. Sinon, tous les temps seront évaluer en utilisant la même clef.
 
 Les noms de shadow attributes débutent par `_` et remplacent les valeurs des attributs normaux. Seules des expressions statiques peuvent être employées comme valeur.
+
+Placer un `_` devant un nom d’attribut, le tranforme en `attribute value template` qui sera évalué au moment de la compilation pour fournir la valeur de l’attribut. Tous les paramètres ou les variables auxquelles on se réfère doivent être déclarés avec `static="yes"`. 
+
+Ce mécanisme peut être utilisé pour paramétriser, par exemple, la sortie d’un doctype dans un document.
 
 `xsl:evaluate` peut être utilisé si les expressions statiques s’avèrent trop contraignantes.
 
@@ -570,6 +622,25 @@ https://www.w3.org/TR/xpath-functions-31/#trigonometry
 
 Voir aussi les Opérateurs arithmétiques sur les valeurs numériques https://www.w3.org/TR/xpath-functions-31/#op.numeric
 
+### Fonction `unparsed-text-lines()`
+
+La fonction `unparsed-text-lines()` lit une ressource externe (par exemple un fichier) et retourne son contenu comme une séquence de chaînes de caractères, ligne par ligne du contenu de la ressource.
+
+
+
+### La fonction `transform()`
+
+La fonction `transform()` est une fonction XPath qui invoque une feuille de style XSLT, exécute la transformation et retourne le résultat.
+
+```xml
+<xsl:sequence select="fn:transform(..., .)" />
+```
+
+- traitement de plusieurs fichiers sans redemarrer Java (test suite)
+- pipeline comme avec XProc
+- simplifier les stylesheets en remplaçant les modes
+- replacer ANT ou d’autres systèmes de construction.
+
 ### L’instruction `xsl:iterate`
 
 Une amélioration syntaxique qui offre la simplicité de `xsl:for-each` combinée avec le passage de paramètres. Elle garantie une tail-recursion (efficacité en mémoire). Mais elle ne peut cependant pas toujours être utilisée.
@@ -590,9 +661,30 @@ Une amélioration syntaxique qui offre la simplicité de `xsl:for-each` combiné
 </xsl:iterate>
 ```
 
+- Un attribut `select` obligatoire comme  `xsl:for-each` 
+- Possibilité d’utiliser `xsl:break` pour terminer l’itération
+- Possibilité d’utiliser `xsl:next-iteration` avec de nouveaux paramètres, n’importe quand, mais seulement lors de la dernière instruction dans le corps d’un if, d’une itération, d’une clause when ou otherwise ou try ou catch.
 
+### L’instruction `xsl:where-populated`
 
+Créer une enveloppe si l’élément n’est pas vide.
 
+```xml
+<xsl:where-populated>
+  <fn-wrap>
+    <xsl:apply-templates select="fn"/>
+  </fn-wrap>
+</xsl:where-populated>
+```
+
+De même `xsl:on-empty` et `xsl:on-non-empty` utilisés en streaming car on ne peut pas regarder en avant mais utiles en dehors.
+
+### Les instructions `xsl:try` et `xsl:catch`
+
+Les instructions `xsl:try` et `xsl:catch` sont utilisées pour évaluer des expressions qui peuvent générer des erreurs, afin de réaliser une action à partir de cette erreur.
+
+- par exemple pour convertif un attribut date en entier
+- ouvrir un fichier qui peut ne pas êrte bien formé
 
 ### Divers
 
@@ -629,3 +721,19 @@ Une amélioration syntaxique qui offre la simplicité de `xsl:for-each` combiné
 - Kosek, Jirka. 2019. « XSLT 3.0 for Daily Coding ». présenté à XML SummerSchool, Oxford. https://www.kosek.cz/xml/2019xmlss/Kosek_XSLT4DailyCoding.pdf.
 - Walmsley, Priscilla. 2015. *XQuery: Search across a Variety of XML Data*. Second edition. Sebastopol, CA : O’Reilly Media.
 
+## XSLT 3 overview
+
+Un langage moderne plus fonctionnel.
+
+- Construit à partir de XSLT 2 avec `xsl:sequence` et des types.
+- Ajoute le streaming, le packaging, de nouveaux types de données et de nouvelles manières de travailler et de combiner des feuilles de styles
+- XPath s’est renforcé
+
+XSLT 3 est plus orthogonal, plus d’instructions peuvent avoir des attributs `select` et il est possible d’utiliser self:foo pour les match patterns 
+
+Les endroits où les chaînes de caractères constant ne pouvaient être transformées en expression peuvent aujourd’hui prendre des `shadow attributes` qui sont computé au moment de la compilation.
+
+- Nouveaux opérateurs `!` et `=>`
+- Nouveaux types `map` et `array` avec des fonctions pour manipuler des fichiers JSON
+- Nouvelles fonctions pour le streaming, la manipulation des maps et des arrays, les fonctions sur les fonctions (`apply()` et `fold-left()`), la collation et les tris, la sérialisation, les variables d’environnement ou les fonctions mathématiques.
+- Ne pas oublier les extensions [Expath](http://expath.org) pour la manipulation de fichiers binaires, l’écriture ou la lecture de fichiers, l’utilisation d’archive zip ou exécuter des requêtes REST

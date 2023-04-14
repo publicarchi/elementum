@@ -15,8 +15,8 @@ La recommandation XSLT 1.0 incluait une section sur le [Data Model](http://www.w
 Le nouveau modèle de données adopté avec le *XQuery 1.0 and XPath 2.0 Data model* est un document important dont près de la moitié récapitule dans des appendices l’état des spécifications précédentes. L’introduction explique que ce modèle de données est basé sur l’infoset avec deux additions pour supporter les types issus de XML Schéma types et la représentation de collections de documents et de valeurs complexes.
 
 - toute instance du modèle de données est une séquence
-- une séquence est une collection ordonnées de zéro ou plus items
-- tous les items sont soit des valeurs atomiques (comme un nombre entier, ou une chaîne) ou un nœud ou encore l’un des septs types suivants : *element node*, *attribute node*, *text node*, etc.
+- une séquence est une collection ordonnées de zéro ou plusieurs items
+- tous les items sont soit des valeurs atomiques (comme un nombre entier, ou une chaîne) ou un nœud ou encore l’un des septs types suivants :  `document node`, `element node`, `attribute node`,`text node`, `processing instruction`, `comment node`, etc.
 
 ## XPath 2.0
 
@@ -114,3 +114,5 @@ Cette question est par ailleurs résolue avec la version 3.0 du langage qui intr
 ## Références
 
 - https://www.w3.org/TR/xpath-datamodel
+- https://www.saxonica.com/papers/ideadb-1.1/mhk-paper.xml
+
