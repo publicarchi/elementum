@@ -43,6 +43,9 @@ hx --tutor
 
 ou dans l’éditeur exécuter la commande `:tutor`
 
+À tout moment, vous pouvez accéder à de l’aide, depuis le mode normal, en tappant : `<SPACE>?`.
+
+Pour réviser, il existe un quiz [Helix Shortcut Quiz](https://tomgroenwoldt.github.io/helix-shortcut-quiz/)
 
 ### Configuration des fichiers runtime
 
@@ -100,6 +103,16 @@ Pour quitter sans entrer de commande, tapper la touche `Escape` pour revenir au 
 
 L’édition d’un document se fait en mode insertion `INS`. On y accède depuis le mode normal en tappant `i`.
 
+Liste des modes mineurs
+- `:` *command mode* pour enter des commandes
+- `v` *select (extend) mode* pour faire des sélections complèxes
+- `m` *match mode* pour sélectionner et éditer du texte sémantiquement
+- `z` *view mode* pour modifier la vue
+- `Z` *sticky view mode* pour visualiser un document 
+- `g` *goto mode* pour se déplacer rapidement
+- `Ctrl-w` *window mode* pour modifier les fenêtres
+- `Space` *space mode* pour réaliser diverses actions
+
 ### Déplacements dans l’éditeur
 
 Les touches `h` `j` `k` `l` servent à se déplacer dans l’éditeur. Il est toutefois également possible d’utiliser les flêches sur le clavier.
@@ -113,11 +126,12 @@ Celles-ci peuvent être combinées entre elles dans des expressions complexes av
 - `b` déplace le curseur en arrière au début du mot (*before*)
 - `W`, `E`, et `B` déplace le curseur de la même manière mais ne considère que les chaînes de caractères séparées par des espaces en ignorant les tirets et les guillemets.
 
+Le mode mineur *goto mode* permet de naviguer rapidement dans un document
 - `ge` aller à la fin du document
 - `gh` aller au début de la ligne
 - `gl` aller à la fin de la ligne
 - `gs` se rendre au premier caractère non-blanc d’une ligne
-
+- `g.` aller aux dernières modifications
 
 ### Édition d’un document
 
@@ -231,7 +245,58 @@ La lecture ou l’édition de textes longs, réclame souvent un mécanisme de co
 enable = true
 ```
 
+Installation de modes d’autocomplétion, et de formatage.
+
+```bash
+hx -health # connaître la liste des langages disponibles
+```
+
+Il est possible d’ajouter des serveurs de langages.
+
+```bash
+# For Terraform (HCL), Bash, Generic YAML, 
+# Docker, Docker compose and Ansible
+brew install terraform-ls bash-language-server \
+             yaml-language-server docker-ls \
+             ansible-language-server
+
+# For HTML, json, css, javascript and typescript
+npm i -g vscode-langservers-extracted typescript typescript-language-server
+
+# Go official language server
+go install golang.org/x/tools/gopls@latest
+```
+
+### Personnalisations avancées
+
+Par défaut le navigateur de fichiers ne permet pas de chercher le contenu des documents mais seulement leur nom. L’ajout de ce script dans le profil de votre shell offre une fonction hxs qui règle la question.
+
+Après avoir installé [fzf](https://github.com/junegunn/fzf) et [ripgrep](https://github.com/BurntSushi/ripgrep) avec brew, ajouter les lignes suivantes à votre fichier de configuration de terminal.
+
+```bash
+# ~/.zprofile
+# Helix Search
+hxs() {
+	RG_PREFIX="rg -i --files-with-matches"
+	local files
+	files="$(
+		FZF_DEFAULT_COMMAND_DEFAULT_COMMAND="$RG_PREFIX '$1'" \
+			fzf --multi 3 --print0 --sort --preview="[[ ! -z {} ]] && rg --pretty --ignore-case --context 5 {q} {}" \
+				--phony -i -q "$1" \
+				--bind "change:reload:$RG_PREFIX {q}" \
+				--preview-window="70%:wrap" \
+				--bind 'ctrl-a:select-all'
+	)"
+	[[ "$files" ]] && hx --vsplit $(echo $files | tr \\0 " ")
+}
+```
+
 # Références
 
 - [Maxime Coste. Why Kakoune, The quest for a better code editor.](https://kakoune.org/why-kakoune/why-kakoune.html)
 - [Helix documentation](https://docs.helix-editor.com/title-page.html)
+- [Lorenzo Setale, «Switching to Helix: My Experience and Tips», 2022](https://blog.setale.me/2022/12/27/Switching-to-Helix-My-Experience-and-Tips/)
+- [Helix Shortcut Quiz](https://tomgroenwoldt.github.io/helix-shortcut-quiz/)
+
+## conseils de personnalisation
+- [Ari Seyhun, Enhanced Helx config, 2023](https://theari.dev/blog/enhanced-helix-config/)
