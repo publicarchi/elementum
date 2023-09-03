@@ -64,6 +64,8 @@ sudo chmod +x saxon
 
 ## Installaton avec Brew
 
+Sur Mac, le plus simple reste sans doute d’installer les deux logiciels avec le gestionnaire de paquet Brew.
+
 ```bash
 brew install jing-trang
 ```

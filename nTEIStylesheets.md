@@ -118,8 +118,6 @@ Dans ces fichiers, on peut faire référence à la transformation maître, de la
 Les feuilles de style TEI sont distribuées avec l’éditeur XML oXygen. On peut donc y faire référence depuis le chemin de l’application, à l’intérieur du répertoire `framework`. La configuration du scénario de transformation permet de renseigner les valeurs de paramètres en donnant accès à leur documentation.
 
 
-
-
 ## Sources
 
 - Sebastian Rahtz, _Developing with the TEI Stylesheet family_, Mutec, Lyon, may 2011.
