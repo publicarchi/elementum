@@ -898,3 +898,4 @@ sum(for $i in 1 to count($A/col) return number($A/col[$i]) * number($B/col[$i]))
 - Dimitre Novatchev. The Evolution of XPath: What’s New in XPath 3.0. Pluralsight. https://app.pluralsight.com/course-player?clipId=4e83cced-f061-4172-8316-31089c7e1511
 - Michael Kay, Reference XPath Syntax
 - Code http://bit.ly/VYWrwh
+- Altova XPath 3.0 and 3.1 Trainting https://www.altova.com/training/xpath3

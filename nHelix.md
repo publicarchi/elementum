@@ -179,6 +179,7 @@ En mode sélection, tous les déplacements étendent la sélection.
 
 - `%` sélectionne l’ensemble du fichier
 - `mm` se déplacer à l’élément correspondant (guillemets, crochets, etc.)
+- `ms` entourer la sélection par... Par exemple pour entourer un mot par un caractère, `ebms`
 
 ### Annulations
 
@@ -253,6 +254,15 @@ hx -health # connaître la liste des langages disponibles
 
 Il est possible d’ajouter des serveurs de langages.
 
+Pour savoir quels LSP sont nécessaires pour un langage
+
+```bash
+hx -health markdown
+```
+
+Installer [Marksman](https://github.com/artempyanykh/marksman) pour la prise en charge de Markdown
+
+
 ```bash
 # For Terraform (HCL), Bash, Generic YAML, 
 # Docker, Docker compose and Ansible
@@ -291,12 +301,16 @@ hxs() {
 }
 ```
 
-# Références
+## Références
 
 - [Maxime Coste. Why Kakoune, The quest for a better code editor.](https://kakoune.org/why-kakoune/why-kakoune.html)
 - [Helix documentation](https://docs.helix-editor.com/title-page.html)
 - [Lorenzo Setale, «Switching to Helix: My Experience and Tips», 2022](https://blog.setale.me/2022/12/27/Switching-to-Helix-My-Experience-and-Tips/)
 - [Helix Shortcut Quiz](https://tomgroenwoldt.github.io/helix-shortcut-quiz/)
 
-## conseils de personnalisation
+## Conseils pour la personnalisation
+
 - [Ari Seyhun, Enhanced Helx config, 2023](https://theari.dev/blog/enhanced-helix-config/)
+- [Hårek, Tim. « My thoughts on Helix after 6 months ». Tim Hårek (blog), 19 juin 2023.](https://timharek.no/blog/my-thoughts-on-helix-after-6-months)
+- [Tim Hårek, Tim. « Helix as a notes tool ». Tim Hårek (blog), 25 août 2023.](https://timharek.no/blog/helix-as-a-notes-tool)
+- [Balkan, Aral. « Installing Helix Editor Language Servers ». Aral Balkan (blog), 14 novembre 2022](https://ar.al/2022/11/14/installing-helix-editor-language-servers/)

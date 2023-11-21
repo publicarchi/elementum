@@ -26,3 +26,9 @@ https://github.com/ajstanley/TEI_to_RDF
 ### EAC-CPF transformations
 
 [eac-cpf_transformations](https://github.com/Timathom/eac-cpf_transformations)
+
+## Divers XML
+
+XPtr
+
+https://github.com/glro/xptr

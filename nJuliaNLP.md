@@ -176,3 +176,17 @@ crps = Corpus(docs)
 typeof(crps)
 ```
 
+## TextGraph package
+
+https://juliapackages.com/p/textgraphs
+
+- Semantic embeddings
+- Graph embeddings
+
+## SemanticTrajectories
+
+RQA
+
+## Références
+
+- https://youtu.be/4jJD4F40WBA?si=1GEQJbhp2vT20PAa

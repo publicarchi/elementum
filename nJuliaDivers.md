@@ -1,5 +1,32 @@
 # Julia divers
 
+## Préambule
+
+> We are greedy: we want more. We want a language that’s open source, with a liberal license. We want the speed of C with the dynamism of Ruby. We want a language that’s homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab. We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell. Something that is dirt simple to learn, yet keeps the most serious hackers happy. We want it interactive and we want it compiled.
+
+Source: [The Julia blog](https://julialang.org/blog/2012/02/why-we-created-julia/).
+
+https://julialang.org/blog/2012/02/why-we-created-julia/
+
+- [documentation](https://docs.julialang.org/en/v1/)
+- [Noteworthy Differences from other Languages](https://docs.julialang.org/en/v1/manual/noteworthy-differences/#Noteworthy-Differences-from-other-Languages)
+- [The Fast Track to Julia](https://cheatsheet.juliadocs.org)
+
+### Avantages
+
+- Interactivité
+- Performance
+- Environnement, facilité apprentissage
+- ...
+
+### Historique du langage
+
+- 0.0 – 2009
+- 0.1 – Feb 14, 2012
+- 1.0 – Aug 8, 2018 (LTS)
+- 1.6 – Mar 24, 2021 (LTS)
+- 1.9 – May 07, 2023
+
 ## Syntaxe de base
 
 Il n’y a pas d’indentation en Julia. Pour définir un bloc d’instruction, on commence par un mot-clé et ce bloc se termine par un `end`
@@ -355,7 +382,53 @@ using IJulia
 notebook()
 ```
 
-Si Jupyter n’est pas installer, l’installer.
+Si Jupyter n’est pas installé, l’installer.
+
+## Utilisation du gestionnaire de paquets
+
+Julia dispose d’un très efficace gestionnaire de paquets, [Pkg](https://pkgdocs.julialang.org/). Dans Julia, on accède au gestionnaire de paquets en tappant `]`. Tapper `backspace` ou  `Ctrl+C` pour revenir au REPL de Julia.
+
+Ajouter un paquet (dans Pkg)
+
+```
+add nom_du_paquet
+```
+
+Supprimer un paquet et ses annotations
+
+```
+rm --manifest nom_du_paquet
+```
+
+La commande `status` ou `st` permet de voir les paquets installés.
+
+Pkg est conçu autour de la notion d’environnements. Des ensembles indépendants de configuration de paquets et de venirs peuvent être capturés dans un fichier de *manifest* qui peut être lié à un répertoire et être versionné pour améliorer la reproductibilité des projets. Cette solution permet de travailler avec des versions différentes de paquets installés à des endroits distincts en fonction de vos besoins. Cette fonctionnalité est comparable à `virtualenv` en Python.
+
+Pour activer un environnement (dans Pkg)
+
+```
+activate nom_du_projet
+```
+
+Lorsqu’on utilise un projet existant, la commande `instantiate` télécharge les dépendances manquantes ou vérifie que l’environnement est prêt à être utilisé (dans Pkg)
+
+```
+instantiate
+```
+
+Au lieu d’utiliser la commande `activate` depuis Julia, il est également possible de spécifier lors du démarage l’environement à utiliser
+
+```julia
+julia --project=. myscript.jl
+```
+
+Pour générer les fichiers d’un paquet (dans Pkg)
+
+```
+generate my_project
+```
+
+
 
 ## Sources
 

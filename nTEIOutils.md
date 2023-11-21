@@ -10,6 +10,30 @@ https://github.com/C2DH/open-tei-transviewer
 
 https://github.com/notesjor/corpusexplorer2.0
 
+## Édition
+
+https://leaf-writer.leaf-vre.org
+
+## Exploration
+
+
+
+## Publication
+
+### Tei Publisher
+
+> The Instant Publishing Toolbox
+
+https://teipublisher.com
+
+### Datura
+
+> Datura is a ruby gem that manages data (TEI-XML, CSVs, VRA-XML, etc) and populates Solr / Elasticsearch instances. Datura also generates HTML for the formats to allow serving the contents via web
+
+Outil de publication utilisé pour la publication de Cohen, Matt, Ed Folsom, et Kenneth Price. « The Walt Whitman Archive », 2003 2000. https://whitmanarchive.org/.
+
+https://github.com/CDRH/datura
+
 ## Facsimile
 
 https://github.com/sparkyc84/tei-zoner

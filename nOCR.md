@@ -46,7 +46,7 @@ Certains logiciels comme Tesseract utilisent une approche basée sur deux passes
 - [Aletheia](http://www.primaresearch.org/tools) (avec Tesseract intégré)
 - [Ocropy](https://github.com/tmbdev/ocropy) est un projet open-source développé en Python et soutenu par Google qui utilisait initialement Tesseract comme moteur de reconnaissance mais qui a ensuite développé son propre outil.
 - [Kraken](https://kraken.re) kraken is a turn-key OCR system optimized for historical and non-Latin script material.
-- Projet https://www.ocr4all.org/
+- [OCR4All](https://www.ocr4all.org/)
 
 ## Outils
 
@@ -74,15 +74,13 @@ pdftk ledoux1804txt.pdf burst
 convert ledoux1804txt.pdf ledoux-%04d.jpg
 ```
 
-
-
 ### OpenConvert
 
 Text conversion tool (from e.g. Word, HTML, txt) to corpus formats TEI or FoLiA) <http://openconvert.clarin.inl.nl/>
 
 https://github.com/INL/OpenConvert
 
-## Calamari
+### Calamari
 
 https://github.com/Calamari-OCR/calamari
 
@@ -129,7 +127,7 @@ https://drive.google.com/drive/u/0/folders/0B7l10Bj_LprhQnpSRkpGMGV2eE0
 
 https://github.com/tmbdev/ocropy/wiki
 
-## Grobid dictionnaries
+### Grobid dictionnaries
 
 http://cloud.science-miner.com/grobid/
 
@@ -159,21 +157,41 @@ Option P2PaLA letter analysis
 
 L’année dernière le développeur principal du projet pensait passer à un modèle payant en 2019. Modèle économique qui vise à desservir les centres d’archives pour la transcription de grosses masses de documentation.
 
-## Formats
+## Formats pour la numérisation
 
-Abby FineReader XML <https://abbyy.technology/en:features:ocr:xml>
+Il existe plusieurs formats de documents pour la représentation des documents issus de traitement de reconnaissance automatique.
+
+#### Abby FineReader XML 
+
+<https://abbyy.technology/en:features:ocr:xml>
 
 https://abbyy.technology/en:features:ocr:xml
 
-ALTO  <https://www.loc.gov/standards/alto/>
+#### Analyzed Layout and Text Object (ALTO)
+
+Développé dans le cadre du projet européen METAe (Meta Data engine 2000-2003) et publié en 2003. C’est le format utilisé par la Bnf dans Gallica
+
+<https://www.loc.gov/standards/alto/>
 
 https://github.com/altoxml/documentation/wiki/Software
 
-Page <http://www.primaresearch.org/schema/PAGE/gts/pagecontent/2017-07-15/pagecontent.xsd>
+#### PageXML Page Analysis and Ground-truth Elements
 
-hOCR <https://en.wikipedia.org/wiki/HOCR>
+Ce format a été développé par le Pattern Recognition & Image Analysis Lab (PRIMA), au sein de l'Université de Salford à Manchester dans le cadre d’un projet européen en 2010. À la différence d’Alto, le format conserve des informations sur le pré-traitement.
 
-Conversions
+https://github.com/PRImA-Research-Lab/PAGE-XML
+
+<http://www.primaresearch.org/schema/PAGE/gts/pagecontent/2017-07-15/pagecontent.xsd>
+
+Pletschacher, Stefan, et Apostolos Antonacopoulos. 2010. « The PAGE (Page Analysis and Ground-Truth Elements) Format Framework ». In *2010 20th International Conference on Pattern Recognition*, 257‑60. https://doi.org/10.1109/ICPR.2010.72.
+
+#### hOCR
+
+Format XML *embedded* dans du XHTML/HTML
+
+<https://en.wikipedia.org/wiki/HOCR>
+
+#### Conversions
 
 - http://james.blushingbunny.net/omnipage2TEI/
 - https://github.com/dariok/page2tei
@@ -184,14 +202,28 @@ voir ce que fait Syd Bauman http://tei-l.970651.n3.nabble.com/OCRed-XML-samples-
 
 ## Segmentation
 
-FineReader et CITLab dans Transkribus
+### DhSegment
 
-FineReader
+Sofia Ares Oliveira, Benoit Seguin, Frederic Kaplan, "dhSegment: A generic deep-learning approach for document segmentation", v.2, [arXiv:1804.10371](https://arxiv.org/abs/1804.10371)
+
+### Larex
+
+Reul, C., Springmann, U., and Puppe, F., "LAREX - A semi-automatic open-source Tool for Layout Analysis and Region Extraction on Early Printed Books", [arXiv:1701.07396](https://arxiv.org/abs/1701.07396)
+
+### Kraken
+
+Kiessling, B., Stökl Ben Ezra, D., Miller M., "BADAM: A Public Dataset for Baseline Detection in Arabic-script Manuscripts", HIP@ICDAR 2019. [arXiv:1907.04041](https://arxiv.org/abs/1907.04041)
+
+
+
+FineReader et CITLab utilisés dans Transkribus
+
+### FineReader
 
 - très bon pour la détection des zones, le typage et l’ordonnancement
 - segmentation et transcription indissociables ; pas de HTR
 
-CITLab
+### CITLab
 
 - adaptation au type de document ; entraînable
 - moins bon que FineReader (même pour le ms car typage et ordonnancement moindre qualité pour les documents complexes, dans le cas de la presse)
