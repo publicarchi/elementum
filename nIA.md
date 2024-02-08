@@ -13,3 +13,7 @@
 [**keras**](https://github.com/fchollet/keras) — a high-level neural networks library, written in Python and capable of running on top of either [TensorFlow](https://github.com/tensorflow/tensorflow) or [Theano](https://github.com/Theano/Theano). It was developed with a focus on enabling fast experimentation.
 
 https://github.com/ChristosChristofidis/awesome-deep-learning
+
+## Ressources pédagogiques
+
+https://microsoft.github.io/AI-For-Beginners/

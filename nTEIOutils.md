@@ -14,9 +14,13 @@ https://github.com/notesjor/corpusexplorer2.0
 
 https://leaf-writer.leaf-vre.org
 
+https://lincsproject.ca/docs/tools/nerve
+
+https://corpora-docs.dh.tamu.edu
+
 ## Exploration
 
-
+https://www.leaf-vre.org/docs/features/dtoc
 
 ## Publication
 
@@ -97,6 +101,10 @@ Marco Büchler (dir), eTRAP
 > TRACER is a suite of 700 algorithms,  whose features can be combined to create the optimal formula for  detecting those words, sentences and ideas that have been reused across  texts. Created by Marco Büchler, TRACER is designed to facilitate  research in text reuse detection and many have made use of it to  identify plagiarism in a text, as well as *verbatim* and *near verbatim* quotations, paraphrase and even allusions. The thousands of feature  combinations that TRACER supports allow to investigate not only  contemporary texts, but also complex **historical texts** where reuse is harder to spot.
 
 https://www.etrap.eu/research/tracer/
+
+### XPointer
+
+https://github.com/scdh/tei-xpointer-schemes
 
 ## Biblio
 

@@ -32,6 +32,8 @@ https://atom.io/packages/linter-autocomplete-jing
 
 https://atom.io/packages/xml-common-schemata
 
+https://xmlstar.sourceforge.net
+
 ## Transformations
 
 https://github.com/BoyCook/XSLTJS

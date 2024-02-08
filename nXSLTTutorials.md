@@ -11,7 +11,7 @@ tags: xslt, guides
 
 Une transformation est exprimée sous la forme d’une feuile de style (stylesheet). Une feuille de style est constituée d’un ou plusieurs doucments XML bien formés ses conformant à la spécification sur les espaces de noms.
 
-Une feuille de style, inclue généralement un mélange d’élémenst définis par XSLT placés dans l’espace de nom de XSLT `http://www.w3.org/1999/XSL/Transform` et un mélange d’autres éléments.
+Une feuille de style, inclue généralement un mélange d’éléments définis par XSLT placés dans l’espace de nom de XSLT `http://www.w3.org/1999/XSL/Transform` et un mélange d’autres éléments.
 
 Le terme feuille de style reflète le fait que XSLT est destiné à ajouter des informations de stylage à des documents sources XML en les transformant en un document consistant de XSL formating objects (XSL-FO) ou dans un autre format de présentation comme HTML, XHTML, ou SVG. Cependant XSLT est également employé pour toutes sortes de tâche de transformation, et pas seulement dans des buts de formattage ou d’applications de présentation.
 
@@ -87,6 +87,8 @@ Walmsley, Priscilla. 2011. « Adding Structure and Semantics with XSLT 2.0 - Tra
 —. 2012. « Adding Structure to Content Using XSLT 2.0 ». présenté à XML summer school. http://www.datypic.com/services/xslt/adding-semantics2.pdf.
 
 Wilmott, Sam. s. d. « Regular Expressions in XSLT 2.0, XQuery 1.0 and XPath 2.0 ». Mulberry. http://www.mulberrytech.com/quickref/regex.pdf.
+
+https://fr.slideshare.net/mevjy/xml-xslt-38610936
 
 ## Tutoriaux XSLT 3.0
 
