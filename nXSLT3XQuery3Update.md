@@ -720,6 +720,9 @@ Les instructions `xsl:try` et `xsl:catch` sont utilisées pour évaluer des expr
 - http://www.datypic.com/services/xslt/whatsnew3.html
 - Kosek, Jirka. 2019. « XSLT 3.0 for Daily Coding ». présenté à XML SummerSchool, Oxford. https://www.kosek.cz/xml/2019xmlss/Kosek_XSLT4DailyCoding.pdf.
 - Walmsley, Priscilla. 2015. *XQuery: Search across a Variety of XML Data*. Second edition. Sebastopol, CA : O’Reilly Media.
+- Birnbaum, David J. 2019. « What’s new in XSLT 3.0 and XPath 3.1? » <oo>→<dh> Digital humanities (blog). 29 octobre 2019. http://dh.obdurodon.org/xslt3.xhtml.
+- Cagle, Kurt. 2017. « Why You Should Be Using XSLT 3.0 ». XML.com (blog). 14 février 2017. https://www.xml.com/articles/2017/02/14/why-you-should-be-using-xslt-30/.
+
 
 ## XSLT 3 overview
 
