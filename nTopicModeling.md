@@ -14,6 +14,7 @@ méthode utilisée en exploration
 
 - Mallet
 - Linkage
+- BERT Topic
 
 Python (textblob, spacy)
 

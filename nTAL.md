@@ -1,15 +1,15 @@
-# TAL
+# Traitement automatique de la langue (TAL)
 
-Traitement automatique du langage, NLP
+Natural language processing (NLP)
 
 Larochelle, Hugo. s. d. *Traitement automatique des langues*. Consulté le 9 avril 2020. https://www.youtube.com/watch?v=waTZl_IbDdo&list=PL6Xpj9I5qXYHMDt3aBiI2KVff8c5Cwlfe.
 
-Il existe plusieurs approches du traitement automatique de la langue. La plus fréquemment employée est une approche statistique, c’est-à-dire que l’on va utiliser des données pour essayer de fournir les connaissance linguistiques au système que l’on cherchera à développer. Cette « connaissance » sera donc obtenue de manière empirique. « You shall know a word by the company it keeps » (1957). C’est par le contexte observé des mots que pourra extraire une compréhension de la syntaxe des mots et de leur sémantique. Cette approche a permis d’attaquer des problèmes hors de portée des techniques précédentes.
+Il existe plusieurs approches du traitement automatique de la langue. La plus fréquemment employée est une approche statistique, c’est-à-dire que l’on va utiliser des données pour essayer de fournir les connaissance linguistiques au système que l’on cherchera à développer. Cette « connaissance » sera donc obtenue de manière empirique. « You shall know a word by the company it keeps » (1957). C’est par le contexte observé des mots que pourra extraire une compréhension de la syntaxe des mots et de leur sémantique. Cette approche a permis d’attaquer des problèmes hors de portée des techniques précédentes.
 
 Auparavant, des approches à base de règles ont été beaucoup développées. Ces approches s’avèrent moins efficace face à des problèmes complexes. Au cours des années 1960-1985, le domaine était dominé par l’approche du rationalisme. Pour un aperçu sur l’histoire de ces approches, cf. :
 
 - Manning, Christopher D. et Hinrich Schütze. 1999. *Foundations of statistical natural language processing*. Cambridge, Mass : MIT Press. Chapitre 1
-- Jurafsky, Dan et James H Martin. 2008. *Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition*. 2e édition. Delhi : Pearson Education. Chapitres 1.5 et 1.6
+- Jurafsky, Dan et James H Martin. 2008. *Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition*. 2e édition. Delhi : Pearson Education. Chapitres 1.5 et 1.6
 
 ### Pourquoi le traitement automatique de la langue est-il difficile ?
 
@@ -380,3 +380,7 @@ http://textable.io/cahier/
 Revue en ligne *Kairos*
 
 http://kairos.technorhetoric.net/archive.html
+
+### RECITAL
+
+https://aclanthology.org/venues/jeptalnrecital/

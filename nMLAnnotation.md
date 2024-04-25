@@ -150,6 +150,12 @@ Outils propriétaires
 - [RectLabel](https://rectlabel.com) outils standalone, utilisation de annotate anything
 - [CVAT](https://www.cvat.ai)
 
+## Divers à explorer
+
+https://github.com/leoimpett/chairos
+
+> CHAIROS is an informal network of international researchers and group of Computer Visionand digital Art History sharing an interest in art and cultural heritage.
+
 ## Références
 
 - Manu. « COCO Format , What and How ». *Medium*, 24 décembre 2022. https://medium.com/@manuktiwary/coco-format-what-and-how-5c7d22cf5301.
