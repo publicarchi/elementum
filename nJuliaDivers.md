@@ -430,6 +430,10 @@ generate my_project
 
 
 
+## Ressources pédagogiques
+
+« Modern Julia Workflows ». 2023. Consulté le septembre 10. https://modernjuliaworkflows.github.io/.
+
 ## Sources
 
 Tutoriel de Cuvelier
