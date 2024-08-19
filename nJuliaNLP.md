@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: julia, nlp
+---
+
 # Julia NLP
 
 ## JuliaText

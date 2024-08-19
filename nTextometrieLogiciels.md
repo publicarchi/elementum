@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: textométrie
+---
+
 ## Logiciels de textométrie
 
 Guides et tutoriaux

@@ -1,6 +1,7 @@
 ---
 since: 2016-06-20
-author: Emmanuel Château-Dutier
+author: emchateau
+tags: xml
 ---
 # XML alternatif
 

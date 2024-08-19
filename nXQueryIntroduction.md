@@ -1,7 +1,6 @@
 ---
-since: 2017-07-07
 author: emchateau
-@tags: xquery
+tags: xquery
 ---
 
 # Introduction XQuery

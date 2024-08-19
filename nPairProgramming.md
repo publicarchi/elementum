@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: programmation
+---
+
 # pair programming
 
 Programmation en binôme

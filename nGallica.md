@@ -2,7 +2,7 @@
 author: Emmanuel Château-Dutier
 since: 2016-11-12
 version: 0.2
-tags: ark, api
+tags: ark, api, iiif
 ---
 
 # Travailler avec Gallica

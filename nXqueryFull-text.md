@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery
+---
+
 # Recherche full-text avec XQuery
 
 

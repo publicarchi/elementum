@@ -1,6 +1,6 @@
 ---
 title: Templating
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2014-06-27
 tags: basex, xquery, templating
 ---

@@ -1,3 +1,10 @@
+---
+author: emchateau
+tags: 3d
+---
+
+
+
 # 3D
 
 3D Models et Pointclouds, .glb, .babylon, .glf, .obj, .stl. Formats singlefiles.

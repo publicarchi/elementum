@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: search
+---
+
 # UX moteurs de recherche
 
 http://patterns.endeca.com/content/library/en/home.html

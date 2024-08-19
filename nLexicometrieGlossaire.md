@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: lexicométrie
+---
+
 # Glossaire de lexicométrie
 
 Tiré de Glossaire pour la statistique textuelle

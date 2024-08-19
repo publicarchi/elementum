@@ -1,5 +1,5 @@
 ---
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2016-12-30
 version: 0.2
 tags: ontologies, modélisation, bibliographie

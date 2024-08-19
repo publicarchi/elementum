@@ -1,6 +1,7 @@
 ---
 author: Emmanuel Château-Dutier
 since: 2016-01-30
+tags: annotation
 ---
 
 # Note sur l’annotation d’image

@@ -1,3 +1,9 @@
+---
+since: 2017-07-07
+author: emchateau
+tags: cms, wordpress
+---
+
 # Wordpress alternatives
 
 Le CMS Wordpress est une solution largement plébicitée pour propulser des sites web. Toutefois, le logiciel comme d’autres concurents tels que Drupal ou Typo3 même s’il est facile d’emploi n’est pas dépourvu d’inconvénients. C’est un logiciel en PHP ce qui contraint certains développements. C’est aussi une solution tout en un qui n’offre pas toujours toute la flexibilité attendue pour certaines applications. De nouvelles solutions propriétaires ou libres ont ainsi émergé pour proposer des alternatives à Wordpress. Dans le domaine du libre, deux logiciels semblent aujourd’hui se démarquer, Ghost et Strapi.

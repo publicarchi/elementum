@@ -1,3 +1,7 @@
+---
+tags: traduction, rest
+---
+
 # Essai de traduction de Fielding
 
 La traduction française existante ne nous paraissant pas très bonne http://opikanoba.org/tr/fielding/rest/

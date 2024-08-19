@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: julia
+---
+
 # Julia Data
 
 ## Travailler avec des données

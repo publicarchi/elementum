@@ -1,6 +1,7 @@
 ---
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2017-02-11
+tags: xslt
 ---
 
 # Feed Back sur les Spécifications XSLT et XQuery 3 par Michael Kay

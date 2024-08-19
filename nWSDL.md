@@ -1,6 +1,7 @@
 ---
 date: 2014-03-05
 version: 1.0
+tags: wsdl, xquery
 ---
 
 # Note sur WSDL ou WADL

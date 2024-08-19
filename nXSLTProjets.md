@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xslt
+---
+
 # Projets XSLT
 
 Quelques projets intéressants en XSLT

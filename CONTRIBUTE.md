@@ -15,7 +15,7 @@
 
 * Éditer le code
 * Committer localement
-* Synchroniser votre fork avec l'upstream du master:
+* Synchroniser votre fork avec l’upstream du master:
 
 ```
 	git checkout <your-branch-name>

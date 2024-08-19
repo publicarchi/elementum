@@ -3,9 +3,10 @@ since: 5 mars 2014
 date: 21 avril 2015
 version: 002
 author: Emmanuel Chateau
+tags: git
 ---
 
-#Guides Git
+# Guides Git
 
 
 ## Sélection de guides de démarrage pour Git

@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xslt
+---
+
 # Utiliser des Packages en XSLT
 
 Depuis la version 3 du langage, il est possible d’utiliser des packages en XSLT. 

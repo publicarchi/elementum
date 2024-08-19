@@ -1,3 +1,9 @@
+---
+since: 2017-07-07
+author: emchateau
+tags: wordpress, cms
+---
+
 # Wordpress en local sur MacOS
 
 ## Installer Wordpress

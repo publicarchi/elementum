@@ -1,12 +1,11 @@
 ---
 author: Emmanuel Château-Dutier
 since: 2017-01-25
+tags: open access
 
 ---
 
 #  Livres numériques
-
-
 
 https://github.com/JayPanoz
 

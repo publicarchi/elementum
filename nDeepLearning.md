@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: deep learning
+---
+
 # Deep Learning
 
 https://github.com/oxford-cs-deepnlp-2017/lectures

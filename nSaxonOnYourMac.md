@@ -1,6 +1,6 @@
 ---
 title: Installer le processeur Saxon sur Mac
-tags: saxon, java, mac, outils
+tags: saxon, java, mac, outils, xslt
 ---
 
 # Installer Saxon sur son Mac

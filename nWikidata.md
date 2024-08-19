@@ -1,8 +1,12 @@
-# nWikidata
+---
+since: 2017-07-07
+author: emchateau
+tags: wikidata
+---
+
+# Wikidata, divers
 
 Créer un élément dans Wikidata https://youtu.be/-PiS-A3w3AM
-
-
 
 Requête de Benoit, Café des savoirs
 

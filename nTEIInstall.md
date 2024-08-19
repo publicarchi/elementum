@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: tei
+---
+
 # Installation de la TEI sur Mac
 
 Les sources de la TEI sont distribuées par l’intermédiaire de GitHub. Qu’il s’agisse de contribuer au projet de la TEI ou bien de pouvoir utiliser les outils développés par la TEI, il peut être intéressant de construire la TEI sur son propre ordinateur. L’installation est relativement aisée sur un système Linux, elle est toutefois plus complexe sur un Mac.

@@ -1,3 +1,10 @@
+---
+author: emchateau
+tags: identifiants
+---
+
+## Identifiants
+
 - une réalisation de la NCDD (Netherlands Coalition for Digital Preservation) qui propose des vidéos pédagogiques (<http://www.ncdd.nl/en/pid/>) et un guide pour choisir le format d'identifiant adapté à ses besoins (<http://www.ncdd.nl/en/pid-wijzer/>).
 - un tutoriel sur DoraNum : <http://dev.doranum.fr/thematique-identifiants-perennes-pid/>
 

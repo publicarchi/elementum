@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: gis
+---
+
 # Ressources pour la cartographie historique
 
 ## Fonds de plans (France 19e siècle)

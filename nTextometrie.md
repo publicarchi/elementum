@@ -1,7 +1,8 @@
 ---
 title: Notes sur la textométrie
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2016-10
+tags: textométrie
 ---
 # Notes sur la textométrie
 

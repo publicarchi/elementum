@@ -1,6 +1,7 @@
 ---
 title: Structure de fichiers Linux
 since: 2014-05-28
+tags: linux
 ---
 
 # Structure de Fichiers Linux

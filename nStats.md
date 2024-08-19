@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: statistiques, visualisation
+---
+
 # Statistiques
 
 ## Javascript

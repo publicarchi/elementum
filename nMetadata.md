@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: métadonnées, Mac
+---
+
 Comment afficher et supprimer des attributs étendus d'un fichier sur Mac OS
 
 

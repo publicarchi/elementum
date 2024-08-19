@@ -1,7 +1,8 @@
 ---
 title: Guide TEI Stylesheets
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2015-05-02
+tags: tei
 ---
 
 # Guide TEI Stylesheets

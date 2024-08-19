@@ -1,3 +1,7 @@
+---
+author: emchateau
+tags: basex
+---
 
 BaseX Talk, discussion intéressantes
 ==========

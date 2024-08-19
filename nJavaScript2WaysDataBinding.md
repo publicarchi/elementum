@@ -1,6 +1,7 @@
 ---
 since: 2017-07-07
 author: emchateau
+tags: javascript
 ---
 
 # Two-way data binding

@@ -4,6 +4,7 @@ filename: nCIDOC-CRM.md
 author: 
 date: 2014-02-23
 version: 0.1
+tags: cidoc
 ---
 
 

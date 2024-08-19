@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xslt, json
+---
+
 # Travailler des fichiers JSON avec XSLT
 
 Les versions 3.0 de XSLT et de XQuery ainsi que la version 3.1 de XPath standardisées par le W3C en 2017 permettent toutes les deux de manipuler des données au format JSON.

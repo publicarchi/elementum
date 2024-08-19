@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: lod, websem
+---
+
 # Sources de données
 
 ## Ressources génériques

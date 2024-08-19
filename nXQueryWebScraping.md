@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery, webscraping
+---
+
 # WebScraping avec XQuery
 
 Tutoriel avec EXPath

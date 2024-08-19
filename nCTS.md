@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: identifiants
+---
+
 # Canonical Text Service
 
 Canonical Text Services permet d’identifier et d’accéder à des passages de texte en utilisant des références canoniques. Les citations sont exprimées sous la forme d’Uniform Resource Names (URN) CTS (cf. [RFC2141](https://datatracker.ietf.org/doc/html/rfc2141)). Les passages de texte sont structurés en XML et peuvent être validés avec un schéma.

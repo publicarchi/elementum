@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: python, networks, outils
+---
+
 # Network analysis with Python
 
 Artur Krochin. [Network Analysis in Python: Getting Started](https://app.pluralsight.com/courses/d4fc1424-3e22-42a6-96c2-ea904e3efe66/table-of-contents)

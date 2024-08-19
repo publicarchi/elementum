@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: data science
+---
+
 # DataScience
 
 ## Introductions à la manipulation de données

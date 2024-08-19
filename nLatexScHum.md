@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: latex
+---
+
 # LaTeX pour les sciences humaines
 
 

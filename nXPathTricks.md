@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xpath
+---
+
 # XPath Tricks
 
 ## Test attribute presence

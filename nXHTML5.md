@@ -1,6 +1,7 @@
 ---
 author: Emmanuel Chateau
 date: 2014-06-27
+tags: html5
 ---
 
 # Note XHTML5

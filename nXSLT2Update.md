@@ -1,6 +1,7 @@
 ---
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2019-11-16
+tags: xslt
 ---
 # Nouveautés introduites dans XSLT 2.0
 

@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery
+---
+
 # Types XQuery
 
 XQuery est un langage typé.

@@ -3,6 +3,7 @@ title: Note Webservice description
 filename: nWebserviceDescription.md
 date: 2014-10-07
 version: 1.0
+tags: web service
 ---
 
 # Webservice description

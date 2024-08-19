@@ -1,6 +1,7 @@
 ---
 author: Emmanuel Château-Dutier
 since: 2016-12-30
+tags: github
 ---
 
 # Comment gérer ses issues avec Github

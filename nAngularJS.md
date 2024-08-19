@@ -1,3 +1,9 @@
+---
+author: emchateau
+tags: javascript
+
+---
+
 # nAngularJS
 
 

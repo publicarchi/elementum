@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: visualisation, javascript
+---
+
 # P5.js
 
 [Creative Coding with Processing and P5.js](https://github.com/creative-coding-with-processing)

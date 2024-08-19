@@ -2,6 +2,7 @@
 title: Solutions pour la publication scientifique en Open access
 author: Emmanuel Château-Dutier
 since: 2016-01-14
+tags: open access, outils
 ---
 # Solutions pour la publication scientifique en Open access
 

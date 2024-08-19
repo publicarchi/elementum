@@ -1,3 +1,9 @@
+---
+since: 2017-07-07
+author: emchateau
+tags: wireframe
+---
+
 # Wireframing avec Illustrator
 
 ## Configuration d’Illustrator

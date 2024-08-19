@@ -1,6 +1,6 @@
 ---
 since: 2023-09-02
-tags: editor
+tags: editor, outils
 ---
 
 # Helix

@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: javascript
+---
+
 # JavaScript Standalone
 
 Pour réaliser des tâches répétitives, on peut facilement utiliser le bash. Par exemple, pour parser un fichier CSV et calculer une moyenne, l’outils awk peut s’avérer très utile.

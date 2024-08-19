@@ -1,6 +1,7 @@
 ---
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2017-01-17
+tags: tei
 ---
 # Outils TEI
 

@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: uml
+---
+
 # note UML
 
 UML (Unified Modeling Language) est un outils particulièrement utilisé pour la modélisation orientée-objet. UML découle de la vue d’analyse et de conception orientée-objet (OOA&D) de la fin des années 80. Le langage unifie les méthodes de Grady Booch, Rumbaugh (Object Management Group OMT) et Jacobson, mais les supplante en devenant un langage de modélisation et plus simplement une méthode.

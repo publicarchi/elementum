@@ -1,7 +1,7 @@
 ---
 author: Emmanuel Château-Dutier
 since: 2017-01-18
-tags: tal
+tags: nlp
 ---
 
 # Ressources utiles pour le traitement automatique de la langue française

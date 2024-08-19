@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xpath, css
+---
+
 ## XPath vs CSS
 
 | **Selection** **Goal**                            | **CSS Selector**                                             | **XPath**                       |

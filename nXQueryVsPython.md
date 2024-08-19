@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery, python
+---
+
 # Python vs XQuery
 
 Pas une bataille où il faudrait savoir qui gagnerait à la fin. Bien sûr, la confrontation entre XQuery et Python est probablement moins évidente que celle qui occupe souvent les tenants de R face aux défenseurs de Python. Avec XQuery, évidemment on évoque un langage de programmation qui n’a rien à voir en terme de popularité avec Python ou R. Mais il s’agit là encore de langages qui existent indépendamment et qui sont extraordinaires à leur manière.

@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xslt
+---
+
 # Bonnes pratiques XSLT
 
 Bonnes pratiques pour écrire du code XSLT efficace
@@ -59,7 +64,7 @@ Tenir compte du double caractère du langage, fonctionnel et déclaratif.
 
 - utiliser des stérilisations appropriées
 
-  ​
+  
 
 ## Difficultés
 

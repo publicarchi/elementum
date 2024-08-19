@@ -1,7 +1,8 @@
 ---
-author: Emmanuel Château-Dutier
+author: emchateau
 since: 2017-01-12
 version: 0.1
+tags: xml
 ---
 
 # Outils XML

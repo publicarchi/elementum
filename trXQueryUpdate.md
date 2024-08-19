@@ -1,3 +1,7 @@
+---
+tags: xquery, traduction
+---
+
 # XQuery Update pour les impatients, Une rapide introduction à la fonctionnalité de mise à jour de XQuery
 
 essai de traduction française de Xavier Franc, XQuery Update for the impatient, A quick introduction to the XQuery Update Facility, http://www.xmlmind.com/tutorials/XQueryUpdate/index.html

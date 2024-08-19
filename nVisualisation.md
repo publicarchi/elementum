@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: visualisation
+---
+
 # Outils de visualisation
 
 Cours

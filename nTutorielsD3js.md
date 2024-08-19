@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: guides, d3
+---
+
 # Tutoriels D3
 
 [Scott Murray, D3 Tutorials](http://alignedleft.com/tutorials/d3/)

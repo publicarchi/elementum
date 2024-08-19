@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery
+---
+
 # Bonnes pratiques XQuery
 
 En XQuery comme avec tout autre langage, l’adoption d’un certain nombre de principes simples peut permettre à la fois d’augmenter la lisibilité du code que vous produisez, sa maintenabilité et sa portabilité.

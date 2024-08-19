@@ -1,6 +1,7 @@
 ---
 title: Configuration des droits pour wordpress
 since: 2016
+tags: wordpress, cms
 ---
 
 # Configuration des droits pour Wordpress

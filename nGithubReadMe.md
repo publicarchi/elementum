@@ -1,6 +1,6 @@
 ---
 since: 2022-01-26
-tags: github, markdown
+tags: github, markdown, git
 ---
 
 # GitHub profile et GitHub Readme

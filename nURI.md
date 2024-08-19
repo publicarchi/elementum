@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: uri
+---
+
 # URI
 
 Uniform Resource Identifier: Structure

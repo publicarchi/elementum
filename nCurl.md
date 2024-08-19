@@ -1,6 +1,7 @@
 ---
 since: 2016-11
 author: Emmanuel Château-Dutier
+tags: bash, curl
 ---
 
 # Curl

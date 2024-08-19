@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xslt
+---
+
 # XSLT in the Browser
 
 « Associating Style Sheets with XML documents 1.0 (Second Edition) ». 2010. Recommendation. W3C. Consulté le 27 novembre 2022. https://www.w3.org/TR/xml-stylesheet/.

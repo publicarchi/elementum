@@ -1,6 +1,9 @@
-nJuliaGraphs
+---
+author: emchateau
+tags: julia, networks
+---
 
-## Tutoriel 2020
+# Tutoriel 2020
 
 https://youtu.be/K3z0kUOBy2Y
 

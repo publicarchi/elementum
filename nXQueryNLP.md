@@ -1,3 +1,10 @@
+---
+author: emchateau
+tags: xquery, nlp
+---
+
+
+
 # XQuery NLP
 
 Tutoriaux

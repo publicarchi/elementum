@@ -1,7 +1,7 @@
 ---
 since: 2017-07-07
-
 author: emchateau
+tags: xml
 ---
 
 # Why XML Rules !

@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: javascript, outils
+---
+
 # Navigations JS
 
 ## Elevator.js

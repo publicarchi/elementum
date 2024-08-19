@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: dates
+---
+
 # Formats de dates
 
 Outils

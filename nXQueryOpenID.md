@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery, authentification
+---
+
 # nXQueryOpenId
 
 ## Les protocoles d’identification

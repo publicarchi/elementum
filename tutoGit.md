@@ -1,6 +1,7 @@
 ---
 author: emchateau
 since: 2015-12-02
+tags: git
 ---
 # Versionner ses fichiers avec Git [tutoriel]
 

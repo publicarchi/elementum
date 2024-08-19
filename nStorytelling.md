@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: storytelling, outils
+---
+
 # Digital Storytelling
 
 ## Applications

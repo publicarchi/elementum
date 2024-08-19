@@ -1,4 +1,5 @@
 ---
+author: emchateau
 since: 2020-05-19
 tags: xslt, guides
 ---

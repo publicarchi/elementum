@@ -2,8 +2,9 @@
 title: Chercher une personne dans DBpeda
 fileName:nChercherPersonneDbPedia.md
 date: 2014-02-01
-author: emmanuel
+author: emchateau
 version: 0.1
+tags: dbpedia
 ---
 
 # Chercher une personne dans DBPedia

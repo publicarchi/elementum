@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery
+---
+
 # Projets XQuery
 
 Une sélection de projets XQuery intéressants.

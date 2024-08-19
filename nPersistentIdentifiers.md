@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: identifiants
+---
+
 # Identifiants persistants
 
 > Identification systems, as defined in this document, create **concise codes (“identifiers”) that can be used to refer unambiguously to something or someone (the “referent”)**. In this way, the identifier can be provided as a proxy for the referent itself, for instance in cataloguing it in a library, enquiring about its attributes, ordering a copy of it or (if a person or party) attributing authorship in something. **To be useful an identification system should be built upon trust in a variety of its characteristics.** These include the reliability of the binding between identifier and the referent, trust in the assignment of the identifier, the related metadata, the longevity of the identification system, and the extent of the system’s use in its sector.

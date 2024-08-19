@@ -1,3 +1,10 @@
+
+
+---
+author: emchateau
+tags: outils
+---
+
 # OpenRefine
 
 - Hooland, Seth van, Ruben Verborgh, et Max De Wilde. 2013. « Nettoyer ses données avec OpenRefine ». *Programming Historian*, août. https://programminghistorian.org/fr/lecons/nettoyer-ses-donnees-avec-openrefine.

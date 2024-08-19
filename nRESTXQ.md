@@ -4,6 +4,7 @@ filename: nRESTXQ.md
 author: Emmanuel Château
 date: 2014-02-19
 version: 0.2
+tags: rest, basex
 ---
 
 # Note RESTXQ

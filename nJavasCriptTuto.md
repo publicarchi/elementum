@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: javascript
+---
+
 ## Usage de JavaScript
 
 historique

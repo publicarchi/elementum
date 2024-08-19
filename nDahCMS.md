@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: cms, outils
+---
+
 # CMS utilisables en histoire de l’art
 
 ## Omeka

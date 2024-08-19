@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: index
+---
+
 # Indexation
 
 ## Standards pertinents pour l’indexation

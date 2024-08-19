@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: htc, ocr
+---
+
 # Kraken
 
 ## Installation sur mac

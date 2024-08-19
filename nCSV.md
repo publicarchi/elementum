@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: cdv
+---
+
 # Travailler avec des données
 
 mechatroner.rainbow-csv

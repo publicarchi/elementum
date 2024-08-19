@@ -4,6 +4,7 @@ author: Emmanuel Chateau
 filename: nREST.md
 date: 2014-02-18
 version: 0.4
+tags: rest
 ---
 
 

@@ -2,6 +2,7 @@
 filename: trRESTXQ
 date: 2014-02-18
 version: 0.1
+tags: traduction, rest, basex
 ---
 
 # Traduction de l’article RESTXQ (documentation BaseX)
@@ -214,7 +215,7 @@ La valeur du _premier paramètre_, si elle est trouvée dans le [composant de re
         {
         <result id="{ $id }" sum="{ sum($add) }"/>
         };
- ```
+```
 
 #### Champs de formulaire HTML (_HTML form fields)
 

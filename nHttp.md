@@ -2,6 +2,7 @@
 filename: nHTTP.md
 author: Emmanuel Chateau
 version: 0.2
+tags: http, rest
 ---
 
 # Note HTTP

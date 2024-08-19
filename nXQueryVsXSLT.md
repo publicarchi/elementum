@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xslt, xquery
+---
+
 # Différences entre XQuery et XSLT
 
 

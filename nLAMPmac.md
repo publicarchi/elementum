@@ -1,4 +1,7 @@
-nLAMPMac.md
+---
+author: emchateau
+tags: lamp, mac
+---
 
 # LAMP on a mac
 

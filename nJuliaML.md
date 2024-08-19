@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: julia, machine learning
+---
+
 # Julia ML
 
 | Purpose                  | Python                                                       | Julia                                                        |

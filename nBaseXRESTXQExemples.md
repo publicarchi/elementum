@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: basex, webapp
+---
+
 Exemples de webApp BaseX
 ==========
 

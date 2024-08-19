@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: thesaurus, outils
+---
+
 # Gestion de Thesaurus avec Ginco
 
 Note d'information DGP/SIAF/2014/007 du 7 octobre 2014relative à la mise en œuvre d'un environnement de création, de gestion et de diffusion de vocabulaires (listes d'autorité, thésaurus, terminologies) https://francearchives.fr/file/720dbf0bd1d5e6966d200c086a546428e3d266a5/static_7780.pdf

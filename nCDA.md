@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: nlp
+---
+
 # Critical Discourse Analysis (CDA)
 
 https://www.sesync.org/resources/critical-discourse-analysis-what-it

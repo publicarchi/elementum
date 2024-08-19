@@ -1,6 +1,7 @@
 ---
 name: nNameEntitiesExtraction.md
 since: 2017-03-23
+tags: ner
 ---
 
 # Extraction d’entités-nommées

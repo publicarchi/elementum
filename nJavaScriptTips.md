@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: javascript
+---
+
 # JavaScript Tips
 
 ## Optional chaining

@@ -1,6 +1,7 @@
 ---
 author: Emmanuel Château-Dutier
 since: 2016-05-25
+tags: git
 ---
 
 # Git cheatsheet

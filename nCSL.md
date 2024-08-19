@@ -1,4 +1,5 @@
 ---
+author: emchateau
 since: 2018-12-07
 tags: bibliographie, csl
 ---

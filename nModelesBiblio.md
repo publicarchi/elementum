@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: bibliography
+---
+
 # Modèles bibliographiques
 
 Depuis le début des années 1990, un important effort de modélisation des métadonnées bibliographiques a été entrepris. Le « modèle FRBR » contenu dans le rapport final sur les [Fonctionnalités requises des notices bibliographiques](http://www.bnf.fr/documents/frbr_rapport_final.pdf), achevé en 1997 et publié en 1998 a constitué le point de départ d’une évolution profonde dans la compréhension de l’univers complexe des métadonnées bibliographiques. Deux autres modèles ont suivi : [FRAD](http://www.bnf.fr/documents/frad_rapport_final.pdf) (2009) pour les données « d’autorité » et [FRSAD](http://www.ifla.org/files/assets/cataloguing/frsad/frsad_rapport_final.pdf) (2010) pour les données « d’autorité matière », périphériques dans FRBR qui se concentrait sur ses quatre entités centrales : *œuvre*, *expression*, *manifestation*, *item*, et sur les relations de et vers ces entités.

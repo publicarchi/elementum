@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: programmation
+---
+
 # Programmation déclarative
 
 La programmation déclarative est un paradigme de programmation dans lequel on exprime la logique de la computation sans décrire les structures de contrôle. Les composants logiciels sont indépendants du contexte et n’utilisent pas d’état interne ainsi l’appel d’un de ses composanst avec les mêmes arguments produit exactement le même résultat.

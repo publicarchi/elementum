@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: rest
+---
+
 # Négociation de contenu
 
 L’application web des Guides de Paris supporte la négociation de contenu telle qu’elle est définie dans la spécification HTTP/1.1. Elle peut choisir la meilleur représentation d’une ressource en fonction des préférences de l’agent web (par exemple un navigateur) pour ce qui concerne le type de média, les langages, le jeu de caractères et son encodage. Elle doit également implémenter des fonctionnalités pour traiter de manière efficace les requêtes dont les informations de négociation sont incomplètes.

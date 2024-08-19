@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: outils, gis
+---
+
 ## Outils cartographiques
 
 ### OpenStreetMap

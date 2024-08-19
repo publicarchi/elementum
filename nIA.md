@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: ia
+---
+
 # Note IA
 
 <https://medium.com/@likid.geimfari/the-list-of-interesting-open-source-projects-2daaa2153f7c>

@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: python, xslt
+---
+
 # XSLT with Python
 
 Plusieurs librairies permettent de travailler des données XML avec Saxon. Toutefois, pendant longtemps ces librairies sont restées très limité car elles ne permettaient pas d’utiliser les versions 2 et 3 des langages XSLT, XPath et XQuery. Ces limitations étaient liées au fait que les processeurs supportant ces versions étaient développés en Java. Le développement de [Saxon/C](https://www.saxonica.com/saxon-c/doc1.1/html/index.html) au début des années 2020 a permis de faciliter le portage de ces versions dans d’autre langage.

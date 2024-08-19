@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: git, guides
+---
+
 # Git Workflow
 
 Lorsque l’on travaille à plusieurs sur un projet commun avec Git, il est habituellement nécessaire de définir un flux de travail pour gérer les contributions.

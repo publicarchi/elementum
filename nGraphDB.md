@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: graphdb, outils
+---
+
 # Graph Databases
 
 Une base de données orientée graphe est une base de données orientée objets utilisant la théorie des graphes pour représenter et stocker les données. Depuis 2016, ce genre de base de données a reçu beaucoup d’intérêt pour le développement web. 

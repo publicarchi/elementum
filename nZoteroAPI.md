@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: api, zotero
+---
+
 # Zotero API
 
 Outre la publication de groupes bibliographiques, le logiciel de gestion de références bibliographiques Zotero propose une Interface programmable (API) qui peut vous permettre d’accéder programmatiquement à vos données.

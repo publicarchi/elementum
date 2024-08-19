@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: xquery, authentification
+---
+
 # nXQueryOAuth
 
 Différents protocole d’identification sur le web, plus ou moins sécurisés, peuvent être implémentés en XQuery.

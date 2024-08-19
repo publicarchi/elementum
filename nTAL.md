@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: nlp
+---
+
 # Traitement automatique de la langue (TAL)
 
 Natural language processing (NLP)

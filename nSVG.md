@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: svg
+---
+
 # Scalable Vector Graphics SVG
 
 https://github.com/webdetails/Viz-SVG

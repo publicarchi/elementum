@@ -1,4 +1,5 @@
 ---
+authors: query
 tags: xquery
 ---
 

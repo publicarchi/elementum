@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: basex
+---
+
 RESTXQ
 
 Ce sont les fichiers placés dans _restxq qui servent les pages de l’application.

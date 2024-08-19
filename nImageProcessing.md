@@ -1,5 +1,6 @@
 ---
 title: Divers sur l’Image processing
+tags: computer vision
 ---
 
 # Divers Image processing

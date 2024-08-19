@@ -1,6 +1,7 @@
 ---
 title: Note sur l’Océrisation
 since: 2016-11
+tags: ocr
 ---
 
 # Océrisation

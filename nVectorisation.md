@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: gis
+---
+
 # Vectorisation de plans anciens
 
 Travaux de Jean-Michel Follin et Elisabeth Simonetto http://psig.huma-num.fr/HumaNS/wp-content/uploads/2018/10/10.follin_SAGEO_abstract_etendu.pdf + article à paraître dans la revue *Humanités numériques*.

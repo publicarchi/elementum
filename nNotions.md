@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: guide
+---
+
 # Notions à définir
 
 Produire un petit répertoire de notions fondamentales avec des définitions pour une culture générale numérique des chercheurs en sciences humaines.

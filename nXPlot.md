@@ -1,3 +1,12 @@
+---
+author: emchateau
+tags: xslt
+---
+
+# XPlot
+
+## CR discussion avec 
+
 Pas formé en mathématiques besoin aide.
 
 Craintes de faire quelque chose qui soit problématique pour des staticiens.

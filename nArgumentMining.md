@@ -1,3 +1,8 @@
+---
+author: emchateau
+tags: arguments
+---
+
 # Argument Mining
 
 > La fouille d’arguments consiste en l’identification et l’extraction des structures d’inférences et de raisonnements exprimées comme des arguments présents dans le langage naturel. La compréhension des structures argumentatives permet d’identifier non seulement quelles positions les personnes adoptent mais aussi pourquoi ils tiennent certaines positions ce qui apporte des éclairages intéressants dans des domaines aussi divers que celui de la prédiction des marchés financiers ou les relations publiques. (traduit de Lawrence et Reed 2020)
