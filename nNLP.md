@@ -7,7 +7,7 @@ tags: nlp
 
 Carmelina
 
-https://twitter.com/deliprao/status/1567280110369214464
+Sur les modèles de langues https://twitter.com/deliprao/status/1567280110369214464
 
 Language Models have taken [#NLProc](https://twitter.com/hashtag/NLProc?src=hashtag_click) by storm. Even if you don’t directly work in NLP, you have likely heard and possibly, used language models. But ever wonder who came up with the term “Language Model”? Recently I went on that quest, and I want to take you along with me.
 
@@ -46,6 +46,17 @@ Any specific credit for "first" is always going to be murky and depends a lot on
 There was also probably a strong influence from those not directly in the group like John Cocke and Joe Raviv. You could also make a case for basic language models in ASR around 1958 with Denes and Fry. Or even for A. A. Markov in 1906 if you want to get really pedantic about it.
 
 Mel’chuk I. A. “An Intermediary Language Model for Machine Translation” Abstracts of the Conference on Machine Tranlation, may 15-21, 1958, 8.
+
+## Outils de NLP
+
+- [Spacy](http://spacy.io) : python, orienté performance, pas de choix des méthodes et algorithmes
+- [NLTK](http://www.nltk.org/) : python, orienté pédagogie, choix des méthodes et algorithmes
+- [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) : framework Java de Stanford, orienté recherche, chaîne de TAL très complète pour l’anglais en particulier
+- [Stanza](https://stanfordnlp.github.io/stanza/) : python, framework de Stanford, modèles neuronaux entraînés sur les données d'Universal Dependancies.
+  [https://github.com/explosion/spacy-stanza](https://github.com/explosion/spacy-stanza) permet d’utiliser les modèles de Stanford avec Spacy
+- [TextBlob](https://textblob.readthedocs.io/en/dev/) : python
+- [DKPro](https://dkpro.github.io) : java
+- [flair](https://github.com/zalandoresearch/flair) : python, le framework de Zalando, très bonnes performances en reconnaissance d’entités nommées
 
 ## BERT
 

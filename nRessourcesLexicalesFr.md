@@ -10,6 +10,52 @@ voir
 
 Habert, Benoît. 2005. *Instruments et ressources électroniques pour le français*. Collection l’essentiel français. Gap : Ophrys.
 
+## Étiquetage des rôles grammaticaux et morphosyntaxique
+
+- cf. https://www.coralcorpuslab.com/tools-and-taggers
+- Charpentier, Lucas, Yannis Haralambous, et Achraf El Masdouri. 2020. « Etude des performances de POS-taggers appliqués à la langue française ». Collection des rapports de recherche d’IMT Atlantique. IMT Atlantique. https://doi.org/10.13140/RG.2.2.17313.35689.
+
+Corpus de référence pour le français : French TreeBank
+
+### TreeTagger
+
+- Url: https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
+- Licence: custom
+- Language: ?
+- Étiquettes : 
+
+[TreeTagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) est un outil pour l’annotation de textes avec des informations de partie du discours et de lemme développé par Helmut Schmid dans le cadre du TC project à l’Institute for Computational Linguistics de l’Université de Stuttgart. 
+
+> The TreeTagger is a Markov Model tagger which makes use of a decision tree to get more reliable estimates for contextual parameters.
+
+Il est utilisé avec succès sur de nombreuses langues comme le français.
+
+### Stanford CoreNLP
+
+- Url: https://stanfordnlp.github.io/CoreNLP/
+- Licence: GNU GPL v2+
+- Language: Java
+- Étiquettes : custom
+
+> CoreNLP is your one stop shop for natural language processing in Java! CoreNLP enables users to derive linguistic annotations for text, including token and sentence boundaries, parts of speech, named entities, numeric and time values, dependency and constituency parses, coreference, sentiment, quote attributions, and relations. CoreNLP currently supports 8 languages: Arabic, Chinese, English, French, German, Hungarian, Italian, and Spanish.
+
+### Spacy
+
+- Language: Python
+- Étiquettes : Universal Dependencies
+
+### Talismane
+
+- Url: https://github.com/joliciel-informatique/talismane
+- Licence: [AGPL open-source license](http://www.gnu.org/licenses/agpl.html)
+- Language: Java
+- Étiquettes : Universal Dependencies
+- Traits
+
+Traitement Automatique des Langues par Inférence Statistique Moyennant l'Annotation de Nombreux Exemples
+
+> Talismane is a natural language processing framework with sentence detector, tokeniser, pos-tagger and dependency syntax parser. Current available language packs include French (standard and [Universal Dependencies](https://github.com/joliciel-informatique/talismane/wiki/Analysing-French-Universal-Dependencies)) and English.
+
 ## FNS SERMO
 
 Neufchâtel projet linguistique sur des corpus de sermons de la réforme. Travail sur des imprimés.

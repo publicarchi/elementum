@@ -11,7 +11,7 @@ tags: julia, machine learning
 | Work with datasets       | [Pandas](https://pandas.pydata.org/)                         | [DataFrames.jl](https://dataframes.juliadata.org/stable/)    |
 | Data visualization       | [Matplotlib](https://matplotlib.org/)                        | [Plots.jl](https://docs.juliaplots.org/stable/)              |
 | Classic Machine learning | [SciKit-Learn](https://scikit-learn.org/)                    | [MLJ.jl](https://alan-turing-institute.github.io/MLJ.jl/dev/about_mlj/), [ScikitLearn.jl](https://scikitlearnjl.readthedocs.io/en/latest/), [BetaML.jl](https://github.com/sylvaticus/BetaML.jl) |
-| Neural Networks          | [TensorFlow](https://www.tensorflow.org/) or [Pytorch](https://pytorch.org/) | [Flux.jl](https://fluxml.ai/Flux.jl/stable/), [BetaML.jl](https://github.com/sylvaticus/BetaML.jl) |
+| Neural Networks          | [TensorFlow](https://www.tensorflow.org/) or [Pytorch](https://pytorch.org/) | [Flux.jl](https://fluxml.ai/Flux.jl/stable/), [BetaML.jl](https://github.com/sylvaticus/BetaML.jl), [Lux.jl](https://lux.csail.mit.edu/stable/) |
 
 ## Machine Learning
 
@@ -53,12 +53,8 @@ Sur le softMax Bendersky, Eli. 2016. « The Softmax function and its derivative 
 
 ## Références
 
-https://github.com/ablaom/HelloJulia.jl/wiki/JuliaCon-2022-workshop:-Getting-started-with-Julia-and-MLJ
-
-Germanov, Andrey. 2023. « Machine Learning with Julia – How to Build and Deploy a Trained AI Model as a Web Service ». *DEV Community* (blog). 17 février 2023. https://dev.to/andreygermanov/machine-learning-with-julia-solve-titanic-competition-on-kaggle-and-deploy-trained-ai-model-as-a-web-service-f9l.
-
-https://juliaai.github.io/DataScienceTutorials.jl/
-
-https://juliaai.github.io/DataScienceTutorials.jl/
-
-An Introduction to Statistical Learning https://www.statlearning.com pour Julia https://github.com/tndoan/ISLR.jl
+- https://github.com/ablaom/HelloJulia.jl/wiki/JuliaCon-2022-workshop:-Getting-started-with-Julia-and-MLJ
+- Germanov, Andrey. 2023. « Machine Learning with Julia – How to Build and Deploy a Trained AI Model as a Web Service ». *DEV Community* (blog). 17 février 2023. https://dev.to/andreygermanov/machine-learning-with-julia-solve-titanic-competition-on-kaggle-and-deploy-trained-ai-model-as-a-web-service-f9l.
+- https://juliaai.github.io/DataScienceTutorials.jl/
+- https://juliaai.github.io/DataScienceTutorials.jl/
+- An Introduction to Statistical Learning https://www.statlearning.com pour Julia https://github.com/tndoan/ISLR.jl

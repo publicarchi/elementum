@@ -197,7 +197,13 @@ possibilité de faire apparaître le type des colonnes
 
 Filtrer pour voir toutes les lignes contennant un... utilisant broadcasting
 
+## Divers
 
+### YAML.jl
+
+https://github.com/JuliaData/YAML.jl
+
+> [YAML](http://yaml.org/) is a flexible data serialization format that is designed to be easily read and written by human beings. This library parses YAML documents into native Julia types and dumps them back into YAML documents.
 
 ## Références
 

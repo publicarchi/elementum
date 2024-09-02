@@ -12,7 +12,7 @@ Il est possible de lier un document XML à une XSLT avec l’instruction de trai
 En insérant la ligne suivante après le prologue de votre document XML, la transformation s’exécutera automatiquement dans un navigateur qui supporte XSLT.
 
 ```xml
-  <?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>
+  <?xml-stylesheet type="text/xsl" href="filename.xsl"?>
 ```
 
 ## Utiliser la spécification XSLTProcessor de l’API HTML5

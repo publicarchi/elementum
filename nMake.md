@@ -4,15 +4,17 @@ author: emchateau
 tags: make
 ---
 
+Traduction française de : Krespanis, Andrew. 2014. « Using GNU Make as a Front-end Development Build Tool ». Sitepoint. 12 mai 2014. https://www.sitepoint.com/using-gnu-make-front-end-development-build-tool/.
+
 La popularité des outils de préprocessing pour la rédaction des CSS a rendu très populaire l’utilisation d’outils d’automatisation de tâches dans le développement front-end. [Grunt](http://gruntjs.com/) et [Gulp](http://gulpjs.com/) sont certainement parmi les plus populaires d’entre eux. Il reste néanmoins toujours possible d’employer [GNU Make](http://www.gnu.org/software/make/) et ce choix peut, dans bien des cas, s’avérer préférable pour plusieurs raisons.
 
-- Make tire parti de la puissance du Shell UNIX et est un outil très versatile
+- *Make* tire parti de la puissance du Shell UNIX et est un outil très versatile
 - Il est déjà disponible dans de nombreux environnement des utilisateurs
-- Il dispose de tous les outils nécessaires sans nécessité d’avoir à gérer des modules et leur dépendances.
+- Il dispose de tous les outils nécessaires sans nécessiter d’avoir à gérer des modules et leur dépendances.
 
 ## Définition de cibles
 
-Une bonne utilisation de Make consiste à définir des cibles couplées avec des pré-requis, de sorte que Make ne construise des nouveaux fichiers seulement quand les sources ont changées. On peut y parvenir en utilisant le dommage des tâches pour définir des cibles.
+La bonne utilisation de *Make* consiste à définir des cibles associées à des pré-requis, de sorte que *Make* ne construise seulement de nouveaux fichiers lorsque les sources changent. On peut y parvenir en utilisant le dommage des tâches pour définir des cibles.
 
 ```bash
 setup:
@@ -23,22 +25,22 @@ setup:
 
 ## Utilisation de cibles et de pré-requis
 
-Afin de tirer parti de tout le potentiel de Make, il convient de définir les résultats désirés sous forme de cibles de construction. Leur pré-requis (ou dépendances), et les recettes pour résoudre ces dépendances, et parvenir à la sortie attendue.
+Afin de tirer parti de tout le potentiel de *Make*, il convient de définir les résultats désirés sous forme de cibles de construction. Leur pré-requis (ou dépendances), et les recettes pour résoudre ces dépendances, et parvenir à la sortie attendue.
 
-L’exemple suivant comporte une règle très simple qui est la construction de base d’une règle Makefile.
+L’exemple suivant présente la création d’une règle de base dans un Makefile.
 
 ```bash
 htdocs/robots.txt: support-files/robots.txt
     cp support-files/robots.txt htdocs/robots.txt
 ```
 
-La première ligne définit la cible (*target*). Après les deux points, viennent les pré-requis. Lorsque Make parse ce Makefile, il lira cette règle et l’interprétera sous la forme "si la source a été modifiée depuis que la cible a été généré, alors re-génère la cible." Pour régénérer la cible, make exécute les lignes indentées avec une tabulation sous la paire `target: source`, appelée recette (*recipe*).
+La première ligne définit la cible (*target*). Après les deux points, viennent les pré-requis. Lorsque *Make* parse ce Makefile, il lira cette règle et l’interprétera de la manière suivante « si la source a été modifiée depuis que la cible a été générée, alors re-génère la cible. » Pour régénérer la cible, *Make* exécute les lignes indentées avec une tabulation sous la paire `target: source`, appelée recette (*recipe*).
 
- ! Attention les recettes des Makefile doivent être intentées avec des tabulation
+ ! Attention les recettes contenues dans des Makefile doivent être intentées avec des tabulation
 
 ## Utilisation de variables automatiques
 
-Make définit également plusieurs [variables automatiques](http://www.gnu.org/software/make/manual/make.html#Automatic-Variables). Celles-ci sont les plus souvent utilisées :
+Make définit également plusieurs [variables automatiques](http://www.gnu.org/software/make/manual/make.html#Automatic-Variables). Voici celles qui sont les plus souvent utilisées :
 
 -  `$@` le nom de fichier cible
 -  `$<` le nom de fichier du premier pré-requis
@@ -51,39 +53,39 @@ htdocs/robots.txt: support-files/robots.txt
     cp $< $@
 ```
 
-On peut par exemple encore améliorer cette règle en introduisant des motifs dans la cible et les pré-requis.
+Il est encore possible d’améliorer cette règle en introduisant des motifs dans la cible et les pré-requis.
 
 ```bash
 htdocs/%.txt: support-files/%.txt
     cp $< $@
 ```
 
-Cette fois-ci, Make copiera tous les fichiers textuels compris dans le répertoire `htdocs` à l’intérieur du répertoire `support-files`, mais à condition que les fichiers sources aient changé.
+Cette fois-ci, *Make* copiera tous les fichiers textuels compris dans le répertoire `htdocs` à l’intérieur du répertoire `support-files`, mais à condition que les fichiers sources aient changé.
 
 ## Compiler des fichiers SASS
 
-Mettons que nos fichiers sont contenus dans un sous-répertoire `css` placé dans un répertoire `assets`, et que le résultat compilé doit être servi sur un serveur http depuis le répertoire `htdocs`. Voici une règle Make pour générer les CSS depuis les sources SAAS en utilisant SassC.
+Mettons que nos fichiers sont contenus dans un sous-répertoire `css` placé dans un répertoire `assets`, et que le résultat compilé doit être servi sur un serveur HTTP depuis le répertoire `htdocs`. Voici une règle *Make* pour générer les CSS depuis les sources SAAS en utilisant SassC.
 
 ```bash
 htdocs/css/%.css: assets/css/%.scss
     sassc -t compressed -o $@ $?
 ```
 
-Une recette avec une seule commande, et un seul pré-requis qui indique à Make "Si la source SASS est plus récente que les fichiers cibles construits, exécute la commande `sassc` avec la cible `$@` fournie comme sortie (option `-o`) et le pré-requis comme source."
+Il s’agit d’une recette présentant une seule commande, et un seul pré-requis qui indique à *Make* « Si la source SASS est plus récente que les fichiers cibles construits, exécute la commande `sassc` avec la cible `$@` fournie comme sortie (option `-o`) et le pré-requis comme source. »
 
 Pour éviter l’affichage des commandes et sorties, il est possible de préfixer les commandes par `@` afin de les rendre silencieuses. On en profite pour améliorer la recette.
 
 ```bash
 htdocs/css/%.css: assets/css/%.scss
     @echo Compiling $@
-	@mkdir -p $(@D)
+		@mkdir -p $(@D)
     @sassc -t compressed -o $@ $?
     @node_modules/.bin/autoprefixer $@
 ```
 
-Le Make précédent exécute les commandes suivantes :
+Le *Make* précédent exécute les commandes suivantes :
 
-- afficher le nom des fichiers de destinations pour voir ce qui est compilé
+- afficher le nom des fichiers de destinations pour indiquer à l’utilisateur ce qui est compilé
 - créer le répertoire de sortie s’il n’existe pas (en incluant ses sous-répertoires !). On emploie ici une nouvelle variable automatique `$(@D)`, le répertoire du fichier cible
 - compiler les CSS depuis les sources SASS
 - utiliser autoprefixer pour ajouter tous les préfixes de vendeur à la CSS 
@@ -93,11 +95,11 @@ La même approche peut être utilisée pour minifier du JavaScript ou transpiler
 ```bash
 htdocs/js/%.js: assets/js/%.js
     @echo Processing $@
-	@mkdir -p $(@D)
+		@mkdir -p $(@D)
     @node_modules/.bin/jsmin --level 2 --output $@ $?
 ```
 
-Dans les deux cas, les exemples utilisent node car cet environnement dispose des meilleurs outils pour l’environnement front-end. Il n’est pour autant pas nécessaire d’envelopper ces modules nodes avec Grunt ou Gulp et les lancer dans un autre programmes node dans sa propre syntaxe.
+Dans les deux cas, les exemples utilisent Node.js car cet environnement dispose des meilleurs outils pour l’environnement front-end. Il n’est pour autant pas nécessaire d’envelopper ces modules Node avec Grunt ou Gulp et les lancer dans un autre programmes Node dans sa propre syntaxe.
 
 ## Pré-requis multiples
 
@@ -106,7 +108,7 @@ Dans de nombreux projets SASS les variables peuvent être définies dans un fich
 ```bash
 htdocs/css/%.css: assets/css/%.scss assets/css/_settings.scss
     @echo Compiling $@
-	@mkdir -p $(@D)
+		@mkdir -p $(@D)
     @sassc -t compressed -o $@ $<
     @node_modules/.bin/autoprefixer $@
 ```
@@ -174,10 +176,7 @@ L’un des principaux inconvénients de Make est de ne pas être multiplateforme
 
 ## Références
 
-https://www.sitepoint.com/using-gnu-make-front-end-development-build-tool/
-
-http://www.gnu.org/prep/standards/html_node/Makefile-Conventions.html
-
-http://www.gnu.org/software/make/manual/make.html
-
-https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/ cf. https://github.com/jcoglan/bake/blob/master/Makefile
+- https://www.sitepoint.com/using-gnu-make-front-end-development-build-tool/
+- http://www.gnu.org/prep/standards/html_node/Makefile-Conventions.html
+- http://www.gnu.org/software/make/manual/make.html
+- https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/ cf. https://github.com/jcoglan/bake/blob/master/Makefile

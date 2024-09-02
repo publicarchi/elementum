@@ -8,21 +8,32 @@ tags: julia
 ## Préambule
 
 > We are greedy: we want more. We want a language that’s open source, with a liberal license. We want the speed of C with the dynamism of Ruby. We want a language that’s homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab. We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell. Something that is dirt simple to learn, yet keeps the most serious hackers happy. We want it interactive and we want it compiled.
+>
+> Bezanson, Jeff, Stefan Karpinski, et Edelman Viral B. Shah Alan. 2012. « Why We Created Julia ». férvier 2012. https://julialang.org/blog/2012/02/why-we-created-julia/.
 
-Source: [The Julia blog](https://julialang.org/blog/2012/02/why-we-created-julia/).
-
-https://julialang.org/blog/2012/02/why-we-created-julia/
-
-- [documentation](https://docs.julialang.org/en/v1/)
+- [Documentation du langage](https://docs.julialang.org/en/v1/)
 - [Noteworthy Differences from other Languages](https://docs.julialang.org/en/v1/manual/noteworthy-differences/#Noteworthy-Differences-from-other-Languages)
-- [The Fast Track to Julia](https://cheatsheet.juliadocs.org)
+- [The Fast Track to Julia (aide-mémoire)](https://cheatsheet.juliadocs.org)
 
 ### Avantages
 
-- Interactivité
-- Performance
-- Environnement, facilité apprentissage
-- ...
+* Julia est **composable**
+* Julia est **concis**
+* Julia est **performant**
+* Julia est **productif**
+* Julia est **facile à maintenir**
+* Julia est **libre et open-source**
+
+Outre ces qualités, il nous semble que la consistance et la clareté de sa syntaxe en fait un très bon candidat pour l’apprentissage de la programmation.
+
+### Caractéristiques de Julia
+
+- langage dynamiquement typé, mais avec des types optionnels
+- built-in types équivalent à des types définis par les utilisateurs
+- compilation JIT
+- utilisation de multiple dynamic dispatch
+- capacités de métaprogramming
+- appel natif de librairies en C et Fortan
 
 ### Historique du langage
 
@@ -31,33 +42,96 @@ https://julialang.org/blog/2012/02/why-we-created-julia/
 - 1.0 – Aug 8, 2018 (LTS)
 - 1.6 – Mar 24, 2021 (LTS)
 - 1.9 – May 07, 2023
+- 1.10 – December 27, 2023 cf. https://julialang.org/blog/2023/12/julia-1.10-highlights/
+
+### Comparaison avec Python
+
+- facile à apprendre depuis Python
+- les librairies Python sont toutes utilisables vi PyCall.jl ou PythonCall.jl
+- vitesse d’exécution comparable à celle de C
+- parallélisation fait partie du langage
+
+cf. https://youtu.be/qhrY0c_BHs8?si=fyPDO-f0U-PXVoJs
+
+## Installation
+
+Télécharger Julia depuis la page dédiée et suivre les instructions https://julialang.org/downloads/
+
+Plusieurs IDE sont disponible, le plus courramment utilisé consiste en l’utilisation de [l’extension Julia](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia) de Visual Studio Code.
+
+Il existe un [Kernel Julia](https://github.com/JuliaLang/IJulia.jl) pour les notebooks Jupyter mais aussi un environnement de notebooks interactifs nativement développé en Julia [Pluto.jl](https://plutojl.org)
+
+## Premiers pas dans le terminal
+
+Démarrer Julia
+
+```bash
+julia
+```
+
+Arrêter Julia
+
+```julia
+exit()
+```
+
+ou
+
+````
+<Ctl-D>
+````
+
+Premiers pas en ligne de commande ou REPL (Read-Eval-Print-Loop)
+
+```julia
+println("Hello world !")
+```
+
+```julia
+1 + 2
+```
+
+```julia
+sqrt(4)
+```
+
+Accéder à de l’aide
+
+```julia
+?
+println
+```
+
+`Enter` ou `Backspace` pour quitter l’aide.
+
+Shell
+
+```julia
+;
+pwd
+```
+
+Gestionnaire de paquets
+
+```julia
+]
+```
+
+`Backspace` pour quitter le gestionnaire de paquets.
 
 ## Syntaxe de base
 
-Il n’y a pas d’indentation en Julia. Pour définir un bloc d’instruction, on commence par un mot-clé et ce bloc se termine par un `end`
+Il n’y a pas d’indentation en Julia. Pour définir un bloc d’instruction, on commence par un mot-clef et ce bloc se termine par un `end`
 
 ```julia
 if a >= b
 end
 ```
 
-En Python
-
-```python
-if a >= b:
-    pass
-```
-
-Pour concaténer une chaîne de caractère on utilise `*`. Le symbole puissance `^` permet de répéter un caractère. En Julia on peut représenter un caractère explicitement avec des apostrophes simples `''` et des chaînes de caractères avec `""`
+Pour concaténer une chaîne de caractère on utilise `*`. Le symbole puissance `^` permet de répéter un caractère. On peut représenter un caractère explicitement avec des apostrophes simples `''` et des chaînes de caractères avec `""`
 
 ```julia
 'a'^5 * "bc"
-```
-
-En Python
-
-```python
-'a'*5 + 'bc'
 ```
 
 C’est souvent l’utilisation des types qui permet à Julia une exécution très rapide. Il est possible de créer une liste non typée ou des listes typées. Pour ajouter un type à tous les éléments de la liste, on le précise avant la liste.
@@ -67,15 +141,7 @@ slow = []
 fast = Int[]
 ```
 
-En Python, il faudrait utilser par exemple numpy
-
-```python
-slow = []
-fast = np.zeros(shape=(3,2),
-               dtype=np.intc)
-```
-
-Dans la syntaxe de Julia le premier élément est 1 et non pas 0. Le dernier élément n’est pas -1 mais accéder avec le mot-clef `end`. La dernière valeur est incluse dans la plage.
+Dans la syntaxe de Julia le premier élément est `1` contrairement à d’autres langages où l’index est `0`. On peut accéder avec le mot-clef `end` au dernier élément. La dernière valeur est incluse dans la plage.
 
 ```julia
 list[1] == first(list)
@@ -83,15 +149,7 @@ list[end] == last(list)
 list[begin+1:end-1]
 ```
 
-En Python
-
-```python
-list[0]
-list[-1]
-list[1:-1]
-```
-
-Julia ne dispose pas de classe à proprement parler tandis que Python est un langage orienté objet plus classique. Pour créer une structure de données en Julia `struct`. Pour créer une structure mutable, on précède par le mot-clef `mutable`. Cette distinction est permise pour permettre l’accélération du code.
+Julia ne dispose pas de classe à proprement parler. Toutefois, il est possible de créer une structure de données avec `struct`. Pour créer une structure mutable, on précède par le mot-clef `mutable`. Cette distinction est permise pour permettre l’accélération du code.
 
 ```julia
 struct X
@@ -102,18 +160,7 @@ mutable struct X
 end
 ```
 
-En Python
-
-```python
-class X: pass
-X = namedtyple('X', ['field'])
-# Immutable
-@dataclass
-class X:
-  field: float
-```
-
-Julia propose une compilation à la volée JIT. Tout le code est compilé avant d’être exécuté. Lors du chargement des modules. Le code plus simple sera souvent plus lent qu’en python, mais ce n’est pas lui le plus important.
+Julia propose une compilation à la volée JIT. Tout le code est compilé avant d’être exécuté lors du chargement des modules. 
 
 Multiméthode, le code à exécuter pour une fonction dépend des types de **tous** les arguments.
 
@@ -154,7 +201,7 @@ d = "Julia"
 println(typeof(d))
 ```
 
-Le type d’une variable peut changer au coursde sa vie
+Le type d’une variable peut changer au cours de sa vie
 
 ```julia
 a = 42
@@ -169,9 +216,22 @@ Pour le débogage, @show affiche aussi l’expression :
 @show a;
 ```
 
+Commentaires
+
+```julia
+# commentaire simple
+```
+
+```julia
+#=
+Commentaire
+Multi-ligne
+=#
+```
+
 ## Les chaînes de caractères
 
-L’interpolation des châines de caractère est utile
+L’interpolation des chaînes de caractère est utile
 
 ```julia
 langage = "Julia"
@@ -183,6 +243,16 @@ Unicode est géré nativement, même pour les noms de variables.
 ```julia
 γs_regex = r"γ|Γ" # \gamma et \Gamma dans l’interpréteur, Jupyter et la plupart des environnements
 match(γs_regex, "abγ")
+```
+
+Texte multiligne
+
+```julia
+multi_line = """
+   This is a
+   multi-line string.
+"""
+print(multi_line)
 ```
 
 ## Structure de données de base
@@ -224,6 +294,8 @@ d = Dict{Int, Float64}(1 => π, 2 => ℯ)
 
 ## Manipuler des données structurées comme des DataFrames
 
+cf. https://github.com/datacraft-paris/2211-Cuvelier-Julia/blob/main/2-dataframes.ipynb
+
 Charger les paquets pour travailler
 
 ```julia
@@ -259,10 +331,10 @@ Avec la fonction `select()`, il est également possible de sélectionner une col
 select(iris, :SepalLength, 2, "PetalLength")
 ```
 
-Toutes les colomnes sauf
+Toutes les colomnes sauf...
 
 ```julia
-select(iris, Not(2))
+select(iris, Not(2)) # Not() est une fonction de DataFrames pas de Julia
 ```
 
 Utilisation d’un prédicat
@@ -370,7 +442,9 @@ end
 
 ## Travailler avec des graphes
 
+@todo
 
+https://github.com/datacraft-paris/2211-Cuvelier-Julia/blob/main/3-graphes.ipynb
 
 ## Notebook IJulia
 
@@ -391,7 +465,7 @@ Si Jupyter n’est pas installé, l’installer.
 
 ## Utilisation du gestionnaire de paquets
 
-Julia dispose d’un très efficace gestionnaire de paquets, [Pkg](https://pkgdocs.julialang.org/). Dans Julia, on accède au gestionnaire de paquets en tappant `]`. Tapper `backspace` ou  `Ctrl+C` pour revenir au REPL de Julia.
+Julia dispose d’un très gestionnaire de paquets efficace, [Pkg](https://pkgdocs.julialang.org/). Dans Julia, on accède au gestionnaire de paquets en tappant `]`. Tapper `backspace` ou  `Ctrl+C` pour revenir au REPL de Julia.
 
 Ajouter un paquet (dans Pkg)
 
@@ -407,7 +481,7 @@ rm --manifest nom_du_paquet
 
 La commande `status` ou `st` permet de voir les paquets installés.
 
-Pkg est conçu autour de la notion d’environnements. Des ensembles indépendants de configuration de paquets et de venirs peuvent être capturés dans un fichier de *manifest* qui peut être lié à un répertoire et être versionné pour améliorer la reproductibilité des projets. Cette solution permet de travailler avec des versions différentes de paquets installés à des endroits distincts en fonction de vos besoins. Cette fonctionnalité est comparable à `virtualenv` en Python.
+Pkg est conçu autour de la notion d’environnement. Il s’agit d’ensemble de paquets qui peuvent être propres à un projet ou partagés et sélectionnés par leur nom. Ces environnements sont décrits dans un fichier de *manifest* qui peut être versionné pour facilité la reproductibilité des projets. Cette solution permet de travailler avec des versions différentes de paquets installés à des endroits distincts en fonction de vos besoins ; une fonctionnalité est comparable à `virtualenv` en Python.
 
 Pour activer un environnement (dans Pkg)
 
@@ -421,11 +495,13 @@ Lorsqu’on utilise un projet existant, la commande `instantiate` télécharge l
 instantiate
 ```
 
-Au lieu d’utiliser la commande `activate` depuis Julia, il est également possible de spécifier lors du démarage l’environement à utiliser
+Au lieu d’utiliser la commande `activate` depuis Julia, il est également possible de spécifier lors du démarage l’environnement à utiliser
 
 ```julia
-julia --project=. myscript.jl
+julia --project=somepath myscript.jl
 ```
+
+Les fichiers `Project.toml` contiennent les informations générales sur le projet (nom, id, auteurs) et les dépendances directes, tandis que `Manifest.toml` contient la date exacte des versions des dépendances directes et indirectes.
 
 Pour générer les fichiers d’un paquet (dans Pkg)
 
@@ -433,13 +509,22 @@ Pour générer les fichiers d’un paquet (dans Pkg)
 generate my_project
 ```
 
+Un sous répertoire `src` est destiné à accueillir le code
 
+### Configuration par défaut de l’environnement de travail
 
-## Ressources pédagogiques
+Pour répliquer le comportement par défaut proposé dans Visual Studio code.
 
-« Modern Julia Workflows ». 2023. Consulté le septembre 10. https://modernjuliaworkflows.github.io/.
+https://log-dh.vercel.app/notes/2024-02-16_julia-gestion-des-environnements/
+
+### Ressources pédagogiques sur les environnements
+
+- Documentation de PKG https://pkgdocs.julialang.org/v1/
+- « Modern Julia Workflows ». 2023. Consulté le septembre 10. https://modernjuliaworkflows.github.io/.
 
 ## Sources
+
+- Lauwens, Ben, et Allen Downey. s. d. *Think Julia. How to Think Like a Computer Scientist*. Consulté le 14 décembre 2019. https://benlauwens.github.io/ThinkJulia.jl/latest/book.html.
 
 Tutoriel de Cuvelier
 
