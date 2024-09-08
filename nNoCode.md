@@ -81,6 +81,15 @@ Baserow est une application destinée à créer des bases de données et des app
 - licence: AGPL v3 + divers
 - language: Clojure + TypeScript
 
+### Open data editor
+
+> No-code application to explore and publish all kinds of data: datasets, tables, charts, maps, stories, and more. Forever free and open source project powered by open standards and generative AI.
+
+- url: https://opendataeditor.okfn.org
+- code: https://github.com/okfn/opendataeditor
+- licence: MIT Licence
+- language: Python + JavaScript
+
 ### Rowy
 
 > Low-code Backend. Manage your database on a spreadsheet-UI and build powerful backend cloud functions, scalably without leaving your browser. Start like no-code, extend with code. 
