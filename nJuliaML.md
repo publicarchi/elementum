@@ -5,9 +5,34 @@ tags: julia, machine learning
 
 # Julia ML
 
+Julia est un langage informatique de calcul scientifique. Il est particulièrement bien positionné pour les applications d’apprentissage machine (*Machine learning*). Si le langage offre un écosystème moins développé que Python il reste néanmoins une option particulièrement viable pour les applications habituelles dans ce domaine.
+
+Quelques concepts-clefs en apprentissage machine
+
+apprentissage supervisé (*Supervised Learning*) @todo
+
+apprentissage non-supervisés (*Unsupervised Learning*) @todo
+
+apprentissage par renforcement (*Reinforcement Learning*) @todo
+
+évaluation de modèles (*Model Evaluation*) @todo
+
+## Débuter avec Julia pour l’apprentissage machine
+
+- Installer Julia
+- Apprendre les bases du langage : vous familiariser avec la syntaxe, les structures et les types.
+- Explorer la manipulation de données et les outils de visualisation
+- Explorer les algorithmes simples
+- Construire et évaluer des modèles
+- Explorer des sujets avancés
+
+Nazarathy, Yoni, et Hayden Klok. 2021. *Statistics with Julia: Fundamentals for Data Science, Machine Learning and Artificial Intelligence*. Springer Series in the Data Science. Cham Springer.
+
+
+
 | Purpose                  | Python                                                       | Julia                                                        |
 | :----------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| Linear algebra           | [Numpy](https://numpy.org/)                                  | Built in arrays, [LinearAlgebra](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/)package |
+| Linear algebra           | [Numpy](https://numpy.org/)                                  | Built in arrays, [LinearAlgebra](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/) package |
 | Work with datasets       | [Pandas](https://pandas.pydata.org/)                         | [DataFrames.jl](https://dataframes.juliadata.org/stable/)    |
 | Data visualization       | [Matplotlib](https://matplotlib.org/)                        | [Plots.jl](https://docs.juliaplots.org/stable/)              |
 | Classic Machine learning | [SciKit-Learn](https://scikit-learn.org/)                    | [MLJ.jl](https://alan-turing-institute.github.io/MLJ.jl/dev/about_mlj/), [ScikitLearn.jl](https://scikitlearnjl.readthedocs.io/en/latest/), [BetaML.jl](https://github.com/sylvaticus/BetaML.jl) |

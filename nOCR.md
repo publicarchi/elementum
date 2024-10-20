@@ -378,7 +378,13 @@ https://github.com/omni-us/pagexml
 
 Library in C++ and a python wrapper for dealing with Page XML files
 
+## Outils
 
+Alto visualiseur http://emory-lits-labs.github.io/altoviz/
+
+abbyy-to-alto https://github.com/Mewel/abbyy-to-alto
+
+ocr-conversion https://github.com/cneud/ocr-conversion
 
    .............................
 

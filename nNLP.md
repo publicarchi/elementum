@@ -58,6 +58,21 @@ Mel’chuk I. A. “An Intermediary Language Model for Machine Translation” Ab
 - [DKPro](https://dkpro.github.io) : java
 - [flair](https://github.com/zalandoresearch/flair) : python, le framework de Zalando, très bonnes performances en reconnaissance d’entités nommées
 
+## SVM
+
+SVM désigne un ensemble de méthodes d’apprentissage supervisé développé par Vapnik et ses collègues basé sur le principe de *Structural Risk Minimization* issu de la théorique d’apprentissage statistique.
+
+>As linear classifiers (with linear kernel), SVMs aim to find the hyperplanes that separate data points with the maximal margins between the two decision boundaries. Aiming to minimize the generalization error, SVMs have the advantage of reducing the risk of overfitting. SVMs outperform other text classification methods in a number of comparative evaluations on topic classification tasks (Dumais et al., 1998; Joachims, 1998; Yang and Liu, 1999).
+
+- Vapnik, V. N. (1982). Estimating of Dependencies Based on Empirical Data. New York: Springer. 
+- Vapnik, V. N. (1999). The Nature of Statistical Learning Theory. 2nd edn. Berlin: Springer-Verlag.
+
+### Implémentations en Julia
+
+La plupart des implémentations sont des wrapper par dessus [LIBSVM 65](https://www.csie.ntu.edu.tw/~cjlin/libsvm/). MLJ utilise par exemple [LIBSVM.jl 62](https://github.com/mpastell/LIBSVM.jl)).
+
+Il existe un guide pour débuter sur LIBSVM 65 [how to start 62](https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf) (normalizing your data, setting the parameters and so forth).
+
 ## BERT
 
 > BERT is a neural network-based language mode from Google that is trained to perform natural language processing tasks. It was introduced by google researchers in 2018. 

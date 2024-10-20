@@ -6,15 +6,15 @@ tags: outils
 
 # Applications Low code - No code
 
-Les applications dites *low code* ou *no code* sont des logiciels qui proposent des interfaces graphiques  pour faciliter la saisie et la gestion de données ou procéder à leur analyse. Ce type de solution a gagné en popularité paryticulièrmeent au tournant des années 2020 avec l’émergence de certains logiciels propriétaires comme [Notion](https://www.notion.so) ou [Air Table](https://www.airtable.com).
+Les applications dites *low code* ou *no code* sont des logiciels qui proposent des interfaces graphiques  pour faciliter la saisie et la gestion de données ou procéder à leur analyse. Ce type de solution a gagné en popularité particulièrement au tournant des années 2020 avec l’émergence de certains logiciels propriétaires comme [Notion](https://www.notion.so) ou [Air Table](https://www.airtable.com).
 
-En raison de leur polyvalence et de leur facilité d’utilisation, de nombreux chercheurs ont rapidement choisi d’adopter ces logiciels pour la gestion de leur données de recherche. Toutefois, il s’agit d’outils propriétaires qu ne reposent pas sur des formats ou des modèles de donnés standardisés. Les possibilités d’exportation sont parfois incomplètes et l’utilisation de ces logiciels présente des risques sérieux en matière de gestion des données de recherche. Leur généralisation risque de produire une situation comparable à celle que nous avons connu ces dernières années avec l’utilisation du logiciel FileMaker dans la recherche historique.
+En raison de leur polyvalence et de leur facilité d’utilisation, de nombreux chercheurs ont rapidement choisi d’adopter ces logiciels pour la gestion de leurs données de recherche. Toutefois, il s’agit d’outils propriétaires qui ne reposent pas sur des formats ou des modèles de donnés standardisés. Les possibilités d’exportation sont parfois incomplètes et l’utilisation de ces logiciels présente des risques sérieux en matière de gestion des données de recherche. Leur généralisation risque de produire une situation comparable à celle que nous avons connu ces dernières années avec l’utilisation du logiciel FileMaker dans la recherche historique.
 
 Il est donc important de pouvoir identifier des solutions alternatives offrant des services comparables tout en garantissant une meilleure pérennité des données.
 
 ## Alternatives Open Source à Notion et Air Table
 
-Face au succès des logiciels propriétaires, plusieurs solutions libres et open source ont émergées. Leur développement a été rapide et ces logiciels commencent à offrir des fonctionnalités comparables. Selon les modèles économiques adoptés par leur concepteurs, ces logiciels peuvent être auto-hébergées ou être proposés sous forme de service payant en ligne.
+Face au succès des logiciels propriétaires, plusieurs solutions libres et open sources ont émergé. Leur développement a été rapide et ces logiciels commencent à offrir des fonctionnalités comparables. Selon les modèles économiques adoptés par leurs concepteurs, ces logiciels peuvent être autohébergés ou être proposés sous forme de service payant en ligne.
 
 ### AppFlowy
 
@@ -27,7 +27,7 @@ Face au succès des logiciels propriétaires, plusieurs solutions libres et open
 
 ### Baserow
 
-Baserow est une application destinée à créer des bases de données et des application sans programmation. Si le logiciel est open source, il ne s’agit pas réellement d’un logiciel libre.
+Baserow est une application destinée à créer des bases de données et des applications sans programmation. Si le logiciel est open source, il ne s’agit pas réellement d’un logiciel libre.
 
 >Create it. Scale it. Own it. The open platform to create scalable databases and applications—without coding.
 
@@ -112,7 +112,7 @@ Omeka-S est un logiciel de gestion de contenu spécialisé pour le domaine patri
 
 ### Arches
 
-Arches est une plateforme de gestion de données open source généraliste pour le partimoine culturel développée par le Getty Conservation Institute et le World Monuments Fund.
+Arches est une plateforme de gestion de données open source généraliste pour le patrimoine culturel développée par le Getty Conservation Institute et le World Monuments Fund.
 
 - url: https://www.archesproject.org
 - code: https://github.com/archesproject/arches
