@@ -34,3 +34,5 @@ http://henryjenkins.org/2007/03/transmedia_storytelling_101.html
 ## Exemples
 
 https://www.reviewjournal.com/entertainment/the-sphere-everything-you-need-to-know/
+
+https://www.lemonde.fr/international/article/2024/11/10/le-mekong-un-fleuve-sous-l-emprise-de-la-chine_6385809_3210.html

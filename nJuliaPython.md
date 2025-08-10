@@ -37,6 +37,8 @@ Il existe deux Paquets Julia pour faire cela : [PyCall.jl](https://github.com/J
 - PyCall https://github.com/JuliaPy/PyCall.jl
 - PythonCall https://juliapy.github.io/PythonCall.jl
 
+Exemple de wrapper SegmentAnything https://github.com/sardinecan/SegmentAnything.jl
+
 ## Références
 
 - Kamiński, Bogumił. 2023. « Julia and Python Better Together ». *Blog by Bogumił Kamiński* (blog). 17 février 2023. https://bkamins.github.io/julialang/2023/02/17/python.html.

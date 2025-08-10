@@ -1,5 +1,4 @@
 ---
-filename: trRESTXQ
 date: 2014-02-18
 version: 0.1
 tags: traduction, rest, basex

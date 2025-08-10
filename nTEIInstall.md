@@ -49,8 +49,6 @@ brew install jing-trang
 brew install saxon
 ```
 
-
-
 - ant
 - jing
 - perl

@@ -5,7 +5,9 @@ tags: topic modeling, nlp
 
 # Topic Modeling
 
-> Topic modelling is an NLP task where, given a corpus of documents, the objective is to find the underlying meaningful *clusters* of docu- ments (or *topics*) that are thematically coherent (use consistent and related vocabulary) and assign each document to one or more of these topics. As a text mining technique, it allows the analysis of big volumes of textual documents through clus- tering them into coherent sets addressing similar subjects (or topics), and labeling them using key- words that are understandable by the end-user. It has the advantage of not relying on any labeled data to achieve good results, as the training of topic models is done in an unsupervised matter. 
+>Topic modeling algorithms are statistical methods that analyze the words of the original texts to discover the themes that run through them, how those themes are connected to each other, and how they change over time. [David M. Blei](http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf)
+
+> Topic modelling is an NLP task where, given a corpus of documents, the objective is to find the underlying meaningful *clusters* of documents (or *topics*) that are thematically coherent (use consistent and related vocabulary) and assign each document to one or more of these topics. As a text mining technique, it allows the analysis of big volumes of textual documents through clustering them into coherent sets addressing similar subjects (or topics), and labeling them using keywords that are understandable by the end-user. It has the advantage of not relying on any labeled data to achieve good results, as the training of topic models is done in an unsupervised matter. 
 >
 > https://aclanthology.org/2021.ranlp-1.55.pdf
 

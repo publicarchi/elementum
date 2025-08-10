@@ -1,10 +1,30 @@
 ---
 author: emchateau
 since: 2018-08-23
-tags: linux, bash
+tags: linux, bash, command_line
 ---
 
-# Notes Bash
+# Travailler avec le Terminal
+
+Le terminal de votre ordinateur est un programme qui vous permet d’interagir avec les couches basses de votre système. Toutes les opérations que vous effectuez habituellement dans une interface graphique pour la manipulation de fichiers dans le Finder sur Mac ou l’Explorateur de fichiers sur PC, peuvent être réalisées directement dans le terminal en ligne de commande.
+
+Pour accéder au Terminal sur Mac, vous pouvez ouvrir l’application Terminal dans les Utilitaires.
+
+## Commandes usuelles
+
+| Commandes    | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| cd [dossier] | changer de répertoire (*change directory*)                   |
+| cd ~         | aller au répertoire Home                                     |
+| cd /         | aller à la racine du disque                                  |
+| cd -         | aller au répertoire précédent                                |
+| ls           | lister les fichiers et les dossiers                          |
+| ls -l        | lister les fichiers et les répertoires avec les détails      |
+| ls -a        | lister les fichiers et les répertoires, y compris les fichiers cachés |
+| ls -lh       | lister les fichiers et les répertoires avec les détails sur leur taille |
+| ls -R        | lister les fichiers et les répertoires récursivement         |
+
+https://github.com/0nn0/terminal-mac-cheatsheet
 
 ## Travailler avec les fichiers cachés
 

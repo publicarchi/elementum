@@ -10,6 +10,26 @@ voir
 
 Habert, Benoît. 2005. *Instruments et ressources électroniques pour le français*. Collection l’essentiel français. Gap : Ophrys.
 
+## Ressources pour le TAL du Français
+
+### OpenNLP
+
+[OpenNLP](https://sites.google.com/site/nicolashernandez/resources/opennlp) propose des modèles pour le traitement automatique du français.
+
+Licence Apache.
+
+Découpage de phrases, tokeniser, étiquetage des parties du discours, analyse morphologique.
+
+## LGeRM
+
+[LGeRM](http://www.atilf.fr/LGeRM/) est un lemmatiseur du français moyen utilisable sur des corpus du français moderne.
+
+voir l’article https://halshs.archives-ouvertes.fr/halshs-00396452/document
+
+ainsi que https://books.google.ca/books?id=Ca6dCgAAQBAJ&pg=PA461&lpg=PA461
+
+voir également http://lexicometrica.univ-paris3.fr/jadt/jadt2000/pdf/89/89.pdf
+
 ## Étiquetage des rôles grammaticaux et morphosyntaxique
 
 - cf. https://www.coralcorpuslab.com/tools-and-taggers
@@ -55,6 +75,27 @@ Il est utilisé avec succès sur de nombreuses langues comme le français.
 Traitement Automatique des Langues par Inférence Statistique Moyennant l'Annotation de Nombreux Exemples
 
 > Talismane is a natural language processing framework with sentence detector, tokeniser, pos-tagger and dependency syntax parser. Current available language packs include French (standard and [Universal Dependencies](https://github.com/joliciel-informatique/talismane/wiki/Analysing-French-Universal-Dependencies)) and English.
+
+## Lefff, lexique des formes fléchies du français
+livresse des mots
+
+https://www.labri.fr/perso/clement/lefff/
+
+## Morphalou, *Lexique morphologique ouvert du français*
+
+Morphalou3 comprend 159 271 lemmes et 954 690 formes fléchies, du français moderne. Ce document présente toutes les informations concernant Morphalou3 : composition, formats, données, jeu d'étiquettes et statistiques.
+
+La version 3 de Morphalou a été obtenue par la fusion de cinq lexiques : 
+
+- [Morphalou 2](https://repository.ortolang.fr/api/content/morphalou/2/LISEZ_MOI.html#morphalou2) (version de décembre 2013)
+- [DELA](https://repository.ortolang.fr/api/content/morphalou/2/LISEZ_MOI.html#dela) (version de décembre 2011)
+- [Dicollecte](https://repository.ortolang.fr/api/content/morphalou/2/LISEZ_MOI.html#dicollecte) (version 4.3)
+- [LGLex et LGLexLefff](https://repository.ortolang.fr/api/content/morphalou/2/LISEZ_MOI.html#lglex) (version 3.4)
+- [Lefff](https://repository.ortolang.fr/api/content/morphalou/2/LISEZ_MOI.html#lefff) (version 2.1 avril 2006)
+
+Cette fusion a permis d'augmenter et corriger le contenu de près de 70 000 lemmes et plus de 500 000 formes fléchies. Elle a également permis de redéfinir [le jeu d'étiquettes, décrit en détail dans un chapitre dédié](https://repository.ortolang.fr/api/content/morphalou/2/LISEZ_MOI.html#jeu_etiquettes). 
+
+https://repository.ortolang.fr/api/content/morphalou/2/LISEZ_MOI.html
 
 ## FNS SERMO
 
@@ -153,6 +194,14 @@ https://nlp.stanford.edu/projects/glove/
 
 voir http://www.elex.is 
 
+## Clarin, The research infrastructure for language as social and cultural data
+
+https://www.clarin.eu
+
+## DARIAH Topic Explorer
+
+https://dariah-de.github.io/TopicsExplorer/
+
 ## Outils pour le français ancien et moderne
 
 ### Graphist : Logiciel de lemmatisation indexation et modernisation automatique de textes anciens
@@ -197,6 +246,7 @@ ANTONI Marie-Hélène, DEMONET Marie-Luce, « Informatisation et lemmatisation d
 Antoni M.-H. (1997). TAL et le projet Grace. Rapport technique interne IBM.
 
 El-Bèze M. (1993) Les modèles de langage probabilistes: quelques domaines d’application.
+
 Thèse HDR. LIPN (Paris XIII).
 
 http://lexicometrica.univ-paris3.fr/jadt/jadt2000/pdf/89/89.pdf
@@ -263,3 +313,8 @@ https://camembert-model.fr/
 
 http://crisco.unicaen.fr/dictionnaire-electronique-des-synonymes/actualites-des/
 
+## Liste de mots vides dans différentes langues
+
+https://github.com/Alir3z4/stop-words/
+
+http://snowball.tartarus.org/algorithms/french/stop.txt

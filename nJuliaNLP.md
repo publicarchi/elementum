@@ -5,9 +5,9 @@ tags: julia, nlp
 
 # Tutoriel Julia NLP
 
-La plupart des applications de l’analyse de texte reposent sur un nombre limité de concepts ou de procédures clefs telles que la concordance, la fréquence des mots, l’annotation ou l’étiquetage, la collocation, la classification de texte, l’analyse des sentiments ou l’extraction d’entité, ou encore les modèles thématiques. Ce tutoriel introduit l’analyse de texte en examinant chancune de ces méthodes dans le contexte des sciences historiques.
+La plupart des applications de l’analyse de texte reposent sur un nombre limité de concepts ou de procédures clefs telles que la concordance, la fréquence des mots, l’annotation ou l’étiquetage, la collocation, la classification de texte, l’analyse des sentiments ou l’extraction d’entités, ou encore les modèles thématiques. Ce tutoriel introduit l’analyse de texte en examinant chacune de ces méthodes dans le contexte des sciences historiques.
 
-Ce tutoriel est basé sur le langage de programmation [Julia](https://julialang.org). Le langage est relativement nouveau par rapport à ses concurrents comme Python ou R. Toutefois, il nous semble qu’il présente plusieurs avantages pour le domaine des humanités nuémriques. Si vous êtes nouvelle ou nouveau dans ce langage ou ne l’avez pas déjà installé, vous pouvez trouver des introductions aux liens suivants.
+Ce tutoriel est basé sur le langage de programmation [Julia](https://julialang.org). Le langage est relativement nouveau par rapport à ses concurrents comme Python ou R. Toutefois, il nous semble qu’il présente plusieurs avantages pour le domaine des humanités numériques et l’analyse de textes. Si vous êtes nouvelle ou nouveau dans ce langage ou ne l’avez pas déjà installé, vous pouvez trouver des introductions aux liens suivants.
 
 - Guides pour débuter avec Julia @todo
 - Bibliographie de base sur l’analyse de texte @todo
@@ -90,7 +90,11 @@ lexicon(crps)
 
 Les concordances sont habituellement présentées sous la forme de mot-clef en contexte (*Key Word in Context* KWIC). Cet index permet de montrer les mots dans leur contexte environnant (contexte droit et gauche). C’est un outil qui aide à comprendre comment un terme est employé au sein d’un corpus.
 
+## Lemmatisation
 
+La lemmatisation est un processus clef dans le domaine de l’analyse textuelle statistique. Il s’agit de ramener les différents termes d’un texte à leur forme de base ou lemme afin de simplifier l’analyse. Ce faisant, la lemmatisation permet de regrouper les différentes formes d’un mot telles que les déclinaisons grammaticales des verbes. Dans certaines situations, cela rend l’analyse statistique plus pertinente en ce concentrant sur la fréquence des lemmes plutôt que leurs multiples variantes.
+
+En Python, les librairies SpaCy et NLTK offrent des fonctionnalités de lemmatisation.
 
 ## Étiquetage des rôles grammaticaux
 
@@ -98,7 +102,51 @@ L’étiquettage des rôles grammaticaux est une tâche de pré-traitement récu
 
 NLTK étiquettage seulement pour l’anglais (2012)
 
+## Stemming
 
+La stemmatisation est une forme de normalisation des textes qui consiste à réduire les mots à leur radicaux ou à leurs unités de base. Un stemmer opère sur les mots individuels sans tenir compte de leur contexte. Il tronque la fin des mots. Les algorithmes sont typiquement fondés sur des règles et impliquent des logiques conditionnelles. En général, il s’agit d’une opération plus simple que la lemmatization.
+
+Il existe différentes méthodes de stemmatisation
+
+- Porter Stemmer (Anglais)
+- Lancaster Stemmer
+- SnowballStemmer (plus de 10 langues)
+- ISRIStemmer (Arabic)
+- RSLPS Stemmer (Portuguese)
+
+Voir : https://github.com/JuliaText/TextAnalysis.jl/issues/3
+
+Le Snwoball Stemmer est fondé sur le Porter2 stemming algorithm qui en est une version améliorée. Le Lancaster Stemmer est un bon algorithme auquel il est possible d’ajouter des règles personnalisées.
+
+https://github.com/nltk/nltk/blob/develop/nltk/stem/arlstem.py#L115 https://github.com/nltk/nltk/blob/develop/nltk/stem/snowball.py#L372
+
+### PortStemmer
+
+PortStemmer.jl
+
+https://gist.github.com/johnmyleswhite/6466011
+
+### Stemmer.jl
+
+Interface for text stemmer implementations.
+
+wrapped the snowball stemmer as a package
+
+> I haven't figured out using `BinDeps` or `deps/build.jl` properly yet, and this is currently for unix only. Though it would be possible to compile for windows as well with appropriate changes.
+
+https://github.com/tanmaykm/Stemmers.jl
+
+### Snowball
+
+https://snowballstem.org
+
+http://snowball.tartarus.org
+
+http://snowball.tartarus.org/algorithms/french/stemmer.html
+
+## Plongements lexicaux (Word embedding)
+
+cf. [nNLPWordEmbedding](./nNLPWordEmbedding.md)
 
 ## Liste de paquets Julia pour NLP
 
@@ -115,6 +163,8 @@ https://github.com/JuliaText/TextAnalysis.jl
 Julia package for text analysis
 
 > [TextAnalysis.jl](https://github.com/JuliaText/TextAnalysis.jl) is a comprehensive package for text processing and analysis, offering functionalities like tokenization, stemming, sentiment analysis, and topic modeling. Unlike LLMTextAnalysis.jl, TextAnalysis.jl provides a broader range of traditional NLP tools suitable for various text analysis tasks.
+
+
 
 #### Word Tokenizer
 
@@ -300,38 +350,56 @@ crps = Corpus(docs)
 typeof(crps)
 ```
 
-## TextGraph package
+## Packages
+
+### TextGraph package
 
 https://juliapackages.com/p/textgraphs
 
 - Semantic embeddings
 - Graph embeddings
 
-## SemanticTrajectories
+### SemanticTrajectories
 
 RQA
 
-## TidierText
+### TidierText
 
 TidierText.jl is a 100% Julia implementation of the R tidytext package. The purpose of the package is to make it easy analyze text data using DataFrames.
 
 https://docs.juliahub.com/General/TidierText/stable/
 
-## WorldCloud
+### WorldCloud
 
 https://github.com/guo-yong-zhi/WordCloud.jl
 
-## Glove
+### Glove
 
 https://github.com/domluna/Glove.jl
 
-## Topic Models
+### Topic Models
 
 https://github.com/slycoder/TopicModels.jl
 
-## Text Graph
+### Text Graph
 
 https://github.com/fargolo/TextGraphs.jl
+
+
+
+à explorer
+
+https://github.com/tejasvaidhyadev/NER_Lab_Protocols
+
+## Remarques
+
+As far as I can see, Python still does not have a good library for embedding analysis/manipulation in 2024…
+
+https://x.com/Dorialexander/status/1851179843972415526
+
+adaptation de https://github.com/bmschmidt/wordVectors
+
+Ben Schmidt : I haven't worked on this package in ~8 years, because word embeddings in R is doubly passé… but I wish we were in the alternate universe where tidyverse flows + R's ability to do real EDA syntax won for building ML flows. `v |> reject(king - man) |> arrange(-magnitude)`
 
 ## Références
 

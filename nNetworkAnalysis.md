@@ -1,5 +1,3 @@
-
-
 ---
 author: emchateau
 tags: networks
@@ -7,19 +5,130 @@ tags: networks
 
 # Analyse de Réseau
 
-## Méthodes
+L’analyse de réseau est mobilisée depuis les années soixante dans diverses disciplines tant dans le domaine des sciences humaines et sociales, que dans celui des sciences formelles ou de la nature. L’analyse de réseau désigne un ensemble de méthodes, de notions et de concepts fondés sur la théorie des graphes destinés à étudier de manière quantitative un phénomène relationnel.
 
-Louvain algorithm hardly detects statistically 120 significant communities (modularity with resolution 1: 0.26) 121 (S.I.2). 
+## Historique
 
-The relatively high edgewise reciprocity (18%, com- 122 pared to 3.5% in average for simulated networks with the same 123 density and number of edges – S.I.3)
+- Développement dès les années 30, sociométrie Moreno et Jennings
+- Social network analysis en Angletter puis aux États-Unis dans les années 50-60
+- Écologie et physique dans les années 90
+- peu d’investissement en histoire
 
-Exponential-Random Graph (ERGM) models show that, for 138
+En sciences humaines et sociales, on désigne habituellement par analyse de réseau une démarche quatitative qui vise à étudier les propriétés relationnelles d’un ensemble d’individus (Beauguitte 2023). Attention, il ne suffit pas de s’intéresser à un réseau comme un réseau social numérique, un réseau d’infrastructure, pour pratiquer une analyse de réseau. À l’inverse, certains phénomènes ou objets culturels tels que la participation à des événements des comportantemnts, des textes peuvent être étudiés en mobilisant une analyse de réseau.
 
-## Modélisation
+Dans le monde anglophone, les sociologues qui pratiquent l’analyse de réseau parlent de *Social Network Analysis SNA*, on parle également d’analyse structurelle *structural analysis*. 
 
-En sciences de l’informatique, un graphe est une structure de données abstraite destinée à implémenter les concepts de graphes orientés ou non orientés issus des mathématiques et de la théorie des graphes. Une structure en graphe consiste en un ensemble fini de sommets *vertices* (aussi appelés nodes ou points) et d’un ensemble de paires non orientées entre ces sommets dans un graphe non-orienté, ou orienté dans un graphe orienté. Ces paires appelés aussi edges (ou liens ou encore lignes) ou arrows dans un graphe orienté. Relations pouvant être étiquetées.
+## Modélisation en graphe
+
+L’analyse de réseau repose sur une modélisation, c’est à dire un processus au cours duquel on transforme certains aspects du monde social en données destinées à être analysées. On peut avoir recours à des modélisations graphiques ou statistiques pour décrire ou expliquer les aspects du monde social à l’aide de schémas ou de calculs. 
+
+Si l’analyse de réseau peut mobiliser des méthodes statistiques, elle repose sur l’utilisation d’un type de modélisation en graphe issue de la théorie des graphes qui ne réclame pas nécessairement de représentation graphique.
+
+### Un modèle issu de la théorie des graphes
+
+En sciences de l’informatique, un graphe est une structure de données abstraite destinée à implémenter les concepts de graphes orientés ou non orientés issue des mathématiques et de la théorie des graphes. 
+
+Une structure en graphe consiste en un ensemble fini et non vide de sommets *vertices* (aussi appelés *nodes* ou points) et d’un ensemble de paires non orientées entre ces sommets dans un graphe non-orienté, ou orienté dans un graphe orienté. Ces paires appelés aussi *edges* (ou liens ou encore lignes) ou *arrows* dans un graphe orienté. Ces relations pouvant être étiquetées.
+
+`G = {V, E}` où `G`désigne le graphe, `V` désigne l’ensemble des sommets (*vertex*, *vertices*), et `E` l’ensemble des liens (*edges*).
+
+### Les réseaux dans le domaine des sciences humaines et sociales
+
+Pour pouvoir utiliser l’analyse de réseau en sciences humaines et sociales, il est nécessaire de définir un type de relations existant entre les éléments étudiés. Un même corpus pouvant d’ailleurs se prêter à différentes modélsisations en fonction des thématiques que l’on souhaite traiter.
+
+Par exemple :
+
+<!-- revoir avec un ex en HA -->
+
+- on a affaire à des auteurs et on créée des liens entre deux auteurs quand ils ont publié ensemble
+- si on travaille avec des mots-clefs on créer des liens lors des articles partage des articles
+- cosignature d’article
+- liens entre population et revue
+- ...
+
+Comme toujours, les choix opérés lors de la construction des données dépendent des questions de recherche que l’on souhaite explorer. 
+
+Dans le domaine des sciences humaines et sociales : 
+
+> Un réseau est constitué d’un ensemble fini et non vide de points, symbolisant des acteurs (individus, groupes, institutions, textes, etc.) et d’un ensemble fini et éventuellement vide de lignes symbolisant les relations entre ces acteurs. Le nombre de sommets est appelé ordre du graphe ; le nombre de liens taille du graphe. Dans la pratique, on parle cependant de grands graphes quand le nombre de sommets et/ou de liens est élevé.
+>
+> (Beauguitte 2016)
+
+### La distinction réseau non orientés et réseaux orientés
+
+> Une première opposition distingue les réseaux non orientés, dans lesquels toute relation d’un sommet *i* vers un sommet *j* implique une relation de *j* vers *i* et les réseaux orientés où le sens de la relation importe et où l’existence d’une relation de *i* vers *j* n’implique pas nécessairement de relation de *j* vers *i*.
+
+ NB: Certains réseaux peuvent être mixtes comme les généalogies (qui associent des liens non orientés : être le ou la conjoint·e de ; et des liens orientés : être l’ascendant·e de.
+
+## Exercice de modélisation
+
+Plusieurs formats de représentation sont possibles
+
+- format de liste
+- format de matrice
+- représentation graphique
+
+Dans l’exemple d’une modélisation où l’on travaille sur des auteurs quand ils ou elles publient ensemble :
+
+- on peut définir une **liste de liens** suivants : CB-MM, CB-GV et MM-GV.
+- cette liste de liens peut être transformée en un tableau carré rempli de 1 et de 0 en fonction de l’existence de lien entre les individus, c’est-à-dire sous la forme de ce que l’on appelle une **matrice d’adjacence**
+
+```txt
+   | CB | MM | GV |
+CB |  0 |  1 |  1 |
+MM |  1 |  0 |  1 |
+GV |  1 |  1 |  0 |
+```
+
+Ce type de tableau permet de mener à bien une analyse de réseau mais également d’autres méthodes statistiques. Il est d’ailleurs possible de combiner les méthodes d’analyse en réalisant une étude factorielle des correspondances.
+
+## Description structurale
+
+### À quoi peut répondre une analyse de réseau ?
+
+Selon les données et la nature du phénomène étudié, l’analyse de réseau peut permettre de répondre à différent types de questions, telles que :
+
+- comment qualifier le réseau ? 
+- certains individus occupent-ils une place particulière dans le réseau ? 
+- certaines relations sont-elles spécifiques ? 
+- les individus partageant certaines caractéristiques sont-ils plus susceptibles d’être en relation les uns avec les autres ? 
+- peut-on créer des sous-ensembles pertinents au sein du réseau ? 
+- quels sont les mécanismes susceptibles d'expliquer la structure du réseau étudié ?
+- l’ajout ou la suppression de certains liens ou de certains sommets est-elle susceptible de modifier la structure du réseau ?
+
+(Ces questions sont tirées de Beauguitte 2023, p. 10)
+
+La question de la centralité présente une importance particulière pour hiérarchiser les individus. Pour répondre à ces diverses questions, différents indicateurs ont été construits pour pouvoir apréhender la centralité ou évaluer la robustesse d’un réseau dans son ensemble, ou encore distinguer des éléments fortement inter-connectés entre eux.
+
+### Vocabulaire de base
+
+> Un graphe est un objet mathématique formé d’un ensemble ni et non vide de points et d’un ensemble ni et éventuellement vide de liens entre ces points (G = {V, E} 2). Le nombre de sommets est appelé l’ordre (*order*) du graphe ; le nombre de liens la taille (*size*) du graphe. Les sommets (*vertex*, pluriel *vertices*) sont également appelés nœuds, points ou acteurs (*node*, *point*, *actor*). Les liens (*edges*) sont aussi appelés relations, arcs ou arêtes (*relation*, *arc*, *edge*). (Beauguitte 2023, p. 21)
+
+En science sociale, l’analyse de réseau réclame des éléments complémentaires : les sommets sont systématiquement pourvus d’attributs (*a minima* un nom), et les liens peuvent être pourvus d’attributs. On parlera alors de **réseau** plutôt que de graphe.
+
+### Chemins et chaînes
+
+Une suite de liens qui permettent de rejoindre deux sommets est appelée **chemin** (*path*) ou **chaîne** selon qu’on prend en compte l’orientation des liens. La **longeur d’un chemin** entre deux sommets correspond au nombre de liens sur ce chemin. Lorsqu’il s’agit du **plus court chemin** (*shortest path*) on parle de **distance géodésique** (*geodesic distance*). Un chemin qui comprend au moins trois liens et dont le sommet de départ et le sommet d’arrivé sont identiques est appelé **cycle**.
+
+L’ensemble des sommets liés par au moins un chemin s’appele une **composante** ou **composante connexe** (*component*). Si tous les sommets d’un graphe appartiennent à une même composante, on parle de graphe connexe (*connected graph*).
+
+<!-- développer -->
+
+Certains sommets jouent un rôle particulier dans la connexité du réseau si leur suppression augmente le nombre de composantes. On parle de point d’articulation (*articulartion point*, *cutpoint*, *cut-vertex*) ou d’isthme (*bridge*)
+
+Réseaux simples, complexes.
+
+> Quel que soit l’aspect du monde social, passé ou présent, que vous étudiez, il est rare qu'un seul type de relations existe entre vos individus : choisir de modéliser ces relations par un réseau simple est une simpli cation, souvent nécessaire et utile, de la réalité et il est prudent dans s’en rappeler lorsqu'on commente ses résultats. (Beauguitte 2023, 25)
+
+Objet construit, opérations de transformation pour les étudier. Exemple graphe bipartis.
+
+Construit. Pb des absences et de la stabilité.
+
+
 
 Opérations :
+
+Plusieurs opération s
 
 The basic operations provided by a graph data structure *G* usually include:
 
@@ -39,202 +148,34 @@ Structures that associate values to the edges usually also provide:
 
 https://en.wikipedia.org/wiki/Graph_(abstract_data_type)
 
-## Formats
+## Méthodes
 
-### Simple interaction file (SIF ou .sif format)
+Louvain algorithm hardly detects statistically 120 significant communities (modularity with resolution 1: 0.26) 121 (S.I.2). 
 
-Le format SIF décrit seulement des nœuds et des interactions alors que d’autres formats permettent d’enregistrer d’autres informations sur la disposition du réseau et le partage de données avec d’autres programmes. 
+The relatively high edgewise reciprocity (18%, com- 122 pared to 3.5% in average for simulated networks with the same 123 density and number of edges – S.I.3)
 
-Son cas d’usage consiste plutôt en l’importation d’interactions au début de la construction d’un réseau. Lorsque le réseau a été chargé et que l’on a opérer sa mise en page, les formats GML ou XGMML peuvent être utilisées pour interagir avec d’autres systèmes.
+Exponential-Random Graph (ERGM) models show that, for 138
 
-Ces fichiers peuvent facilement être créés dans un éditeur de texte ou avec un tableur. Il s’agit d’un format tabulaire dans lequel chaque colonne correspond à une interaction individuelle (edge) entre une source et un nœud cible.
+## Ressources
 
-```txt
-nodeA relationship nodeB
-nodeC relationship nodeA
-nodeD relationship nodeE
-```
+### Bibliographie
 
-http://www.cbmc.it/fastcent/doc/SifFormat.htm
+- Beauguitte, Laurent. 2023. « L’analyse de réseau en sciences sociales. Petit guide pratique ». https://beauguitte.github.io/analyse-de-reseau-en-shs/.
+- Beauguitte, Laurent. 2016. « L’analyse de réseaux en sciences sociales et en histoire : vocabulaire, principes et limites ». In *Le réseau. Usages d’une notion polysémique en sciences humaines et sociales*, édité par Rosemonde Letricot, Mario Cuxac, Maria Utcategui, et Andrea Cavaletto, Presses Universitaires de Louvain, 9‑24. Louvain. https://halshs.archives-ouvertes.fr/halshs-01476090
+- László Barabási, Albert. s. d. *Network Science*. Consulté le 16 mai 2020. http://networksciencebook.com.
+- Borgatti, Stephen P., Martin G. Everett, et Jeffrey C. Johnson. 2013. *Analyzing social networks*. Los Angeles: SAGE.
 
-### Nested network format (NNF or .nnf format)
+### Tutoriaux
 
-### Graph Markup Language (GML or .gml format) [obsolète]
+### Webographie
 
-@name Graph Markup Language
+- Briatte, François. (2016-). « Awesome Network Analysis ». R. https://github.com/briatte/awesome-network-analysis.
+- [The Historical Network Research Community](https://historicalnetworkresearch.org)
+- [GDR Analyse de réseaux en sciences humaines et sociales](https://arshs.hypotheses.org/)
+- [Journal of Historical Network Research](https://jhnr.net)
+- [Getty Advanced Workshop on Network Analysis and Digital Art History (NA+DAH)](https://sites.haa.pitt.edu/na-dah/)
 
-@acronyme GML
+### Chercheurs
 
-@extension .gml
-
-@url http://www.infosun.fmi.uni-passau.de/Graphlet/GML/ [inactif] voir https://web.archive.org/web/20170601041145/http://www.fim.uni-passau.de/index.php?id=17297&L=1
-
-@url https://web.archive.org/web/20060824191148/http://www.infosun.fmi.uni-passau.de/Graphlet/GML/gml-tr.html
-
->GML (Graph Modelling Language): There are many different programs that work with graphs but almost all of them use their own file format. As a consequence, exchanging graphs between different programs is almost impossible. Simple tasks like exchange of data, externally reproducible results or a common benchmark suite are much harder than neccessary.
->Therefore, we have developed a new file format for the Graphlet system: GML. GML supports attaching arbitrary information to graphs, nodes and edges, and is therefore able to emulate almost every other format.
-
-À la différence de SIF, GML est un riche format de graphe supporté par de nombreux package de visualisation. Le format permet d’embarquer des informations de présentation.
-
-Ce format peut paraître obsolète car il fut notamment remplacé par le format XGMML. Néanmoins, le fait qu’il s’agisse d’un simple fichier ASCII peut s’avérer utile, il est par ailleurs toujours supporté par nombre de logiciels.
-
-@seeAlso https://en.wikipedia.org/wiki/Graph_Modelling_Language
-
-### Directed Graph Markup Language (DGML)
-
-@name Directed Graph Markup Language
-
-@acronyme DGML
-
-@extension .dgml
-
-@url http://schemas.microsoft.com/vs/2009/dgml/
-
-DGML est un format XML pour les graphes orientés. Ce format est spécifié par un [schema XML](Schema http://schemas.microsoft.com/vs/2009/dgml/dgml.xsd) et a été implémenté dans Visual Studio en 2010.
-
-@seeAlso 
-
-- Documentation https://docs.microsoft.com/fr-fr/visualstudio/modeling/customize-code-maps-by-editing-the-dgml-files
-- Schema http://schemas.microsoft.com/vs/2009/dgml/dgml.xsd
-
-### XGMML (extensible graph markup and modelling language) [obsolète ?]
-
-@name eXtensible Graph Markup and Modeling Language
-
-@acronyme XGMML
-
-@url http://cgi7.cs.rpi.edu/research/groups/pb/punin/public_html/XGMML/ [rompu], voir http://cgi7.cs.rpi.edu/research/groups/pb/punin/public_html/XGMML/
-
-> XGMML (eXtensible Graph Markup and Modeling Language) is an XML application based on GML which is used for graph description. XGMML uses tags to describe nodes and edges of a graph. The purpose of XGMML is to make possible the exchange of graphs between differents authoring and browsing tools for graphs. The conversion of graphs written in GML to XGMML is trivial. Using XSL with XGMML allows the translation of graphs to different formats. XGMML was created to be used for the WWWPAL System that visualizes web sites as a graph. Web Robots can navigate through a web site and save the graph information as an XGMML file. XGMML, as any other XML application, can be mixed with other markup languages to describe additional graph, node and/or edge information.
-
-Spécifié par une DTD et un Schéma XML (2001).
-
-e**X**tensible **G**raph **M**arkup and **M**odeling **L**anguage est une application basée sur GML pour la description de graphe.
-
-### Systems Biology Markup Language (SBML)
-
-@name Systems Biology Markup Language
-
-@acronyme SBML
-
-@url http://sbml.org/documents/
-
-Le Systems Biology Markup Language (SBML) est un format XML destiné à la description de réseaux en biochimie.
-
-### Biological PAthways eXchange (BioPAX)
-
-@url http://www.biopax.org/
-
-@name Biological PAthways eXchange
-
-@acronyme BioPAX
-
-> Biological Pathway Exchange (BioPAX) is a standard language that aims to enable integration, exchange, visualization and analysis of biological pathway data. Specifically, BioPAX supports data exchange between pathway data groups and thus reduces the complexity of interchange between data formats by providing an accepted standard format for pathway data. It is an open and collaborative effort by the community of researchers, software developers, and institutions. BioPAX is defined in OWL DL and is represented in the RDF/XML format. For more details, see Demir E et al. 2010. The BioPAX community standard for pathway data sharing, Nature Biotechnology. 28(9).
-
-Le BioPAX est une ontologie OWL conçue pour l’échange de données biologiques.
-
-### PSI-MI Level 1 and 2.5
-
-@name PSI-MI Level 1 and 2.5
-
-@url http://psidev.sourceforge.net/mi/xml/doc/user/
-
-Le format PSI-MI  est un format d’échange XML pour les interactions protéiques.
-
-### GraphML
-
-@name GraphML
-
-@url http://graphml.graphdrawing.org/
-
-https://web.archive.org/web/20200511231546/http://graphml.graphdrawing.org/
-
-http://cs.brown.edu/people/rtamassi/gdhandbook/chapters/graphml.pdf 
-
-GraphML est un format XML de description de graphes issus des efforts de la communauté des acteurs de la visualisation de graphes pour définir un format commun pour l’échange de données en structure de graphe. Le travail initié en 2000 a fait l’objet d’une spécification en 2001. Le format supporte l’ensemble des structures de graphes (orientées, non-orientées, mixtes, hyper graphes, et des attributs spécifiques pour les applications).
-
-Un fichier GraphML est un fichier XML dont le nœud racine est un élément `graphml` qui contient un élément graph qui lui même continent une séquence non ordonnées de `node` et de `edge`. Chaque nœud `node` doit disposer d’un attribut `@id` distinct et chaque `edge` dispose d’attributs `@source` et `@target` pour identifier les sommets d’un edge.
-
-Le format est utilisé nativement par yEd et Gephi
-
-### Graph eXchange Language GXL
-
-@name Graph eXchange Language
-
-@acronyme GXL
-
-@url http://www.gupro.de/GXL/
-
-> GXL (Graph eXchange Language) is designed to be a standard exchange format for graphs. GXL is an XML sublanguage and the syntax is given by a XML DTD (Document Type Definition). This exchange format offers an adaptable and flexible means to support interoperability between graph-based tools. Introductions into GXL are given in [Holt et al., 2000], and [Holt/Winter, 2000], and a tutorial is given in [Winter, 2001].
-
-Le format est initialement un merge des formats GRAph eXchange (GraX) de l’Université de Koblenz pour l’échange de graphes orientés typés, et ordonnés (TGraphs), du Tuple Attribute Language (TA) de l’université de Waterloo et du format de graphe du PROGRES graph rewriting system de Université Bw, Munich. Il inclut des idées de formats d’échanges comme le Relation Partition Algebra (RPA) de Philips Research, Eindhoven et du Rigi Standard Format (RSF) Université de Victoria. Son développement a été influence par d’autres formats de dessins de graphes comme le Graph Modelling Language (GML), Graphlet, ou encore GraphXML.
-
-Nota : seulement spécifié par une DTD alors que GraphXML est exprimé par un Schéma XML.
-
-@seeAlso https://en.wikipedia.org/wiki/GXL
-
-### Delimited text
-
-### Excel Workbook (.xls, .xlsx)
-
-### GEXF (Graph Exchange XML Format)
-
-https://gephi.org/gexf/format/
-
-> GEXF (Graph Exchange XML Format) is a language for describing complex networks structures, their associated data and dynamics. Started in 2007 at Gephi project by different actors, deeply involved in graph exchange issues, the gexf specifications are mature enough to claim being both extensible and open, and suitable for real specific applications.
-
-### Trivial Graph Format (TGF)
-
-https://en.wikipedia.org/wiki/Trivial_Graph_Format
-
-### Cytoscape.js
-
-[Cytoscape.js JSON](http://cytoscape.github.io/cytoscape.js/#notation/elements-json)
-
-### Cytoscape CX
-
-[Cytoscape CX](https://github.com/CyComponent/CyWiki)
-
-### Sources
-
-http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html
-
-## Logiciels
-
-### iGraph
-
-https://igraph.org/redirect.html
-
-> igraph is a collection of network analysis tools with the emphasis on efficiency, portability and ease of use. igraph is open source and free. igraph can be programmed in R, Python, Mathematica and C/C++.
-
-### Cytoscape
-
->Cytoscape is an [open source](https://cytoscape.org/download.html) software platform for visualizing complex networks and integrating these with any type of attribute data. A lot of [*Apps*](http://apps.cytoscape.org/) are available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web.
-
-https://cytoscape.org 
-
-http://js.cytoscape.org
-
-### JSNetworkX
-
-http://jsnetworkx.org
-
-### vis.js
-
-http://visjs.org
-
-### Cell-maps
-
-http://cellmaps.babelomics.org/
-
->An open-source web-based HTML5 systems biology tool for visualizing and analysing biological networks http://cellmaps.babelomics.org/
-
-https://github.com/opencb/cell-maps
-
-### yEd
-
-https://www.yworks.com/products/yed
-
-### Networkx
-
-http://networkx.github.io/
+- https://f.briatte.org
+- https://www.martingrandjean.ch

@@ -9,7 +9,9 @@ tags: git
 
 # Git
 
-Git est un logiciel de versionning, c’est à dire un logiciel qui vous permet de conserver la trace des changements que vous effectuez sur des fichiers au cours du temps. Git enregistre toutes les modifications que vous faites à un projet, en stockant ces modifications, il vous permet d’y faire référence comme de besoin ou de revenir à une version antérieure du fichier.
+Git est un logiciel de gestion de version (*versionning*), c’est à dire un logiciel qui permet de conserver la trace des changements effectués sur des fichiers au cours du temps. Git enregistre les modifications afin de pouvoir y faire référence ou pour revenir à une version antérieure du fichier.
+
+Initialement développé par Linus Torvalds pour la gestion des sources informatiques du noyau Linux, Git est aujourd’hui un de slogiciel de gestion de version le plus populaire. Il constitue une infrastructure essentielle pour la collaboration sur des projets de logiciel libre et open source.
 
 Dans ce tutoriel, nous allons travailler à la rédaction d’un simple fichier texte pour apprendre l’utilisation de Git.
 

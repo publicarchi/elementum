@@ -301,6 +301,85 @@ hxs() {
 }
 ```
 
+### Serveur de langue Julia
+
+[LanguageServer.jl](https://github.com/julia-vscode/LanguageServer.jl) est une implémentation du Microsoft Language Server Protocole pour Julia.
+
+[Helix](https://github.com/julia-vscode/LanguageServer.jl/wiki/Helix) dispose déjà d’un fichier de config pour Julia dans `languages.toml`.
+
+cf. https://discourse.julialang.org/t/neovim-languageserver-jl/37286/7
+
+https://github.com/fredrikekre/.dotfiles/blob/master/.julia/environments/nvim-lspconfig/Makefile
+
+### Markdown (divers)
+
+https://www.reddit.com/r/HelixEditor/comments/1cprxft/markdown_preview/
+
+Markdown preview
+
+Markdown preview could actually (efficiently) be handled by a language server. There is already https://github.com/euclio/mdpls which does exactly that.
+
+```toml
+[[language]]
+name = "markdown"
+language-server = { command = "/path/to/mdpls" }
+config = { markdown.preview.auto = true, markdown.preview.browser = "firefox" }
+```
+
+Puis `:lsp-workspace-command Open\ Preview` pour ouvrir la prévisualisation. Ne fonctionne pas si le navitateur n’est pas dans le path.
+
+Pour conserver marksman
+
+```toml
+[[language]]
+name = "markdown"
+language-servers = ["marksman", "mdpls"]
+
+[language-server.mdpls]
+command = "/path/to/mdpls"
+config = { markdown.preview.auto = true }
+```
+
+I wrote a bash script that previews anything pandoc can render in the terminal itself, and detects modifications to the file to reload. My helix-config-foo isn't great so I'm not sure if this can be integrated well; I'm currently using it in a separate terminal tab/window.
+I hope this is useful to someone! It requires inotify-tools, [termpdf.py](https://github.com/dsanson/termpdf.py) or some other in-terminal PDF reader (do change the code if you're using something else) and pandoc.
+
+```bash
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+FILE="$(realpath "$1")"
+TMPDIR="$(mktemp -d)"
+PDF="$TMPDIR/rendered.pdf"
+trap "pkill -P $$ && rm -rf \"$TMPDIR\"" exit
+
+regen() {
+	inotifywait -q -e modify "$FILE" "$TMPDIR/closing.signal" > "$TMPDIR/inotify.log"
+	grep -q "$TMPDIR/closing.signal" "$TMPDIR/inotify.log" || {
+		pandoc "$FILE" -o "$PDF"
+		pkill -P "$$" # Kills children of these script, which can only be termpdf.py at this point
+	}
+}
+
+pushd "$TMPDIR" >/dev/null # termpdf.py's log file will go here and will be deleted on exit
+pandoc "$FILE" -o "$PDF"
+touch closing.signal
+
+while :
+do
+	regen &
+	termpdf.py "$PDF" && popd>/dev/null && echo 1 >"$TMPDIR/closing.signal" && exit 0 # If the user quits the viewer, we can exit nicely
+done
+```
+
+https://medium.com/@CaffeineForCode/helix-setup-for-markdown-b29d9891a812
+
+https://github.com/helix-editor/helix/discussions/1196
+
+https://github.com/microsoft/vscode-markdown-languageservice
+
+https://github.com/helix-editor/helix/discussions/5830
+
 ## Références
 
 - [Maxime Coste. Why Kakoune, The quest for a better code editor.](https://kakoune.org/why-kakoune/why-kakoune.html)

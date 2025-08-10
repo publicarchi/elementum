@@ -7,9 +7,11 @@ tags: julia
 
 ## Préambule
 
-> We are greedy: we want more. We want a language that’s open source, with a liberal license. We want the speed of C with the dynamism of Ruby. We want a language that’s homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab. We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell. Something that is dirt simple to learn, yet keeps the most serious hackers happy. We want it interactive and we want it compiled.
+- [Julia](https://julialang.org) est un langage de programmation scientifique rapide conçu est développé par le MIT. Il gagne de plus en plus en popularité et se classe 24^e^ parmi les langages de programmation au [PYPL rating](https://pypl.github.io/PYPL.html) (en septembre 2024).
+
+> **We are greedy: we want more.** We want a language that’s **open source**, with a liberal license. We want the **speed** of C with the **dynamism** of Ruby. We want a language that’s **homoiconic**, with **true macros** like Lisp, but with obvious, **familiar mathematical notation** like Matlab. We want something as usable for **general programming** as Python, as easy for **statistics** as R, as **natural for string processing** as Perl, as powerful for **linear algebra** as Matlab, as good at **gluing programs together** as the shell. Something that is **dirt simple to learn**, yet keeps the most serious hackers happy. We want it **interactive** and we want it **compiled**.
 >
-> Bezanson, Jeff, Stefan Karpinski, et Edelman Viral B. Shah Alan. 2012. « Why We Created Julia ». férvier 2012. https://julialang.org/blog/2012/02/why-we-created-julia/.
+> (Bezanson, Karpinski, et Viral B. Shah Alan 2012)
 
 - [Documentation du langage](https://docs.julialang.org/en/v1/)
 - [Noteworthy Differences from other Languages](https://docs.julialang.org/en/v1/manual/noteworthy-differences/#Noteworthy-Differences-from-other-Languages)
@@ -24,7 +26,7 @@ tags: julia
 * Julia est **facile à maintenir**
 * Julia est **libre et open-source**
 
-Outre ces qualités, il nous semble que la consistance et la clareté de sa syntaxe en fait un très bon candidat pour l’apprentissage de la programmation.
+Outre ces qualités, la consistance et la clareté de sa syntaxe en font un très bon candidat pour l’apprentissage de la programmation.
 
 ### Caractéristiques de Julia
 
@@ -37,19 +39,22 @@ Outre ces qualités, il nous semble que la consistance et la clareté de sa synt
 
 ### Historique du langage
 
+[Julia](https://julialang.org) est un nouveau langage de programmation développé par le MIT dont la version 1.0 a été seulement été publiée en août 2018. Le projet a été débuté à la fin de 2009 par Jeff Bezanson, Alan Edelman, Stefan Karpinski, et Viral Shah. Il a été rendu public à travers un billet de blog publié le 14 février 2012 intitulé : « Why We Created Julia ».
+
 - 0.0 – 2009
 - 0.1 – Feb 14, 2012
 - 1.0 – Aug 8, 2018 (LTS)
 - 1.6 – Mar 24, 2021 (LTS)
-- 1.9 – May 07, 2023
-- 1.10 – December 27, 2023 cf. https://julialang.org/blog/2023/12/julia-1.10-highlights/
+- [version en cours](https://julialang.org/downloads/)
+
+Bezanson, Jeff, Stefan Karpinski, et Edelman Viral B. Shah Alan. 2012. « Why We Created Julia ». férvier 2012. https://julialang.org/blog/2012/02/why-we-created-julia/.
 
 ### Comparaison avec Python
 
 - facile à apprendre depuis Python
-- les librairies Python sont toutes utilisables vi PyCall.jl ou PythonCall.jl
+- les librairies Python sont toutes utilisables vi [PyCall.jl](https://github.com/JuliaPy/PyCall.jl) ou [PythonCall.jl](https://github.com/JuliaPy/PythonCall.jl)
 - vitesse d’exécution comparable à celle de C
-- parallélisation fait partie du langage
+- la parallélisation fait partie du langage
 
 cf. https://youtu.be/qhrY0c_BHs8?si=fyPDO-f0U-PXVoJs
 
@@ -57,7 +62,7 @@ cf. https://youtu.be/qhrY0c_BHs8?si=fyPDO-f0U-PXVoJs
 
 Télécharger Julia depuis la page dédiée et suivre les instructions https://julialang.org/downloads/
 
-Plusieurs IDE sont disponible, le plus courramment utilisé consiste en l’utilisation de [l’extension Julia](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia) de Visual Studio Code.
+Plusieurs IDE sont disponibles, le plus courramment utilisé consiste en l’utilisation de [l’extension Julia](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia) de Visual Studio Code.
 
 Il existe un [Kernel Julia](https://github.com/JuliaLang/IJulia.jl) pour les notebooks Jupyter mais aussi un environnement de notebooks interactifs nativement développé en Julia [Pluto.jl](https://plutojl.org)
 
@@ -75,11 +80,7 @@ Arrêter Julia
 exit()
 ```
 
-ou
-
-````
-<Ctl-D>
-````
+ou `<Ctl-D>`
 
 Premiers pas en ligne de commande ou REPL (Read-Eval-Print-Loop)
 
@@ -95,7 +96,7 @@ println("Hello world !")
 sqrt(4)
 ```
 
-Accéder à de l’aide
+Consulter l’aide d’une fonction
 
 ```julia
 ?
@@ -155,12 +156,13 @@ Julia ne dispose pas de classe à proprement parler. Toutefois, il est possible 
 struct X
 	field
 end
+
 mutable struct X
 	field::Float64
 end
 ```
 
-Julia propose une compilation à la volée JIT. Tout le code est compilé avant d’être exécuté lors du chargement des modules. 
+Julia propose une compilation à la volée JIT. Tout le code est compilé avant d’être exécuté lors du chargement des modules.
 
 Multiméthode, le code à exécuter pour une fonction dépend des types de **tous** les arguments.
 
@@ -190,13 +192,13 @@ Lors de la définition d’une variable, l’interpréteur lui assigne un type
 ```julia
 a = 42
 println(typeof(a))
-    
+
 b = 3.14159
 println(typeof(b))
-    
+
 c = 'c'
 println(typeof(c))
-    
+
 d = "Julia"
 println(typeof(d))
 ```
@@ -255,7 +257,9 @@ multi_line = """
 print(multi_line)
 ```
 
-## Structure de données de base
+[Documentation officielle](https://docs.julialang.org/en/v1.11/manual/strings/) sur les chaînes de caractères.
+
+## Structure de données élémentaires
 
 Les éléments d’un tableau de base peuvent avoir un type. Un type par défaut est attribué.
 
@@ -291,6 +295,330 @@ Il est également possible de créer des dictionnaires avec `Dict{k, v}`
 ```julia
 d = Dict{Int, Float64}(1 => π, 2 => ℯ)
 ```
+
+En utilisant un générateur
+
+```julia
+f(x) = x^2
+Dict(i => f(i) for i = 1:10)
+```
+
+Étendre le dictionnaire
+
+```julia
+merge!(d, Dict(3 => 42.0))
+```
+
+### Style et conventions
+
+Outre certaines restrictions sur les nom de variable, plusieurs conventions sont d’usage :
+
+- Les noms des variables sont en minuscule.
+- Les mots sont séparés par des tirets bas ('_') dans les noms de variable, mais on évite d’y avoir recours.
+- Les noms de Type ou de Modules commencent par une lettre majuscule, les majuscules séparant les différents mots du nom de la variable (exemple : "MonModule")
+- Les noms des fonctions et macros sont en minuscule sans tirets bas.
+- Le nom des fonctions qui modifient en sortie leurs arguments d’entrée s’écrivent avec le suffixe `!`.
+
+[Documentation officielle](https://docs.julialang.org/en/v1/manual/style-guide/) sur les guides de style.
+
+## Tableaux et matrices
+
+Qu’il s’agissent de vecteurs, de matrices ou d’hypermatrices, les tableaux occupent une place essentielle dans Julia.
+
+Il n’y a qu’un seul type de tableau : **Array** dont on peut définir le nombre d’entrées. Un tableau peut contenir des matrices.
+
+En Julia les indices commencent à 1, et l’accès aux éléments se fait en utilisant des crochets droits `[` et `]`, les parenthèses étant réservées pour les fonction.
+
+### Itérateur
+
+Il existe un type range
+
+```julia
+a = 1:5
+a .+ 1
+typeof(a)
+collect(a)
+```
+
+@todo
+
+[Documentation officielle](https://docs.julialang.org/en/v1.11/base/collections/) sur les collections et les structures de données.
+
+## Itérations et expressions conditionnelles
+
+### Boucles
+
+Techniquement, des constructions telles que les boucles font partie du flux de contrôle dans les langages de programmation impératifs. Ce sont des langages qui exécutent une séquence de commandes dans un ordre défini par le flux de contrôle. Pensez-y comme à des langages où vous dites à l’ordinateur quoi faire en détail. L’alternative principale est un langage déclaratif, où vous demandez à l’ordinateur d’obtenir un résultat sans vous soucier de la manière dont il y parvient (pensez à Excel). Les langages impératifs correspondent plus naturellement au fonctionnement du matériel informatique et à notre manière de penser (ou du moins la mienne), ce qui les rend plus courants. Cependant, les langages déclaratifs peuvent être fantastiques, et en réalité, la division entre ces deux types de langages n’est souvent pas nette. Les langages déclaratifs incluent souvent aussi des constructions de contrôle de flux, et les langages impératifs modernes intègrent souvent des composants déclaratifs.
+
+Il existe plusieurs stratégies pour créer des boucles avec Julia. La plus simple d’entre-elles est probablement d’utiliser la boucle `while`
+
+```julia
+while CONDITION
+  # faire quelque chose
+end
+```
+
+Cette expression fait quelque chose jusqu‘à ce que la condition devienne fausse. Une telle construction suppose implicitement que quelque chose changera et que chaque cycle d’exécution soit légèrement différent, ce qui permettra à la condition de passer de vrai à faux.
+
+Par exemple, cette boucle compte de 1 à 10 puis s’arrête.
+
+```julia
+compteur = 1
+while compteur <= 10
+  @show compteur
+  compteur += 1
+end
+```
+
+Comme l’utilisation d’un compteur est classique dans les boucles, il existe un raccourci pour le faire.
+
+```julia
+for compteur = 1:10
+  @show compteur
+end
+```
+
+Cette boucle fait exactement la même chose que la boucle `while` précédente mais est plus succinte. Les boucles `for` sont très usuelles dans les langages de programmation de haut-niveau.
+
+### Expressions conditionnelles
+
+Les conditions s’écrivent avec les mots-clefs `if`, `elseif` et `else` :
+
+```julia
+if x >= 0
+    …
+elseif x <= 1
+    …
+else
+    …
+end
+```
+
+Comme langage orienté mathématiques, Julia permet d’utiliser des comparaisons multiples : pour vérifier que x est dans l’intervalle [0, 1], on peut utiliser la condition `0 <= x <= 1`.
+
+## Déclaration de fonction
+
+Définition en ligne
+
+```julia
+f(x) = x+1
+f(2)
+```
+
+Les fonctions se déclarent avec le mot-clef `function` suivi du nom de la fonction avec ses parenthèses.
+
+```julia
+function zéro()
+  return 0
+end
+
+function somme(a, b)
+    return a + b
+end
+```
+
+La notation `::` indique le type d’un argument :
+
+```julia
+function sum(a::Int, b::Int)
+    return a + b
+end
+```
+
+Les structures de données immuables sont déclarées avec le mot-clef struct :
+
+```julia
+struct Point
+    x::Float64
+    y::Float64
+end
+```
+
+Instancier une structure de données se fait comme un appel de fonction :
+
+```julia
+p = Point(0.0, 1.0)
+```
+
+Les instances de ces objets ne peuvent pas être modifiées : pour p, on ne peut que lire les valeurs des champs x et y, pas les écrire.
+
+```julia
+println(p.x) # Affiche "0.0"
+p.x = 1.0 # Erreur : "ERROR: setfield! immutable struct of type Point cannot be changed"
+```
+
+Julia oriente les utilisateurs vers un style de programmation plutôt fonctionnel. Lorsque les valeurs des structures de données ne peuvent pas changer, les sources de problème dans le code sont fortement réduites.
+
+Néanmoins, il est possible d’outrepasser cette limitation en déclarant la structure de données comme `mutable struct` :
+
+```julia
+mutable struct Point
+    x::Float64
+    y::Float64
+end
+
+p = Point(0.0, 1.0)
+println(p.x) # Affiche "0.0"
+p.x = 1.0 # Il n’y a plus d’erreur
+println(p.x) # Affiche "1.0"
+```
+
+Fonction anonyme
+
+```julia
+x->x^2
+```
+
+## Exécution du code
+
+L’environnement de Julia est relativement flexible. Un script qui prend habituellement l’extension `.jl` peut s’exécuter dans le REPL avec `include()`. Mais il est également possible de travailler dans l’IDE.
+
+```julia
+include("script.jl")
+```
+
+En ligne de commande
+
+```bash
+$ julia script.jl
+```
+
+## Méthodes, etc.
+
+### Retrouver tous les attributs d’un type
+
+Supposons que l’on a un type `T`. Pour voir toutes les méthodes qui acceptent un objet de type `T` comme argument :
+
+```julia
+methodswith(T)
+```
+
+To see all **fields** (i.e.: type's "properties"):
+
+```julia
+fieldnames(T)
+```
+
+If you want to combine all info into a function, you can do one yourself, like this:
+
+```julia
+function allinfo(type)
+   display(fieldnames(type))
+   methodswith(type)
+end
+```
+
+### Retrouver tous les attributs d’un objet
+
+Pour connaître tous les attributs d’un objet
+
+```julia
+# See all methods
+methodswith(typeof(a))
+
+# See all fields
+methodswith(typeof(a))
+
+# Function combining both
+function allinfo(a)
+   type = typeof(a)
+   display(fieldnames(type))
+   methodswith(type)
+end
+```
+
+### Retrouver tous les attributs quelque soit leur nature
+
+Using multiple dispatch, you can define a function with three methods that gets you all info regardless of what you pass as argument.
+
+The third case is needed in case you want to inspect methods that accept Type objects as arguments.
+
+```julia
+# Gets all info when argument is a Type
+function allinfo(type::Type)
+   display(fieldnames(type))
+   methodswith(type)
+end
+
+# Gets all info when the argument is an object
+function allinfo(a)
+   type = typeof(a)
+   display(fieldnames(type))
+   methodswith(type)
+end
+
+# Gets all info when the argument is a parametric type of Type
+function allinfo(a::Type{T}) where T <: Type
+   methodswith(a)
+end
+```
+
+## Julia REPL
+
+Le REPL de Julia présente 4 modes : Julia, Package `]`, Aide `?` et Shell `;`. Les modes gestionnaire de paquets, aide et shell, sont accessibles avec les touches `]`, `?` et `;`. On revient simplement au mode normal avec la touche `backspace`.
+
+## Utilisation du gestionnaire de paquets
+
+Julia dispose d’un gestionnaire de paquets très efficace, [Pkg](https://pkgdocs.julialang.org/). Dans Julia, on accède au gestionnaire de paquets en tappant `]`. Tapper `backspace` ou  `Ctrl+C` pour revenir au REPL de Julia.
+
+Ajouter un paquet (dans Pkg)
+
+```
+add nom_du_paquet
+```
+
+Supprimer un paquet et ses annotations
+
+```
+rm --manifest nom_du_paquet
+```
+
+La commande `status` ou `st` permet de voir les paquets installés.
+
+Les commandes `add`, `up`, `remove` ou `rm` permettent de gérer les packets.
+
+### Les environnements
+
+Pkg est conçu autour de la notion d’environnement. Il s’agit d’ensemble de paquets qui peuvent être propres à un projet ou partagés et sélectionnés par leur nom. Ces environnements sont décrits dans un fichier de *manifest* qui peut être versionné pour faciliter la reproductibilité des projets. Cette solution permet de travailler avec des versions différentes de paquets installés à des endroits distincts en fonction de vos besoins ; une fonctionnalité est comparable à `virtualenv` en Python (moins les problèmes récurrents).
+
+Pour activer un environnement (dans Pkg)
+
+```
+activate nom_du_projet
+```
+
+Lorsqu’on utilise un projet existant, la commande `instantiate` télécharge les dépendances manquantes ou vérifie que l’environnement est prêt à être utilisé (dans Pkg)
+
+```
+instantiate
+```
+
+Au lieu d’utiliser la commande `activate` depuis Julia, il est également possible de spécifier lors du démarage l’environnement à utiliser
+
+```julia
+julia --project=somepath myscript.jl
+```
+
+Les fichiers `Project.toml` contiennent les informations générales sur le projet (nom, id, auteurs) et les dépendances directes, tandis que `Manifest.toml` contient la date exacte des versions des dépendances directes et indirectes.
+
+Pour générer les fichiers d’un paquet (dans Pkg)
+
+```
+generate my_project
+```
+
+Un sous répertoire `src` est destiné à accueillir le code
+
+### Configuration par défaut de l’environnement de travail
+
+Pour répliquer le comportement par défaut proposé dans Visual Studio code.
+
+https://log-dh.vercel.app/notes/2024-02-16_julia-gestion-des-environnements/
+
+### Ressources pédagogiques sur les environnements
+
+- Documentation de PKG https://pkgdocs.julialang.org/v1/
+- « Modern Julia Workflows ». 2023. Consulté le septembre 10. https://modernjuliaworkflows.github.io/.
 
 ## Manipuler des données structurées comme des DataFrames
 
@@ -368,7 +696,7 @@ combine(iris, :PetalLength => mean)[1, 1] # rapporte la valeur scalaire
 
 ### Création de nouvelles colonnes
 
-Avec `select`, on effectue l’opération ligne par ligne. 
+Avec `select`, on effectue l’opération ligne par ligne.
 
 Avec la syntaxe précédente, `select()` permet de créer une nouvelle colonne avec un calcul simple donné par une fonction à appliquer sur toute la colonne.
 
@@ -463,67 +791,44 @@ notebook()
 
 Si Jupyter n’est pas installé, l’installer.
 
-## Utilisation du gestionnaire de paquets
+## Serveurs de langues Julia
 
-Julia dispose d’un très gestionnaire de paquets efficace, [Pkg](https://pkgdocs.julialang.org/). Dans Julia, on accède au gestionnaire de paquets en tappant `]`. Tapper `backspace` ou  `Ctrl+C` pour revenir au REPL de Julia.
+cf. https://discourse.julialang.org/t/neovim-languageserver-jl/37286/7
 
-Ajouter un paquet (dans Pkg)
+https://github.com/fredrikekre/.dotfiles/blob/master/.julia/environments/nvim-lspconfig/Makefile
 
-```
-add nom_du_paquet
-```
+[LanguageServer.jl](https://github.com/julia-vscode/LanguageServer.jl) est une implémentation du Microsoft Language Server Protocole pour Julia.
 
-Supprimer un paquet et ses annotations
+[Helix](https://github.com/julia-vscode/LanguageServer.jl/wiki/Helix) dispose déjà d’un fichier de config pour Julia dans `languages.toml`.
 
-```
-rm --manifest nom_du_paquet
-```
+Après avoir installé LanguageServer.jl
 
-La commande `status` ou `st` permet de voir les paquets installés.
-
-Pkg est conçu autour de la notion d’environnement. Il s’agit d’ensemble de paquets qui peuvent être propres à un projet ou partagés et sélectionnés par leur nom. Ces environnements sont décrits dans un fichier de *manifest* qui peut être versionné pour facilité la reproductibilité des projets. Cette solution permet de travailler avec des versions différentes de paquets installés à des endroits distincts en fonction de vos besoins ; une fonctionnalité est comparable à `virtualenv` en Python.
-
-Pour activer un environnement (dans Pkg)
+Ajouter le bloc de code suivant dans `.config/helix/languages.toml`
 
 ```
-activate nom_du_projet
+[[language]]
+name = "julia"
+scope = "source.julia"
+injection-regex = "julia"
+file-types = ["jl"]
+roots = ["Project.toml", "Manifest.toml"]
+comment-token = "#"
+language-server = { command = "julia", args = [
+    "--startup-file=no",
+    "--history-file=no",
+    "--quiet",
+    "--project",
+    "-e",
+    "using LanguageServer; runserver()",
+    ] }
+indent = { tab-width = 4, unit = "    " }
 ```
 
-Lorsqu’on utilise un projet existant, la commande `instantiate` télécharge les dépendances manquantes ou vérifie que l’environnement est prêt à être utilisé (dans Pkg)
 
-```
-instantiate
-```
-
-Au lieu d’utiliser la commande `activate` depuis Julia, il est également possible de spécifier lors du démarage l’environnement à utiliser
-
-```julia
-julia --project=somepath myscript.jl
-```
-
-Les fichiers `Project.toml` contiennent les informations générales sur le projet (nom, id, auteurs) et les dépendances directes, tandis que `Manifest.toml` contient la date exacte des versions des dépendances directes et indirectes.
-
-Pour générer les fichiers d’un paquet (dans Pkg)
-
-```
-generate my_project
-```
-
-Un sous répertoire `src` est destiné à accueillir le code
-
-### Configuration par défaut de l’environnement de travail
-
-Pour répliquer le comportement par défaut proposé dans Visual Studio code.
-
-https://log-dh.vercel.app/notes/2024-02-16_julia-gestion-des-environnements/
-
-### Ressources pédagogiques sur les environnements
-
-- Documentation de PKG https://pkgdocs.julialang.org/v1/
-- « Modern Julia Workflows ». 2023. Consulté le septembre 10. https://modernjuliaworkflows.github.io/.
 
 ## Sources
 
+- Bezanson, Jeff, Stefan Karpinski, et Edelman Viral B. Shah Alan. 2012. « Why We Created Julia ». férvier 2012. https://julialang.org/blog/2012/02/why-we-created-julia/.
 - Lauwens, Ben, et Allen Downey. s. d. *Think Julia. How to Think Like a Computer Scientist*. Consulté le 14 décembre 2019. https://benlauwens.github.io/ThinkJulia.jl/latest/book.html.
 
 Tutoriel de Cuvelier

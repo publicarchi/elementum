@@ -1,7 +1,6 @@
 ---
-author: Emmanuel Château-Dutier
-tags: cms, api
-
+Author: Emmanuel Château-Dutier
+Tags: cms, api
 
 ---
 

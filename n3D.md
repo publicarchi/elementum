@@ -3,19 +3,17 @@ author: emchateau
 tags: 3d
 ---
 
-
-
 # 3D
 
 3D Models et Pointclouds, .glb, .babylon, .glf, .obj, .stl. Formats singlefiles.
 
 ## Formats de fichiers 3D
 
-- .glb
-- .babylon
-- .glf 
-- .obj
-- .stl
+- `.glb`
+- `.babylon`
+- `.glf `
+- `.obj`
+- `.stl`
 
 ### GL Transmission Format Binary file
 

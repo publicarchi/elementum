@@ -163,7 +163,7 @@ local:toto(1, 'string')
 
 Travail avec la base de données
 
-création d’une base de données
+création d’une base de données (BaseX v. 9, mettre à jour les fonctions db:open)
 
 ```xquery
 db:open('gdp')
@@ -208,7 +208,7 @@ declare function local:titreGdp( $edition ) {
 local:titreGdp('gdpBrice1684')
 ```
 
-
+## Modules
 
 Créer un module, enregistrer le dans webapp/
 

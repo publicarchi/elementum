@@ -5,7 +5,7 @@ tags: xslt
 
 # XPlot
 
-## CR discussion avec 
+## CR discussion avec David J. Birnbaum
 
 Pas formé en mathématiques besoin aide.
 
