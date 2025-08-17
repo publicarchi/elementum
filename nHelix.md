@@ -35,21 +35,23 @@ hx
 
 Documentation : https://docs.helix-editor.com
 
-Exécuter le tutoriel installé avec le logiciel 
+Un tutoriel est installé avec le logiciel. On y accède de la manière suivante : 
 
 ```bash
 hx --tutor
 ```
 
-ou dans l’éditeur exécuter la commande `:tutor`
+ou bien en exécutant dans l’éditeur la commande `:tutor`
 
 À tout moment, vous pouvez accéder à de l’aide, depuis le mode normal, en tappant : `<SPACE>?`.
 
 Pour réviser, il existe un quiz [Helix Shortcut Quiz](https://tomgroenwoldt.github.io/helix-shortcut-quiz/)
 
+Avec Mac, vous pourriez rencontrer des difficultés pour les combinaisons utilisant la touche Alt. cf. https://docs.helix-editor.com/remapping.html voir également https://github.com/helix-editor/helix/issues/2469
+
 ### Configuration des fichiers runtime
 
-Sur Maci et Linux, on fait pointer la variable d’environnement du terminal vers les fichiers runtime
+Sur MacOS et Linux, on fait pointer la variable d’environnement du terminal vers les fichiers runtime
 
 ```bash
 # ~/.bashrc ou ~/.zprofile
@@ -66,7 +68,7 @@ ln -s $PWD/runtime ~/.config/helix/runtime
 
 Helix propose de riches fonctionnalités pour utiliser des serveurs LSP. 
 
-Installaton des langages https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
+Installation des langages https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers
 
 Voir la liste par défaut des serveurs de langages
 
@@ -76,20 +78,24 @@ hx --health
 
 ## Commandes utiles
 
-### Modes 
+### Un éditeur multimodal
 
 À l’instar d’autres éditeurs en ligne de commande (Vim notamment), Helix propose une interface de travail qui repose sur l’utilisation de modes. Ce fonctionnement peut être déroutant pour le nouvel utilisateur, mais s’avère très productif à l’usage.
 
 Dans un éditeur multimodal, les touches on des effets différents selon le mode sélectionné : par exemple en mode insertion la pluspart des touches insèrent des caractères dans le buffer, mais en mode normal les touches auront un effet différent. Par exemple `w` pourra déplacer le curseur à la fin du mot, `y` (yank) permettra de copier la sélection, `p` (paste) de coller, `u` (undo) d’annuler une opération, ou encore la combinaison de touche `g` suivie de `f` permettra d’ouvrir le nom de fichier sous le curseur.
 
-Les éditeurs qui ne proposent pas de modes privilégient l’insertion afin de faciliter la saisie du texte. Toutefois, ce choix est effectué au détriment de d’autres fonctionnalités qui deviennent sous-optimales parcequ’elles son rendues difficiles d’accès au clavier ou vous obligent à quitter les mains du clavier pour utiliser la souris ou le trackpad. Bien sûr l’insertion doit être optimisée mais l’édition de document nécessite également de nombreux aller-retour à travers le texte ou le code, de multiples opérations de copier-coller ou de reformatage. Un éditeur de texte modal rend alors ces différentes opérations plus accessibles et plus simples à exprimer.
+Les éditeurs qui ne proposent pas de modes privilégient l’insertion afin de faciliter la saisie du texte. Toutefois, ce choix est effectué au détriment d’autres fonctionnalités qui deviennent sous-optimales parceque difficiles d’accès au clavier ou qu’elles vous obligent à utiliser la souris ou le trackpad. Bien sûr, l’insertion doit être optimisée mais l’édition de documents nécessite également de nombreux aller-retour à travers le texte ou le code, de multiples opérations de copier-coller ou de reformatage. Un éditeur de texte modal rend alors ces différentes opérations plus accessibles et plus simples à exprimer.
+
+### Des commandes composables inspirées de Kakoune
 
 Le fonctionnement d’Helix s’inspire directement du modèle proposé par Maxime Coste pour [Kakoune](https://kakoune.org). Il reprend l’idée de Vim d’envisager l’édition modale comme un véritable langage d’édition. Les commandes sont composables de manière à exprimer des opérations complexes dans un langage qui permet à l’éditeur d’exprimer ses intentions de manière précise. Cette propriété est souhaitble car la pluspart des opérations d’édition sont répétitives. Pouvoir exprimer structurellement ces opérations permet de définir non-seulement des commandes réutilisables mais aussi plus facilement mémorisables.
 
-La grammaire d’Helix repose sur des sélections suivies de verbes en les combinant avec des retours contextuels dynamiques qui permettent de visualiser l’objet courant (la sélection) avant d’y appliquer des changements ce qui permet de corriger les erreurs éventuelles.
+La grammaire d’Helix repose sur des ==sélections suivies de verbes== en les combinant avec des retours contextuels dynamiques qui permettent de visualiser l’objet courant (la sélection) avant d’y appliquer des changements ce qui permet de corriger les erreurs éventuelles.
+
+### Sélection des modes, fermeture et enregistrement des fichiers
 
 
-Dans Helix, le mode par défaut est le mode normal `NOR`. En mode normal, on peut accéder à de l’aide sur les fonctionnalités possibles en tappant la touche `Espace`.
+Dans Helix, le mode par défaut est le mode normal `NOR`. En mode normal, on peut accéder à de l’aide sur les fonctionnalités possibles en tappant la touche `<Espace>`.
 
 Depuis le mode normal, on accède au mode de commande en tappant `:`. L’interface propose alors plusieurs options possibles. Un des atouts de l’éditeurs est d’intégrer une aide contextuelle qui facilite la mémorisation des commandes.
 
@@ -110,8 +116,10 @@ Liste des modes mineurs
 - `z` *view mode* pour modifier la vue
 - `Z` *sticky view mode* pour visualiser un document 
 - `g` *goto mode* pour se déplacer rapidement
-- `Ctrl-w` *window mode* pour modifier les fenêtres
-- `Space` *space mode* pour réaliser diverses actions
+- `<Ctrl>-w` *window mode* pour modifier les fenêtres
+- `<Espace>` *space mode* pour réaliser diverses actions
+
+Accéder à de l’aide. L’interface d’Helix propose une aide dynamique mais il est également possible d’accéder à de l’aide en tappant : `space + ?`. Outre une recherche floue, il est possible de rechercher des raccourcis avec `%bindings`.
 
 ### Déplacements dans l’éditeur
 
@@ -119,7 +127,7 @@ Les touches `h` `j` `k` `l` servent à se déplacer dans l’éditeur. Il est to
 
 Helix propose une série de commandes inspirées de [Kakoune](https://kakoune.org) qui sont destinées à faciliter le déplacement ou la manipulation de texte dans un document. Ces sélections multiples sont le moyen d’interagir avec l’éditeur grâce à des primitives de manipulation puissantes.
 
-Celles-ci peuvent être combinées entre elles dans des expressions complexes avec des expressions régulières.
+Ces instructions peuvent être combinées entre elles dans des expressions complexes avec des expressions régulières.
 
 - `w` déplace le curseur avant le début du prochain mot (*word*)
 - `e` déplace le curseur à la fin du mot (*end*)
@@ -155,10 +163,10 @@ Suppressions et remplacements
 - `ec` change la fin d’un mod (*end*, *change*)
 
 Commenter
-- `Ctrl-c` commenter ou décommenter la ligne
+- `<Ctrl>-c` commenter ou décommenter la ligne
 
 Autocompléter
-- `Ctrl-x` autocompléter
+- `<Ctrl>-x` autocompléter
 
 ### Déplacements et sélections multiples
 
@@ -167,13 +175,18 @@ Les commandes de déplacement peuvent être précédées par des quantificateurs
 - `3e` déplace vers la fin du troisième mot en avant.
 - `2b` déplace le curseur deux mots en arrière.
 
+ll est également possible de se déplacer jusqu’à l’apparition d’un caractère (contrairement à Vim, cela n’est pas cantonné à la ligne courante)
+
+- `t` trouver jusqu’au prochain caractère, `v` trouver le prochain caractère
+- `T` trouver jusqu’au précédent caractère, `V` trouver le précédent caractère
+
 Il existe un mode de sélection auquel on accès en tappant `v` (*view*). Pour revenir en mode normal tapper `v` une nouvelle fois.
 
 En mode sélection, tous les déplacements étendent la sélection.
 
 - `x` sélectionne la ligne du curseur
 - `2x` sélectionne deux lignes
-- `vgld` ou `t<ENTER>d` effacer la fin de la ligne. `v` est utilisé avec `gl` car cette dernière commande ne sélectionne par le texte. `t` (*til*) la nouvelle ligne est représentée par la touche `ENTER`.
+- `vgld` ou `t<Entrée>d` effacer la fin de la ligne. `v` est utilisé avec `gl` car cette dernière commande ne sélectionne par le texte. `t` (*til*) la nouvelle ligne est représentée par la touche `<Entrée>`.
 - `;` permet d’abandonner la sélection.
 - `;d` effacer après avoir réduit la sélection à un seul caractère
 
@@ -195,9 +208,13 @@ Les commandes peuvent être utilisées plusieurs fois de suite
 
 - `xy` copier une ligne
 
-Dès lors que du texte est supprimé (`d`) ou modifié (`c`), Helix copie le contenu altéré. On peut empêcher ce comportement avec `Alt-d` et `Alt-c`. Sur Mac, la touche Alt n’existe pas par défaut dans votre terminal. Il faut activer son replacement dans les préférences du terminal.
+Dès lors que du texte est supprimé (`d`) ou modifié (`c`), Helix copie le contenu altéré. On peut empêcher ce comportement avec `<Alt>-d` et `<Alt>-c`. 
 
-Helix ne partage pas son clipboard avec presse-papier avec le système. Néanmoins il est possible avec `Space + y` de copier dans le presse-papier du système pour réutiliser la sélection dans une autre application.
+> [!TIP]
+>
+> **Sur MacOS**, la touche Alt n’existe pas par défaut dans votre terminal. Il faut activer son replacement dans les préférences du terminal.
+
+Helix ne partage pas son presse-papier (*clipboard*) avec le système. Néanmoins il est possible avec `<Espace> + y` de copier dans le presse-papier du système pour réutiliser la sélection dans une autre application.
 
 ### Rechercher dans un fichier
 
@@ -216,12 +233,12 @@ Remplacements multiples
 - `%s` sélectionne tout le buffer et ouvre une recherche dans la sélection, saisir la recherche ou la regex, valider avec la touche ENTER, puis `c` pour saisir la chaîne de remplacement. Quitter la sélection multiple avec `,`.
 
 Chercher le mot sous le curseur
-- `Alt-o*n` (s’il y un LSP) ou `be*n`. Lorsqu’il y a un LSP, `Alt-o` étend la sélection au nœud parent dans la syntaxe, puis `*` utlise la sélection comme motif de recherche, `n` va à la prochaine occurence. `b` sélectionne le début du mot, `e` sélectionne la fin du mot.
+- `<Alt>-o*n` (s’il y un LSP) ou `be*n`. Lorsqu’il y a un LSP, `<Alt>-o` étend la sélection au nœud parent dans la syntaxe, puis `*` utlise la sélection comme motif de recherche, `n` va à la prochaine occurence. `b` sélectionne le début du mot, `e` sélectionne la fin du mot.
 
 ### Curseurs multiples
 
 - `C` duplique le curseur à la ligne suivante pour éditer deux lignes simultanéemenet
-- `Alt-C` fait la même chose au dessus du curseur
+- `<Alt>-C` fait la même chose au dessus du curseur
 - `,` supprime le deuxième curseur 
 
 
@@ -230,9 +247,19 @@ Il n’y a pas de sélection de bloc avec Helix. Il est possible d’étendre la
 ## Exécuter une commande shell
 - `:sh`
 
-Il n’y a pas de marque-page nommés dans Helix, mais il est possible de mémoriser une localisation dans la liste de rebond (*jumplist*) avec `Ctrl-s` puis de revenir à cette localisation en ouvrant la liste avec `<Espace>-j` ou de revenir en arrière dans la liste avec `Ctrl-o` et en avant avec `Ctrl-i`.
+Il n’y a pas de marque-page nommés dans Helix, mais il est possible de mémoriser une localisation dans la liste de rebond (*jumplist*) avec `<Ctrl>-s` puis de revenir à cette localisation en ouvrant la liste avec `<Espace>-j` ou de revenir en arrière dans la liste avec `Ctrl-o` et en avant avec `<Ctrl>-i`.
 
+### Gestionnaire de fichiers et de fenêtres
 
+Il existe un gestionnaire de fichiers rudimentaire accessible en ouvrant Helix depuis un chemin de répertoire dans le terminal. Il est possible de chercher ou parcourir les fichiers.
+
+Depuis n’importe quel éditeur, il est également possible de parcourir le répertoire avec `<Espace>-f`.
+
+`<Ctrl>-V` permet d’ouvrir le fichier sélectionné dans une division verticale. `<Ctrl>-wq` ferme le split.
+
+Symbols picker basé sur LSP `<Espace>-s`.
+
+Commenter une sélection `<Ctrl>-c`.
 
 ## Configuration
 
@@ -301,7 +328,11 @@ hxs() {
 }
 ```
 
-### Serveur de langue Julia
+### Serveurs de langue
+
+https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
+
+#### Serveur de langue Julia
 
 [LanguageServer.jl](https://github.com/julia-vscode/LanguageServer.jl) est une implémentation du Microsoft Language Server Protocole pour Julia.
 
@@ -311,7 +342,31 @@ cf. https://discourse.julialang.org/t/neovim-languageserver-jl/37286/7
 
 https://github.com/fredrikekre/.dotfiles/blob/master/.julia/environments/nvim-lspconfig/Makefile
 
-### Markdown (divers)
+#### Serveur de langue pour XML
+
+[XML Language Server (LemMinX)](https://github.com/eclipse-lemminx/) est une implémentation LSP pour XML.
+
+XML Language Server (LemMinX)
+
+#### Correction d’orthographe
+
+[A Hunspell-compatible spellchecking Rust library](https://github.com/helix-editor/spellbook)
+
+Voir aussi les discussions suivantes : https://github.com/helix-editor/helix/discussions/3637
+
+Getreu, Jens. 2022. « Note talking with Helix, Tp-Note and LanguageTool ». *Jens Getreu’s blog*, septembre 30. https://blog.getreu.net/20220828-tp-note-new8/.
+
+https://github.com/helix-editor/spellbook
+
+https://github.com/tekumara/typos-lsp
+
+https://github.com/errata-ai/vale
+
+https://github.com/Automattic/harper/
+
+https://github.com/blopker/codebook
+
+#### Markdown (divers)
 
 https://www.reddit.com/r/HelixEditor/comments/1cprxft/markdown_preview/
 
@@ -380,6 +435,45 @@ https://github.com/microsoft/vscode-markdown-languageservice
 
 https://github.com/helix-editor/helix/discussions/5830
 
+Exemples de configuration https://github.com/helix-editor/helix/discussions/1360
+
+
+## Helix comme IDE
+
+Pour NeoVim
+
+ThePrimeagen’s video about setting up NeoVim from scratch
+- file tree (sidebar style),
+- the smarts,
+- fuzzy finder,
+- global search
+- replace
+
+## Theme
+
+- base16_transparent
+- carbon +
+- catpuccin_frappe
+- catpuccin_macchiato +
+- catpuccin_mocha
+- doom-one ++
+- dracula
+- dracula_at_night
+- everblush
+- focus_nova +
+- jetbrains_dark +
+- nord
+- nord-night +
+- onedark ++
+- onedarker
+- papercolor-dark
+- snazzy +
+- starlight
+- term16_light
+- zed_onedark
+
+
+
 ## Références
 
 - [Maxime Coste. Why Kakoune, The quest for a better code editor.](https://kakoune.org/why-kakoune/why-kakoune.html)
@@ -393,3 +487,4 @@ https://github.com/helix-editor/helix/discussions/5830
 - [Hårek, Tim. « My thoughts on Helix after 6 months ». Tim Hårek (blog), 19 juin 2023.](https://timharek.no/blog/my-thoughts-on-helix-after-6-months)
 - [Tim Hårek, Tim. « Helix as a notes tool ». Tim Hårek (blog), 25 août 2023.](https://timharek.no/blog/helix-as-a-notes-tool)
 - [Balkan, Aral. « Installing Helix Editor Language Servers ». Aral Balkan (blog), 14 novembre 2022](https://ar.al/2022/11/14/installing-helix-editor-language-servers/)
+- Tong, Quand. 2023. « Turning Helix into an IDE with the help of WezTerm and CLI tools ». Quan Tong, août 19. https://quantonganh.com/2023/08/19/turn-helix-into-ide.md.
