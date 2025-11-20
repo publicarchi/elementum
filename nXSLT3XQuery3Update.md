@@ -6,23 +6,23 @@ tags: xslt
 
 # Feed Back sur les Spécifications XSLT et XQuery 3 par Michael Kay
 
-Près de 10 ans après XSLT 2, Michael Kay a offert à XMLPrague 2017 un point d’information sur l’état des différents langages dans leur version 3. Au cours de cette présentation, il a notamment cherché à dégager les aspects de cette nouvelle version du langage qui constituent de véritables nouveautés. Deux changements sont stratégiques pour XQuery et XSLT : les fonctions de haut-niveau pour leur capacité à prendre en compte la variété et le changement, et le support de JSON car toutes les données ne sont pas en XML.
+Près de dix ans après XSLT 2, Michael Kay a offert à XMLPrague 2017 un point d’information sur l’état des différents langages dans leur version 3. Au cours de cette présentation, il a notamment cherché à dégager les aspects de cette nouvelle version du langage qui constituent de véritables nouveautés. Deux changements sont stratégiques pour XQuery et XSLT : les fonctions de haut-niveau pour leur capacité à prendre en compte la variété et le changement, et le support de JSON car toutes les données ne sont pas en XML.
 
 ## Fonctions d’ordre supérieur
 
-L’introduction de fonction d’ordre supérieur peut être appréciée du point de vue de leur élégance en terme de programmation. Mais cette nouveauté apporte également des fonctionnalités importantes car elle donne la possibilité de traiter les choses de manière dynamique. Ces fonctions de haut-niveau offrent la capacité de prendre en charge la variété et le changement. Au sein du langage XSLT, le mécanisme du *templating* offrait déjà des réponses à ces questions.
+L’introduction de fonctions d’ordre supérieur peut être appréciée du point de vue de leur élégance en terme de programmation. Mais cette nouveauté apporte également des fonctionnalités importantes car elle donne la possibilité de traiter les choses de manière dynamique. Ces fonctions de haut-niveau offrent la capacité de prendre en charge la variété et le changement. Au sein du langage XSLT, le mécanisme du *templating* offrait déjà des réponses à ces questions.
 
 On peut passer un paramètre à une requête de sorte que l’action peut être effectuée de manière différente. Aussi, il ne s’agit pas seulement d’une manière élégante de programmer mais de quelques chose qui présente le potentiel de pouvoir rendre les applications qui montent mieux en charge.
 
 ## Support de JSON
 
-Une des nouveautés importantes de cette version concerne l’introduction du support de JSON. MK ne croit pas que XQuery ou XSLT seront un jour largement utilisés sur le web pour traiter du JSON, cela pour plusieurs raisons : d’abord pour une raison culturelle, au sens où les langages proviennent d’un terrain distinct. Cependant ce support de JSON était nécessaire pour des raisons stratégiques car les personnes qui utilisent XML n’utilisent pas seulement du XML, et il est très important que leurs outils rencontrent tous les besoins de ces utilisateurs. Il s’agit donc d’étendre la portée du langage.
+Une des nouveautés importantes des versions 3 concerne l’introduction du support de JSON. Toutefois, Michael Kay ne croit pas que XQuery ou XSLT seront un jour largement utilisés sur le web pour traiter du JSON, cela pour plusieurs raisons : d’abord pour une raison culturelle, au sens où les langages proviennent d’un terrain distinct. Cependant ce support de JSON était nécessaire pour des raisons stratégiques car les personnes qui utilisent XML n’utilisent pas seulement du XML, et il est très important que leurs outils rencontrent tous les besoins de ces utilisateurs. Il s’agit donc d’étendre la portée du langage.
 
 Il est désormais possible de parser des fichiers JSON en XSLT ou en XQuery. Un nouvel objet *map* a été introduit dans le langage qui est plus expressif que les simples objets JSON. Par ailleurs un nouvel objet *array* a également été introduit.
 
 ## Streaming et Packaging
 
-Le streaming et le packaging sont deux choses qui présentent des enjeux pour la monté en charge de XSLT. Le Streaming permet de prendre en charge de larges sources de documents, et le packaging est utile pour la production de grandes applications très stratégiques en terme de maintenance.
+Le *streaming* et le *packaging* sont deux choses qui présentent des enjeux pour la monté en charge de XSLT. Le Streaming permet de prendre en charge de larges sources de documents, et le packaging est utile pour la production de grandes applications très stratégiques en terme de maintenance.
 
 - `xsl:stream`
 - `xsl:source-document` et `xsl:iterate`
@@ -248,6 +248,23 @@ Getting closer: 2nd Last Call in October 2014●A big and complex spec, getting 
 
 - XQuery Update 3.1
 - Full Text 3.1
+
+## XSLT 3 overview
+
+Un langage moderne plus fonctionnel.
+
+- Construit à partir de XSLT 2 avec `xsl:sequence` et des types.
+- Ajoute le streaming, le packaging, de nouveaux types de données et de nouvelles manières de travailler et de combiner des feuilles de styles
+- XPath s’est renforcé
+
+XSLT 3 est plus orthogonal, plus d’instructions peuvent avoir des attributs `select` et il est possible d’utiliser self:foo pour les match patterns 
+
+Les endroits où les chaînes de caractères constant ne pouvaient être transformées en expression peuvent aujourd’hui prendre des `shadow attributes` qui sont computé au moment de la compilation.
+
+- Nouveaux opérateurs `!` et `=>`
+- Nouveaux types `map` et `array` avec des fonctions pour manipuler des fichiers JSON
+- Nouvelles fonctions pour le streaming, la manipulation des maps et des arrays, les fonctions sur les fonctions (`apply()` et `fold-left()`), la collation et les tris, la sérialisation, les variables d’environnement ou les fonctions mathématiques.
+- Ne pas oublier les extensions [Expath](http://expath.org) pour la manipulation de fichiers binaires, l’écriture ou la lecture de fichiers, l’utilisation d’archive zip ou exécuter des requêtes REST
 
 ## BestFeature in XSLT 3.0
 
@@ -723,21 +740,3 @@ Les instructions `xsl:try` et `xsl:catch` sont utilisées pour évaluer des expr
 - Walmsley, Priscilla. 2015. *XQuery: Search across a Variety of XML Data*. Second edition. Sebastopol, CA : O’Reilly Media.
 - Birnbaum, David J. 2019. « What’s new in XSLT 3.0 and XPath 3.1? » <oo>→<dh> Digital humanities (blog). 29 octobre 2019. http://dh.obdurodon.org/xslt3.xhtml.
 - Cagle, Kurt. 2017. « Why You Should Be Using XSLT 3.0 ». XML.com (blog). 14 février 2017. https://www.xml.com/articles/2017/02/14/why-you-should-be-using-xslt-30/.
-
-
-## XSLT 3 overview
-
-Un langage moderne plus fonctionnel.
-
-- Construit à partir de XSLT 2 avec `xsl:sequence` et des types.
-- Ajoute le streaming, le packaging, de nouveaux types de données et de nouvelles manières de travailler et de combiner des feuilles de styles
-- XPath s’est renforcé
-
-XSLT 3 est plus orthogonal, plus d’instructions peuvent avoir des attributs `select` et il est possible d’utiliser self:foo pour les match patterns 
-
-Les endroits où les chaînes de caractères constant ne pouvaient être transformées en expression peuvent aujourd’hui prendre des `shadow attributes` qui sont computé au moment de la compilation.
-
-- Nouveaux opérateurs `!` et `=>`
-- Nouveaux types `map` et `array` avec des fonctions pour manipuler des fichiers JSON
-- Nouvelles fonctions pour le streaming, la manipulation des maps et des arrays, les fonctions sur les fonctions (`apply()` et `fold-left()`), la collation et les tris, la sérialisation, les variables d’environnement ou les fonctions mathématiques.
-- Ne pas oublier les extensions [Expath](http://expath.org) pour la manipulation de fichiers binaires, l’écriture ou la lecture de fichiers, l’utilisation d’archive zip ou exécuter des requêtes REST

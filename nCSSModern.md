@@ -51,3 +51,15 @@ Bell, Andy. 2019. « Create a responsive grid layout with no media queries, usin
 Components
 
 « Modern Web ». s. d. Modern Web. Consulté le 19 avril 2022. https://modern-web.dev/.
+
+## Font-size
+
+Historiquement le W3C maintenait [une page](https://www.w3.org/QA/Tips/font-size) qui recommandait l’utilisation de tailles relatives ou même de tailles absolues ([absolute-size](https://www.w3.org/TR/CSS2/fonts.html#value-def-absolute-size)) ou relatives ().
+
+Toutefois les designers ont depuis longtemps l’habitude de donner des mesures relatives en `em` ou `rem`. 
+
+https://stackoverflow.com/questions/8726843/should-i-be-using-absolute-font-sizes-small-medium-large-et-al
+
+## Baseline
+
+https://drafts.csswg.org/css-writing-modes-4/#baseline

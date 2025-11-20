@@ -11,9 +11,13 @@ tags: svelte
 
 https://awesome-sveltekit.janosh.dev
 
+https://github.com/scosman/awesome-svelte
+
 https://madewithsvelte.com
 
 https://sveltethemes.dev
+
+
 
 ## Authentification avec Svelte
 
@@ -23,7 +27,7 @@ https://github.com/MacFJA/svelte-oauth2
 
 https://blog.zenika.com/2021/06/01/securisation-oauth2-dune-single-page-application/
 
-## Composants
+## Collections de composants
 
 https://illright.github.io/attractions//
 
@@ -57,12 +61,62 @@ https://bits-ui.com
 
 https://svelte-headlessui.goss.io/docs/2.0
 
+https://svelteui.org
+
+https://www.yesvelte.com
+
+## Documentation
+
+### Svelte docs starter
+
+https://github.com/code-gio/svelte-docs-starter
+
+A modern documentation template built with Svelte 5, MDSvex, and TailwindCSS. Create beautiful, accessible documentation with features like automatic navigation, dark mode, search, and more.
+
+### Svelte-docs
+
+https://alexxnb.github.io/svelte-docs
+
+https://github.com/AlexxNB/svelte-docs
+
+## Composants
+
+### Svelte Sidebar
+
+https://github.com/philipp-tailor/svelte_sidebar
+
+### Svelte Scrolling
+
+https://github.com/valmisson/svelte-scrolling
+
+Scroll to given elements with smooth animation.
+
+### Svelte Scroll Nav
+
+https://github.com/schoodicsolutions/svelte-scroll-nav
+
+Svelte Scroll Nav is a Svelte component and utility library designed to simplify the implementation of scroll-driven navigation within Svelte applications. It provides two-way binding between navigation menus and scrollable sections, enhancing the user experience in single-page applications.
+
+https://github.com/valmisson/svelte-scrolling
+
+### Svelte Page Navigation
+
+https://github.com/francescodessi/svelte-page-navigation
+
 ## Slides
 
 https://splidejs.com
 
 https://swiperjs.com
 Version Svelte
+
+## Données tabulaires
+
+### svelte simple datatables
+
+https://github.com/vincjo/datatables
+
+A toolkit for creating data table components with Svelte
 
 ## Visualisation
 

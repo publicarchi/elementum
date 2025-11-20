@@ -4,6 +4,20 @@ author: emchateau
 tags: make
 ---
 
+Dans le monde Unix, les opérations de *build* sont réalisées à l’aide de l’utilitaire GNU `make` (cf. [*The GNU Make Manual*](https://www.gnu.org/software/make/manual/html_node/index.html#Top)). Les recettes pour construire un paquet s’expriment dans un `Makefile` qui contient un ensemble de règles. L’utilitaire détermine automatiquement les éléments d’un programme qui doivent être recompilées en fonction de l’existence des fichiers et de leurs dates de création, puis exécute les commandes qui leur sont associées.
+
+Le programme `make` est destiné à automatiser les tâches triviales de transformation du code source en un exécutable. Par rapport à l’utilisation de scripts, il permet de spécifier les relations entre les éléments du programme. Au moyen de ces informations de dépendance et de dates de fichiers, `make` détermine exactement les étapes à refaire pour produire la sortie attentue mais aussi optimiser le processus de *build*. (Mecklenburg 2009)
+
+En somme, GNU `make`définit un langage pour décrire les relations entre le code source, les fichiers intermédiaires et les exécutables.
+
+GNU make est conforme à la section 6.2 de [IEEE Standard 1003.2-1992 (POSIX.2)](https://standards.ieee.org/ieee/1003.2/1408/). C’est un composant essentiel du système de build de GNU.
+
+La spécification utilisée par  `make` est habituellement sauvée dans un fichier nommé `makefile`.
+
+
+
+## Tutoriel
+
 Traduction française de : Krespanis, Andrew. 2014. « Using GNU Make as a Front-end Development Build Tool ». Sitepoint. 12 mai 2014. https://www.sitepoint.com/using-gnu-make-front-end-development-build-tool/.
 
 La popularité des outils de préprocessing pour la rédaction des CSS a rendu très populaire l’utilisation d’outils d’automatisation de tâches dans le développement front-end. [Grunt](http://gruntjs.com/) et [Gulp](http://gulpjs.com/) sont certainement parmi les plus populaires d’entre eux. Il reste néanmoins toujours possible d’employer [GNU Make](http://www.gnu.org/software/make/) et ce choix peut, dans bien des cas, s’avérer préférable pour plusieurs raisons.

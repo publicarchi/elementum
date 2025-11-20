@@ -408,8 +408,6 @@ https://github.com/OCR-D/
 
 
 
-
-
 https://github.com/INL/OpenConvert
 
 https://github.com/opf/text-extractor

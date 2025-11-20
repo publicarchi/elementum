@@ -7,6 +7,19 @@ tags: julia, machine learning
 
 Julia est un langage informatique de calcul scientifique. Il est particulièrement bien positionné pour les applications d’apprentissage machine (*Machine learning*). Si le langage offre un écosystème moins développé que Python il reste néanmoins une option particulièrement viable pour les applications habituelles dans ce domaine.
 
+Plusieurs paquets Julia sont dédiés à l’apprentissage machine (*machine learning*).
+
+| Catégorie             | Paquets                                                     |
+| --------------------- | ----------------------------------------------------------- |
+| ML toolkits/pipelines | MLJ.jl, ScikitLearn.jl, AutoMLPipeline.jl                   |
+| Neural Networks       | Flux.jl/Lux.it, Knet.jl                                     |
+| Decision Trees        | DecisionTree.jl                                             |
+| Clustering            | Clustering.jl, GaussianMixtures.jl                          |
+| Missing imputations   | Impute.jl                                                   |
+|                       | [BetaML.jl](https://sylvaticus.github.io/BetaML.jl/stable/) |
+
+
+
 Quelques concepts-clefs en apprentissage machine
 
 apprentissage supervisé (*Supervised Learning*) @todo

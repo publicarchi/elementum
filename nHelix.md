@@ -94,7 +94,6 @@ La grammaire d’Helix repose sur des ==sélections suivies de verbes== en les c
 
 ### Sélection des modes, fermeture et enregistrement des fichiers
 
-
 Dans Helix, le mode par défaut est le mode normal `NOR`. En mode normal, on peut accéder à de l’aide sur les fonctionnalités possibles en tappant la touche `<Espace>`.
 
 Depuis le mode normal, on accède au mode de commande en tappant `:`. L’interface propose alors plusieurs options possibles. Un des atouts de l’éditeurs est d’intégrer une aide contextuelle qui facilite la mémorisation des commandes.
@@ -140,6 +139,12 @@ Le mode mineur *goto mode* permet de naviguer rapidement dans un document
 - `gl` aller à la fin de la ligne
 - `gs` se rendre au premier caractère non-blanc d’une ligne
 - `g.` aller aux dernières modifications
+
+Les touches `[` et `]` combinées avec certaines lettres permettent de se déplacer d’un élément similaire à l’autre (paragraphe précédent ou suivant `p`, fonction précédente ou suivante `f`, commentaire précédent ou suivant `c`, diagnostic `d` etc.).
+
+La touche `m` donne également accès à une série d’options pour naviguer autour d’une ressource. Par exemple `maf` sélectionne une fonction.
+
+Le mode « espace » accessible avec la touche `<espace>` permet de faire des recherches dans les fichiers du répertoire (`F`) ou de naviguer à l’intérieur du fichier de travail grâce à des symboles (`s`).
 
 ### Édition d’un document
 
@@ -190,16 +195,23 @@ En mode sélection, tous les déplacements étendent la sélection.
 - `;` permet d’abandonner la sélection.
 - `;d` effacer après avoir réduit la sélection à un seul caractère
 
+Sélections et déplacements
+
 - `%` sélectionne l’ensemble du fichier
+- `_` retire les espaces de la sélection
 - `mm` se déplacer à l’élément correspondant (guillemets, crochets, etc.)
 - `ms` entourer la sélection par... Par exemple pour entourer un mot par un caractère, `ebms`
+
+>This gets fancier with Treesitter features: Take some arbitrary Rust file. Press %, then s, then type ^fn, and you selected the fn keyword in every top-level function. Now press Alt+o, to extend the selection to the surrounding syntactic element, i.e. the entire function.
+
+voir les exemples https://herecomesthemoon.net/2025/06/i-like-helix/
 
 ### Annulations
 
 - `u` permet d’annuler la dernière action (*undo*)
 - `U` refait la dernière action (*redo*)
 
-Les commandes peuvent être utilisées plusieurs fois de suite
+Les commandes peuvent être utilisées plusieurs fois de suite.
 
 ### Copier/coller
 
@@ -230,10 +242,14 @@ Helix ne partage pas son presse-papier (*clipboard*) avec le système. Néanmoin
 La recherche permet aussi l’utilisation d’expressions régulières. 
 
 Remplacements multiples
-- `%s` sélectionne tout le buffer et ouvre une recherche dans la sélection, saisir la recherche ou la regex, valider avec la touche ENTER, puis `c` pour saisir la chaîne de remplacement. Quitter la sélection multiple avec `,`.
+- `%s` sélectionne tout le buffer et ouvre une recherche dans la Psélection, saisir la recherche ou la regex, valider avec la touche ENTER, puis `c` pour saisir la chaîne de remplacement. Quitter la sélection multiple avec `,`.
 
 Chercher le mot sous le curseur
-- `<Alt>-o*n` (s’il y un LSP) ou `be*n`. Lorsqu’il y a un LSP, `<Alt>-o` étend la sélection au nœud parent dans la syntaxe, puis `*` utlise la sélection comme motif de recherche, `n` va à la prochaine occurence. `b` sélectionne le début du mot, `e` sélectionne la fin du mot.
+- `<Alt>-o*n` (s’il y un LSP) ou `be*n`. Lorsqu’il y a un LSP, `<Alt>-o` étend la sélection au nœud parent dans la syntaxe, puis `*` utlise la sélection comme motif de recherche, `n` va à la prochaine occurence. `b` sélectionne le début du mot, `e` sélectionne la fin du mot.i
+
+Primitives de sélection
+- il est possible d’utiliser `s` de manière répétée
+- `k` permet de restreindre la sélection à un motif défini par une expression régulière, ou `<Alt+k>` pour retirer celles contenant un motif donné.
 
 ### Curseurs multiples
 
@@ -243,6 +259,8 @@ Chercher le mot sous le curseur
 
 
 Il n’y a pas de sélection de bloc avec Helix. Il est possible d’étendre la sélection au dessous avec les mouvements standards et les curseurs multiples `C`.
+
+Il est possible de rechercher et remplacer sur l’ensemble du document en utilisant les curseurs multiples avec une composition de commandes : 1° sélectionner tout le document avec `%`, 2° passer en mode sélection avec `s`, 3° tapper le mot auquel vous souhaitez restreindre la sélection dans le fichier, 4° tapper `c` pour placer un curseur à toute la sélection, 5° éditer toutes les instances en même temps.
 
 ## Exécuter une commande shell
 - `:sh`
@@ -471,6 +489,8 @@ ThePrimeagen’s video about setting up NeoVim from scratch
 - starlight
 - term16_light
 - zed_onedark
+
+Finalement Darkside en appliquant le thème par défaut de mon émulateur de terminal (Ghostty).
 
 
 

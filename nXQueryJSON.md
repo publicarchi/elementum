@@ -14,8 +14,6 @@ XQuery fournit deux fonctions par défaut pour parser des données en JSON : `p
 
 
 
-
-
 Voir aussi 
 
 https://docs.basex.org/12/JSON_Functions
