@@ -7,6 +7,8 @@ tags: editor, outils
 
 L’éditeur [Helix](https://helix-editor.com/news/release-23-03-highlights/) est une variante de [Kakoune](https://kakoune.org) implémenté en Rust. Bien que relativement récent, le logiciel présente des fonctionnalités très complètes et comparables à Vim avec le bénéfice de l’utilisation de primitives logiques pour travailler sur le texte. La cohérence des séquences de commandes et les retours visuels offerts par l’interface facilitent beaucoup la prise en main de l’éditeur qui constitue une très bonne option de départ lorsqu’il s’agit d’adopter un éditeur en ligne de commande.
 
+Test
+
 ### Installation
 
 Sur Mac, le logiciel est distribué sous la forme d’une image disque ou bien par le gestionnaire de paquets Brew :
