@@ -5,7 +5,46 @@ tags: dates
 
 # Formats de dates
 
-Outils
+Définition de UNIX time en 1971, premier jeudi en 1970 comme point de départ des dates.
+
+Les dates qu’emploient les humanistes sont autrement plus complexes. Celles-ci doivent répondre à plusieurs contraintes.
+
+- Elles doivent permettre le tri ou la comparaison mathématique
+- Elles doivent permettre de prendre en compte l’incertitude
+- Elles devraient être faciles à lire et à écrire
+
+Exemples
+
+- 19e siècle
+- 14 juillet 1789
+- Date dans le calendrier julien
+- UNIX Time
+
+Intervales : une position et une étendue au sein d’un système de référence temporel.
+
+Cf. Alle Interval Calculus, et Tme Ontology in OWL. 
+
+Position et époque
+
+Calendrier
+
+EDTF
+
+https://github.com/arttracks/cultural_dates
+
+Cf. https://fr.slideshare.net/slideshow/fuzzy-dates-the-digital-humanities/77846707
+
+
+
+## Fuzzy-dates
+
+Woźniak, Dariusz. (2025) 2025. *Fuzzy Dates*. Python. juin 17, released octobre 20. https://github.com/dariusz-wozniak/fuzzy-dates.
+
+> A comprehensive EBNF (Extended Backus-Naur Form) grammar for representing fuzzy, uncertain, and complex temporal expressions. This grammar provides a standardized way to express dates and times with various levels of precision, uncertainty, and contextual information.
+
+https://dariuszwozniak.net/blog/fuzzy-dates-library
+
+## Outils
 
 https://github.com/inukshuk/edtf.js
 
@@ -113,8 +152,6 @@ ISO 8601:2004 is applicable whenever representation of dates in the Gregorian ca
 ISO 8601:2004 does not cover dates and times where words are used in the representation and dates and times where characters are not used in the representation.
 
 ISO 8601:2004 does not assign any particular meaning or interpretation to any data element that uses representations in accordance with ISO 8601:2004. Such meaning will be determined by the context of the application.
-
-
 
 Soyons progressifs
 

@@ -35,8 +35,6 @@ Mais pas de choix de la méthode ou de l'algorithme utilisé. D’autre logciels
 
 Relativement simple à prendre en main. Très bien documenté.
 
-
-
 ## Modèles
 
 - 4 modèles pour le français

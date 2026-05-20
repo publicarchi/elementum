@@ -11,9 +11,9 @@ Sur les modèles de langues https://twitter.com/deliprao/status/1567280110369214
 
 Language Models have taken [#NLProc](https://twitter.com/hashtag/NLProc?src=hashtag_click) by storm. Even if you don’t directly work in NLP, you have likely heard and possibly, used language models. But ever wonder who came up with the term “Language Model”? Recently I went on that quest, and I want to take you along with me.
 
-Shannon travaillait sur l’entropy de la langue anglaise, pour développer une théorie de la communication optimale. Shannon dans son article de 1948 ne fait pas mention des "Language Model" ni dans aucun travail successif. https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
+Shannon travaillait sur l’entropy de la langue anglaise, pour développer une théorie de la communication optimale. Shannon dans son article de 1948 ne fait pas mention des « Language Model » ni dans aucun travail successif. https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
 
-Par la suite c’est en 1958 qu’il est de nouveau fait allusion aux modèles de langues, dans l’article de Chomsky intitulé "three models for the description of language", où il les désigne comme des "Finite State Markov Processes".
+Par la suite c’est en 1958 qu’il est de nouveau fait allusion aux modèles de langues, dans l’article de Chomsky intitulé « three models for the description of language », où il les désigne comme des « Finite State Markov Processes ».
 
 > 2. Finite State Markov Processes
 >
@@ -21,15 +21,15 @@ Par la suite c’est en 1958 qu’il est de nouveau fait allusion aux modèles d
 
 Par la suite mobilisé par la grammaire et ne poursuivit pas cette conception. Cependant il les désigne comme des Modèles de langue. https://chomsky.info/wp-content/uploads/195609-.pdf
 
-Le Center for Language and Speech Processing at de l’Université Johns Hopkins en 1995 sur l’ajout de syntaxe dans les modèles de langues, “LM95”. Mais l’emploi de la terminologie était alors très opérationnel. Quoiqu’il en soit la désignation apparaît entre 1958 et 1995.
+Le Center for Language and Speech Processing de l’Université Johns Hopkins en 1995 sur l’ajout de syntaxe dans les modèles de langues, “LM95”. Mais l’emploi de la terminologie était alors très opérationnel. Quoiqu’il en soit la désignation apparaît entre 1958 et 1995.
 
 Article de 1976, sans doute le premier à employer le terme “language model” dans la littérature scientifique.
 
-> It is the function of the *language mode (LM)* to provide us with estimates of *P{w}* for all word strings *w*. We will assume that the LM is a Markov source in the sense of Appendix II, i.e., a Markov cahin whose state transitions are associated with word output probability distributions. We will leave to later research the proble of LM construction for natural language corpora, and will simpy assyme here that the LM is given.
+> It is the function of the *language mode (LM)* to provide us with estimates of *P{w}* for all word strings *w*. We will assume that the LM is a Markov source in the sense of Appendix II, i.e., a Markov chain whose state transitions are associated with word output probability distributions. We will leave to later research the proble of LM construction for natural language corpora, and will simpy assyme here that the LM is given.
 
 Frederick Jelinek. Continuous Speech Recognition by Statistical Methods. Proceedings of the IEEE, vol. 64, n° 4, avril 1976. https://ieeexplore.ieee.org/iel5/5/31240/01454428.pdf
 
-L’article en lui même constitue une étape importante. C’est le premier à décire un engin pré-deep learning ASR. L’architecture qui est décrite est très proche de son déploiement actuel.
+L’article en lui même constitue une étape importante. C’est le premier à décrire un engin pré-deep learning ASR. L’architecture qui est décrite est très proche de son déploiement actuel.
 
 Linguistic decoder qui retourne le score de séquences de mots. Attire attention note 17.
 

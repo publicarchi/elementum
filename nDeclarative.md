@@ -9,7 +9,7 @@ La programmation déclarative est un paradigme de programmation dans lequel on e
 
 Dans ce type de programmation on décrit plutôt le problème, le *quoi* tandis que dans une programmation impérative on décrit le *comment*, c’est-à-dire la structure de contrôle qui correspond à la solution.
 
-Il s’agit d’une forme de programmation dite sans effet de bord qui présente une correspodance avec la logique mathématique. Plusieurs formes de programmation sont dites déclaratives
+Il s’agit d’une forme de programmation dite sans effet de bord qui présente une correspondance avec la logique mathématique. Plusieurs formes de programmation sont dites déclaratives
 
 - la programmation descriptive (description de structures de données : HTML, XML)
 - la programmation fonctionnelle qui envisage les applications comme un ensemble de fonctions mathématiques (Lisp, Caml, Haskell, etc.)
@@ -19,6 +19,8 @@ Il s’agit d’une forme de programmation dite sans effet de bord qui présente
 Langage de haut niveau qui décrit ce que la computation doit effectuée
 
 Langage de programmation sans effet de bord (ou plus spécifiquement référentiellement transparent)
+
+Les langages de base de données ou de requête comme SQL ou XQuery sont des langages déclaratifs, tout comme les expressions régulières et la programmation logique, la programmation fonctionnelle, etc.
 
 ## Programmation logique
 
@@ -67,6 +69,18 @@ XSLT
 ## Déclarative langage
 
 NicoVerwer https://youtu.be/hlFoT26nWhA
+
+### Définition du FOLDOC
+
+><*[language](https://foldoc.org/contents/language.html)*>
+>
+>Any [relational language](https://foldoc.org/relational+language) or [functional language](https://foldoc.org/functional+language). These kinds of [programming language](https://foldoc.org/programming+language)describe relationships between variables in terms of [functions](https://foldoc.org/functions) or [inference rules](https://foldoc.org/inference+rules), and the language executor ([interpreter](https://foldoc.org/interpreter) or [compiler](https://foldoc.org/compiler)) applies some fixed [algorithm](https://foldoc.org/algorithm) to these relations to produce a result.
+>
+>Declarative languages contrast with [imperative languages](https://foldoc.org/imperative+languages) which specify explicit manipulation of the computer's internal state; or [procedural languages](https://foldoc.org/procedural+languages) which specify an explicit sequence of steps to follow.
+>
+>The most common examples of declarative languages are [logic programming](https://foldoc.org/logic+programming) languages such as [Prolog](https://foldoc.org/Prolog) and [functional languages](https://foldoc.org/functional+languages) like [Haskell](https://foldoc.org/Haskell).
+>
+>See also [production system](https://foldoc.org/production+system).
 
 ## Sources
 

@@ -5,10 +5,17 @@ tags: outils, thesaurus
 
 # Logiciels de gestion de thesaurus
 
-## Ginco
+## OpenTheso
 
-...
+https://opentheso.huma-num.fr
 
 ## Skosmos
 
-http://skosmos.org/
+http://skosmos.org
+
+## Ginco
+
+http://www.culturecommunication.gouv.fr/Ressources/HADOC/Referentiels2/Les-vocabulaires-scientifiques-et-techniques/Le-projet-GINCO
+
+https://archeonum.hypotheses.org/255
+

@@ -836,3 +836,10 @@ Tutoriel de Cuvelier
 - https://github.com/datacraft-paris/2211-Cuvelier-Julia/blob/main/1-bases.ipynb
 - https://github.com/datacraft-paris/2211-Cuvelier-Julia/blob/main/2-dataframes.ipynb
 - https://github.com/datacraft-paris/2211-Cuvelier-Julia/blob/main/3-graphes.ipynb
+
+## Liens utiles
+
+https://github.com/TheAlgorithms/Julia
+
+Algorithms implemented in the Julia programming language. We're collaborating with the Humans of Julia community!
+

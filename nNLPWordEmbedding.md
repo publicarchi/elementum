@@ -6,11 +6,9 @@
 
 La représentation vectorielle d’un mot est généralement obtenue par l’analyse de sa distribution et du contexte lexical de chacune de ses occurences au sein du corpus. Les plus récentes approches reposent sur des modèles probabilistes.
 
-L’utilisation des plongements pour representer du texte a joué un rôle déterminant dans le développement des applications de traitement automatique du langage naturel (NLP). Leur utilisation est aujourd’hui fondamentale pour les tâches de classification de texte, d’analyse de sentiments ou de traduction de textes.
+L’utilisation des plongements pour représenter du texte a joué un rôle déterminant dans le développement des applications de traitement automatique du langage naturel (NLP). Leur utilisation est aujourd’hui fondamentale pour les tâches de classification de texte, d’analyse de sentiments ou de traduction de textes.
 
 cf. https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26560496/plongement-de-mots
-
-Word2Vec et TF-IDF.
 
 Les One Hot Encoding, TF-IDF, Word2Vec, FastText sont des méthodes souvent utilisées pour le plongement lexical.
 
@@ -18,10 +16,9 @@ Les One Hot Encoding, TF-IDF, Word2Vec, FastText sont des méthodes souvent util
 
 Dans l’*encodage 1 parmi n* (*One hot encoding*), chaque mot est représenté sous la forme d’un vecteur creux dont la dimension est égale à la taille du vocabulaire.
 
-Les données catégorielles doivent être converties en données numériques pour pouvoir être traitées avec des modèles de machine learning. On peut alors assigner une valeur numérique à ces étiquettes puis utiliser la technique du One Hot Encoding.
+Les données catégorielles doivent être converties en données numériques pour pouvoir être traitées avec des modèles d’apprentissage machine (*machine learning*). On peut alors assigner une valeur numérique à ces étiquettes puis utiliser la technique du *One Hot Encoding*.
 
-La dimension augmente plus le lexique augmente (*curse of*
-*dimensionality*). Par ailleurs, cette représentation manque d’informations sémantiques et ne capture pas les relations entre les mots.
+La dimension augmente plus le lexique augmente (*curse of dimensionality*). Par ailleurs, cette représentation manque d’informations sémantiques et ne capture pas les relations entre les mots.
 
 ### Plongements lexicaux
 

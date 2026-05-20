@@ -8,13 +8,13 @@ La version 3 des langages XPath, XSLT et XQuery offrent une meilleure prise en c
 
 Marklogic utilise XQuery comme langage glue.
 
-BaseX offre des fonctions spécifiques pour manipuler des fichers JSON
+BaseX offre des fonctions spécifiques pour manipuler des fichiers JSON
 
 XQuery fournit deux fonctions par défaut pour parser des données en JSON : `parse-json()` et `json-doc()`.
 
+La version 4 de XPath et XQuery permet de requêter des documents JSON.
 
-
-Voir aussi 
+## Voir aussi 
 
 https://docs.basex.org/12/JSON_Functions
 

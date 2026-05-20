@@ -2,7 +2,11 @@
 
 Lorsque l’on sert des contenus en ligne, il reste possible d’exécuter des transformations XSLT côté client pour rendre des fichiers XML. Le support de transformation XSLT est à peu près pris en charge par l’ensemble des navigateurs à l’exclusion de certaines plate-formes mobiles, mais cette fonctionnalité se limite à la version 1.0 du langage XSLT.
 
-En 2013, Mickael Kay a présenté en 2012  [Saxon-CE](http://www.saxonica.com/ce/user-doc/1.1/index.html) un processeur permettant l’exécution de XSLT 2.0 côté client.
+Cette possibilité était notamment largement utilisée pour publier des flux RSS ou des entrepôts OAI-PMH sous la forme de page HTML.
+
+Le 1er août 2025, un développeur de Chromium a proposé la suppression du support de XSLT de la plate forme du web sur le GitHub du WHATWG, non sans susciter de vives discussions[^1]. Un [polyfill](https://github.com/search?q=XSLT%20polyfill&type=repositories) permettra d’exécuter le code existant.
+
+En 2013, Mickael Kay a présenté en 2012  [Saxon-CE](http://www.saxonica.com/ce/user-doc/1.1/index.html) un processeur permettant l’exécution de XSLT 2.0 côté client. Il existe également [SaxonJS](https://www.saxonica.com/saxonjs/index.xml).
 
 
 ## Association d’un document XML à une XSLT
@@ -131,10 +135,21 @@ La fonction displayResult() est employée pour rendre le XML stylé par la trans
     - Utilisation de la méthode transformToFragment() pour appliquer la transformation XSL au document XML
     - Réglage du body du document courant (id="example") pour contenir le XML stylé.
 
+## Exemples d’utilisation
+
+- [rss-xslt](https://github.com/nfriedly/rss-xslt)
+- [RSS.Style](https://www.rss.style) https://github.com/fileformat/rss.style
+- https://gist.github.com/bennadel/32bb016f4ac6a7be4e9f5517259fdd73
+- https://www.govinfo.gov/content/pkg/BILLS-119hr400ih/xml/BILLS-119hr400ih.xml
+- https://xmpp.org/extensions/xep-0182.xml
+- http://oai.persee.fr/oai?verb=Identify
+
 ## Liens d’intérêt
 
-Test Cases for XSLT support in browser http://greenbytes.de/tech/tc/xslt/
+- Test Cases for XSLT support in browser http://greenbytes.de/tech/tc/xslt/
+- http://stackoverflow.com/questions/28041557/client-side-xslt-internet-explorer-does-not-cache-xslt
+- http://dh.obdurodon.org/transformation-scenario.xhtml
 
-http://stackoverflow.com/questions/28041557/client-side-xslt-internet-explorer-does-not-cache-xslt
+## Notes
 
-http://dh.obdurodon.org/transformation-scenario.xhtml
+[^1]: Should we remove XSLT from the web platform? https://github.com/whatwg/html/issues/11523

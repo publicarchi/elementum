@@ -4,8 +4,11 @@ since: 2016-03-20
 tags: programmation, programmation fonctionnelle
 ---
 
-
 # Programmation fonctionnelle
+
+Les langages de programmation peuvent être catégorisés de différentes manières, en fonction de leur génération ou bien selon la manière dont ils spécifient la computation.
+
+> **Another classification of languages uses the term imperative for languages in which a program specifies how a computation is to be done and declarative for languages in which a program species what computation is to be done.** Languages such as C, C++, C#, and Java are imperative languages. In imperative languages there is a notion of program state and statements that change the state. Functional languages such as ML and Haskell and constraint logic languages such as Prolog are often considered to be declarative languages. (Aho et al. [1986] 2007, p. 13)
 
 XQuery et XSLT ont la qualité d’être des langages fonctionnels. Si la notion de programmation fonctionnelle a bénéficié d’un regain d’intérêt récemment on évoque plus habituellement les langages [Haskell](https://www.haskell.org/) ou [Lisp](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29). On peut également programmer de manière fonctionnelle avec [Elm](http://elm-lang.org/) ou [Clojurescript](https://github.com/clojure/clojurescript) deux langages qui se compilent en JavaScript.
 
@@ -48,3 +51,7 @@ Lisp un des premiers langages fonctionnels développé par John McCarty au MIT p
 - https://en.wikipedia.org/wiki/Functional_programming
 - Hughes, John. "Why Functional Programming Matters." In Research Topics in Functional Programming. Edited by D Turner. Addison-Wesley, 1990. Why Functional Programming Matters.
 - Backus, John. "Can Programming Be Liberated From the Von Neumann Style?: A Functional Style and Its Algebra of Programs." Commun. ACM 21, no. 8 (1978): doi:10.1145/359576.359579. http://doi.acm.org/10.1145/359576.359579.
+
+## Références
+
+“Another classi cation of languages uses the term imperative for languages in which a program speci es how a computation is to be done and declarative for languages in which a program speci es what computation is to be done. Languages such as C, C++, C#, and Java are imperative languages. In imperative languages there is a notion of program state and statements that change the state. Functional languages such as ML and Haskell and constraint logic languages such as Prolog are often considered to be declarative languages.”

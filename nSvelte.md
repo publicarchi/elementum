@@ -17,7 +17,27 @@ https://madewithsvelte.com
 
 https://sveltethemes.dev
 
+https://svelte-apps.me
 
+https://intlayer.org/fr
+
+
+
+## Internationalisation
+
+https://github.com/kaisermann/svelte-i18n
+
+https://github.com/sveltekit-i18n/lib
+
+https://github.com/codingcommons/typesafe-i18n
+
+https://www.sveltevietnam.dev/en/blog/20251105-internationalisation-with-remote-function-a-proof-of-concept
+
+https://github.com/sveltevietnam/sveltevietnam.dev/tree/main/packages/i18n
+
+https://inlang.com/m/gerre34r/library-inlang-paraglideJs/sveltekit
+
+https://wuchale.dev
 
 ## Authentification avec Svelte
 
@@ -64,6 +84,8 @@ https://svelte-headlessui.goss.io/docs/2.0
 https://svelteui.org
 
 https://www.yesvelte.com
+
+https://atom-forge.eu
 
 ## Documentation
 

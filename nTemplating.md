@@ -213,6 +213,8 @@ https://preactjs.com/
 
 - https://en.wikipedia.org/wiki/JavaScript_templating
 
+- https://en.wikipedia.org/wiki/Web_template_system
+
 - https://sylvainpv.developpez.com/tutoriels/javascript/guide-templating-client/
 
 - https://jonsuh.com/blog/javascript-templating-without-a-library/
